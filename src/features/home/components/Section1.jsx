@@ -13,12 +13,7 @@ export const Section1 = () => {
   return (
     <div className="relative h-[85dvh] flex flex-col">
       {/* Background and Overlay */}
-      <Image
-        src={backgroundImg}
-        alt=""
-        fill
-        className="object-cover -z-10"
-      />
+      <Image src={backgroundImg} alt="" fill className="object-cover -z-10" />
       <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(0deg,_rgba(7,24,34,0.76),_rgba(7,24,34,0.76))] -z-10"></div>
 
       {/* Navbar */}
@@ -49,7 +44,7 @@ export const Section1 = () => {
 
       {/* Mobile Overlay Menu */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/80 z-50 flex flex-col items-center justify-center animate-slideDown">
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/50 backdrop-blur-md animate-slideDown">
           <button
             className="absolute top-6 right-6 text-white"
             onClick={() => setIsOpen(false)}
@@ -63,7 +58,7 @@ export const Section1 = () => {
                 key={text}
                 href="/"
                 onClick={() => setIsOpen(false)}
-                className="text-white text-[20px] font-semibold"
+                className="text-white text-[20px] font-semibold fade-in-delay-500"
               >
                 {text}
               </Link>

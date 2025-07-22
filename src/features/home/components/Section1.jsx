@@ -13,8 +13,13 @@ export const Section1 = () => {
   return (
     <div className="relative h-[85dvh] flex flex-col">
       {/* Background and Overlay */}
-      <Image src={backgroundImg} alt="" fill className="object-cover -z-10" />
-      <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(0deg,_rgba(7,24,34,0.76),_rgba(7,24,34,0.76))] -z-10"></div>
+      <Image
+        src={backgroundImg}
+        alt=""
+        fill
+        className="object-cover -z-10 rounded-t-[50px]"
+      />
+      <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(0deg,_rgba(7,24,34,0.76),_rgba(7,24,34,0.76))] -z-10 rounded-t-[50px]"></div>
 
       {/* Navbar */}
       <div className="flex py-8 px-6 md:px-[40px] lg:[120px] justify-between items-center">

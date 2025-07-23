@@ -1,3 +1,4 @@
+import { Footer } from "@/features/common/Footer";
 import { Section1 } from "@/features/home/components/Section1";
 import { Section2 } from "@/features/home/components/Section2";
 import { Section3 } from "@/features/home/components/Section3";
@@ -17,6 +18,7 @@ export default function Home() {
       <Section6 />
       <Section7 />
       <Section8 />
+      <Footer />
     </div>
   );
 }

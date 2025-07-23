@@ -28,3 +28,25 @@
   animation: fadeIn 1s ease-out forwards;
   animation-delay: 1s;
 }
+
+/* Mantine Tab Styling */
+.mantine-Tabs-list {
+  display: flex;
+  gap: 16px;
+  border: none;
+  margin: 32px 0;
+}
+
+.mantine-Tabs-list button {
+  flex: 1;
+  border: 1px solid #E7E7E7;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+.mantine-Tabs-list button[aria-selected="true"] {
+  background-color: #000000;
+  color: #FFFFFF;
+}

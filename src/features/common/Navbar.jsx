@@ -1,16 +1,20 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../assets/icons/logo";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
 
-export const Navbar = () => {
+export const Navbar = ({ mode = "dark" }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const textColor = mode === "dark" ? "text-white" : "text-black";
+  const bgOverlay = mode === "dark" ? "bg-black/70" : "bg-white/90";
+
   return (
     <>
-      <div className="flex py-8 px-6 md:px-[40px] lg:[120px] justify-between items-center">
-        <Logo className="text-white" />
+      {/* Navbar */}
+      <div className="flex py-8 px-6 md:px-[40px] lg:px-[120px] justify-between items-center">
+        <Logo className={textColor} />
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-10">
@@ -18,7 +22,7 @@ export const Navbar = () => {
             <Link
               key={text}
               href="/"
-              className="text-white text-[16px]/[150%] font-bold"
+              className={`${textColor} text-[16px]/[150%] font-bold`}
             >
               {text}
             </Link>
@@ -27,17 +31,20 @@ export const Navbar = () => {
 
         {/* Mobile Burger Icon */}
         <button
-          className="md:hidden text-white z-50"
+          className={`md:hidden ${textColor} z-50`}
           onClick={() => setIsOpen(true)}
         >
           <Menu size={28} />
         </button>
       </div>
+
       {/* Mobile Overlay Menu */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/50 backdrop-blur-md animate-slideDown">
+        <div
+          className={`fixed inset-0 z-50 flex flex-col items-center justify-center ${bgOverlay} backdrop-blur-md animate-slideDown`}
+        >
           <button
-            className="absolute top-6 right-6 text-white"
+            className={`absolute top-6 right-6 ${textColor}`}
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
           >
@@ -49,7 +56,7 @@ export const Navbar = () => {
                 key={text}
                 href="/"
                 onClick={() => setIsOpen(false)}
-                className="text-white text-[20px] font-semibold fade-in-delay-500"
+                className={`${textColor} text-[20px] font-semibold fade-in-delay-500`}
               >
                 {text}
               </Link>

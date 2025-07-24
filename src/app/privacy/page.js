@@ -34,10 +34,10 @@ const Impressum = () => {
                     {/* Tabs start here */}
                     <Tabs defaultValue="tab1" color="dark" mt="md">
                         <TabsList>
-                            <TabsTab value="tab1">Data Collection</TabsTab>
-                            <TabsTab value="tab2">Usage</TabsTab>
-                            <TabsTab value="tab3">Security</TabsTab>
-                            <TabsTab value="tab4">Your Rights</TabsTab>
+                            <TabsTab value="tab1">BlackRock Privacy Notice</TabsTab>
+                            <TabsTab value="tab2">Recruitment Privacy Notice</TabsTab>
+                            <TabsTab value="tab3">Alumni Privacy Notice</TabsTab>
+                            <TabsTab value="tab4">Cookie Notice</TabsTab>
                         </TabsList>
 
                         <TabsPanel value="tab1" pt="xs">

@@ -3,7 +3,10 @@ import CheckIcon from "../../../assets/images/sec4-check.png"
 import Image from 'next/image';
 export const Section6 = () => {
   return (
-    <div className="py-12 px-4 md:px-6 lg:px-[8.333vw] lg:py-[85px] flex flex-col lg:gap-[64px] gap-8 items-center">
+    <div
+      id="solutions"
+      className="py-12 px-4 md:px-6 lg:px-[8.333vw] lg:py-[85px] flex flex-col lg:gap-[64px] gap-8 items-center"
+    >
       <div className="lg:px-[20.833vw]">
         <h2 className="font-bold text-[24px]/[130%] lg:text-[40px]/[130%] mb-5 md:mb-4 lg:text-center uppercase">
           Strategic Solutions for Growth

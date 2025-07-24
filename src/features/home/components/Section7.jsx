@@ -3,7 +3,10 @@ import React from 'react'
 export const Section7
  = () => {
   return (
-    <div className="bg-[#F5F5F5] py-12 px-4 md:px-6 lg:px-[8.333vw] lg:py-[85px]">
+    <div
+      id="our-team"
+      className="bg-[#F5F5F5] py-12 px-4 md:px-6 lg:px-[8.333vw] lg:py-[85px]"
+    >
       <h2 className="font-bold text-[24px]/[130%] lg:text-[40px]/[130%] text-center mb-6 lg:mb-[64px] w-full">
         Our Team
       </h2>

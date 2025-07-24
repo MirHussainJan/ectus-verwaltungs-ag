@@ -14,21 +14,27 @@ export const Navbar = ({ mode = "dark" }) => {
     <>
       {/* Navbar */}
       <div className="flex py-8 px-6 md:px-[40px] lg:px-[120px] justify-between items-center">
-        <Logo className={textColor} />
-
+        <Link href={"/"}>
+          <Logo className={textColor} />
+        </Link>
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-10">
-          {["About Us", "Solutions", "Our Team", "Contact Us"].map((text) => (
+          {[
+            { name: "About Us", path: "#about-us" },
+            { name: "Solutions", path: "#solutions" },
+            { name: "Our Team", path: "#our-team" },
+            { name: "Contact Us", path: "#contact-us" },
+          ].map((page) => (
             <Link
-              key={text}
-              href="/"
-              className={`${textColor} text-[16px]/[150%] font-bold`}
+              key={page.name}
+              href={page.path}
+              onClick={() => setIsOpen(false)}
+              className={`${textColor} text-[20px] font-semibold fade-in-delay-500`}
             >
-              {text}
+              {page.name}
             </Link>
           ))}
         </div>
-
         {/* Mobile Burger Icon */}
         <button
           className={`md:hidden ${textColor} z-50`}
@@ -51,14 +57,19 @@ export const Navbar = ({ mode = "dark" }) => {
             <X size={32} />
           </button>
           <div className="flex flex-col items-center gap-8">
-            {["About Us", "Solutions", "Our Team", "Contact Us"].map((text) => (
+            {[
+              { name: "About Us", path: "#about-us" },
+              { name: "Solutions", path: "#solutions" },
+              { name: "Our Team", path: "#our-team" },
+              { name: "Contact Us", path: "#contact-us" },
+            ].map((page) => (
               <Link
-                key={text}
-                href="/"
+                key={page.name}
+                href={page.path}
                 onClick={() => setIsOpen(false)}
                 className={`${textColor} text-[20px] font-semibold fade-in-delay-500`}
               >
-                {text}
+                {page.name}
               </Link>
             ))}
           </div>

@@ -4,7 +4,7 @@ import image from "../../../assets/images/sec3.png";
 
 export const Section3 = () => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row lg:gap-[90px] gap-8">
+    <div id="about-us" className="flex flex-col-reverse lg:flex-row lg:gap-[90px] gap-8">
       <div className="lg:w-[45.972vw] relative py-12">
         <div className="absolute bg-[#F3F4F7] top-0 left-0 w-full h-[85%] -z-10"></div>
         <div className="absolute bg-[#F3F4F7] bottom-0 left-0 w-[85%] h-full -z-10"></div>

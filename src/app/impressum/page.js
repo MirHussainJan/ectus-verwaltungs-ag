@@ -8,7 +8,7 @@ const Impressum = () => {
     return (
         <div>
             <Navbar mode="light" />
-            <div className='lg:px-[8.333vw] px-4 lg:pt-[42px] lg:pb-[80px] pt-[28px] pb-[48px]'>
+            <div className='lg:px-[8.333vw] min-h-[calc(100dvh-763px] md:min-h-[calc(100dvh-655px)] lg:min-h-[calc(100dvh-486px)] px-4 lg:pt-[42px] lg:pb-[80px] pt-[28px] pb-[48px]'>
                 <Link className='flex items-center gap-2 font-bold text-[#484848] text-[20px]/[150%]' href="/">
                     <BackArrow /> Home</Link>
                 <div className='flex flex-col gap-4 lg:mt-8 mt-6 w-[240px]'>

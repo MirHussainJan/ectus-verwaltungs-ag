@@ -203,7 +203,7 @@ export const Tab1 = () => {
         <br />
         The below table sets out the purposes and basis for which we process PI.
       </p>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
           <strong>Processing Purpose</strong>
           <br />
@@ -249,7 +249,7 @@ export const Tab1 = () => {
           activities, such as terrorism
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
           To deliver the services you have requested, including liaising with
           third parties (e.g., brokers for the purposes of executing
@@ -286,7 +286,7 @@ export const Tab1 = () => {
           prompt payment of any fees, costs and debts in respect of our services
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
           To interact with you (e.g. upon your request to answer questions you
           submit online)
@@ -307,7 +307,7 @@ export const Tab1 = () => {
           best client services and visitor services we can offer
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
           To manage our relationship with you which will include notifying you
           about changes to our terms of business or this privacy notice
@@ -333,7 +333,7 @@ export const Tab1 = () => {
           best client services and visitor services we can offer
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
           To interact with governmental or regulatory bodies or other competent
           national authorities
@@ -365,7 +365,7 @@ export const Tab1 = () => {
           comply with governmental and regulatory body requests
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
           To detect or prevent fraud and/or other criminal activity and to
           protect our employees and assets
@@ -409,7 +409,7 @@ export const Tab1 = () => {
           applicable laws protecting BlackRock employees
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
           To manage and protect our business, including improving data security,
           troubleshooting data and systems, system maintenance and testing, data
@@ -446,7 +446,7 @@ export const Tab1 = () => {
           and data security and fraud prevention
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
           To manage and improve our products and services with relevant and
           up-to-date information
@@ -471,7 +471,7 @@ export const Tab1 = () => {
           in highest quality to our clients
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
           To invite you to take part in market insight or other events, or
           client seminars or similar, and to manage your participation in them
@@ -503,7 +503,7 @@ export const Tab1 = () => {
           services, identifying ways to expand our business
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
           To send you marketing communications and service updates (including by
           paper and electronic channels and personalization in authenticated
@@ -543,7 +543,7 @@ export const Tab1 = () => {
       <p className="text-[16px]/[24px] text-[#000000] underline">
         In relation to vendor services:
       </p>
-      <div className="grid grid-cols-3 gap-8 mt-6">
+      <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6 mt-6">
         <div>
           <strong>Purpose and/or activity</strong>
           <br />

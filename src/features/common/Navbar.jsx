@@ -1,15 +1,45 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../../assets/icons/logo";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export const Navbar = ({ mode = "dark" }) => {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const [isOpen, setIsOpen] = useState(false);
 
   const textColor = mode === "dark" ? "text-white" : "text-black";
   const bgOverlay = mode === "dark" ? "bg-black/70" : "bg-white/90";
+  useEffect(() => {
+    const section = searchParams.get("section");
+    if (section) {
+      const el = document.getElementById(section);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+    }
+    }
+  }, [searchParams]);
 
+const handleNavClick = async (e, sectionId) => {
+  e.preventDefault();
+  setIsOpen(false);
+  if (pathname === "/") {
+    scrollToSection(sectionId);
+  } else {
+    router.push(`/?section=${sectionId}`);
+  }
+};
+const scrollToSection = (id) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
   return (
     <>
       {/* Navbar */}
@@ -20,19 +50,19 @@ export const Navbar = ({ mode = "dark" }) => {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-10">
           {[
-            { name: "About Us", path: "#about-us" },
-            { name: "Solutions", path: "#solutions" },
-            { name: "Our Team", path: "#our-team" },
-            { name: "Contact Us", path: "#contact-us" },
+            { name: "About Us", path: "/#about-us" },
+            { name: "Solutions", path: "/#solutions" },
+            { name: "Our Team", path: "/#our-team" },
+            { name: "Contact Us", path: "/#contact-us" },
           ].map((page) => (
-            <Link
+            <a
               key={page.name}
               href={page.path}
-              onClick={() => setIsOpen(false)}
-              className={`${textColor} text-[20px] font-semibold fade-in-delay-500`}
+              onClick={(e) => handleNavClick(e, page.path.replace("/#", ""))}
+              className={`${textColor} text-[20px] font-semibold fade-in-delay-500 cursor-pointer`}
             >
               {page.name}
-            </Link>
+            </a>
           ))}
         </div>
         {/* Mobile Burger Icon */}
@@ -58,19 +88,19 @@ export const Navbar = ({ mode = "dark" }) => {
           </button>
           <div className="flex flex-col items-center gap-8">
             {[
-              { name: "About Us", path: "#about-us" },
-              { name: "Solutions", path: "#solutions" },
-              { name: "Our Team", path: "#our-team" },
-              { name: "Contact Us", path: "#contact-us" },
+              { name: "About Us", path: "/#about-us" },
+              { name: "Solutions", path: "/#solutions" },
+              { name: "Our Team", path: "/#our-team" },
+              { name: "Contact Us", path: "/#contact-us" },
             ].map((page) => (
-              <Link
+              <a
                 key={page.name}
                 href={page.path}
-                onClick={() => setIsOpen(false)}
-                className={`${textColor} text-[20px] font-semibold fade-in-delay-500`}
+                onClick={(e) => handleNavClick(e, page.path.replace("/#", ""))}
+                className={`${textColor} text-[20px] font-semibold fade-in-delay-500 cursor-pointer`}
               >
                 {page.name}
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -1,190 +1,184 @@
-import React from 'react'
+import React from "react";
 
 export const Tab3 = () => {
   return (
     <div className="lg:w-[45.833vw]">
       <p className="text-[16px]/[24px] text-black">
-        <strong>BlackRock Alumni Privacy Notice</strong>
+        <strong>Datenschutzhinweis für BlackRock Alumni</strong>
         <br />
         <br />
-        Last revised: 1 June 2024
+        Zuletzt überarbeitet: 1. Juni 2024
         <br />
         <br />
-        Welcome to the BlackRock Alumni Website (“Alumni Website”). BlackRock is
-        committed to processing personal information (“PI”) in line with all
-        applicable privacy and data protection laws. “BlackRock”, “we”, “us” or
-        “our” means BlackRock, Inc., and each of the direct or indirect
-        subsidiaries of BlackRock, Inc.
+        Willkommen auf der BlackRock Alumni-Website („Alumni-Website“).
+        BlackRock verpflichtet sich zur Verarbeitung personenbezogener Daten
+        („PI“) gemäß allen geltenden Datenschutzgesetzen. „BlackRock“, „wir“,
+        „uns“ oder „unser“ bezieht sich auf BlackRock, Inc. und alle direkten
+        oder indirekten Tochtergesellschaften von BlackRock, Inc.
         <br />
         <br />
-        <strong>PI we collect about you</strong>
+        <strong>Von uns erfasste personenbezogene Daten (PI)</strong>
         <br />
         <br />
-        PI is information relating to an individual, which can be used either
-        alone or with other sources of information to identify that individual.
-        PI does not include information where the identity of the individual has
-        been removed and is therefore non-attributable.
+        PI sind Informationen über eine Person, die alleine oder zusammen mit
+        anderen Informationen zur Identifikation dieser Person verwendet werden
+        können. PI schließen Informationen aus, bei denen die Identität entfernt
+        wurde und somit nicht mehr zugeordnet werden kann.
         <br />
         <br />
-        To join BlackRock’s alumni network, you will be asked to submit an
-        application on our Alumni Website. Your participation in our network is
-        entirely your choice. As part of your application, we may collect the
-        following PI that can be categorized as follows (the PI listed for each
-        category are non-exhaustive examples):
+        Um dem Alumni-Netzwerk von BlackRock beizutreten, müssen Sie eine
+        Bewerbung auf unserer Alumni-Website einreichen. Ihre Teilnahme an
+        unserem Netzwerk ist völlig freiwillig. Im Rahmen der Bewerbung erfassen
+        wir möglicherweise folgende PI, unterteilt in Kategorien (die Beispiele
+        sind nicht abschließend):
       </p>
       <ul className="list-disc pl-6 space-y-4 my-4 text-[16px]/[24px] text-black">
         <li>
-          <strong>Identification data</strong>
+          <strong>Identifikationsdaten</strong>
           <br />
-          Full name, gender, photograph.
+          Vollständiger Name, Geschlecht, Foto.
         </li>
         <li>
-          <strong>Personal Contact data</strong>
+          <strong>Persönliche Kontaktdaten</strong>
           <br />
-          Email address, current residential location.
+          E-Mail-Adresse, aktueller Wohnort.
         </li>
         <li>
-          <strong>Professional Information data</strong>
+          <strong>Berufliche Informationen</strong>
           <br />
-          Current employment status, management title, line of business,
-          employment experience, education, board memberships, BlackRock email
-          address, information relating to your time at BlackRock, including
-          management level, city last worked, line of business, title, and time
-          of joining and leaving BlackRock.
+          Aktueller Beschäftigungsstatus, Führungsposition, Geschäftsbereich,
+          Berufserfahrung, Ausbildung, Vorstandsmitgliedschaften,
+          BlackRock-E-Mail-Adresse, Informationen über Ihre Zeit bei BlackRock,
+          einschließlich Führungsebene, letzter Arbeitsort, Geschäftsbereich,
+          Titel sowie Eintritts- und Austrittsdatum.
         </li>
       </ul>
       <p className="text-[16px]/[24px] text-black">
-        Unless we otherwise indicate that the provision of specific PI is
-        optional, any PI we request from you is necessary to progress your
-        application to become a member of the BlackRock alumni network.
+        Sofern nicht anders angegeben, ist die Angabe bestimmter PI
+        erforderlich, um Ihre Bewerbung für das Alumni-Netzwerk
+        weiterzubearbeiten.
         <br />
         <br />
-        <strong>The purposes and legal basis for processing your PI</strong>
+        <strong>Zwecke und Rechtsgrundlagen der Verarbeitung Ihrer PI</strong>
         <br />
         <br />
-        The below table sets out the purposes and bases for which we process PI.
+        Die folgende Tabelle zeigt die Zwecke und Rechtsgrundlagen, auf deren
+        Basis wir PI verarbeiten.
       </p>
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
-        <div className="font-bold">Processing Purpose</div>
-        <div className="font-bold">Category of PI</div>
-        <div className="font-bold">Basis of Processing</div>
+        <div className="font-bold">Verarbeitungszweck</div>
+        <div className="font-bold">PI-Kategorie</div>
+        <div className="font-bold">Rechtsgrundlage der Verarbeitung</div>
       </div>
       <hr className="my-6" />
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
           <strong>
-            {" "}
-            To process your application to enable you to join our alumni network
+            Um Ihre Bewerbung zu bearbeiten und Ihnen den Beitritt zum
+            Alumni-Netzwerk zu ermöglichen
           </strong>
         </div>
         <div>
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Personal contact data
+          · Persönliche Kontaktdaten
           <br />
-          <br />· Professional information data
+          <br />· Berufliche Informationen
         </div>
         <div>
-          · Performance of a contract
+          · Vertragserfüllung
           <br />
           <br />
-          · Consent
+          · Einwilligung
           <br />
-          <br />· Legitimate interests of BlackRock: ensure that applications to
-          join our alumni network are made only by BlackRock alumni
+          <br />· Berechtigtes Interesse von BlackRock: Sicherstellung, dass
+          Bewerbungen nur von tatsächlichen ehemaligen Mitarbeitenden erfolgen
         </div>
       </div>
       <hr className="my-6" />
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div className="font-bold">
-          To send communications that include BlackRock news, thought
-          leadership, career opportunities, alumni stories, and invitations to
-          alumni events
+          Versand von Mitteilungen mit BlackRock-Nachrichten, Fachbeiträgen,
+          Karrieremöglichkeiten, Alumni-Geschichten und Einladungen zu
+          Alumni-Veranstaltungen
         </div>
-        <div>· Personal contact data</div>
+        <div>· Persönliche Kontaktdaten</div>
         <div>
-          · Consent
+          · Einwilligung
           <br />
-          <br />· Legitimate interests of BlackRock: ensure that our alumni are
-          made aware of content and opportunities relevant to the alumni network
+          <br />· Berechtigtes Interesse von BlackRock: Alumni über relevante
+          Inhalte und Möglichkeiten zu informieren
         </div>
       </div>
       <hr className="my-6" />
       <p className="text-[16px]/[24px] text-black">
-        <strong>To whom we may disclose your PI</strong>
+        <strong>Empfänger Ihrer PI</strong>
         <br />
         <br />
-        In connection with one or more of the purposes outlined in the section
-        ‘Purpose and Legal basis for processing your PI’ above, we may disclose
-        PI in any jurisdiction to:
+        In Verbindung mit den oben genannten Zwecken können wir PI an folgende
+        Empfänger in beliebigen Ländern weitergeben:
       </p>
 
       <ul className="list-disc pl-6 space-y-4 my-4 text-[16px]/[24px] text-black">
-        <li>Other members of BlackRock;</li>
+        <li>Andere BlackRock-Unternehmen</li>
         <li>
-          Any service providers who provide services to us in relation to the
-          alumni network;
+          Dienstleister, die uns beim Betrieb des Alumni-Netzwerks unterstützen
         </li>
         <li>
-          Any person in connection with litigation or other legal proceedings,
-          to obtain legal advice or for establishing, exercising or defending
-          legal rights;
+          Personen im Zusammenhang mit Rechtsstreitigkeiten oder zur Einholung
+          rechtlicher Beratung
         </li>
         <li>
-          Any person to whom disclosure is allowed or required by law and/or
-          regulation;
+          Personen, denen wir gesetzlich oder regulatorisch zur Offenlegung
+          verpflichtet oder berechtigt sind
         </li>
+        <li>Gerichte, Behörden oder staatliche Stellen</li>
         <li>
-          Any court, tribunal, regulatory authority or Government entity; and
-        </li>
-        <li>
-          Third parties to whom BlackRock may transfer its rights and/or
-          obligations under any agreement, including but not limited to a
-          potential merger or acquisition of all or part of BlackRock’s business
-          or assets.
+          Dritte im Rahmen einer potenziellen Übertragung, Fusion oder eines
+          Verkaufs von BlackRock oder dessen Vermögenswerten
         </li>
       </ul>
 
       <p className="text-[16px]/[24px] text-black">
-        <strong>Your rights</strong>
+        <strong>Ihre Rechte</strong>
         <br />
         <br />
-        In some countries, subject to certain exemptions, you may have the
-        following rights:
+        In einigen Ländern haben Sie unter bestimmten Voraussetzungen folgende
+        Rechte:
       </p>
 
       <ul className="list-disc pl-6 space-y-4 my-4 text-[16px]/[24px] text-black">
         <li>
-          <strong>Access</strong>
+          <strong>Zugang</strong>
           <br />
-          The PI processed in relation to you is accessible to you in your
-          profile on the Alumni Website.
+          Die über Sie verarbeiteten PI sind über Ihr Profil auf der
+          Alumni-Website einsehbar.
         </li>
         <li>
-          <strong>Correction</strong>
+          <strong>Berichtigung</strong>
           <br />
-          You may amend your PI directly in your profile on the Alumni Website.
+          Sie können Ihre PI direkt in Ihrem Profil auf der Alumni-Website
+          aktualisieren.
         </li>
         <li>
-          <strong>Erasure</strong>
+          <strong>Löschung</strong>
           <br />
-          If you wish to delete your BlackRock Alumni Website account, you may
-          email us at{" "}
+          Wenn Sie Ihr Konto auf der Alumni-Website löschen möchten, senden Sie
+          bitte eine E-Mail an{" "}
           <a
             href="mailto:alumni@blackrock.com"
             className="underline text-blue-600"
           >
             alumni@blackrock.com
-          </a>{" "}
-          to request deletion.
+          </a>
+          .
         </li>
       </ul>
       <p className="text-[16px]/[24px] text-black">
-        Additionally, in some countries, subject to certain exemptions, you have
-        rights including, but not limited to the right to object to processing,
-        restriction, and portability. If you wish to exercise any of these
-        rights, please contact
+        Zusätzlich haben Sie möglicherweise Rechte wie Widerspruch,
+        Einschränkung der Verarbeitung oder Datenübertragbarkeit. Zur Ausübung
+        dieser Rechte wenden Sie sich bitte an
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
@@ -195,82 +189,69 @@ export const Tab3 = () => {
         .
         <br />
         <br />
-        You will not be disadvantaged in any way by exercising your rights in
-        relation to the processing of your PI.
+        Ihnen entstehen keine Nachteile, wenn Sie Ihre Rechte in Bezug auf Ihre
+        PI geltend machen.
         <br />
         <br />
-        <strong>How long your PI is retained for</strong>
+        <strong>Aufbewahrung Ihrer PI</strong>
         <br />
         <br />
-        We will process your PI for as long as is necessary to fulfil the
-        purpose for which it was collected or to comply with legal, regulatory,
-        accounting, reporting, internal policy requirements or for the
-        establishment or defence of legal claims.
+        Ihre PI werden so lange verarbeitet, wie es zur Erfüllung der Zwecke
+        erforderlich ist oder gesetzliche, regulatorische oder interne
+        Anforderungen dies vorsehen.
         <br />
         <br />
-        <strong>How your PI is protected</strong>
+        <strong>Schutz Ihrer PI</strong>
         <br />
         <br />
-        BlackRock implements technical and organizational measures to
-        appropriately protect PI against unauthorized, accidental, or unlawful
-        destruction, loss, alteration, unauthorized disclosure of, or access to
-        PI transmitted, stored, or otherwise processed.
+        BlackRock setzt technische und organisatorische Maßnahmen ein, um PI vor
+        unbefugter oder unbeabsichtigter Zerstörung, Verlust, Veränderung,
+        Offenlegung oder Zugriff zu schützen.
         <br />
         <br />
-        <strong>Transfers of PI</strong>
+        <strong>Übermittlung von PI</strong>
         <br />
         <br />
-        We are a global organization and in the course of running our business,
-        we may transfer PI to a location outside of the country where you
-        reside, including BlackRock processing centers in the USA, Hungary,
-        India and Singapore. Although the country to which PI may be transferred
-        may not have the same level of privacy and data protection laws, we
-        apply the same level of security and organizational controls to the
-        processing of PI wherever it is processed. We require by contract that
-        our service providers processing PI on our behalf comply with
-        BlackRock’s criteria for PI processing.
+        Als globales Unternehmen kann BlackRock PI auch außerhalb Ihres
+        Wohnsitzlandes verarbeiten, z. B. in den USA, Ungarn, Indien und
+        Singapur. Auch wenn dort andere Datenschutzgesetze gelten, wendet
+        BlackRock dieselben Schutzmaßnahmen an. Unsere Dienstleister sind
+        vertraglich verpflichtet, unsere Datenschutzstandards einzuhalten.
         <br />
         <br />
-        If we transfer PI out of the EEA, we ensure a similar level of
-        protection for your PI by ensuring the country is considered by the EU
-        Commission to provide an adequate level of protection or by putting in
-        place contractual clauses the EU Commission considers to provide the
-        same level of protection.
+        Bei Übermittlungen außerhalb des EWR stellen wir ein angemessenes
+        Datenschutzniveau sicher, z. B. durch EU-Standardvertragsklauseln.
         <br />
         <br />
-        <strong>
-          Alumni communications and exercising your right to opt-out
-        </strong>
+        <strong>Alumni-Kommunikation und Opt-out</strong>
         <br />
         <br />
-        We will not send you communications about BlackRock news, thought
-        leadership, career opportunities, alumni stories, and invitations to
-        alumni events if you have informed us that you do not wish to receive
-        communications. All electronic communications we send to you will have
-        an unsubscribe option.
+        Wir senden Ihnen keine Mitteilungen, wenn Sie uns mitgeteilt haben, dass
+        Sie diese nicht wünschen. Alle E-Mails enthalten eine
+        Abmeldemöglichkeit.
         <br />
         <br />
-        <strong>Third-party marketing/sale of PI</strong>
+        <strong>Weitergabe oder Verkauf Ihrer PI an Dritte</strong>
         <br />
         <br />
-        We do not share or sell your PI to third parties for the third party to
-        use for their own marketing or other purposes.
+        Wir verkaufen oder teilen Ihre PI nicht mit Dritten für deren eigene
+        Marketingzwecke.
         <br />
         <br />
         <strong>Cookies</strong>
         <br />
         <br />
-        Please see our separate Cookie Notice.
+        Bitte beachten Sie unseren separaten Cookie-Hinweis.
         <br />
         <br />
-        <strong>Contacting us</strong>
+        <strong>Kontakt</strong>
         <br />
         <br />
-        The Global Head of Privacy and Data Protection oversees compliance with
-        privacy and data protection at BlackRock. If you wish to exercise any of
-        your rights, or have questions concerning this notice, please contact:
+        Der Global Head of Privacy and Data Protection ist verantwortlich für
+        die Einhaltung der Datenschutzanforderungen bei BlackRock. Kontaktieren
+        Sie uns bei Fragen oder zur Ausübung Ihrer Rechte:
         <br />
-        The Global Head of Privacy and Data Protection
+        Global Head of Privacy and Data Protection
         <br />
         BlackRock
         <br />
@@ -280,7 +261,7 @@ export const Tab3 = () => {
         <br />
         EC2N 2DL
         <br />
-        Email:{" "}
+        E-Mail:{" "}
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
@@ -288,19 +269,18 @@ export const Tab3 = () => {
           GroupPrivacy@BlackRock.com
         </a>
         <br />
-        If you are a California resident, you may also call us on{" "}
+        Wenn Sie in Kalifornien wohnen, können Sie uns auch anrufen unter{" "}
         <a href="tel:+18553710019" className="underline text-blue-600">
           +1 855 371 0019
         </a>
         .
         <br />
         <br />
-        <strong>Complaints</strong>
+        <strong>Beschwerden</strong>
         <br />
         <br />
-        If you have any concerns or complaints about the way your PI is
-        processed, please contact the Global Head of Privacy and Data Protection
-        at
+        Wenn Sie Bedenken hinsichtlich der Verarbeitung Ihrer PI haben, wenden
+        Sie sich bitte an
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
@@ -308,29 +288,18 @@ export const Tab3 = () => {
           {" "}
           GroupPrivacy@BlackRock.com
         </a>
-        . You also have a right to complain to a data protection or other
-        competent authority with jurisdiction over privacy and data protection
-        law in the country you live or work, or in the country where you believe
-        an issue in relation to the processing of your PI has arisen. Please
-        contact
-        <a
-          href="mailto:GroupPrivacy@BlackRock.com"
-          className="underline text-blue-600"
-        >
-          {" "}
-          GroupPrivacy@BlackRock.com
-        </a>{" "}
-        for further details.
+        . Sie haben auch das Recht, sich bei der zuständigen Datenschutzbehörde
+        Ihres Wohnsitzes oder am Ort der vermuteten Verletzung zu beschweren.
         <br />
         <br />
-        <strong>Changes to this Privacy Notice</strong>
+        <strong>Änderungen dieser Datenschutzmitteilung</strong>
         <br />
         <br />
-        We may modify or amend this Privacy Notice from time to time and you are
-        advised to visit our Alumni Website regularly to check for any
-        amendments. Any material changes will be communicated to you through an
-        appropriate channel, depending on how we normally communicate with you.
+        Wir können diese Datenschutzmitteilung gelegentlich aktualisieren.
+        Besuchen Sie bitte regelmäßig unsere Alumni-Website, um sich über
+        Änderungen zu informieren. Wesentliche Änderungen werden Ihnen über
+        geeignete Kanäle mitgeteilt.
       </p>
     </div>
   );
-}
+};

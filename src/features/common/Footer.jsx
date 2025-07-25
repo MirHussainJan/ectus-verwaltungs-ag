@@ -36,7 +36,7 @@ export const Footer = () => {
             +49 XXX XXX XXXX
             <br />
             <br />
-            Sandstraße104 40789 Monheim am Rhein
+            Sandstraße104 <br />40789 Monheim am Rhein
           </p>
         </div>
       </div>

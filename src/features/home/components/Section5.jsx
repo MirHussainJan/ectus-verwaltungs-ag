@@ -17,7 +17,8 @@ export const Section5 = () => {
         </p>
       </div>
         <Image
-          className="rounded-[35px] lg:max-w-[45%] flex-1 object-cover"
+          style={{ objectFit: "cover", height: "468px", width: "auto", maxHeight: "468%", minHeight: "468%" }}
+          className="rounded-[35px] lg:max-w-[50%] flex-1 object-cover"
           src={Section5Img}
           alt=""
         />

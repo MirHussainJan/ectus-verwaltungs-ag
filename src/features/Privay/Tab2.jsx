@@ -4,547 +4,577 @@ export const Tab2 = () => {
   return (
     <div className="lg:w-[45.833vw]">
       <p className="text-[16px]/[24px] text-black">
-        <strong>BlackRock Recruitment Privacy Notice</strong>
+        <strong>Datenschutzhinweis für Bewerber bei BlackRock</strong>
         <br />
         <br />
-        Last revised: 1 June 2024
+        Zuletzt überarbeitet: 1. Juni 2024
         <br />
         <br />
-        <strong>Introduction</strong>
+        <strong>Einleitung</strong>
         <br />
         <br />
-        BlackRock is committed to processing personal information (“PI”),
-        including sensitive personal information (“SPI”), in line with all
-        applicable privacy and data protection laws. Most of our offices are
-        located in countries which have laws governing the processing of PI.
-        “BlackRock”, “we”, “us” or “our” means BlackRock, Inc., and each of the
-        direct or indirect subsidiaries of BlackRock, Inc., (the “
-        <strong>BlackRock Group</strong>”).
+        BlackRock verpflichtet sich zur Verarbeitung personenbezogener Daten
+        („PI“), einschließlich sensibler personenbezogener Daten („SPI“), im
+        Einklang mit allen geltenden Datenschutzgesetzen. Die meisten unserer
+        Büros befinden sich in Ländern, in denen Gesetze zur Verarbeitung von PI
+        gelten. „BlackRock“, „wir“, „uns“ oder „unser“ bezieht sich auf
+        BlackRock, Inc. und alle direkten oder indirekten Tochtergesellschaften
+        von BlackRock, Inc. (die „<strong>BlackRock-Gruppe</strong>“).
         <br />
         <br />
-        This Privacy Notice (“Notice”) sets out the purposes for which we
-        collect, use and disclose (collectively “processing”) PI during the
-        recruitment process and how it is protected. References to “you” or
-        “your” relate to individuals who have applied for a position as a summer
-        analyst, on the internship program (also called the Student Program), as
-        a fixed term employee or for a permanent position.
+        Dieser Datenschutzhinweis („Hinweis“) legt die Zwecke dar, zu denen wir
+        während des Bewerbungsverfahrens PI erheben, verwenden und offenlegen
+        (zusammengefasst „verarbeiten“) und wie diese geschützt werden. „Sie“
+        oder „Ihre“ bezieht sich auf Personen, die sich für eine Stelle als
+        Summer Analyst, im Rahmen des Praktikumsprogramms (auch
+        „Studentenprogramm“ genannt), als befristeter Mitarbeitender oder für
+        eine Festanstellung beworben haben.
         <br />
         <br />
-        We may also provide you with additional information regarding the
-        processing of your PI specific to a particular part of the recruitment
-        process. Any such additional information should be read in conjunction
-        with this Notice.
+        Gegebenenfalls stellen wir Ihnen zusätzliche Informationen zur
+        Verarbeitung Ihrer PI im Rahmen bestimmter Schritte des
+        Bewerbungsverfahrens zur Verfügung. Diese Informationen sind zusammen
+        mit diesem Hinweis zu lesen.
         <br />
         <br />
-        This Notice does not override any rights you may have under relevant
-        employment law.
+        Dieser Hinweis hebt keine Rechte auf, die Ihnen nach geltendem
+        Arbeitsrecht zustehen.
         <br />
         <br />
-        <strong>PI we collect about you</strong>
+        <strong>Von uns über Sie erfasste PI</strong>
         <br />
         <br />
-        PI is information relating to an individual, which can be used either
-        alone or with other sources of information to identify that individual.
-        PI does not include information where the identity of the individual has
-        been removed and is therefore non-attributable. SPI is a sub-category of
-        PI that includes PI that relates to race or ethnicity, religious or
-        philosophical beliefs, sex life, sexual orientation, political opinions,
-        trade union membership, information about health and genetic and
-        biometric data. Not all countries define SPI in their privacy and data
-        protection laws.
+        PI ist Information, die sich auf eine identifizierbare Person bezieht –
+        entweder allein oder zusammen mit anderen Informationen. PI schließt
+        Informationen, bei denen die Identität entfernt wurde und somit keine
+        Rückverfolgung möglich ist, nicht ein. SPI ist eine Unterkategorie von
+        PI, die Angaben zu ethnischer Herkunft, Religion, sexueller
+        Orientierung, politischen Meinungen, Gewerkschaftszugehörigkeit,
+        Gesundheit sowie genetischen und biometrischen Daten umfasst. Nicht alle
+        Länder definieren SPI gesetzlich.
         <br />
         <br />
-        PI, including SPI, that we may collect about you will vary depending on
-        the stage of the recruitment process you are and can be categorized as
-        follows (the PI listed for each category are non-exhaustive examples):
+        Die von uns erfasste PI (einschließlich SPI) hängt vom Stand Ihrer
+        Bewerbung ab und kann wie folgt kategorisiert werden (die aufgelisteten
+        Beispiele sind nicht abschließend):
         <br />
         <br />
-        If you are a member of our Talent Community:
+        Wenn Sie Mitglied unserer Talent Community sind:
       </p>
+
       <ul className="list-disc pl-6 space-y-4 my-4 text-[16px]/[24px] text-black">
         <li>
-          <strong>Contact data</strong>
+          <strong>Kontaktdaten</strong>
           <br />
-          Personal address; telephone number; email address; URL of social media
-          profile.
+          Privatadresse; Telefonnummer; E-Mail-Adresse; URL Ihres
+          Social-Media-Profils.
         </li>
 
         <li>
-          <strong>Professional Information data</strong>
+          <strong>Berufliche Informationen</strong>
           <br />
-          Curriculum vitae/résumé; academic background and qualifications;
-          languages spoken; positions held/job titles; work addresses.
+          Lebenslauf; akademischer Hintergrund und Qualifikationen; gesprochene
+          Sprachen; ausgeübte Positionen/Funktionsbezeichnungen;
+          Arbeitsadressen.
         </li>
 
         <li>
-          <strong>Profile data</strong>
+          <strong>Profildaten</strong>
           <br />
-          Username and password for our talent community portal.
+          Benutzername und Passwort für unser Talent-Community-Portal.
         </li>
 
         <li>
-          <strong>Technical data</strong>
+          <strong>Technische Daten</strong>
           <br />
-          Your use of and interaction with our online services; your IP address;
-          browser type and version; browser plug in types and versions;
-          operating system.
+          Ihre Nutzung und Interaktion mit unseren Onlinediensten; Ihre
+          IP-Adresse; Browsertyp und -version; Plug-ins und Betriebssystem.
         </li>
       </ul>
+
       <p className="text-[16px]/[24px] text-black">
-        If you apply for position with BlackRock, all the above applies, as well
-        as:
+        Wenn Sie sich bei BlackRock bewerben, gelten alle oben genannten Angaben
+        sowie:
       </p>
+
       <ul className="list-disc pl-6 space-y-4 my-4 text-[16px]/[24px] text-black">
         <li>
-          <strong>Identification data</strong>
+          <strong>Identifikationsdaten</strong>
           <br />
-          Full name; title; gender; marital status; date of birth; passport
-          number; driving license number; nationality; national identification
-          number; immigration status and work permits held; photographic images.
+          Vollständiger Name; Anrede; Geschlecht; Familienstand; Geburtsdatum;
+          Reisepassnummer; Führerscheinnummer; Nationalität; nationale
+          ID-Nummer; Aufenthaltsstatus und Arbeitserlaubnisse; Lichtbilder.
         </li>
 
         <li>
-          <strong>Profile data</strong>
+          <strong>Profildaten</strong>
           <br />
-          Username and password for our online recruitment portals, positions
-          applied for.
+          Benutzername und Passwort für unser Online-Bewerbungsportal; beworbene
+          Stellen.
         </li>
 
         <li>
-          <strong>Compensation Information data</strong>
+          <strong>Vergütungsinformationen</strong>
           <br />
-          Salary, bonus and benefits received and expected.
+          Gehalt, Bonus und erhaltene/erwartete Zusatzleistungen.
         </li>
 
         <li>
-          <strong>Electronic Monitoring data</strong>
+          <strong>Elektronische Überwachung</strong>
           <br />
-          To the extent permitted by law, we may record and monitor your
-          electronic communications with us.
+          Soweit gesetzlich zulässig, können wir Ihre elektronische
+          Kommunikation mit uns aufzeichnen und überwachen.
         </li>
 
         <li>
-          <strong>BlackRock Building and Assets Security data</strong>
+          <strong>
+            Sicherheitsdaten zu Gebäuden und Eigentum von BlackRock
+          </strong>
           <br />
-          Records of visits to our premises; CCTV recordings.
+          Besuchsprotokolle; CCTV-Aufzeichnungen.
         </li>
 
         <li>
           <strong>SPI</strong>
           <br />
-          In limited circumstances, where relevant to the recruitment process
-          and where allowed or required by law, we may collect SPI including
-          information about: criminal convictions and offences; gender, race,
-          ethnicity on a voluntary basis and to ensure we are an inclusive
-          employer; dietary requirements if we are arranging catering;
-          disability so that we can make reasonable accommodations for you in
-          our buildings; health related information; sexual orientation if you
-          provide details of your spouse or partner; political affiliations for
-          us to determine whether you are a politically exposed person.
+          In bestimmten Fällen und wenn gesetzlich zulässig oder erforderlich,
+          können wir SPI erfassen, darunter: Vorstrafen; Geschlecht, ethnische
+          Herkunft (freiwillig zur Förderung von Inklusion); Essgewohnheiten
+          (bei Bewirtung); Behinderungen (um angemessene Vorkehrungen zu
+          treffen); gesundheitsbezogene Informationen; sexuelle Orientierung
+          (z. B. Angabe von Ehepartnern); politische Zugehörigkeit (zur
+          Feststellung politischer Exponierung).
         </li>
       </ul>
+
       <p className="text-[16px]/[24px] text-black">
-        We may also process PI on third parties where relevant to the
-        recruitment process, for example we will ask you to declare close
-        personal or financial relationships with current BlackRock employees
-        and/or clients and business partners to manage conflicts of interest,
-        fraud, and other <br /> financial crime. We are also required by law to
-        determine whether you are a politically exposed person (“PEP”) and may
-        process PI on individuals connected to you that are considered to be
-        PEPs.
+        Wir können auch PI über Dritte verarbeiten, sofern es für das
+        Bewerbungsverfahren relevant ist – z. B. wenn wir Sie bitten, enge
+        persönliche oder finanzielle Beziehungen zu aktuellen
+        BlackRock-Mitarbeitenden und/oder Kunden und Geschäftspartnern
+        anzugeben, um Interessenkonflikte, Betrug und sonstige
+        Finanzkriminalität zu vermeiden. Außerdem sind wir gesetzlich
+        verpflichtet zu prüfen, ob Sie eine politisch exponierte Person („PEP“)
+        sind, und dürfen PI zu mit Ihnen verbundenen Personen verarbeiten, die
+        als PEP gelten.
         <br />
         <br />
-        We collect PI in several ways including:
+        Wir erfassen PI auf verschiedene Arten, einschließlich:
       </p>
 
       <ul className="list-disc pl-6 space-y-4 my-4 text-[16px]/[24px] text-black">
         <li>
-          <strong>Careers Websites</strong>
+          <strong>Karriereseiten</strong>
           <br />
-          PI submitted by you when you respond to a recruitment advert and/or
-          create a profile through our Careers or Student Recruitment websites.
+          Von Ihnen bereitgestellte PI, wenn Sie auf eine Stellenanzeige
+          reagieren und/oder ein Profil auf unseren Karriere- oder
+          Studentenrekrutierungsseiten erstellen.
         </li>
 
         <li>
-          <strong>Social Media Sites</strong>
+          <strong>Soziale Netzwerke</strong>
           <br />
-          We may use PI you make publicly available to reach out to you for
-          recruitment purposes or to consider you as a future talent. If we do
-          this, you will be given the ability to opt out of having your record
-          retained in our Talent Community files and/or receiving any further
-          information about career opportunities with BlackRock.
-          <br />
-          <br />
-          PI submitted by you when you respond to a recruitment advert on a
-          social media site.
+          Wir können öffentlich zugängliche PI nutzen, um Sie für
+          Rekrutierungszwecke zu kontaktieren oder als potenzielles Talent zu
+          betrachten. In diesem Fall haben Sie die Möglichkeit, der Speicherung
+          Ihrer Daten in unserer Talent Community zu widersprechen und/oder
+          keine weiteren Informationen zu Karrieremöglichkeiten bei BlackRock zu
+          erhalten.
           <br />
           <br />
-          When you choose to provide us with a link to your profile on social
-          media sites (such as LinkedIn), as part of your application we will
-          collect PI from certain fields on these sites and combine this with
-          other data captured through the online application form to create a
-          single profile. We will not collect your photographs or videos without
-          letting you know first unless you submit a photograph or video
-          voluntarily as part of your application.
+          Von Ihnen bereitgestellte PI, wenn Sie auf eine Stellenanzeige in
+          sozialen Netzwerken reagieren.
+          <br />
+          <br />
+          Wenn Sie uns im Rahmen Ihrer Bewerbung einen Link zu Ihrem Profil auf
+          sozialen Netzwerken (z. B. LinkedIn) zur Verfügung stellen, erfassen
+          wir PI aus bestimmten Feldern dieser Plattformen und kombinieren diese
+          mit weiteren Angaben aus dem Online-Bewerbungsformular, um ein
+          vollständiges Profil zu erstellen. Wir erfassen keine Fotos oder
+          Videos, es sei denn, Sie stellen diese freiwillig zur Verfügung oder
+          wir informieren Sie zuvor darüber.
         </li>
 
         <li>
           <strong>Talent Community</strong>
           <br />
-          When joining the talent community, we may automatically enrich your
-          profile to ensure completeness and accuracy of information using
-          publicly available information. You will always be notified before
-          enrichment happens and will always be provided with the ability to opt
-          out of this functionality.
+          Beim Beitritt zur Talent Community können wir Ihr Profil automatisch
+          anreichern, um Vollständigkeit und Genauigkeit sicherzustellen,
+          basierend auf öffentlich verfügbaren Informationen. Sie werden immer
+          im Voraus benachrichtigt und können dieser Funktion widersprechen.
         </li>
 
         <li>
-          <strong>Recruitment Agencies</strong>
+          <strong>Personalvermittlungen</strong>
           <br />
-          Your PI may be provided to us by recruitment agencies you have
-          registered with if they feel a BlackRock vacancy may be of interest to
-          you. Where a recruitment agency refers you to us, a profile will be
-          created for you in our recruitment database based on the information
-          provided and you will receive a notification asking you to log in and
-          complete your candidate profile through a BlackRock owned website.
+          Ihre PI können uns von Vermittlungsagenturen zur Verfügung gestellt
+          werden, bei denen Sie registriert sind, wenn eine Stelle bei BlackRock
+          für Sie geeignet erscheint. Wird Ihre Bewerbung von einer Agentur
+          weitergeleitet, wird ein Profil in unserer Bewerberdatenbank erstellt,
+          und Sie erhalten eine Benachrichtigung mit der Aufforderung, sich über
+          eine BlackRock-Website anzumelden und Ihr Bewerberprofil zu
+          vervollständigen.
         </li>
 
         <li>
-          <strong>Third Party Sources</strong>
+          <strong>Drittquellen</strong>
           <br />
-          We may collect your PI from other third-party sources during the
-          recruitment process such as through references from previous
-          employers.
+          Wir können im Rahmen des Bewerbungsprozesses Ihre PI von anderen
+          Drittquellen erfassen, etwa über Referenzen früherer Arbeitgeber.
         </li>
       </ul>
 
       <p className="text-[16px]/[24px] text-black">
-        Unless we otherwise indicate that the provision of specific PI is
-        optional, any PI we request is necessary for us to progress your
-        application. If you provide false, misleading or inaccurate PI we
-        reserve the right not to progress your application further and/or to
-        withdraw an offer of employment.
+        Sofern nicht ausdrücklich als freiwillig gekennzeichnet, ist jede
+        angeforderte PI erforderlich, um Ihre Bewerbung weiterzuverarbeiten.
+        Wenn Sie falsche, irreführende oder ungenaue Angaben machen, behalten
+        wir uns das Recht vor, den Bewerbungsprozess nicht weiterzuführen
+        und/oder ein bereits unterbreitetes Beschäftigungsangebot
+        zurückzuziehen.
         <br />
         <br />
-        <strong>Purpose and legal basis for processing your PI</strong>
+        <strong>Zweck und Rechtsgrundlage für die Verarbeitung Ihrer PI</strong>
       </p>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          <strong>Processing Purpose</strong>
+          <strong>Verarbeitungszweck</strong>
           <br />
           <br />
-          To ensure BlackRock has complete and accurate information within your
-          profile
+          Sicherstellung, dass BlackRock vollständige und genaue Informationen
+          in Ihrem Profil hat
         </div>
 
         <div>
-          <strong>Category of PI</strong>
+          <strong>Kategorie der PI</strong>
           <br />
           <br />
-          . Contact data
+          . Kontaktdaten
           <br />
           <br />
-          . Professional information data
+          . Berufliche Informationen
           <br />
           <br />
-          . Profile data
+          . Profildaten
           <br />
-          <br />. Technical data
+          <br />. Technische Daten
         </div>
 
         <div>
-          <strong>Basis of Processing</strong>
+          <strong>Rechtsgrundlage der Verarbeitung</strong>
           <br />
-          <br />. Legitimate interests: to ensure the completeness of your
-          profile data
+          <br />. Berechtigtes Interesse: Sicherstellung der Vollständigkeit
+          Ihrer Profildaten
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To include you in our Talent Community, to evaluate whether you have
-          the necessary skills and qualities to perform in a potentially
-          relevant future role, and to recommend you as a member of our Talent
-          Community for possible open positions
+          Aufnahme in unsere Talent Community, um zu prüfen, ob Sie die
+          erforderlichen Fähigkeiten und Qualifikationen für eine mögliche
+          zukünftige Stelle besitzen, und um Sie für offene Positionen zu
+          empfehlen
         </div>
         <div>
-          . Contact data
+          . Kontaktdaten
           <br />
           <br />
-          . Professional information data
+          . Berufliche Informationen
           <br />
           <br />
-          . Profile data
+          . Profildaten
           <br />
-          <br />. Technical data
+          <br />. Technische Daten
         </div>
-        <div> . Consent</div>
+        <div>. Einwilligung</div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To process your application including to identify and contact you; to
-          assess whether you have the professional skills, expertise and
-          experience required for the position applied for; and to make
-          recruitment decisions
+          Bearbeitung Ihrer Bewerbung, einschließlich Identifikation und
+          Kontaktaufnahme mit Ihnen; Bewertung, ob Sie die beruflichen
+          Fähigkeiten, Erfahrungen und Kenntnisse für die beworbene Position
+          mitbringen; sowie die Entscheidung im Rahmen des Bewerbungsprozesses
         </div>
         <div>
-          . Identification data
+          . Identifikationsdaten
           <br />
           <br />
-          . Contact data
+          . Kontaktdaten
           <br />
           <br />
-          . Professional information data
+          . Berufliche Informationen
           <br />
           <br />
-          . Profile data
+          . Profildaten
           <br />
           <br />. SPI
         </div>
         <div>
-          . Performance of a contract
+          . Vertragserfüllung
           <br />
           <br />
-          . Legal or regulatory obligation
+          . Gesetzliche oder regulatorische Verpflichtung
           <br />
-          <br />. Legitimate interests: to evaluate whether you have the
-          necessary skills and qualities to perform the relevant role
+          <br />. Berechtigtes Interesse: Bewertung, ob Sie über die notwendigen
+          Qualifikationen für die Stelle verfügen
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To check you are legally entitled to work in the jurisdiction in which
-          you are applying to work
+          Um zu überprüfen, ob Sie rechtlich berechtigt sind, in dem Land zu
+          arbeiten, in dem Sie sich bewerben
         </div>
         <div>
-          . Identification data
+          . Identifikationsdaten
           <br />
-          <br />. Contact data
+          <br />. Kontaktdaten
         </div>
         <div>
-          . Legal obligation
+          . Gesetzliche Verpflichtung
           <br />
-          <br />. Legitimate interests: to ensure you have the right to work in
-          the jurisdiction you are applying to work
+          <br />. Berechtigtes Interesse: um sicherzustellen, dass Sie das Recht
+          haben, in dem entsprechenden Land zu arbeiten
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          If you are offered and accept a position, to conduct background
-          screening (as allowed or required by law), including: verification of
-          all information provided; searches with a credit reference agency;
-          criminal record (including fingerprinting); drug and alcohol testing;
-          sanctions screening
+          Wenn Ihnen eine Stelle angeboten wird und Sie diese annehmen,
+          Durchführung von Hintergrundüberprüfungen (soweit gesetzlich erlaubt
+          oder erforderlich), einschließlich: Verifizierung aller
+          bereitgestellten Informationen; Abfragen bei Auskunfteien;
+          Strafregisterprüfung (einschließlich Fingerabdrücken); Drogen- und
+          Alkoholtests; Sanktionsprüfungen
         </div>
         <div>
-          . Identification data
+          . Identifikationsdaten
           <br />
           <br />
-          . Contact data
+          . Kontaktdaten
           <br />
           <br />
-          . Professional information data
+          . Berufliche Informationen
           <br />
           <br />
-          . Profile data
+          . Profildaten
           <br />
           <br />. SPI
         </div>
         <div>
-          . Legal or regulatory obligation
+          . Gesetzliche oder regulatorische Verpflichtung
           <br />
-          <br />. Legitimate interests: to protect BlackRock assets and
-          employees; fraud and other financial crime prevention
+          <br />. Berechtigtes Interesse: Schutz der Vermögenswerte und
+          Mitarbeitenden von BlackRock; Prävention von Betrug und anderen
+          Finanzstraftaten
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          Administrative tasks in preparation for joining once the background
-          screening is successfully completed
+          Administrative Aufgaben zur Vorbereitung Ihrer Anstellung nach
+          erfolgreichem Abschluss der Hintergrundprüfung
         </div>
         <div>
-          . Identification data
+          . Identifikationsdaten
           <br />
           <br />
-          . Contact data
+          . Kontaktdaten
           <br />
           <br />
-          . Professional information data
+          . Berufliche Informationen
           <br />
           <br />
-          . Profile data
+          . Profildaten
           <br />
           <br />. SPI
         </div>
         <div>
-          . Performance of a contract
+          . Vertragserfüllung
           <br />
           <br />
-          . Legal or regulatory obligation
+          . Gesetzliche oder regulatorische Verpflichtung
           <br />
-          <br />. Legitimate interests: managing our workforce to ensure the
-          efficient and secure running of our business
+          <br />. Berechtigtes Interesse: Verwaltung unserer Belegschaft zur
+          Sicherstellung eines effizienten und sicheren Geschäftsbetriebs
         </div>
       </div>
+
       <p className="text-[16px]/[24px] text-black">
-        <strong>To whom we disclose your PI</strong>
+        <strong>An wen wir Ihre PI weitergeben</strong>
         <br />
         <br />
-        In connection with one or more of the purposes outlined in the section
-        ‘Purpose and Legal basis for processing your PI’ above, we may disclose
-        PI in any jurisdiction to:
+        Im Zusammenhang mit einem oder mehreren der im Abschnitt „Zweck und
+        Rechtsgrundlage für die Verarbeitung Ihrer PI“ genannten Zwecke, können
+        wir PI in beliebigen Ländern weitergeben an:
       </p>
 
       <ul className="list-disc pl-6 space-y-4 my-4 text-[16px]/[24px] text-black">
-        <li>other members of the BlackRock Group;</li>
+        <li>andere Mitglieder der BlackRock-Gruppe;</li>
 
         <li>
-          professional advisors, third parties, agents or independent
-          contractors that provide services to any member of the BlackRock Group
-          (such as IT systems providers, medical professionals, immigration
-          advisers, consultants);
+          professionelle Berater, Drittanbieter, Vertreter oder unabhängige
+          Auftragnehmer, die einem Mitglied der BlackRock-Gruppe
+          Dienstleistungen erbringen (z. B. IT-Systemanbieter, medizinisches
+          Fachpersonal, Einwanderungsberater, Consultants);
         </li>
 
         <li>
-          any person in connection with litigation or other legal proceedings,
-          to obtain legal advice or to establish, exercise or defend legal
-          rights;
+          jede Person im Zusammenhang mit Gerichtsverfahren oder rechtlichen
+          Auseinandersetzungen, um Rechtsberatung zu erhalten oder rechtliche
+          Ansprüche geltend zu machen, auszuüben oder zu verteidigen;
         </li>
 
         <li>
-          competent authorities (including any national and/or international
-          regulatory or enforcement body, agency, court or other form of
-          tribunal or tax authority) or their agents where BlackRock is required
-          or allowed to do so under applicable law or regulation;
+          zuständige Behörden (einschließlich nationaler und/oder
+          internationaler Regulierungs- oder Strafverfolgungsbehörden, Gerichte
+          oder Steuerbehörden) oder deren Vertreter, sofern BlackRock gesetzlich
+          dazu verpflichtet oder berechtigt ist;
         </li>
 
         <li>
-          credit reference agencies or credit bureaus and/or criminal records
-          bureaus when conducting background checks and where allowed by law;
+          Auskunfteien oder Strafregisterämter im Rahmen gesetzlich zulässiger
+          Hintergrundprüfungen;
         </li>
 
         <li>
-          any person to whom disclosure is allowed or required by local or
-          foreign law, regulation or any other applicable instrument; and
+          jede Person, gegenüber der eine Offenlegung nach lokalem oder
+          ausländischem Recht, einer Vorschrift oder einem anderen geltenden
+          Rechtsinstrument zulässig oder erforderlich ist; und
         </li>
 
         <li>
-          a potential buyer, transferee, merger partner or seller and their
-          advisers in connection with an actual or potential transfer or merger
-          of part or all of BlackRock’s business or assets, or any associated
-          rights or interests, or to acquire a business or enter into a merger
-          with it.
+          potenzielle Käufer, Übertragungsempfänger, Fusionspartner oder
+          Verkäufer sowie deren Berater im Zusammenhang mit einer tatsächlichen
+          oder potenziellen Übertragung oder Fusion eines Teils oder der
+          gesamten Geschäftstätigkeit oder Vermögenswerte von BlackRock, oder
+          zur Übernahme eines Unternehmens bzw. einer Fusion.
         </li>
       </ul>
+
       <p className="text-[16px]/[24px] text-black">
-        <strong>International Transfers of PI</strong>
+        <strong>Internationale Übermittlung von PI</strong>
         <br />
         <br />
-        We are a global organization and in the course of running our business,
-        we may transfer PI to a location outside of the country w here you
-        reside or have applied to work, including BlackRock processing centers
-        in the USA, Hungary, India and Singapore. Although the country to which
-        PI may be transferred may not have the same level of privacy and data
-        protection laws, we apply the same level of security and organizational
-        controls to the processing of PI wherever it is processed. We require by
-        contract that our third-party service providers processing PI on our
-        behalf to comply with BlackRock’s criteria for PI processing.
+        Wir sind ein globales Unternehmen und können im Rahmen unserer
+        Geschäftstätigkeit PI an Standorte außerhalb des Landes übermitteln, in
+        dem Sie wohnen oder sich beworben haben – einschließlich
+        BlackRock-Verarbeitungszentren in den USA, Ungarn, Indien und Singapur.
+        Auch wenn das Zielland möglicherweise nicht über dasselbe
+        Datenschutzniveau verfügt, wenden wir weltweit die gleichen Sicherheits-
+        und organisatorischen Schutzmaßnahmen bei der Verarbeitung von PI an.
+        Wir verpflichten unsere externen Dienstleister vertraglich dazu, die
+        Datenschutzanforderungen von BlackRock für die Verarbeitung von PI
+        einzuhalten.
         <br />
         <br />
-        If we transfer PI out of the EEA, we ensure a similar level of
-        protection for your PI by ensuring the country is considered by the EU
-        Commission to provide an adequate level of protection, putting in p lace
-        contractual clauses the EU Commission consider to provide the same level
-        of protection.
+        Wenn wir PI außerhalb des EWR übertragen, stellen wir sicher, dass ein
+        angemessenes Schutzniveau gewährleistet ist – entweder indem das
+        Empfängerland von der EU-Kommission als datenschutzkonform eingestuft
+        wird oder durch den Abschluss von Vertragsklauseln, die laut
+        EU-Kommission ein gleichwertiges Schutzniveau bieten.
         <br />
         <br />
-        <strong>Sale of PI</strong>
+        <strong>Verkauf von PI</strong>
         <br />
         <br />
-        We do not sell your PI.
+        Wir verkaufen Ihre PI nicht.
         <br />
         <br />
-        <strong>PI Retention</strong>
+        <strong>Aufbewahrung von PI</strong>
         <br />
         <br />
-        We will process your PI for as long as is necessary to fulfil the
-        purpose for which it was collected or to comply with legal, regulatory,
-        accounting, reporting, internal policy requirements or for the
-        establishment or defence of legal claims.
+        Wir verarbeiten Ihre PI nur so lange, wie dies zur Erfüllung des
+        Erhebungszwecks notwendig ist oder zur Einhaltung gesetzlicher,
+        regulatorischer, buchhalterischer oder interner Richtlinien oder zur
+        Geltendmachung bzw. Abwehr von Rechtsansprüchen erforderlich ist.
         <br />
         <br />
-        If your application for employment is unsuccessful, we will hold your
-        data on file for 2 years after the end of the recruitment proce ss.
+        Wenn Ihre Bewerbung nicht erfolgreich ist, speichern wir Ihre Daten für
+        einen Zeitraum von 2 Jahren nach Abschluss des Bewerbungsverfahrens.
         <br />
         <br />
-        We may also retain your contact information for the purposes of inviting
-        you to join the BlackRock Talent Community. If you join, you will
-        receive information regarding job opportunities at BlackRock that may be
-        relevant to your skills. If you ask us not to contact you ag ain about
-        retain the minimum PI necessary to ensure you are not contacted again.
+        Wir können Ihre Kontaktdaten auch speichern, um Sie zur Teilnahme an der
+        BlackRock Talent Community einzuladen. Wenn Sie teilnehmen, erhalten Sie
+        Informationen zu Stellenangeboten bei BlackRock, die zu Ihrem Profil
+        passen könnten. Wenn Sie nicht erneut kontaktiert werden möchten,
+        speichern wir nur die Mindestmenge an PI, um sicherzustellen, dass keine
+        weitere Kontaktaufnahme erfolgt.
         <br />
         <br />
-        <strong>PI Security</strong>
+        <strong>Sicherheit von PI</strong>
         <br />
         <br />
-        We use a range of physical, electronic, and managerial measures to
-        ensure a level of security appropriate to the risk of PI processing.
-        These measures include:
+        Wir setzen eine Reihe physischer, elektronischer und organisatorischer
+        Maßnahmen ein, um ein dem Risiko entsprechendes Sicherheitsniveau bei
+        der Verarbeitung von PI zu gewährleisten. Diese Maßnahmen umfassen:
       </p>
+
       <ul className="list-disc pl-6 space-y-4 my-4 text-[16px]/[24px] text-black">
         <li>
-          Education and training of relevant staff to ensure they are aware of
-          our privacy obligations when processing PI as well as training around
-          social engineering, phishing, spear phishing, and password risks.
+          Schulung und Sensibilisierung relevanter Mitarbeitender hinsichtlich
+          unserer Datenschutzpflichten bei der Verarbeitung von PI sowie zu
+          Themen wie Social Engineering, Phishing, Spear Phishing und
+          Passwortsicherheit.
         </li>
         <li>
-          The ability to ensure the ongoing confidentiality, integrity,
-          availability and resilience of processing systems and services.
+          Sicherstellung der kontinuierlichen Vertraulichkeit, Integrität,
+          Verfügbarkeit und Belastbarkeit unserer Systeme und Dienste.
         </li>
         <li>
-          The ability to restore the availability and access to PI in a timely
-          manner in the event of a physical or technical incident.
+          Wiederherstellung der Verfügbarkeit und des Zugangs zu PI innerhalb
+          eines angemessenen Zeitrahmens im Falle physischer oder technischer
+          Zwischenfälle.
         </li>
-        <li>Administrative and technical controls to restrict access to PI.</li>
         <li>
-          Technological security measures, including fire walls, encryption
-          (industry standard SSL encryption with 128-bit key lengths), and
-          anti-virus software.
+          Administrative und technische Maßnahmen zur Zugriffsbeschränkung auf
+          PI.
         </li>
-        <li>Physical security measures, such as building access controls.</li>
         <li>
-          External technical assessments, security audits and vendor due
-          diligence.
+          Technologische Sicherheitsmaßnahmen wie Firewalls, Verschlüsselung
+          (branchenüblicher SSL-Standard mit 128-Bit-Schlüsseln) und
+          Antivirensoftware.
         </li>
-        <li>Perimeter security.</li>
-        <li>Segregation of networks.</li>
-        <li>Application security.</li>
-        <li>Endpoint security.</li>
-        <li>Real-time monitoring of data leakage controls.</li>
-        <li>Layered and comprehensive cybersecurity defences.</li>
-        <li>Security incident reporting and management.</li>
+        <li>
+          Physische Sicherheitsmaßnahmen wie Zugangskontrollen für Gebäude.
+        </li>
+        <li>
+          Externe technische Bewertungen, Sicherheitsaudits und
+          Lieferantenprüfungen.
+        </li>
+        <li>Perimetersicherheit.</li>
+        <li>Netzwerksegmentierung.</li>
+        <li>Applikationssicherheit.</li>
+        <li>Endpunktsicherheit.</li>
+        <li>Echtzeitüberwachung von Datenlecksicherungen.</li>
+        <li>Mehrschichtige und umfassende Cybersecurity-Abwehrmaßnahmen.</li>
+        <li>Meldung und Management von Sicherheitsvorfällen.</li>
       </ul>
+
       <p className="text-[16px]/[24px] text-black">
-        The security of data transmitted over the internet (including by e-mail)
-        cannot be guaranteed and carries the risk of access and interception.
-        You should not send us any PI by open/unsecure channels over the
-        internet. We endeavour to protect PI, but we cannot guarantee the
-        security of data transmitted to us or by us.
+        Die Sicherheit von über das Internet übertragenen Daten (einschließlich
+        E-Mails) kann nicht garantiert werden und birgt das Risiko unbefugter
+        Zugriffe oder Abfangens. Sie sollten uns keine PI über ungesicherte
+        Kanäle senden. Wir bemühen uns, PI zu schützen, können die Sicherheit
+        der übertragenen Daten jedoch nicht vollständig garantieren.
         <br />
         <br />
-        <strong>Updating your information</strong>
+        <strong>Aktualisierung Ihrer Informationen</strong>
         <br />
         <br />
-        For permanent and fixed term applicants, you can update your PI by
-        accessing your online candidate profile on the career site or within the
-        Talent Community platform.
+        Festangestellte und befristet Beschäftigte können ihre PI über ihr
+        Online-Bewerberprofil auf der Karriereseite oder innerhalb der
+        Talent-Community-Plattform aktualisieren.
         <br />
         <br />
-        If you are a student programme applicant and wish to update your PI,
-        please email:
+        Wenn Sie sich im Rahmen des Studentenprogramms beworben haben und Ihre
+        PI aktualisieren möchten, senden Sie bitte eine E-Mail an:
       </p>
+
       <ul className="list-disc pl-6 space-y-4 my-4 text-[16px]/[24px] text-black">
         <li>
-          For APAC – &nbsp;
+          Für APAC – &nbsp;
           <a
             href="mailto:apaccampusrecruiting@blackrock.com"
             className="underline text-blue-600"
@@ -553,7 +583,7 @@ export const Tab2 = () => {
           </a>
         </li>
         <li>
-          For AMERS – &nbsp;
+          Für AMERS – &nbsp;
           <a
             href="mailto:blackrockcampusrecruiting@blackrock.com"
             className="underline text-blue-600"
@@ -562,7 +592,7 @@ export const Tab2 = () => {
           </a>
         </li>
         <li>
-          For EMEA – &nbsp;
+          Für EMEA – &nbsp;
           <a
             href="mailto:emeacampusrecruitment@blackrock.com"
             className="underline text-blue-600"
@@ -571,106 +601,109 @@ export const Tab2 = () => {
           </a>
         </li>
       </ul>
+
       <p className="text-[16px]/[24px] text-black">
-        <strong>Your rights</strong>
+        <strong>Ihre Rechte</strong>
         <br />
         <br />
-        In certain circumstances you may have the following rights in relation
-        to the processing of your PI:
+        Unter bestimmten Umständen haben Sie folgende Rechte in Bezug auf die
+        Verarbeitung Ihrer PI:
       </p>
 
       <ul className="list-disc pl-6 space-y-4 my-4 text-[16px]/[24px] text-black">
         <li>
-          <strong>Access</strong>
+          <strong>Zugang</strong>
           <br />
-          To request a copy of the PI we process in relation to you and to be
-          informed about how we use and share your PI.
+          Sie können eine Kopie der von uns verarbeiteten PI anfordern und
+          Informationen darüber erhalten, wie wir Ihre PI verwenden und
+          weitergeben.
         </li>
 
         <li>
-          <strong>Object</strong>
+          <strong>Widerspruch</strong>
           <br />
-          To object to the processing of your PI if (i) we are processing your
-          PI on the grounds of legitimate interests or for the performance of a
-          task in the public interest (including profiling) or (ii) if we are
-          processing your PI for direct marketing purposes or (iii) your PI is
-          subject to automatic enrichment in our talent community.
+          Sie können der Verarbeitung Ihrer PI widersprechen, wenn (i) wir Ihre
+          PI aufgrund berechtigter Interessen oder zur Wahrnehmung einer Aufgabe
+          im öffentlichen Interesse verarbeiten (einschließlich Profiling) oder
+          (ii) wir Ihre PI für Direktmarketingzwecke verarbeiten oder (iii) Ihre
+          PI in unserer Talent Community automatisch angereichert wird.
         </li>
 
         <li>
-          <strong>Correction</strong>
+          <strong>Berichtigung</strong>
           <br />
-          To request that we update the PI we process in relation to you or
-          correct such PI that you think is incorrect or incomplete. Please also
-          see the section ‘Updating your information’.
+          Sie können verlangen, dass wir Ihre PI aktualisieren oder solche PI
+          berichtigen, die Ihrer Meinung nach falsch oder unvollständig sind.
+          Siehe dazu auch den Abschnitt „Aktualisierung Ihrer Informationen“.
         </li>
 
         <li>
-          <strong>Erasure</strong>
+          <strong>Löschung</strong>
           <br />
-          To ask that we delete PI that we process in relation to you where we
-          do not have a legal or regulatory obligation or other valid reason to
-          continue to process it.
+          Sie können verlangen, dass wir Ihre PI löschen, wenn keine
+          gesetzliche, regulatorische oder sonstige gültige Grundlage für die
+          weitere Verarbeitung besteht.
         </li>
 
         <li>
-          <strong>Restriction</strong>
+          <strong>Einschränkung</strong>
           <br />
-          To request that we restrict the way in which we process your PI, for
-          example if you dispute the accuracy of your PI or have raised an
-          objection which is under consideration.
+          Sie können verlangen, dass wir die Art und Weise einschränken, in der
+          wir Ihre PI verarbeiten – z. B. wenn Sie die Richtigkeit Ihrer PI
+          bestreiten oder Widerspruch eingelegt haben, der noch geprüft wird.
         </li>
 
         <li>
-          <strong>Portability</strong>
+          <strong>Datenübertragbarkeit</strong>
           <br />
-          To request a copy of your PI that you have provided to us in a
-          commonly used electronic format.
+          Sie können eine Kopie Ihrer PI, die Sie uns bereitgestellt haben, in
+          einem gängigen elektronischen Format anfordern.
         </li>
 
         <li>
-          <strong>Automated decision making</strong>
+          <strong>Automatisierte Entscheidungsfindung</strong>
           <br />
-          To request manual intervention if you are subject to automated
-          decisions where the decision results in a legal or similar effect to
-          you. The automatic enrichment of your PI does not trigger any
-          automated decisions with regards to your application.
+          Sie können verlangen, dass Entscheidungen, die automatisiert getroffen
+          wurden und rechtliche oder ähnliche Auswirkungen auf Sie haben,
+          manuell überprüft werden. Die automatische Anreicherung Ihrer PI führt
+          nicht zu automatisierten Entscheidungen im Zusammenhang mit Ihrer
+          Bewerbung.
         </li>
       </ul>
+
       <p className="text-[16px]/[24px] text-black">
-        You may exercise your rights at any time by using the details set out in
-        the Contacting us section.
+        Sie können Ihre Rechte jederzeit ausüben, indem Sie die im Abschnitt
+        „Kontaktaufnahme“ aufgeführten Kontaktdaten verwenden.
         <br />
         <br />
-        We may need to request specific information from you to help us confirm
-        your identity and ensure your right to access to the PI requested, or to
-        exercise any of your other rights. This is to ensure that PI is not
-        disclosed to any person who does not have authority to receive it. We
-        may also request further information in relation to your request to help
-        us to locate the PI processed in relation to you, for example the
-        position you have applied for and in which country.
+        Wir müssen möglicherweise bestimmte Informationen von Ihnen anfordern,
+        um Ihre Identität zu bestätigen und sicherzustellen, dass Sie berechtigt
+        sind, Zugriff auf die angeforderten PI zu erhalten oder andere Rechte
+        auszuüben. Dies dient dazu, sicherzustellen, dass PI nicht an unbefugte
+        Personen weitergegeben wird. Wir können zudem weitere Informationen
+        anfordern, um Ihre Anfrage zu bearbeiten, z. B. die Stelle, auf die Sie
+        sich beworben haben, und das entsprechende Land.
         <br />
         <br />
-        We aim to respond to all legitimate requests within one calendar month.
-        If we think it may take us longer than one calendar month, for example
-        if your request is particularly complex or you have made a number of
-        requests, we will notify you and keep you updated.
+        Unser Ziel ist es, auf alle berechtigten Anfragen innerhalb eines
+        Kalendermonats zu antworten. Sollte es ausnahmsweise länger dauern –
+        etwa bei komplexen Anfragen oder mehreren gleichzeitigen Anfragen –,
+        informieren wir Sie entsprechend und halten Sie auf dem Laufenden.
         <br />
         <br />
-        You will not be disadvantaged in any way by exercising your rights in
-        relation to the processing of your PI.
+        Die Ausübung Ihrer Rechte in Bezug auf die Verarbeitung Ihrer PI hat
+        keine nachteiligen Auswirkungen für Sie.
         <br />
         <br />
-        <strong>Contacting us</strong>
+        <strong>Kontaktaufnahme</strong>
         <br />
         <br />
-        The Global Head of Privacy and Data Protection oversees compliance with
-        privacy and data protection obligations at BlackRock. If you wish to
-        exercise any of your rights, or have questions concerning this notice,
-        please contact:
+        Die globale Leitung für Datenschutz überwacht die Einhaltung der
+        Datenschutzpflichten bei BlackRock. Wenn Sie eines Ihrer Rechte ausüben
+        möchten oder Fragen zu dieser Mitteilung haben, kontaktieren Sie bitte:
         <br />
         <br />
-        The Global Head of Privacy and Data Protection
+        Global Head of Privacy and Data Protection
         <br />
         <br />
         12 Throgmorton Avenue
@@ -679,7 +712,7 @@ export const Tab2 = () => {
         <br />
         EC2N 2DL
         <br />
-        Email:{" "}
+        E-Mail:{" "}
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
@@ -688,57 +721,58 @@ export const Tab2 = () => {
         </a>
         <br />
         <br />
-        If you are an applicant resident in California, you may also call us on
-        +1 855 371 0019
+        Wenn Sie ein Bewerber mit Wohnsitz in Kalifornien sind, können Sie uns
+        auch unter +1 855 371 0019 telefonisch erreichen.
         <br />
         <br />
-        <strong>Complaints</strong>
+        <strong>Beschwerden</strong>
         <br />
         <br />
-        If you have any concerns or complaints about the way in which your PI is
-        processed, please contact the Global Head of Privacy and Data Protection
-        at{" "}
+        Wenn Sie Bedenken oder Beschwerden hinsichtlich der Verarbeitung Ihrer
+        PI haben, wenden Sie sich bitte an den Global Head of Privacy and Data
+        Protection unter{" "}
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
         >
           GroupPrivacy@BlackRock.com
         </a>
-        . You also have a right to complain to a data protection or other
-        competent authority with jurisdiction over privacy and data protection
-        law in the country you live or work, or in the country where you believe
-        an issue in relation to the processing of your PI has arisen. Please
-        contact{" "}
+        . Sie haben auch das Recht, sich bei einer Datenschutz- oder anderen
+        zuständigen Aufsichtsbehörde im Land Ihres Wohn- oder Arbeitsortes oder
+        in dem Land, in dem Sie eine Verletzung des Datenschutzes vermuten, zu
+        beschweren. Bitte kontaktieren Sie{" "}
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
         >
           GroupPrivacy@BlackRock.com
         </a>{" "}
-        for further details.
+        für weitere Informationen.
         <br />
         <br />
-        <strong>Cookie Notice</strong>
+        <strong>Cookie-Hinweis</strong>
         <br />
         <br />
-        Please see our separate Cookie Notice.
+        Bitte beachten Sie unseren separaten Cookie-Hinweis.
         <br />
         <br />
-        <strong>Linked websites</strong>
+        <strong>Verlinkte Webseiten</strong>
         <br />
         <br />
-        This Notice is not applicable to third party websites that we do not own
-        or control, or to any third-party website where BlackRock advertisements
-        are displayed.
+        Diese Mitteilung gilt nicht für Webseiten Dritter, die wir nicht
+        besitzen oder kontrollieren, oder für Webseiten Dritter, auf denen
+        Werbung von BlackRock angezeigt wird.
         <br />
         <br />
-        <strong>Changes to this Privacy Notice</strong>
+        <strong>Änderungen dieser Datenschutzmitteilung</strong>
         <br />
         <br />
-        We may modify or amend this Privacy Notice from time to time and you are
-        advised to visit our website regularly to check for any amendments. Any
-        material changes will be communicated to you through an appropriate
-        channel, depending on how we normally communicate with you.
+        Wir behalten uns vor, diese Datenschutzmitteilung von Zeit zu Zeit zu
+        ändern oder zu aktualisieren. Bitte besuchen Sie regelmäßig unsere
+        Website, um sich über eventuelle Änderungen zu informieren. Wesentliche
+        Änderungen werden Ihnen über einen geeigneten Kommunikationsweg
+        mitgeteilt – abhängig davon, wie wir üblicherweise mit Ihnen
+        kommunizieren.
       </p>
     </div>
   );

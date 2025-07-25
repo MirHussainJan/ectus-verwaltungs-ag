@@ -3,7 +3,8 @@
 import Image from "next/image";
 import backgroundImg from "../../../assets/images/section1bg.jpg";
 import { Navbar } from "@/features/common/Navbar";
-
+import { SearchParamScroll } from "@/features/common/SearchParamScroll";
+import { Suspense } from "react";
 export const Section1 = () => {
   return (
     <div className="relative h-[85dvh] flex flex-col">
@@ -18,6 +19,9 @@ export const Section1 = () => {
 
       {/* Navbar */}
       <Navbar />
+      <Suspense fallback={null}>
+        <SearchParamScroll />
+      </Suspense>
 
       {/* Hero Content */}
       <div className="flex w-full h-full flex-col items-center justify-center px-6 md:px-[23.056vw]">

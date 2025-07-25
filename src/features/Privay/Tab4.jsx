@@ -4,201 +4,214 @@ export const Tab4 = () => {
   return (
     <div className="lg:w-[45.833vw]">
       <p className="text-[16px]/[24px] text-black">
-        <strong>BlackRock Cookie Notice</strong>
+        <strong>BlackRock Cookie-Hinweis</strong>
         <br />
         <br />
-        Last revised: 11 June 2024
+        Zuletzt aktualisiert: 11. Juni 2024
         <br />
         <br />
-        <strong>Introduction</strong>
+        <strong>Einleitung</strong>
         <br />
         <br />
-        This Cookie Notice applies to the use by BlackRock of cookies and
-        similar technologies (collectively “cookies”) on the BlackRock Websites
-        (“our Websites”). The purpose of this Cookie Notice is to explain what
-        cookies are, how they work, the cookies we use and how you can control
-        which ones we use when you visit our Websites. It also describes the
-        purposes for which we process Personal Information (“PI”) collected
-        through our use of cookies and your rights. It also sets out
-        individuals’ rights in relation to the processing of their PI by
-        cookies.
+        Dieser Cookie-Hinweis gilt für die Verwendung von Cookies und ähnlichen
+        Technologien (zusammen „Cookies“) durch BlackRock auf den
+        BlackRock-Websites („unsere Websites“). Ziel dieses Hinweises ist es, zu
+        erklären, was Cookies sind, wie sie funktionieren, welche Cookies wir
+        verwenden und wie Sie steuern können, welche Cookies verwendet werden,
+        wenn Sie unsere Websites besuchen. Zudem beschreibt er die Zwecke, zu
+        denen wir personenbezogene Daten („PI“) verarbeiten, die über Cookies
+        erhoben werden, sowie Ihre Rechte. Er legt auch die Rechte von Personen
+        in Bezug auf die Verarbeitung ihrer PI durch Cookies dar.
         <br />
         <br />
-        “Our Websites” mean any publicly available, BlackRock-domain, operated
-        by BlackRock or by a third party on behalf of BlackRock.
+        „Unsere Websites“ bezeichnet jede öffentlich zugängliche Website mit
+        einer BlackRock-Domain, die von BlackRock oder einem Dritten im Auftrag
+        von BlackRock betrieben wird.
         <br />
         <br />
-        “BlackRock”, “we”, “us” or “our” means BlackRock, Inc., and each of the
-        direct or indirect subsidiaries of BlackRock, Inc., (the “BlackRock
-        Group”).
+        „BlackRock“, „wir“, „uns“ oder „unser“ bezieht sich auf BlackRock, Inc.
+        sowie auf jede direkte oder indirekte Tochtergesellschaft von BlackRock,
+        Inc. (die „BlackRock-Gruppe“).
         <br />
         <br />
-        References to “you” or “your” relate to individuals who visit our
-        Websites.
+        Verweise auf „Sie“ oder „Ihr(e)“ beziehen sich auf Einzelpersonen, die
+        unsere Websites besuchen.
         <br />
         <br />
-        This Cookie Notice should be read in conjunction with&nbsp;
+        Dieser Cookie-Hinweis ist in Verbindung mit dem&nbsp;
         <a href="#" className="underline text-blue-600">
-          BlackRock’s Privacy Notice
+          Datenschutz-Hinweis von BlackRock
         </a>
-        .
+        &nbsp;zu lesen.
         <br />
         <br />
-        This Cookie Notice does not apply to any domains that we do not own or
-        control, or to any third-party domains where BlackRock advertisements
-        are displayed.
+        Dieser Cookie-Hinweis gilt nicht für Domains, die wir nicht besitzen
+        oder kontrollieren, oder für Drittanbieterdomains, auf denen
+        BlackRock-Werbung angezeigt wird.
       </p>
       <p className="text-[16px]/[24px] text-black">
         <br />
         <br />
-        <strong>What is a cookie?</strong>
+        <strong>Was ist ein Cookie?</strong>
         <br />
         <br />
-        A cookie is a small text file which is downloaded to your device or
-        browser when you visit a website. Cookies are then sent back to the
-        originating website on each subsequent visit, or to another website that
-        recognises that cookie, in order to develop a record of the user’s
-        online activity. Cookies may be delivered by the website a user visits,
-        or by third parties. First party cookies are set by BlackRock and belong
-        to the website domain that appears in the browser address bar.
+        Ein Cookie ist eine kleine Textdatei, die beim Besuch einer Website auf
+        Ihr Gerät oder Ihren Browser heruntergeladen wird. Cookies werden bei
+        jedem weiteren Besuch an die ursprüngliche Website oder an eine andere
+        Website, die diesen Cookie erkennt, zurückgesendet, um eine Aufzeichnung
+        der Online-Aktivitäten des Nutzers zu erstellen. Cookies können entweder
+        von der besuchten Website oder von Dritten bereitgestellt werden.
+        Erstanbieter-Cookies werden von BlackRock gesetzt und gehören zur
+        Website-Domain, die in der Adressleiste Ihres Browsers angezeigt wird.
         <br />
         <br />
-        <strong>Types of cookies:</strong>
+        <strong>Arten von Cookies:</strong>
         <br />
         <br />
       </p>
       <ol className="list-decimal pl-6 space-y-4 text-[16px]/[24px] text-black">
         <li>
-          <strong>Necessary cookies</strong>
+          <strong>Notwendige Cookies</strong>
           <br />
-          Necessary cookies help keep our websites secure while enabling network
-          management, site functionality and accessibility. You may disable
-          necessary cookies in your browser settings, but that may affect how
-          the website functions for you.
+          Notwendige Cookies helfen dabei, unsere Websites sicher zu halten und
+          ermöglichen Netzwerkverwaltung, Funktionalität und Barrierefreiheit
+          der Seite. Sie können notwendige Cookies in Ihren Browsereinstellungen
+          deaktivieren, was sich jedoch negativ auf die Funktionalität der
+          Website auswirken kann.
         </li>
         <li>
-          <strong>Preference cookies</strong>
+          <strong>Präferenz-Cookies</strong>
           <br />
-          Preference cookies enable us to store certain user selections or
-          preferences and allows for a more tailored website experience.
+          Präferenz-Cookies ermöglichen es uns, bestimmte Benutzerauswahlen oder
+          -präferenzen zu speichern und bieten so ein individuell angepasstes
+          Website-Erlebnis.
         </li>
         <li>
-          <strong>Statistical Analytics</strong>
+          <strong>Statistische Analyse</strong>
           <br />
-          Measure the performance of our website and collect aggregate level
-          information on how you use our site, for us to provide you with the
-          best possible digital experience. No user level based behavioural data
-          will be collected as part of this method. If you are visiting a
-          European site, these are only active if you click “Accept all”. On
-          Non-European sites, you may opt out of these separately under “Manage
-          cookies”.
+          Diese Cookies messen die Leistung unserer Website und sammeln
+          aggregierte Informationen darüber, wie Sie unsere Website nutzen,
+          damit wir Ihnen die bestmögliche digitale Erfahrung bieten können. Es
+          werden keine nutzerspezifischen Verhaltensdaten gesammelt. Auf
+          europäischen Websites sind diese Cookies nur aktiv, wenn Sie „Alle
+          akzeptieren“ klicken. Auf Nicht-EU-Websites können Sie diese unter
+          „Cookie-Einstellungen“ separat deaktivieren.
         </li>
         <li>
-          <strong>Marketing/Tracking/Profiling cookies</strong>
+          <strong>Marketing-/Tracking-/Profiling-Cookies</strong>
           <br />
-          Marketing/Tracking/Profiling cookies are usually placed by advertising
-          networks and are used to deliver relevant content or measure campaign
-          performance. Information about website usage and visits may be shared
-          with other organizations such as advertisers.
+          Diese Cookies werden in der Regel von Werbenetzwerken gesetzt und
+          dienen dazu, relevante Inhalte bereitzustellen oder die Leistung von
+          Kampagnen zu messen. Informationen über Website-Nutzung und Besuche
+          können mit Organisationen wie Werbeanbietern geteilt werden.
         </li>
         <li>
-          <strong>Conversational cookies</strong>
+          <strong>Konversations-Cookies</strong>
           <br />
-          Conversational cookies help tie conversations and interactions to a
-          specific visitor on our site, when you are interacting with our
-          chatbot. These cookies must be accepted in order to interact with the
-          chatbot on our websites.
+          Konversations-Cookies helfen dabei, Gespräche und Interaktionen einem
+          bestimmten Besucher auf unserer Website zuzuordnen, wenn Sie mit
+          unserem Chatbot interagieren. Diese Cookies müssen akzeptiert werden,
+          um mit dem Chatbot auf unseren Websites zu interagieren.
         </li>
       </ol>
       <p className="text-[16px]/[24px] text-black">
         <br />
         <br />
-        <strong>Consent and updating your cookie preferences</strong>
+        <strong>
+          Einwilligung und Aktualisierung Ihrer Cookie-Einstellungen
+        </strong>
         <br />
         <br />
-        On our European Websites, we will not set any cookies other than those
-        that are Strictly Necessary without your consent.
+        Auf unseren europäischen Websites setzen wir keine Cookies außer den
+        unbedingt erforderlichen, ohne Ihre Einwilligung.
         <br />
         <br />
-        On our Websites outside Europe, by clicking “Required only”, Statistical
-        Analytics and Strictly Necessary cookies will be set as they do not
-        collect any Personal Information. You may opt out of Statistical
-        Analytics separately under “Manage cookies”.
+        Auf unseren Websites außerhalb Europas werden mit einem Klick auf „Nur
+        erforderlich“ statistische Analyse-Cookies und unbedingt erforderliche
+        Cookies gesetzt, da diese keine personenbezogenen Daten erfassen. Sie
+        können sich separat über „Cookie-Einstellungen“ von der Analyse
+        abmelden.
         <br />
         <br />
-        If you are navigating between our European Websites and our Websites
-        outside Europe, your first choice will determine the setting of
-        Statistical Analytics; you can always change your preference under
-        “Manage cookies”.
+        Wenn Sie zwischen unseren europäischen und nicht-europäischen Websites
+        wechseln, bestimmt Ihre erste Auswahl die Einstellung für statistische
+        Analysen. Sie können Ihre Präferenzen jederzeit unter
+        „Cookie-Einstellungen“ ändern.
         <br />
         <br />
-        When you first visit our Website and on subsequent visits you will have
-        the option to choose and then amend your other cookie preferences by
-        clicking the Manage Cookies button which will appear on each page.
+        Beim ersten Besuch unserer Website und bei späteren Besuchen haben Sie
+        die Möglichkeit, Ihre Cookie-Einstellungen über den Button
+        „Cookie-Einstellungen“ auf jeder Seite auszuwählen und zu ändern.
         <br />
         <br />
-        Across all sites, you will only be prompted again if we update the list
-        of cookies we utilize or if this affects your browsing.
+        Auf allen Seiten werden Sie nur erneut gefragt, wenn wir die Liste der
+        von uns verwendeten Cookies aktualisieren oder wenn sich dies auf Ihr
+        Nutzungserlebnis auswirkt.
       </p>
 
       <p className="text-[16px]/[24px] text-black mt-6">
-        <strong>Cookies used on our Websites</strong>
+        <strong>Auf unseren Websites verwendete Cookies</strong>
         <br />
         <br />
-        If you’d like more information on the specific cookies currently used,
-        their purpose and how long they last, please{" "}
+        Wenn Sie weitere Informationen zu den derzeit verwendeten Cookies, deren
+        Zweck und Lebensdauer erhalten möchten, bitte&nbsp;
         <a href="#" className="underline text-blue-600">
-          click here
+          hier klicken
         </a>
-        . (only available in English)
+        . (nur auf Englisch verfügbar)
         <br />
         <br />
-        "Session" Cookies are temporary and will expire at the end of a browser
-        session; that is, when you leave a website. These allow our website to
-        recognize you and carry information as you navigate between pages during
-        a single browser session and allow you to use the website efficiently.
+        „Session“-Cookies sind temporär und verfallen am Ende einer
+        Browsersitzung, also wenn Sie eine Website verlassen. Diese Cookies
+        ermöglichen es unserer Website, Sie zu erkennen und Informationen
+        zwischen Seiten während einer einzigen Sitzung weiterzugeben, damit Sie
+        die Website effizient nutzen können.
         <br />
         <br />
-        Other cookies have a defined expiry period as set out in the link above.
-        Cookies will not be listed if they have expired, however some expired
-        cookies may still be listed in your browser cookies settings even though
-        they are not current on our website.
+        Andere Cookies haben eine festgelegte Gültigkeitsdauer, wie im obigen
+        Link beschrieben. Abgelaufene Cookies werden nicht aufgeführt, jedoch
+        können einige abgelaufene Cookies weiterhin in Ihren
+        Browsereinstellungen angezeigt werden, obwohl sie auf unserer Website
+        nicht mehr aktiv sind.
       </p>
 
       <p className="text-[16px]/[24px] text-black mt-6">
-        <strong>Non-cookie tracking technologies</strong>
+        <strong>Tracking-Technologien ohne Cookies</strong>
         <br />
         <br />
-        We may also use web beacons including conversion pixels, which are small
-        codes located on a particular web page which are triggered when someone
-        visits a page resulting in an increase in the conversion count, or other
-        technologies for similar purposes. We may include these on our sites, in
-        our marketing e-mail messages or newsletters, or on affiliated websites,
-        including client platforms and products, to determine whether messages
-        have been opened and links clicked on.
+        Wir können auch Web-Beacons, einschließlich Conversion-Pixeln,
+        verwenden. Dabei handelt es sich um kleine Codes auf einer bestimmten
+        Webseite, die ausgelöst werden, wenn jemand die Seite besucht und
+        dadurch die Anzahl der Conversions erhöht wird – oder andere
+        Technologien mit ähnlichen Zwecken. Wir können diese auf unseren
+        Websites, in Marketing-E-Mails oder Newslettern oder auf verbundenen
+        Websites, einschließlich Kundenplattformen und Produkten, einbinden, um
+        festzustellen, ob Nachrichten geöffnet und Links angeklickt wurden.
       </p>
 
       <p className="text-[16px]/[24px] text-black mt-6">
-        <strong>How to block all cookies and what this will mean</strong>
+        <strong>Wie Sie alle Cookies blockieren und was das bedeutet</strong>
         <br />
         <br />
-        If you want to block all cookies, you may be able to do this through the
-        settings in your browser for each browser you use and each device you
-        use. If you block all cookies, you may find certain features on our
-        website will not function properly and we may not be able to respond to
-        your request or provide you with the best service.
+        Wenn Sie alle Cookies blockieren möchten, können Sie dies möglicherweise
+        über die Einstellungen in Ihrem Browser tun – für jeden verwendeten
+        Browser und jedes Gerät. Wenn Sie alle Cookies blockieren, funktionieren
+        bestimmte Funktionen auf unserer Website möglicherweise nicht
+        ordnungsgemäß, und wir können Ihre Anfrage möglicherweise nicht
+        beantworten oder Ihnen nicht den bestmöglichen Service bieten.
         <br />
         <br />
-        Please remember, if you turn off cookies using the settings in your
-        browser, this will apply to all websites, not just BlackRock.
+        Bitte beachten Sie: Wenn Sie Cookies in Ihrem Browser deaktivieren, gilt
+        dies für alle Websites – nicht nur für BlackRock.
       </p>
+
       <p className="text-[16px]/[24px] text-black">
         <br />
         <br />
-        <strong>Further information</strong>
+        <strong>Weitere Informationen</strong>
         <br />
         <br />
-        You can find more information about cookies on the following websites:
+        Weitere Informationen zu Cookies finden Sie auf den folgenden Websites:
         <br />
         <a
           href="https://www.allaboutcookies.org"
@@ -218,16 +231,16 @@ export const Tab4 = () => {
       </p>
 
       <p className="text-[16px]/[24px] text-black mt-6">
-        <strong>Contacting us</strong>
+        <strong>Kontaktaufnahme mit uns</strong>
         <br />
         <br />
-        The Global Head of Privacy and Data Protection oversees compliance with
-        privacy and data protection law and regulation at BlackRock. If you wish
-        to exercise any of your rights, or have questions concerning this Cookie
-        Notice, please contact:
+        Der Global Head of Privacy and Data Protection ist für die Einhaltung
+        der Datenschutzgesetze und -vorschriften bei BlackRock verantwortlich.
+        Wenn Sie eines Ihrer Rechte ausüben möchten oder Fragen zu dieser
+        Cookie-Richtlinie haben, kontaktieren Sie bitte:
         <br />
         <br />
-        The Global Head of Privacy and Data Protection
+        Global Head of Privacy and Data Protection
         <br />
         BlackRock
         <br />
@@ -237,7 +250,7 @@ export const Tab4 = () => {
         <br />
         EC2N&nbsp;2DL
         <br />
-        Email:&nbsp;
+        E-Mail:&nbsp;
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
@@ -247,60 +260,60 @@ export const Tab4 = () => {
       </p>
 
       <p className="text-[16px]/[24px] text-black mt-6">
-        <strong>Complaints</strong>
+        <strong>Beschwerden</strong>
         <br />
         <br />
-        If you have any concerns or complaints about the way your PI is
-        processed, please contact the Global Head of Privacy and Data Protection
-        at&nbsp;
+        Wenn Sie Bedenken oder Beschwerden hinsichtlich der Verarbeitung Ihrer
+        personenbezogenen Daten (PI) haben, wenden Sie sich bitte an den Global
+        Head of Privacy and Data Protection unter&nbsp;
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
         >
           GroupPrivacy@BlackRock.com
         </a>
-        . You also have a right to complain to a data protection or other
-        competent authority with jurisdiction over privacy and data protection
-        law in the country you live or work, or in the country where you believe
-        an issue in relation to the processing of your Personal Information has
-        arisen. Please contact&nbsp;
+        . Sie haben auch das Recht, sich bei einer Datenschutzbehörde oder einer
+        anderen zuständigen Stelle in dem Land zu beschweren, in dem Sie wohnen
+        oder arbeiten, oder in dem Sie glauben, dass ein Verstoß gegen den
+        Datenschutz stattgefunden hat. Bitte kontaktieren Sie&nbsp;
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
         >
           GroupPrivacy@BlackRock.com
         </a>
-        &nbsp;for further details.
+        &nbsp;für weitere Informationen.
       </p>
 
       <p className="text-[16px]/[24px] text-black mt-6">
-        <strong>BlackRock Privacy Notice</strong>
+        <strong>Datenschutzerklärung von BlackRock</strong>
         <br />
         <br />
-        Please see our separate&nbsp;
+        Bitte beachten Sie unsere separate&nbsp;
         <a href="#" className="underline text-blue-600">
-          BlackRock Privacy Notice
+          Datenschutzerklärung von BlackRock
         </a>
         .
       </p>
 
       <p className="text-[16px]/[24px] text-black mt-6">
-        <strong>Recruitment Privacy Notice</strong>
+        <strong>Datenschutzerklärung für Bewerber</strong>
         <br />
         <br />
-        Please see our separate&nbsp;
+        Bitte beachten Sie unsere separate&nbsp;
         <a href="#" className="underline text-blue-600">
-          Recruitment Privacy Notice
+          Datenschutzerklärung für Bewerber
         </a>
         .
       </p>
 
       <p className="text-[16px]/[24px] text-black mt-6">
-        <strong>Changes to this Cookie Notice</strong>
+        <strong>Änderungen dieser Cookie-Richtlinie</strong>
         <br />
         <br />
-        We may modify or amend this Cookie Notice from time to time. You are
-        advised to visit our website regularly to check for any amendments.
+        Wir können diese Cookie-Richtlinie von Zeit zu Zeit ändern oder
+        aktualisieren. Wir empfehlen Ihnen, unsere Website regelmäßig zu
+        besuchen, um sich über etwaige Änderungen zu informieren.
       </p>
     </div>
   );

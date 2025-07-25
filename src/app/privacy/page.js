@@ -28,7 +28,7 @@ const Impressum = () => {
 
                 <div className="flex flex-col gap-4 lg:mt-8 mt-6">
                     <h2 className="font-bold text-[32px]/[140%] lg:text-[40px]/[52px]">
-                        Privacy at BlackRock
+                        Datenschutz bei BlackRock
                     </h2>
 
                     {/* Tabs start here */}

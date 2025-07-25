@@ -17,7 +17,7 @@ export const Section5 = () => {
         </p>
       </div>
         <Image
-          className="rounded-[35px] flex-1 object-cover"
+          className="rounded-[35px] lg:max-w-[45%] flex-1 object-cover"
           src={Section5Img}
           alt=""
         />

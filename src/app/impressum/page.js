@@ -18,7 +18,7 @@ const Impressum = () => {
                         40789 Monheim a. Rhein
                         <br /><br />
 
-                        Geschäftsführer Mustafa Sizan
+                        Geschäftsführer : Mustafa Sizan
                         Hauptsitz Monheim
                         Amtsgericht Düsseldorf
                         HRB 102003

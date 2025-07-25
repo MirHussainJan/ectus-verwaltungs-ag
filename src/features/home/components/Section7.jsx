@@ -12,26 +12,26 @@ export const Section7
       </h2>
       <div className="flex flex-col md:flex-row gap-6 lg:gap-12">
         <div className="bg-white rounded-[16px] p-5 flex-1">
-          <h3 className="font-bold text-[20px]/[150%] lg:text-[32px]/[150%] text-[#1D1E20] mb-1">
+          <h3 className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%] text-[#1D1E20] mb-1">
             Mustafa Sizan
           </h3>
-          <p className="lg:text-[20px]/[150%] text-[16px]/[150%] text-[#0171FF]">
+          <p className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%] text-[#0171FF]">
             Managing Director
           </p>
         </div>
         <div className="bg-white rounded-[16px] p-5 flex-1">
-          <h3 className="font-bold text-[20px]/[150%] lg:text-[32px]/[150%] text-[#1D1E20] mb-1">
+          <h3 className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%] text-[#1D1E20] mb-1">
             Sven Flieshardt
           </h3>
-          <p className="lg:text-[20px]/[150%] text-[16px]/[150%] text-[#0171FF]">
+          <p className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%] text-[#0171FF]">
             Department Head
           </p>
         </div>
         <div className="bg-white rounded-[16px] p-5 flex-1">
-          <h3 className="font-bold text-[20px]/[150%] lg:text-[32px]/[150%] text-[#1D1E20] mb-1">
+          <h3 className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%] text-[#1D1E20] mb-1">
             Laura Lehmann
           </h3>
-          <p className="lg:text-[20px]/[150%] text-[16px]/[150%] text-[#0171FF]">
+          <p className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%] text-[#0171FF]">
             Secretary
           </p>
         </div>

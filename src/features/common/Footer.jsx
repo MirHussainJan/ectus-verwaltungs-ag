@@ -5,7 +5,10 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div id="contact-us" className="lg:py-[45px] lg:px-[7.778vw] py-12 px-4 md:px-6 rounded-b-[50px] bg-[#F5F5F5]">
+    <div
+      id="contact-us"
+      className="lg:py-[45px] lg:px-[7.778vw] py-12 px-4 md:px-6 rounded-b-[50px] bg-[#F5F5F5]"
+    >
       <div className="flex justify-between gap-6 flex-col lg:flex-row border-b border-[#D1D5DB]">
         <div>
           <Logo className="w-[241px] h-[40px] mb-4" />
@@ -33,7 +36,7 @@ export const Footer = () => {
             +49 XXX XXX XXXX
             <br />
             <br />
-            Sandrstraße 104, 40789 Monheim am Rhein, Germany
+            Sandstraße104 40789 Monheim am Rhein
           </p>
         </div>
       </div>

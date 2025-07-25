@@ -21,8 +21,8 @@ export const Section2 = () => {
   return (
     <div className="overflow-hidden px-6 md:px-[40px] lg:px-[120px] py-12">
       <div className="flex gap-0 md:gap-8 items-center">
-        <h3 className="text-[24px]/[170%] font-bold text-[#141414] min-w-[150px] opacity-60">
-          Our Partners
+        <h3 className="text-[20px]/[140%] font-bold text-[#141414] min-w-[150px] opacity-60">
+          Unsere Partner
         </h3>
 
         <div className="flex-1 justify-center">
@@ -33,7 +33,23 @@ export const Section2 = () => {
             blurBorders={false}
             blurBorderColor="#fff"
           >
-            {[logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13, logo14, logo15].map((logo, index) => (
+            {[
+              logo1,
+              logo2,
+              logo3,
+              logo4,
+              logo5,
+              logo6,
+              logo7,
+              logo8,
+              logo9,
+              logo10,
+              logo11,
+              logo12,
+              logo13,
+              logo14,
+              logo15,
+            ].map((logo, index) => (
               <Slider.Slide key={index}>
                 <div className="flex justify-center items-center w-full h-[48px]">
                   <Image src={logo} alt={`logo-${index}`} height={48} />

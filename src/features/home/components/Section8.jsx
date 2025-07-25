@@ -24,11 +24,11 @@ export const Section8 = () => {
       />
       <div className="bg-white lg:rounded-[204px] rounded-[88px] lg:px-[4.444vw] lg:py-[64px] py-[48px] px-[24px] flex-1">
         <h2 className="font-bold lg:text-[48px]/[100%] text-[32px]/[100%] text-center lg:px-[8.993vw] uppercase">
-          Ready to Take Your Company Public?
+          Bereit, Ihr Unternehmen an die Börse zu bringen?
         </h2>
         <p className="text-[16px]/[140%] text-center mt-4 lg:px-[18.472vw]">
-          Your IPO journey starts with a single conversation. Speak directly
-          with our team of experts today.
+          Ihre IPO-Reise beginnt mit einem einzigen Gespräch. Sprechen Sie noch
+          heute direkt mit unserem Expertenteam.
         </p>
       </div>
     </div>

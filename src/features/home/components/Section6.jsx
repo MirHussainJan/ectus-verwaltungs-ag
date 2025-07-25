@@ -9,11 +9,12 @@ export const Section6 = () => {
     >
       <div className="lg:px-[20.833vw]">
         <h2 className="font-bold text-[24px]/[130%] lg:text-[40px]/[130%] mb-5 md:mb-4 lg:text-center uppercase">
-          Strategic Solutions for Growth
+          Strategische Lösungen für Wachstum
         </h2>
         <p className="text-[16px]/[140%] lg:text-[18px]/[28px] text-[#626262] lg:text-center">
-          We provide tailored strategies and proven frameworks to help
-          businesses scale, attract investors, and succeed in public markets.
+          Wir bieten maßgeschneiderte Strategien und bewährte Rahmenwerke, um
+          Unternehmen beim Skalieren, der Investorengewinnung und dem Erfolg auf
+          öffentlichen Märkten zu unterstützen.
         </p>
       </div>
       <div className="flex flex-col md:flex-row gap-6 w-full">
@@ -22,33 +23,34 @@ export const Section6 = () => {
             Klarna
           </h3>
           <p className="lg:text-[18px]/[28px] text-[16px]/[140%] lg:mb-8 mb-5">
-            Our expertise in scaling leading fintech platforms is exemplified
-            through Klarna—a success story that demonstrates how we guide
-            companies from early-stage growth to global market leadership.
+            Unsere Expertise im Skalieren führender Fintech-Plattformen zeigt
+            sich am Beispiel Klarna – eine Erfolgsgeschichte, die verdeutlicht,
+            wie wir Unternehmen von der frühen Wachstumsphase bis zur globalen
+            Marktführerschaft begleiten.
           </p>
           <div className="flex flex-col gap-1">
             <div className="flex gap-2 items-center">
               <Image className="size-[18px]" src={CheckIcon} alt="" />
               <h3 className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%]">
-                Early-Stage Advisory
+                Beratung in der Frühphase
               </h3>
             </div>
             <div className="flex gap-2 items-center">
               <Image className="size-[18px]" src={CheckIcon} alt="" />
               <h3 className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%]">
-                Capital Access
+                Kapitalzugang
               </h3>
             </div>
             <div className="flex gap-2 items-center">
               <Image className="size-[18px]" src={CheckIcon} alt="" />
               <h3 className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%]">
-                Regulatory Navigation
+                Regulatorische Navigation
               </h3>
             </div>
             <div className="flex gap-2 items-center">
               <Image className="size-[18px]" src={CheckIcon} alt="" />
               <h3 className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%]">
-                Post-IPO Support
+                Unterstützung nach dem Börsengang
               </h3>
             </div>
           </div>
@@ -58,33 +60,34 @@ export const Section6 = () => {
             Fscale
           </h3>
           <p className="lg:text-[18px]/[28px] text-[16px]/[140%] lg:mb-8 mb-5">
-            Fscale is our proven framework for IPO readiness. We provide
-            end-to-end support, ensuring your business is structured for a
-            successful listing on the world’s most competitive exchanges.
+            Fscale ist unser bewährtes Rahmenwerk für Börsengangsvorbereitung.
+            Wir bieten umfassende Unterstützung, um sicherzustellen, dass Ihr
+            Unternehmen optimal für eine erfolgreiche Notierung an den weltweit
+            wettbewerbsfähigsten Börsen aufgestellt ist.
           </p>
           <div className="flex flex-col gap-1">
             <div className="flex gap-2 items-center">
               <Image className="size-[18px]" src={CheckIcon} alt="" />
               <h3 className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%]">
-                Comprehensive Assessment
+                Umfassende Bewertung
               </h3>
             </div>
             <div className="flex gap-2 items-center">
               <Image className="size-[18px]" src={CheckIcon} alt="" />
               <h3 className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%]">
-                Structuring & Governance
+                Strukturierung & Unternehmensführung
               </h3>
             </div>
             <div className="flex gap-2 items-center">
               <Image className="size-[18px]" src={CheckIcon} alt="" />
               <h3 className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%]">
-                Investor Positioning
+                Positionierung für Investoren
               </h3>
             </div>
             <div className="flex gap-2 items-center">
               <Image className="size-[18px]" src={CheckIcon} alt="" />
               <h3 className="font-bold lg:text-[18px]/[28px] text-[16px]/[140%]">
-                Execution & Listing
+                Umsetzung & Börsengang
               </h3>
             </div>
           </div>

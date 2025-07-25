@@ -9,20 +9,21 @@ export const Section4 = () => {
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-[6.806vw]">
         <div className="lg:w-[31.528vw]">
           <h2 className="font-bold text-[24px]/[130%] lg:text-[40px]/[130%] uppercase">
-            Our Proven Success in Public Markets
+            Unser nachweislicher Erfolg an den öffentlichen Märkten
           </h2>
         </div>
         <div className="flex-1 flex flex-col gap-6">
           <p className="text-[16px]/[140%] lg:text-[20px]/[140%] text-[#626262]">
-            At SK BlackRock Financial, we have a track record of guiding
-            innovative businesses to successful IPOs. Our strategic expertise,
-            global network, and hands-on approach have helped numerous companies
-            enter and thrive in public markets.
+            Bei SK BlackRock Financial verfügen wir über eine nachweisliche
+            Erfolgsbilanz in der Begleitung innovativer Unternehmen zu
+            erfolgreichen Börsengängen (IPOs). Unsere strategische Expertise,
+            unser globales Netzwerk und unser praxisnaher Ansatz haben
+            zahlreichen Unternehmen den Eintritt in die öffentlichen Märkte
+            ermöglicht und zu nachhaltigem Erfolg verholfen.
             <br />
             <br />
             <strong className="font-bold text-[#000000]">
-              {" "}
-              Notable Success Stories:
+              Bedeutende Erfolgsgeschichten:
             </strong>
           </p>
           <div className="flex flex-col gap-1 lg:gap-4">
@@ -38,8 +39,9 @@ export const Section4 = () => {
                 alt=""
               />
               <p className="text-[16px]/[28px] lg:text-[18px]/[28px]">
-                <strong className="font-bold">Airbnb –</strong> Transformed into
-                a global hospitality leader through a landmark IPO.
+                <strong className="font-bold">Airbnb –</strong> Durch einen
+                historischen Börsengang zu einem globalen Marktführer im
+                Gastgewerbe geworden.
               </p>
             </div>
             <div className="flex gap-4 lg:items-center">
@@ -54,8 +56,8 @@ export const Section4 = () => {
                 alt=""
               />
               <p className="text-[16px]/[28px] lg:text-[18px]/[28px]">
-                <strong className="font-bold">Snowflake –</strong>
-                Achieved one of the most significant software IPOs in history.
+                <strong className="font-bold">Snowflake –</strong> Eines der
+                bedeutendsten Software-Börsendebüts der Geschichte realisiert.
               </p>
             </div>
           </div>
@@ -64,10 +66,10 @@ export const Section4 = () => {
       <div className="flex gap-5 lg:gap-8 flex-col md:flex-row">
         <div className="flex flex-1 flex-col items-center rounded-[81px] bg-[#F5F5F5] py-6">
           <h2 className="font-bold text-[20px]/[140%] lg:text-[32px]/[140%] text-[#000000] text-center">
-            €10B+
+            €10 Mrd+
           </h2>
           <p className="text-[16px]/[140%] lg:text-[20px]/[140%]">
-            Fund Raised
+            Aufgebrachte Mittel
           </p>
         </div>
         <div className="flex flex-1 flex-col items-center rounded-[81px] bg-[#F5F5F5] py-6">
@@ -75,7 +77,7 @@ export const Section4 = () => {
             25+
           </h2>
           <p className="text-[16px]/[140%] lg:text-[20px]/[140%] text-center">
-            Companies Taken Public
+            Börsengänge erfolgreich begleitet
           </p>
         </div>
         <div className="flex flex-1 flex-col items-center rounded-[81px] bg-[#F5F5F5] py-6">
@@ -83,7 +85,7 @@ export const Section4 = () => {
             20+
           </h2>
           <p className="text-[16px]/[140%] lg:text-[20px]/[140%] text-center">
-            Years of Combined Expertise
+            Jahre kombinierte Erfahrung
           </p>
         </div>
       </div>

@@ -50,19 +50,20 @@ const scrollToSection = (id) => {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-10">
           {[
-            { name: "About Us", path: "/#about-us" },
-            { name: "Solutions", path: "/#solutions" },
-            { name: "Our Team", path: "/#our-team" },
-            { name: "Contact Us", path: "/#contact-us" },
-          ].map((page) => (
-            <a
-              key={page.name}
-              href={page.path}
-              onClick={(e) => handleNavClick(e, page.path.replace("/#", ""))}
-              className={`${textColor} text-[20px] font-semibold fade-in-delay-500 cursor-pointer`}
-            >
-              {page.name}
-            </a>
+            { name: "Über uns", path: "/#about-us" },
+            { name: "Lösungen", path: "/#solutions" },
+            { name: "Unser Team", path: "/#our-team" },
+            { name: "Kontakt", path: "/#contact-us" },
+          ]
+          .map((page) => (
+          <a
+            key={page.name}
+            href={page.path}
+            onClick={(e) => handleNavClick(e, page.path.replace("/#", ""))}
+            className={`${textColor} text-[20px] font-semibold fade-in-delay-500 cursor-pointer`}
+          >
+            {page.name}
+          </a>
           ))}
         </div>
         {/* Mobile Burger Icon */}
@@ -88,19 +89,20 @@ const scrollToSection = (id) => {
           </button>
           <div className="flex flex-col items-center gap-8">
             {[
-              { name: "About Us", path: "/#about-us" },
-              { name: "Solutions", path: "/#solutions" },
-              { name: "Our Team", path: "/#our-team" },
-              { name: "Contact Us", path: "/#contact-us" },
-            ].map((page) => (
-              <a
-                key={page.name}
-                href={page.path}
-                onClick={(e) => handleNavClick(e, page.path.replace("/#", ""))}
-                className={`${textColor} text-[20px] font-semibold fade-in-delay-500 cursor-pointer`}
-              >
-                {page.name}
-              </a>
+              { name: "Über uns", path: "/#about-us" },
+              { name: "Lösungen", path: "/#solutions" },
+              { name: "Unser Team", path: "/#our-team" },
+              { name: "Kontakt", path: "/#contact-us" },
+            ]
+            .map((page) => (
+            <a
+              key={page.name}
+              href={page.path}
+              onClick={(e) => handleNavClick(e, page.path.replace("/#", ""))}
+              className={`${textColor} text-[20px] font-semibold fade-in-delay-500 cursor-pointer`}
+            >
+              {page.name}
+            </a>
             ))}
           </div>
         </div>

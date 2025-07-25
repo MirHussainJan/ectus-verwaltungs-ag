@@ -13,21 +13,21 @@ export const Footer = () => {
         <div>
           <Logo className="w-[241px] h-[40px] mb-4" />
           <p className="lg:mb-[53px] text-[14px]/[20px]">
-            Phone: +49 XXX XXX XXXX
+            Telefon: +49 XXX XXX XXXX
             <br />
             <br />
-            <strong className="font-bold">Business Hours:</strong> <br />
-            Monday to Saturday: <strong>10:00 AM – 9:00 PM</strong> (Central
-            European Summer Time, GMT+2)
+            <strong className="font-bold">Geschäftszeiten:</strong> <br />
+            Montag bis Samstag: <strong>10:00 – 21:00 Uhr</strong>{" "}
+            (Mitteleuropäische Sommerzeit, GMT+2)
             <br />
             <br />
-            <strong className="font-bold">Break Time:</strong> <br />
-            12:00 PM – 2:00 PM (Central European Summer Time, GMT+2)
+            <strong className="font-bold">Pause:</strong> <br />
+            12:00 – 14:00 Uhr (Mitteleuropäische Sommerzeit, GMT+2)
           </p>
         </div>
         <div className="w-[256px] mb-8">
           <p className="lg:mb-[53px] text-[14px]/[20px]">
-            <strong>Contact</strong>
+            <strong>Kontakt</strong>
             <br />
             <br />
             info@sk-blackrock
@@ -36,7 +36,8 @@ export const Footer = () => {
             +49 XXX XXX XXXX
             <br />
             <br />
-            Sandstraße104 <br />40789 Monheim am Rhein
+            Sandstraße 104 <br />
+            40789 Monheim am Rhein
           </p>
         </div>
       </div>
@@ -48,11 +49,11 @@ export const Footer = () => {
         </p>
         <Link href="/privacy">
           <p className="text-[14px]/[20px]">
-            <strong className="font-bold">Data Protection</strong>
+            <strong className="font-bold">Datenschutz</strong>
           </p>
         </Link>
         <p className="text-[16px]/[24px] font-medium text-[#525252]">
-          © Copyright 2025, All Rights Reserved
+          © Copyright 2025, Alle Rechte vorbehalten
         </p>
       </div>
     </div>

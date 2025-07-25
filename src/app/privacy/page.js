@@ -23,7 +23,7 @@ const Impressum = () => {
                     className="flex items-center gap-2 font-bold text-[#484848] text-[20px]/[150%]"
                     href="/"
                 >
-                    <BackArrow /> Home
+                    <BackArrow /> Startseite
                 </Link>
 
                 <div className="flex flex-col gap-4 lg:mt-8 mt-6">
@@ -34,10 +34,10 @@ const Impressum = () => {
                     {/* Tabs start here */}
                     <Tabs defaultValue="tab1" color="dark" mt="md">
                         <TabsList>
-                            <TabsTab value="tab1">BlackRock Privacy Notice</TabsTab>
-                            <TabsTab value="tab2">Recruitment Privacy Notice</TabsTab>
-                            <TabsTab value="tab3">Alumni Privacy Notice</TabsTab>
-                            <TabsTab value="tab4">Cookie Notice</TabsTab>
+                            <TabsTab value="tab1">Datenschutzhinweis von BlackRock</TabsTab>
+                            <TabsTab value="tab2">Datenschutzhinweis für Bewerber</TabsTab>
+                            <TabsTab value="tab3">Datenschutzhinweis für Alumni</TabsTab>
+                            <TabsTab value="tab4">Cookie-Hinweis</TabsTab>
                         </TabsList>
 
                         <TabsPanel value="tab1" pt="xs">

@@ -4,887 +4,938 @@ export const Tab1 = () => {
   return (
     <div className="lg:w-[45.833vw]">
       <p className="text-[16px]/[24px] text-[#000000]">
-        <strong>BlackRock Privacy Notice</strong>
+        <strong>Datenschutzhinweis von BlackRock</strong>
         <br />
         <br />
-        Last revised: 1 March 2025
+        Letzte Überarbeitung: 1. März 2025
         <br />
         <br />
-        <strong>Introduction</strong>
+        <strong>Einleitung</strong>
         <br /> <br />
-        BlackRock is committed to safeguarding and processing personal
-        information <strong>(“PI”)</strong>, including sensitive personal
-        information <strong>(“SPI”)</strong> , in line with all applicable
-        privacy and data protection laws. Many of our offices are located in
-        countries with laws governing the processing of PI. “BlackRock”, “we”,
-        “us” or “our” means BlackRock, Inc., each of the direct or indirect
-        subsidiaries of BlackRock, Inc. <strong>(the “BlackRock Group”)</strong>{" "}
-        and BlackRock managed products. BlackRock, Inc., BlackRock Group
-        functions and the entity you contract with are the controllers of your
-        PI. Where we process your PI without a contract with you, the controller
-        is the entity providing you with this Privacy Notice.
+        BlackRock verpflichtet sich zum Schutz und zur Verarbeitung
+        personenbezogener Daten
+        <strong>(„PI“)</strong>, einschließlich sensibler personenbezogener
+        Daten
+        <strong>(„SPI“)</strong>, im Einklang mit allen geltenden
+        Datenschutzgesetzen. Viele unserer Niederlassungen befinden sich in
+        Ländern mit Gesetzen zur Verarbeitung personenbezogener Daten.
+        „BlackRock“, „wir“, „uns“ oder „unser“ bezeichnet BlackRock, Inc., jede
+        direkte oder indirekte Tochtergesellschaft von BlackRock, Inc.{" "}
+        <strong>(die „BlackRock-Gruppe“)</strong> sowie von BlackRock verwaltete
+        Produkte. BlackRock, Inc., die Funktionen der BlackRock-Gruppe und das
+        Unternehmen, mit dem Sie einen Vertrag abschließen, sind Verantwortliche
+        für Ihre PI. Wenn wir Ihre PI ohne Vertragsbeziehung verarbeiten, ist
+        das Unternehmen, das Ihnen diesen Datenschutzhinweis bereitstellt, der
+        Verantwortliche.
         <br />
         <br />
-        References to “you” or “your” refers to individuals whose PI is
-        processed by BlackRock, including individual investors, individuals in
-        the alternative business industry, client employees, officers or agents
-        (together “Representatives”) with direct or indirect relationships (such
-        as those who invest through an intermediary); and beneficial owners of
-        an organization or entity in connection with:
+        Mit „Sie“ oder „Ihr“ sind Einzelpersonen gemeint, deren PI von BlackRock
+        verarbeitet werden, einschließlich Einzelanlegern, Personen in der
+        alternativen Investmentbranche, Mitarbeitenden, Führungskräften oder
+        Vertretern von Kunden (zusammen „Vertreter“) mit direkter oder
+        indirekter Beziehung (z. B. durch Investition über einen Vermittler);
+        sowie wirtschaftlich Berechtigte einer Organisation oder Einheit im
+        Zusammenhang mit:
       </p>
-      <ul className="list-disc pl-6 space-y-2 my-4">
-        <li>the provision of services to potential and actual clients;</li>
-        <li>
-          transactions to which we are party (including those which we effect on
-          behalf of clients); or
-        </li>
-        <li>services provided to us by a third-party vendor.</li>
-      </ul>
-      <p className="text-[16px]/[24px] text-[#000000]">
-        If your contract is with the BlackRock Group, the BlackRock entity you
-        contract with will be the controller of your PI. If you are an investor
-        in a BlackRock managed product, the associated BlackRock management
-        company and the managed product, if a separate legal entity, will be
-        separate controllers. This privacy notice applies to your relationship
-        with BlackRock.
-        <br />
-        <br />
-        This Privacy Notice sets out the purposes for which we collect, use, and
-        disclose (collectively <strong>“Processing”)</strong> PI and how it is
-        protected. It also sets outs individuals’ rights in relation to the
-        processing of their PI.
-        <br />
-        <br />
-        There may be additional terms, conditions and commitments that also
-        govern how we collect, use and disclose your PI, which should be read in
-        conjunction with this Privacy Notice.
-        <br />
-        <br />
-        <strong>PI we collect about you</strong>
-        <br />
-        <br />
-        PI is information relating to an individual, which can be used either
-        alone or with other sources of information to identify that individual.
-        PI does not include information where the identity of the individual or
-        the specific detail of the information has been removed and is therefore
-        non-attributable. Depending on your jurisdiction, SPI is a sub-category
-        of PI that may include PI relating to race or ethnicity, government
-        identifiers, geolocation information, religious or philosophical
-        beliefs, sex life, sexual orientation, political opinions, trade union
-        membership, information about health and genetic and biometric data,
-        among others.
-        <br />
-        <br />
-        The nature of the information that we collect will depend on the
-        services provided, applicable laws and our relationship with you. We
-        categorize the PI we may process as follows (the PI listed for each
-        category are non-exhaustive examples):
-      </p>
+
       <ul className="list-disc pl-6 space-y-2 my-4">
         <li>
-          Identification data Full name, title, gender, marital status, date of
-          birth, passport number, driving license number, national
-          identification number, signature.
-        </li>
-        <li>Contact data Personal address, telephone number, email address.</li>
-        <li>
-          Electronic Monitoring data To the extent permitted by law, we may
-          record and monitor your electronic communications with us, including
-          telephone conversations, email, instant messaging and any other
-          electronic communications.
+          der Erbringung von Dienstleistungen für potenzielle und bestehende
+          Kunden;
         </li>
         <li>
-          Financial data Account number, client reference number; account
-          statements, investment history.
+          Transaktionen, an denen wir beteiligt sind (einschließlich solcher im
+          Namen von Kunden); oder
         </li>
-        <li>
-          Marketing, Behavioral and Communications data Marketing and
-          communication preferences; information about your use of our websites,
-          our portals and platforms as explained in our Cookie Notice.
-        </li>
-        <li>
-          Professional Information data Firm name, position/job title, work and
-          education history, business address, business telephone number,
-          business email address, B2B social media ID (e.g., LinkedIn profile
-          URL, WeChat ID).
-        </li>
-        <li>
-          Profile and Interaction data Username and password for our online
-          services that you have access to, investments made by you, services
-          requested, as well as participation information and marketing
-          communications in connection with survey responses, e-mail campaigns,
-          chat bot interactions and social media advertisement.
-        </li>
-        <li>
-          Services data Payment details to and from you, details of services you
-          have provided to us, or we have provided to you.
-        </li>
-        <li>
-          BlackRock Building and Assets Security data Records of visits to our
-          premises, CCTV recordings.
-        </li>
-        <li>
-          Technical data Your use of and interaction with our online services,
-          your IP address browser type and version, browser plug in types,
-          geographic location, language, access time, referring website and
-          versions operating system.
-        </li>
-        <li>
-          SPI In limited circumstances we may collect information about criminal
-          convictions and offences, when legally required; dietary requirements,
-          if we are arranging catering; disability, to make reasonable
-          accommodations for you in our buildings; political affiliations, for
-          us to determine whether you are a politically exposed person.
-          Additionally, some of the other information described above may be
-          considered “sensitive” under certain laws. We do not use or disclose
-          SPI for purposes other than those permitted by relevant laws.
-        </li>
+        <li>Dienstleistungen, die uns von Dritten bereitgestellt werden.</li>
       </ul>
+
       <p className="text-[16px]/[24px] text-[#000000]">
-        We collect PI in relation to you in several ways, including:
+        Wenn Sie einen Vertrag mit einem Unternehmen der BlackRock-Gruppe
+        abgeschlossen haben, ist dieses Unternehmen der Verantwortliche für Ihre
+        PI. Wenn Sie in ein von BlackRock verwaltetes Produkt investieren, sind
+        die zugehörige Verwaltungsgesellschaft und – sofern rechtlich
+        eigenständig – das Produkt eigenständige Verantwortliche. Dieser
+        Datenschutzhinweis gilt für Ihre Beziehung zu BlackRock.
+        <br />
+        <br />
+        Dieser Datenschutzhinweis legt die Zwecke dar, zu denen wir PI erheben,
+        verwenden und offenlegen (zusammen <strong>„Verarbeitung“</strong>) und
+        wie sie geschützt wird. Er beschreibt auch die Rechte von Personen im
+        Hinblick auf die Verarbeitung ihrer PI.
+        <br />
+        <br />
+        Es können zusätzliche Bedingungen oder Verpflichtungen gelten, die
+        zusammen mit diesem Datenschutzhinweis gelesen werden sollten.
+        <br />
+        <br />
+        <strong>PI, die wir über Sie erfassen</strong>
+        <br />
+        <br />
+        PI sind Informationen über eine natürliche Person, anhand derer sie
+        allein oder in Kombination mit anderen Daten identifiziert werden kann.
+        PI umfassen keine Daten, bei denen die Identität oder spezifische
+        Merkmale entfernt wurden und somit nicht mehr zuordenbar sind. Abhängig
+        von Ihrer Rechtsordnung kann SPI eine Unterkategorie von PI sein und
+        Informationen zu Rasse oder ethnischer Herkunft, amtliche Kennungen,
+        Standortdaten, religiöse oder weltanschauliche Überzeugungen,
+        Sexualleben, sexuelle Orientierung, politische Meinungen,
+        Gewerkschaftszugehörigkeit, Gesundheitsdaten sowie genetische und
+        biometrische Daten umfassen.
+        <br />
+        <br />
+        Die Art der Daten, die wir erfassen, hängt von den angebotenen
+        Dienstleistungen, geltenden Gesetzen und unserer Beziehung zu Ihnen ab.
+        Wir kategorisieren die PI, die wir verarbeiten können, wie folgt (die
+        aufgelisteten PI sind nicht abschließend):
       </p>
+
       <ul className="list-disc pl-6 space-y-2 my-4">
         <li>
-          Directly from you when provided to us, for example in connection with
-          a BlackRock product or service; such as a completed investment
-          application form.
+          Identifikationsdaten: Vollständiger Name, Titel, Geschlecht,
+          Familienstand, Geburtsdatum, Reisepassnummer, Führerscheinnummer,
+          nationale Kennnummer, Unterschrift.
+        </li>
+        <li>Kontaktdaten: Privatadresse, Telefonnummer, E-Mail-Adresse.</li>
+        <li>
+          Elektronische Überwachungsdaten: Soweit gesetzlich zulässig, können
+          wir Ihre elektronische Kommunikation mit uns überwachen und
+          aufzeichnen, einschließlich Telefongespräche, E-Mails, Instant
+          Messaging und andere elektronische Kommunikation.
         </li>
         <li>
-          If you are Representative of an organization or entity that is a
-          client or vendor of BlackRock, and that organization or entity
-          provides us with your PI.
+          Finanzdaten: Kontonummer, Kundennummer, Kontoauszüge,
+          Investitionsverlauf.
         </li>
         <li>
-          Throughout the course of our relationship with you or your employer,
-          including where you change your details, provide additional PI, or
-          where the services we are providing to you change.
+          Marketing-, Verhaltens- und Kommunikationsdaten: Marketing- und
+          Kommunikationspräferenzen, Informationen zur Nutzung unserer Websites,
+          Portale und Plattformen, wie in unserem Cookie-Hinweis erläutert.
         </li>
         <li>
-          From documentation we receive in the course of our relationship with
-          from a General Partner or Limited Partner of the company you are
-          engaged with.
+          Berufliche Informationen: Firmenname, Position/Titel, Arbeits- und
+          Ausbildungshistorie, Geschäftsadresse, Geschäftstelefonnummer,
+          geschäftliche E-Mail-Adresse, B2B-Social-Media-ID (z. B.
+          LinkedIn-Profil, WeChat-ID).
         </li>
         <li>
-          From public sources such as company corporate websites or social media
-          (in particular LinkedIn), regulatory filings and news, including where
-          you have been interacting with us via social media or where you have
-          been notified that your PI is considered for talent acquisition
-          purposes, including via public profiles on social media.
-        </li>
-        <li>From e-mail or advertising campaigns and surveys.</li>
-        <li>
-          From other BlackRock Group entities or third parties such as credit
-          reference agencies and data brokers.
+          Profil- und Interaktionsdaten: Benutzername und Passwort für unsere
+          Online-Dienste, getätigte Investitionen, angeforderte
+          Dienstleistungen, Teilnahmeinformationen und Marketingkommunikation in
+          Zusammenhang mit Umfragen, E-Mail-Kampagnen, Chatbots oder
+          Social-Media-Werbung.
         </li>
         <li>
-          From visits to our websites, use of our chat bots or through logging
-          into any of our online services (including by cookies or other
-          tracking tools).
+          Dienstleistungsdaten: Zahlungsinformationen, Details zu
+          Dienstleistungen, die Sie uns bereitstellen oder von uns erhalten.
         </li>
         <li>
-          From attending in-person or virtual events or trainings organized or
-          co- sponsored by BlackRock..
+          BlackRock-Gebäude- und Sicherheitsschutzdaten: Besuchsprotokolle,
+          CCTV-Aufzeichnungen.
+        </li>
+        <li>
+          Technische Daten: Nutzung und Interaktion mit unseren Online-Diensten,
+          IP-Adresse, Browsertyp und -version, Plug-ins, geografischer Standort,
+          Sprache, Zugriffszeit, verweisende Website, Betriebssystemversionen.
+        </li>
+        <li>
+          SPI: In begrenzten Fällen erheben wir Daten über strafrechtliche
+          Verurteilungen und Straftaten, wenn gesetzlich erforderlich;
+          Ernährungsbedürfnisse bei Bewirtung; Behinderung zur barrierefreien
+          Gestaltung unserer Räumlichkeiten; politische Zugehörigkeit zur
+          Feststellung, ob Sie eine politisch exponierte Person sind. Weitere
+          oben genannte Informationen können je nach Gesetzgebung ebenfalls als
+          „sensibel“ gelten. Wir verwenden oder offenbaren SPI nur zu gesetzlich
+          erlaubten Zwecken.
         </li>
       </ul>
+
       <p className="text-[16px]/[24px] text-[#000000]">
-        We may also create or derive PI such as creating records of your
-        interactions with us, subject to applicable law.
-        <br />
-        <br />
-        Unless we otherwise indicate that the provision of specific PI is
-        optional, any PI we request is necessary for us to provide you or your
-        organization or entity with the products and services requested. If you
-        do not provide the PI requested, we may not be able to provide those
-        products and services.
-        <br />
-        <br />
-        <strong>Purpose and legal basis for processing your PI</strong>
-        <br />
-        <br />
-        The below table sets out the purposes and basis for which we process PI.
+        Wir erheben PI über Sie auf verschiedene Arten, unter anderem:
       </p>
+
+      <ul className="list-disc pl-6 space-y-2 my-4">
+        <li>
+          Direkt von Ihnen, z. B. im Rahmen eines BlackRock-Produkts oder
+          -Dienstes, etwa durch ein ausgefülltes Antragsformular.
+        </li>
+        <li>
+          Wenn Sie Vertreter einer Organisation oder eines Unternehmens sind,
+          das Kunde oder Dienstleister von BlackRock ist und uns Ihre PI zur
+          Verfügung stellt.
+        </li>
+        <li>
+          Im Laufe unserer Beziehung mit Ihnen oder Ihrem Arbeitgeber, z. B. bei
+          Änderungen Ihrer Daten, bei zusätzlicher PI oder Änderungen der von
+          uns erbrachten Dienstleistungen.
+        </li>
+        <li>
+          Aus Unterlagen, die wir im Rahmen der Beziehung von einem General
+          Partner oder Limited Partner Ihres Unternehmens erhalten.
+        </li>
+        <li>
+          Aus öffentlichen Quellen wie Unternehmenswebsites oder sozialen Medien
+          (insbesondere LinkedIn), regulatorischen Einreichungen und Nachrichten
+          – einschließlich Fällen, in denen Sie mit uns über soziale Medien
+          interagieren oder wenn Ihre PI für Talentgewinnungszwecke verwendet
+          werden, z. B. über öffentliche Profile.
+        </li>
+        <li>Aus E-Mail- oder Werbekampagnen und Umfragen.</li>
+        <li>
+          Von anderen BlackRock-Gruppenunternehmen oder Dritten wie Auskunfteien
+          und Datenanbietern.
+        </li>
+        <li>
+          Durch Besuch unserer Websites, Nutzung von Chatbots oder Anmeldung bei
+          Online-Diensten (einschließlich durch Cookies oder andere
+          Tracking-Tools).
+        </li>
+        <li>
+          Durch Teilnahme an persönlichen oder virtuellen Veranstaltungen oder
+          Schulungen, die von BlackRock organisiert oder mitveranstaltet werden.
+        </li>
+      </ul>
+
+      <p className="text-[16px]/[24px] text-[#000000]">
+        Wir können auch PI erzeugen oder ableiten, z. B. Protokolle Ihrer
+        Interaktionen mit uns, sofern gesetzlich zulässig.
+        <br />
+        <br />
+        Sofern wir nicht ausdrücklich angeben, dass die Angabe bestimmter PI
+        freiwillig ist, sind alle von uns angeforderten PI erforderlich, um
+        Ihnen oder Ihrer Organisation die gewünschten Produkte oder
+        Dienstleistungen bereitzustellen. Wenn Sie diese PI nicht bereitstellen,
+        können wir die jeweiligen Produkte oder Dienstleistungen möglicherweise
+        nicht erbringen.
+        <br />
+        <br />
+        <strong>Zweck und Rechtsgrundlage der Verarbeitung Ihrer PI</strong>
+        <br />
+        <br />
+        Die folgende Tabelle zeigt die Zwecke und Rechtsgrundlagen, auf deren
+        Basis wir Ihre PI verarbeiten.
+      </p>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          <strong>Processing Purpose</strong>
+          <strong>Verarbeitungszweck</strong>
           <br />
           <br />
-          To consider opening an account, or entering into a relationship at
-          your request (including preparation steps such as answering queries
-          prior to entering into a contractual relationship), including
-          performing anti-money laundering, anti-terrorism, sanction screening,
-          fraud and other due diligence checks
+          Prüfung der Kontoeröffnung oder Aufnahme einer Geschäftsbeziehung auf
+          Ihre Anfrage hin (einschließlich vorbereitender Schritte wie die
+          Beantwortung von Fragen vor dem Vertragsabschluss), einschließlich
+          Prüfungen zur Geldwäschebekämpfung, Terrorismusbekämpfung,
+          Sanktionsprüfungen, Betrugserkennung und weiterer Sorgfaltspflichten
         </div>
         <div>
-          <strong>Category of PI</strong>
+          <strong>Kategorie der PI</strong>
           <br />
           <br />
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Contact data
+          · Kontaktdaten
           <br />
           <br />
-          · Electronic Monitoring data
+          · Elektronische Überwachungsdaten
           <br />
           <br />
-          · Financial data
+          · Finanzdaten
           <br />
           <br />
-          · Professional Information data
+          · Berufliche Informationen
           <br />
           <br />
-          · Services data
+          · Dienstleistungsdaten
           <br />
-          <br />· SPI
+          <br />· Sensible personenbezogene Daten (SPI)
         </div>
         <div>
-          <strong>Basis of Processing</strong>
+          <strong>Rechtsgrundlage der Verarbeitung</strong>
           <br />
-          <br />· Performance of a contract
           <br />
-          <br />· Legal or regulatory obligation
+          · Vertragserfüllung
           <br />
-          <br />· Legitimate interests: ensuring we do not accept the proceeds
-          of criminal activities or assist in fraudulent or any unlawful
-          activities, such as terrorism
+          <br />
+          · Gesetzliche oder regulatorische Verpflichtung
+          <br />
+          <br />· Berechtigtes Interesse: Sicherstellung, dass wir keine Erträge
+          aus kriminellen Aktivitäten annehmen oder betrügerische bzw.
+          rechtswidrige Handlungen wie Terrorismus unterstützen
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To deliver the services you have requested, including liaising with
-          third parties (e.g., brokers for the purposes of executing
-          transactions) and to provide access to our technology solutions
-          services (e.g., Aladdin)
+          Erbringung der von Ihnen angeforderten Dienstleistungen,
+          einschließlich der Zusammenarbeit mit Dritten (z. B. Makler zum Zwecke
+          der Transaktionsdurchführung) und Bereitstellung des Zugangs zu
+          unseren technologiebasierten Dienstleistungen (z. B. Aladdin)
         </div>
         <div>
-          · Identification data
+          · Identifikationsdaten
           <br />
-          <br />· Contact data
           <br />
-          <br />· Electronic Monitoring data
+          · Kontaktdaten
           <br />
-          <br />· Financial data
           <br />
-          <br />· Profile and Interaction data
+          · Elektronische Überwachungsdaten
           <br />
-          <br />· Services data
           <br />
-          <br />· Technical data
+          · Finanzdaten
           <br />
-          <br />· Marketing, Behavioral and Communications data
           <br />
-          <br />· Professional Information data
+          · Profil- und Interaktionsdaten
+          <br />
+          <br />
+          · Dienstleistungsdaten
+          <br />
+          <br />
+          · Technische Daten
+          <br />
+          <br />
+          · Marketing-, Verhaltens- und Kommunikationsdaten
+          <br />
+          <br />· Berufliche Informationen
         </div>
         <div>
-          · Performance of a contract
+          · Vertragserfüllung
           <br />
           <br />
-          · Legal or regulatory obligation
+          · Gesetzliche oder regulatorische Verpflichtung
           <br />
-          <br />· Legitimate interests: ensuring that you are provided with the
-          best client services and visitor services we can offer, and securing a
-          prompt payment of any fees, costs and debts in respect of our services
+          <br />· Berechtigtes Interesse: Sicherstellung, dass Sie die
+          bestmöglichen Kunden- und Besucherservices erhalten und dass Gebühren,
+          Kosten und Forderungen für unsere Dienstleistungen zeitnah beglichen
+          werden
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To interact with you (e.g. upon your request to answer questions you
-          submit online)
+          Interaktion mit Ihnen (z. B. auf Ihre Anfrage zur Beantwortung von
+          Online-Fragen)
         </div>
         <div>
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Contact data
+          · Kontaktdaten
           <br />
           <br />
-          · Profile and Interaction data
+          · Profil- und Interaktionsdaten
           <br />
-          <br />· Professional Information data
+          <br />· Berufliche Informationen
         </div>
         <div>
-          <br />· Legitimate interests: ensuring that you are provided with the
-          best client services and visitor services we can offer
+          <br />· Berechtigtes Interesse: Sicherstellung, dass Sie die
+          bestmöglichen Kunden- und Besucherservices erhalten
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To manage our relationship with you which will include notifying you
-          about changes to our terms of business or this privacy notice
+          Verwaltung unserer Beziehung zu Ihnen, einschließlich der
+          Benachrichtigung über Änderungen unserer Geschäftsbedingungen oder
+          dieses Datenschutzhinweises
         </div>
         <div>
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Contact data
+          · Kontaktdaten
           <br />
           <br />
-          · Profile and Interaction data
+          · Profil- und Interaktionsdaten
           <br />
-          <br />· Professional Information data
+          <br />· Berufliche Informationen
         </div>
         <div>
-          · Performance of a contract
+          · Vertragserfüllung
           <br />
           <br />
-          · Legal or regulatory obligation
+          · Gesetzliche oder regulatorische Verpflichtung
           <br />
-          <br />· Legitimate interests: ensuring that you are provided with the
-          best client services and visitor services we can offer
+          <br />· Berechtigtes Interesse: Sicherstellung, dass Sie die
+          bestmöglichen Kunden- und Besucherservices erhalten
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To interact with governmental or regulatory bodies or other competent
-          national authorities
+          Interaktion mit Regierungs- oder Aufsichtsbehörden oder anderen
+          zuständigen nationalen Stellen
         </div>
         <div>
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Contact data
+          · Kontaktdaten
           <br />
           <br />
-          · Electronic Monitoring data
+          · Elektronische Überwachungsdaten
           <br />
           <br />
-          · Financial data
+          · Finanzdaten
           <br />
           <br />
-          · Services data
+          · Dienstleistungsdaten
           <br />
-          <br />· Professional Information data
+          <br />· Berufliche Informationen
         </div>
         <div>
-          · Legal or regulatory obligation
+          · Gesetzliche oder regulatorische Verpflichtung
           <br />
           <br />
-          · Public interest
+          · Öffentliches Interesse
           <br />
-          <br />· Legitimate interests: protecting BlackRock’s interest to
-          comply with governmental and regulatory body requests
+          <br />· Berechtigtes Interesse: Schutz der Interessen von BlackRock
+          zur Einhaltung behördlicher und gesetzlicher Anforderungen
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To detect or prevent fraud and/or other criminal activity and to
-          protect our employees and assets
+          Aufdeckung oder Verhinderung von Betrug und/oder anderer krimineller
+          Aktivitäten sowie Schutz unserer Mitarbeitenden und Vermögenswerte
         </div>
-
         <div>
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · BlackRock Building and Assets Security data
+          · BlackRock Gebäude- und Sicherheitsschutzdaten
           <br />
           <br />
-          · Contact data
+          · Kontaktdaten
           <br />
           <br />
-          · Electronic Monitoring data
+          · Elektronische Überwachungsdaten
           <br />
           <br />
-          · Financial data
+          · Finanzdaten
           <br />
           <br />
-          · Professional Information data
+          · Berufliche Informationen
           <br />
           <br />
-          · Profile and Interaction data
+          · Profil- und Interaktionsdaten
           <br />
           <br />
-          · Services data
+          · Dienstleistungsdaten
           <br />
-          <br />· Technical data
+          <br />· Technische Daten
         </div>
-
         <div>
-          · Legal or regulatory obligation
+          · Gesetzliche oder regulatorische Verpflichtung
           <br />
           <br />
-          · Public interest
+          · Öffentliches Interesse
           <br />
-          <br />· Legitimate interests: protecting BlackRock and client assets,
-          detecting, and protecting against breaches of our policies and
-          applicable laws protecting BlackRock employees
+          <br />· Berechtigtes Interesse: Schutz der Vermögenswerte von
+          BlackRock und Kunden, Aufdeckung und Verhinderung von Verstößen gegen
+          unsere Richtlinien und geltendes Recht sowie Schutz der Mitarbeitenden
+          von BlackRock
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To manage and protect our business, including improving data security,
-          troubleshooting data and systems, system maintenance and testing, data
-          hosting, managing our offices and other facilities
+          Verwaltung und Schutz unseres Unternehmens, einschließlich
+          Verbesserung der Datensicherheit, Fehlerbehebung bei Daten und
+          Systemen, Systemwartung und -tests, Datenhosting sowie Verwaltung
+          unserer Büros und sonstigen Einrichtungen
         </div>
-
         <div>
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Contact data
+          · Kontaktdaten
           <br />
           <br />
-          · Electronic Monitoring data
+          · Elektronische Überwachungsdaten
           <br />
           <br />
-          · Profile and Interaction data
+          · Profil- und Interaktionsdaten
           <br />
           <br />
-          · Technical data
+          · Technische Daten
           <br />
           <br />
-          · Marketing, Behavioral and Communications data
+          · Marketing-, Verhaltens- und Kommunikationsdaten
           <br />
-          <br />· Professional Information data
+          <br />· Berufliche Informationen
         </div>
-
         <div>
-          · Legal or regulatory obligation
+          · Gesetzliche oder regulatorische Verpflichtung
           <br />
-          <br />· Legitimate interests: ensuring the efficient and secure
-          running of our business, including through office and facilities
-          administration, maintaining information technology services, network
-          and data security and fraud prevention
+          <br />· Berechtigtes Interesse: Sicherstellung eines effizienten und
+          sicheren Geschäftsbetriebs, u. a. durch Verwaltung von Büros und
+          Einrichtungen, Aufrechterhaltung von IT-Diensten, Netzwerk- und
+          Datensicherheit sowie Betrugsprävention
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To manage and improve our products and services with relevant and
-          up-to-date information
+          Verwaltung und Verbesserung unserer Produkte und Dienstleistungen mit
+          relevanten und aktuellen Informationen
         </div>
-
         <div>
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Professional Information data
+          · Berufliche Informationen
           <br />
           <br />
-          · Profile and Interaction data
+          · Profil- und Interaktionsdaten
           <br />
-          <br />· Marketing, Behavioral and Communications data
+          <br />· Marketing-, Verhaltens- und Kommunikationsdaten
         </div>
-
         <div>
-          · Consent
+          · Einwilligung
           <br />
-          <br />· Legitimate interests: ensuring to provide up-to-date products
-          in highest quality to our clients
+          <br />· Berechtigtes Interesse: Sicherstellung der Bereitstellung
+          aktueller und hochwertiger Produkte für unsere Kunden
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To invite you to take part in market insight or other events, or
-          client seminars or similar, and to manage your participation in them
+          Einladung zur Teilnahme an Marktanalysen oder anderen Veranstaltungen,
+          Kunden-Seminaren oder ähnlichen Aktivitäten sowie Verwaltung Ihrer
+          Teilnahme
         </div>
-
         <div>
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Contact data
+          · Kontaktdaten
           <br />
           <br />
-          · Profile and Interaction data
+          · Profil- und Interaktionsdaten
           <br />
           <br />
-          · Technical data
+          · Technische Daten
           <br />
           <br />
-          · Marketing, Behavioral and Communications data
+          · Marketing-, Verhaltens- und Kommunikationsdaten
           <br />
-          <br />· Professional Information data
+          <br />· Berufliche Informationen
         </div>
-
         <div>
-          · Consent
+          · Einwilligung
           <br />
-          <br />· Legitimate interests: ensuring our client records are up to
-          date, promoting our client services, receiving feedback, improving our
-          services, identifying ways to expand our business
+          <br />· Berechtigtes Interesse: Sicherstellung aktueller Kundendaten,
+          Förderung unserer Dienstleistungen, Erhalt von Feedback, Verbesserung
+          unserer Angebote, Identifikation von Wachstumschancen
         </div>
       </div>
+
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6">
         <div>
-          To send you marketing communications and service updates (including by
-          paper and electronic channels and personalization in authenticated
-          instances (i.e. within your respective online environment when you are
-          logged in as a user)) and to better understand our marketing outreach
-          and how our websites and platforms are used and to improve user
-          experience.
+          Versand von Marketing-Mitteilungen und Service-Updates (einschließlich
+          per Post oder auf elektronischem Wege sowie Personalisierung in
+          authentifizierten Umgebungen – d. h. in Ihrer Online-Umgebung, wenn
+          Sie als Nutzer angemeldet sind); besseres Verständnis für unsere
+          Marketingmaßnahmen und Nutzung unserer Websites und Plattformen sowie
+          Verbesserung der Nutzererfahrung
         </div>
-
         <div>
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Contact data
+          · Kontaktdaten
           <br />
           <br />
-          · Profile and Interaction data
+          · Profil- und Interaktionsdaten
           <br />
           <br />
-          · Technical data
+          · Technische Daten
           <br />
           <br />
-          · Marketing, Behavioral and Communications data
+          · Marketing-, Verhaltens- und Kommunikationsdaten
           <br />
-          <br />· Professional Information data
+          <br />· Berufliche Informationen
         </div>
-
         <div>
-          · Consent
+          · Einwilligung
           <br />
-          <br />· Legitimate interests: reviewing how clients use, and what they
-          think of, our services, identifying ways to improve and expand our
-          business
+          <br />· Berechtigtes Interesse: Analyse, wie Kunden unsere Services
+          nutzen und bewerten, Verbesserung und Erweiterung unseres Geschäfts
         </div>
       </div>
+
       <hr className="my-6" />
       <p className="text-[16px]/[24px] text-[#000000] underline">
-        In relation to vendor services:
+        Im Zusammenhang mit Anbieterdienstleistungen:
       </p>
       <div className="grid grid-cols-3 gap-6 text-[16px]/[24px] text-black my-6 mt-6">
         <div>
-          <strong>Purpose and/or activity</strong>
+          <strong>Zweck und/oder Tätigkeit</strong>
           <br />
           <br />
-          To engage you or the organization or entity you work for as a new
-          supplier, including performing anti-money laundering, anti-terrorism,
-          sanctions, fraud, and other background checks
+          Sie oder die Organisation bzw. das Unternehmen, für das Sie tätig
+          sind, als neuen Lieferanten zu beauftragen, einschließlich Prüfungen
+          zur Geldwäschebekämpfung, Terrorismusbekämpfung, Sanktionsprüfung,
+          Betrugserkennung und weiteren Hintergrundprüfungen
           <br />
           <br />
-          To manage payments, fees, and charges and to collect and recover money
-          owed to us
+          Verwaltung von Zahlungen, Gebühren und Entgelten sowie Einzug und
+          Rückforderung ausstehender Beträge
           <br />
           <br />
-          Where we provide you access to our systems we need to manage and
-          protect our business, including improving data security,
-          troubleshooting data and systems, system maintenance and testing, and
-          data hosting
+          Wenn wir Ihnen Zugang zu unseren Systemen gewähren, müssen wir unser
+          Geschäft verwalten und schützen, einschließlich der Verbesserung der
+          Datensicherheit, Fehlerbehebung bei Daten und Systemen, Systemwartung
+          und -tests sowie Datenhosting
         </div>
 
         <div>
-          <strong>Type of data</strong>
+          <strong>Datenarten</strong>
           <br />
           <br />
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Contact data
+          · Kontaktdaten
           <br />
           <br />
-          · Electronic Communications data
+          · Daten elektronischer Kommunikation
           <br />
           <br />
-          · Financial data
+          · Finanzdaten
           <br />
           <br />
-          · Services data
+          · Dienstleistungsdaten
           <br />
           <br />
-          · Professional Information data
+          · Berufliche Informationen
           <br />
           <br />
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Contact data
+          · Kontaktdaten
           <br />
           <br />
-          · Financial data
+          · Finanzdaten
           <br />
           <br />
-          · Professional Information data
+          · Berufliche Informationen
           <br />
           <br />
-          · Services data
+          · Dienstleistungsdaten
           <br />
           <br />
-          · Identification data
+          · Identifikationsdaten
           <br />
           <br />
-          · Contact data
+          · Kontaktdaten
           <br />
           <br />
-          · Profile and Interaction data
+          · Profil- und Interaktionsdaten
           <br />
-          <br />· Technical data
+          <br />· Technische Daten
         </div>
 
         <div>
-          <strong>Legal basis for processing</strong>
+          <strong>Rechtsgrundlage der Verarbeitung</strong>
           <br />
           <br />
-          · Performance of a contract
+          · Vertragserfüllung
           <br />
           <br />
-          · Legal or regulatory obligation
+          · Gesetzliche oder regulatorische Verpflichtung
           <br />
           <br />
-          · Legitimate interests: ensuring we do not deal with proceeds of
-          criminal activities or assist in any other unlawful or fraudulent
-          activities for example terrorism
+          · Berechtigtes Interesse: Sicherstellung, dass wir nicht mit Erträgen
+          aus kriminellen Aktivitäten handeln oder andere rechtswidrige oder
+          betrügerische Handlungen unterstützen, z. B. Terrorismus
           <br />
           <br />
-          · Public interest
+          · Öffentliches Interesse
           <br />
           <br />
-          · Performance of a contract
+          · Vertragserfüllung
           <br />
           <br />
-          · Legitimate interests: ensuring we can manage payments, fees, and
-          charges; to collect and recover money owed to us
+          · Berechtigtes Interesse: Sicherstellung, dass wir Zahlungen, Gebühren
+          und Entgelte verwalten sowie ausstehende Beträge einziehen und
+          zurückfordern können
           <br />
           <br />
-          · Legal or regulatory obligation
+          · Gesetzliche oder regulatorische Verpflichtung
           <br />
-          <br />· Legitimate interests: ensuring the efficient and secure
-          running of our business, including maintaining information technology
-          services, network, and data security
+          <br />· Berechtigtes Interesse: Sicherstellung eines effizienten und
+          sicheren Geschäftsbetriebs, einschließlich Aufrechterhaltung von
+          IT-Diensten, Netzwerksicherheit und Datenschutz
         </div>
       </div>
+            <hr className="my-6" />
       <p className="text-[16px]/[24px] text-[#000000]">
-        <strong>To whom we disclose your PI</strong>
+        <strong>An wen wir Ihre PI weitergeben</strong>
         <br />
         <br />
-        In connection with one or more of the purposes outlined in the section
-        ‘Purpose and Legal basis for processing your PI’ above, we may disclose
-        PI in any jurisdiction to:
+        Im Zusammenhang mit einem oder mehreren der oben im Abschnitt „Zweck und
+        Rechtsgrundlage der Verarbeitung Ihrer PI“ genannten Zwecke können wir
+        PI in jeder Rechtsordnung offenlegen gegenüber:
       </p>
+
       <ul className="list-disc pl-6 space-y-2 my-4">
-        <li>other members of the BlackRock Group;</li>
+        <li>andere Mitglieder der BlackRock-Gruppe;</li>
 
         <li>
-          professional advisors, third parties, agents or independent
-          contractors that provide services to any member of the BlackRock Group
-          (such as IT systems providers, data analysis providers, platform
-          providers, financial advisors, brokers, consultants (including lawyers
-          and accountants));
+          professionelle Berater, Drittanbieter, Vertreter oder unabhängige
+          Auftragnehmer, die einem Mitglied der BlackRock-Gruppe
+          Dienstleistungen erbringen (z. B. IT-Systemanbieter,
+          Datenanalyseanbieter, Plattformanbieter, Finanzberater, Makler,
+          Berater, einschließlich Anwälte und Wirtschaftsprüfer);
         </li>
 
         <li>
-          goods and services providers (such as providers of marketing, payment
-          and billing services or debt collection agencies where we are
-          permitted to disclose your personal information to them),
-          intermediaries, brokers, and other individuals and entities that
-          partner with us;
+          Anbieter von Waren und Dienstleistungen (z. B. Anbieter von
+          Marketing-, Zahlungs- und Abrechnungsdiensten oder Inkassounternehmen,
+          sofern wir berechtigt sind, Ihre personenbezogenen Daten
+          weiterzugeben), Vermittler, Makler sowie andere Personen und
+          Organisationen, die mit uns zusammenarbeiten;
         </li>
 
         <li>
-          customers and partners (including investors, fund managers, service
-          providers, and advisors in the alternative assets industry) that have
-          subscribed to specific services offered by any member of the BlackRock
-          Group (e.g. data base services);
+          Kunden und Partner (einschließlich Investoren, Fondsmanager,
+          Dienstleister und Berater im Bereich alternativer Vermögenswerte), die
+          bestimmte Dienste eines Mitglieds der BlackRock-Gruppe abonniert haben
+          (z. B. Datenbankdienste);
         </li>
 
         <li>
-          competent authorities (including any national and/or international
-          regulatory or enforcement body, agency, court or other form of
-          tribunal or tax authority) or their agents where BlackRock is required
-          or allowed to do so under applicable law or regulation;
+          zuständige Behörden (einschließlich nationaler und/oder
+          internationaler Regulierungs- oder Strafverfolgungsbehörden, Gerichte
+          oder sonstiger rechtlicher Instanzen sowie Steuerbehörden) oder deren
+          Vertreter, wenn BlackRock gesetzlich dazu verpflichtet oder berechtigt
+          ist;
         </li>
 
         <li>
-          a potential buyer, transferee, merger partner or seller and their
-          advisers in connection with an actual or potential transfer or merger
-          of part or all of BlackRock’s business or assets, or any associated
-          rights or interests, or to acquire a business or enter into a merger
-          with it;
+          potenzielle Käufer, Übertragungsempfänger, Fusionspartner oder
+          Verkäufer sowie deren Berater im Zusammenhang mit einer tatsächlichen
+          oder möglichen Übertragung oder Fusion eines Teils oder des gesamten
+          Geschäfts oder Vermögens von BlackRock bzw. der zugehörigen Rechte
+          oder Beteiligungen oder zur Übernahme eines Unternehmens oder zum
+          Abschluss einer Fusion;
         </li>
 
         <li>
-          credit reference agencies or other organizations that help us to
-          conduct anti- money laundering and anti-terrorist financing checks and
-          to detect fraud and other potential criminal activity;
+          Auskunfteien oder andere Organisationen, die uns bei der Durchführung
+          von Prüfungen zur Geldwäsche- und Terrorismusbekämpfung sowie bei der
+          Aufdeckung von Betrug und anderer möglicher krimineller Aktivitäten
+          unterstützen;
         </li>
 
         <li>
-          any person to whom disclosure is allowed or required by local or
-          foreign law, regulation, or any other applicable instrument.
+          jede Person, gegenüber der eine Offenlegung nach lokalem oder
+          ausländischem Recht, einer Vorschrift oder einem anderen geltenden
+          Rechtsinstrument zulässig oder erforderlich ist.
         </li>
       </ul>
+
       <p className="text-[16px]/[24px] text-[#000000]">
         <br />
         <br />
         <strong>
-          International transfers and transfers to service providers
+          Internationale Übermittlungen und Übermittlungen an Dienstleister
         </strong>
         <br />
         <br />
-        To provide global services and in the course of running our business, we
-        may transfer PI to a location outside of the country where you reside or
-        where services are provided to you or the organization or entity you
-        work for, including BlackRock processing and/or research centers in
-        Europe, USA, India, Philippines and Singapore. Although the country to
-        which PI may be transferred may not have the same level of privacy and
-        data protection laws, we apply the same level of security and
-        organizational controls to the processing of PI wherever it is
-        processed. We require by contract that our third-party service providers
-        processing PI on our behalf to comply with BlackRock’s criteria for PI
-        processing.
+        Zur Erbringung globaler Dienstleistungen und im Rahmen unseres
+        Geschäftsbetriebs können wir PI an Standorte außerhalb des Landes
+        übermitteln, in dem Sie wohnen oder in dem die Dienstleistungen für Sie
+        oder Ihre Organisation erbracht werden – einschließlich
+        BlackRock-Verarbeitungs- und Forschungszentren in Europa, den USA,
+        Indien, den Philippinen und Singapur. Auch wenn das Zielland
+        möglicherweise nicht dieselben Datenschutzgesetze hat, wenden wir
+        weltweit denselben Sicherheits- und Organisationsstandard für die
+        Verarbeitung von PI an. Unsere Drittanbieter, die PI in unserem Auftrag
+        verarbeiten, verpflichten wir vertraglich zur Einhaltung der
+        BlackRock-Kriterien für PI-Verarbeitung.
         <br />
         <br />
-        If we transfer PI out of the EEA, we ensure a similar level of
-        protection for your PI by ensuring the country to which the PI is
-        transferred is considered by the EU Commission to provide an adequate
-        level of protection or putting in place contractual clauses the EU
-        Commission consider provide the same level of protection.
+        Wenn wir PI aus dem EWR übermitteln, stellen wir ein vergleichbares
+        Schutzniveau sicher, indem wir entweder in Länder übermitteln, die von
+        der EU-Kommission als datenschutzkonform anerkannt sind, oder
+        Standardvertragsklauseln verwenden, die von der EU-Kommission als
+        ausreichend angesehen werden.
         <br />
         <br />
         <strong>
-          Marketing and exercising your right to opt-out of marketing emails and
-          Personalization
+          Marketing und Ausübung Ihres Rechts auf Abmeldung von
+          Marketing-E-Mails und Personalisierung
         </strong>
         <br />
         <br />
-        In certain jurisdictions, you will need to expressly consent to receive
-        marketing emails. If you are an authenticated user on our websites and
-        platform, we may provide you with a personalized experience based on
-        your user behaviour.
+        In bestimmten Ländern müssen Sie ausdrücklich zustimmen, um
+        Marketing-E-Mails zu erhalten. Wenn Sie ein authentifizierter Nutzer
+        unserer Websites und Plattformen sind, können wir Ihnen ein
+        personalisiertes Erlebnis auf Grundlage Ihres Nutzerverhaltens bieten.
         <br />
         <br />
-        In all jurisdictions, you can choose not to receive such communications
-        at any time by clicking on marketing opt-out links in any electronic
-        marketing materials we send you, by making a request to your usual
-        BlackRock contact, by using the contact details set out in the
-        “Contacting Us” section of this Privacy Notice, or, in relation to
-        certain third party advertisements, by exercising your rights related to
-        cookies as explained in our Cookie Notice.
+        In allen Ländern können Sie sich jederzeit gegen den Erhalt solcher
+        Mitteilungen entscheiden – durch Klick auf die Abmeldelinks in unseren
+        elektronischen Marketingnachrichten, durch Anfrage an Ihren üblichen
+        BlackRock-Kontakt, durch Nutzung der Kontaktdaten im Abschnitt
+        „Kontaktaufnahme“ dieses Datenschutzhinweises oder im Hinblick auf
+        Drittanbieterwerbung durch Ausübung Ihrer Cookie-Einstellungen gemäß
+        unserem Cookie-Hinweis.
         <br />
         <br />
-        <strong>Third-party marketing/sale of PI</strong>
+        <strong>Drittanbieter-Marketing / Verkauf von PI</strong>
         <br />
         <br />
-        Some entities in the BlackRock Group may sell certain PI. For example,
-        Preqin sells Identification data; Contact data; and Professional
-        Information data to its customers who subscribe to certain of our
-        databases for their own purposes, including marketing. We also share for
-        targeted advertising or cross-context behavioral advertising purposes
-        the following categories of PI to advertising networks and social media
-        networks: Profile and Interaction data; Technical data; and Marketing,
-        Behavioral and Communications data. We do not knowingly sell or share
-        personal information of individuals under 16 years of age.
+        Einige Unternehmen der BlackRock-Gruppe verkaufen bestimmte PI. Zum
+        Beispiel verkauft Preqin Identifikationsdaten, Kontaktdaten und
+        berufliche Informationen an Kunden, die bestimmte Datenbankdienste
+        abonnieren – unter anderem zu Marketingzwecken. Wir geben zudem zu
+        Zwecken gezielter Werbung oder kontextübergreifender Verhaltenswerbung
+        folgende PI-Kategorien an Werbe- und soziale Netzwerke weiter: Profil-
+        und Interaktionsdaten, technische Daten sowie Marketing-, Verhaltens-
+        und Kommunikationsdaten. Wir verkaufen oder teilen wissentlich keine
+        personenbezogenen Daten von Personen unter 16 Jahren.
         <br />
         <br />
-        Because of certain of these activities, Preqin, a BlackRock Group
-        member, is a data broker under Texas law. To conduct business in Texas,
-        a data broker must register with the Texas Secretary of State (Texas
-        SOS). Information about data broker registrants is available on the
-        Texas SOS website at https://www.sos.state.tx.us/index.shtml.
+        Aufgrund dieser Aktivitäten gilt Preqin, ein Mitglied der
+        BlackRock-Gruppe, nach texanischem Recht als Datenvermittler. Um in
+        Texas tätig zu sein, muss ein Datenvermittler bei der texanischen
+        Handelskammer registriert sein. Informationen zu registrierten
+        Datenvermittlern finden Sie auf der Website der Texas Secretary of
+        State: https://www.sos.state.tx.us/index.shtml.
         <br />
         <br />
-        You will find information on your right to opt-out from such processing
-        in the section “Your rights”.
+        Informationen zu Ihrem Widerspruchsrecht gegen eine solche Verarbeitung
+        finden Sie im Abschnitt „Ihre Rechte“.
         <br />
         <br />
-        <strong>PI retention</strong>
+        <strong>Aufbewahrung von PI</strong>
         <br />
         <br />
-        We will process your PI for as long as is necessary to fulfil the
-        purpose for which it was collected or to comply with legal, regulatory,
-        accounting, reporting, internal policy requirements or for the
-        establishment or defense of legal claims.
+        Wir verarbeiten Ihre PI so lange, wie es erforderlich ist, um den Zweck
+        zu erfüllen, zu dem sie erhoben wurden, oder zur Einhaltung
+        gesetzlicher, regulatorischer, buchhalterischer oder interner
+        Richtlinien oder zur Begründung oder Verteidigung von Rechtsansprüchen.
         <br />
         <br />
-        <strong>PI security</strong>
+        <strong>Sicherheit von PI</strong>
         <br />
         <br />
-        We use a range of physical, electronic, and managerial measures designed
-        to ensure a level of security appropriate to the risk of PI processing.
-        These measures may include:
+        Wir nutzen verschiedene physische, elektronische und organisatorische
+        Maßnahmen, um ein angemessenes Sicherheitsniveau entsprechend dem Risiko
+        der Verarbeitung von PI sicherzustellen. Diese Maßnahmen können
+        Folgendes beinhalten:
         <br />
         <br />
       </p>
+
       <ul className="list-disc pl-6 space-y-2 my-4">
         <li>
-          education and training of relevant staff to ensure they are aware of
-          our privacy obligations when processing PI as well as training around
-          social engineering, phishing, spear phishing, and password risks;
+          Schulung und Weiterbildung relevanter Mitarbeitender, um
+          sicherzustellen, dass sie sich ihrer Datenschutzpflichten bei der
+          Verarbeitung von PI bewusst sind, einschließlich Trainings zu Social
+          Engineering, Phishing, Spear Phishing und Passwortsicherheit;
         </li>
         <li>
-          the ability to ensure the ongoing confidentiality, integrity,
-          availability and resilience of processing systems and services;
+          Fähigkeit zur Sicherstellung der fortlaufenden Vertraulichkeit,
+          Integrität, Verfügbarkeit und Belastbarkeit von Verarbeitungssystemen
+          und -diensten;
         </li>
 
         <li>
-          the ability to restore the availability and access to PI in a timely
-          manner in the event of a physical or technical incident;
+          Fähigkeit zur Wiederherstellung der Verfügbarkeit und des Zugriffs auf
+          PI in angemessener Zeit im Falle eines physischen oder technischen
+          Vorfalls;
         </li>
-
-        <li>administrative and technical controls to restrict access to PI;</li>
 
         <li>
-          technological security measures, including fire walls, encryption
-          (industry standard SSL encryption with 128-bit key lengths), and
-          anti-virus software;
+          Verwaltungs- und technische Kontrollen zur Beschränkung des Zugriffs
+          auf PI;
         </li>
-
-        <li>physical security measures, such building access controls;</li>
 
         <li>
-          external technical assessments, security audits and vendor due
-          diligence;
+          Technologische Sicherheitsmaßnahmen, einschließlich Firewalls,
+          Verschlüsselung (branchenübliche SSL-Verschlüsselung mit
+          128-Bit-Schlüsseln) und Antivirensoftware;
         </li>
 
-        <li>perimeter security;</li>
+        <li>
+          Physische Sicherheitsmaßnahmen, wie Zugangskontrollen zu Gebäuden;
+        </li>
 
-        <li>segregation of networks;</li>
+        <li>
+          Externe technische Bewertungen, Sicherheitsüberprüfungen und
+          Lieferantenprüfungen;
+        </li>
 
-        <li>application security;</li>
+        <li>Perimetersicherheit;</li>
 
-        <li>endpoint security;</li>
+        <li>Netzwerksegmentierung;</li>
 
-        <li>real-time monitoring of data leakage controls;</li>
+        <li>Anwendungssicherheit;</li>
 
-        <li>layered and comprehensive cybersecurity defences; and</li>
+        <li>Endpunktsicherheit;</li>
 
-        <li>security incident reporting and management.</li>
+        <li>Echtzeitüberwachung von Datenverlustkontrollen;</li>
+
+        <li>Gestaffelte und umfassende Cybersicherheitsverteidigung; und</li>
+
+        <li>Meldung und Management von Sicherheitsvorfällen.</li>
       </ul>
+
       <p className="text-[16px]/[24px] text-[#000000]">
-        The security of data transmitted over the internet (including by e-mail)
-        cannot be guaranteed and carries the risk of access and interception.
-        You should not send us any PI by open/unsecure channels over the
-        internet. We endeavour to protect PI but cannot guarantee the security
-        of data transmitted to us or by us.
+        Die Sicherheit der über das Internet übermittelten Daten (einschließlich
+        per E-Mail) kann nicht garantiert werden und birgt das Risiko des
+        Zugriffs und Abfangens. Sie sollten uns keine PI über offene/unsichere
+        Kanäle im Internet senden. Wir bemühen uns, PI zu schützen, können
+        jedoch die Sicherheit von Daten, die an uns oder durch uns übermittelt
+        werden, nicht garantieren.
         <br />
         <br />
-        <strong>Your rights</strong>
+        <strong>Ihre Rechte</strong>
         <br />
         <br />
-        In certain circumstances you may have the following rights in relation
-        to the processing of your PI:
+        Unter bestimmten Umständen können Sie in Bezug auf die Verarbeitung
+        Ihrer PI folgende Rechte haben:
       </p>
+
       <ul className="list-disc pl-6 space-y-2 my-4">
         <li>
-          <strong>Know or Access</strong>
+          <strong>Auskunft/Zugriff</strong>
           <br />
-          To request a copy of the PI we process in relation to you and to be
-          informed about how we collect, use and share your PI.
+          Anforderung einer Kopie der PI, die wir über Sie verarbeiten, sowie
+          Information darüber, wie wir Ihre PI erfassen, verwenden und
+          weitergeben.
         </li>
 
         <li>
-          <strong>Object</strong>
+          <strong>Widerspruch</strong>
           <br />
-          To object to the processing of your PI if (i) we are processing your
-          PI on the grounds of legitimate interests or for the performance of a
-          task in the public interest (including profiling); or (ii) if we are
-          processing your PI for direct marketing purposes.
+          Widerspruch gegen die Verarbeitung Ihrer PI, wenn (i) wir Ihre PI auf
+          Grundlage berechtigter Interessen oder zur Erfüllung einer Aufgabe im
+          öffentlichen Interesse verarbeiten (einschließlich Profiling), oder
+          (ii) wenn wir Ihre PI für Direktmarketing verarbeiten.
         </li>
 
         <li>
-          <strong>Opt Out</strong>
+          <strong>Abmeldung</strong>
           <br />
-          Depending on the laws of your jurisdiction, to opt out of sales or
-          sharing of your PI including for cross-context behavioral advertising
-          or targeted advertising.
-          <br />
-          <br />
-          To opt out of sharing for such advertising purposes through the
-          BlackRock website, you may do so by selecting “Manage Cookies” below
-          and toggling off Marketing/Tracking/Profiling Cookies.
+          Je nach Gesetzgebung Ihres Landes können Sie sich gegen den Verkauf
+          oder die Weitergabe Ihrer PI abmelden – einschließlich für
+          kontextübergreifende Verhaltenswerbung oder gezielte Werbung.
           <br />
           <br />
-          To opt out of all other sales, please email us at{" "}
+          Um sich für solche Werbezwecke über die BlackRock-Website abzumelden,
+          wählen Sie bitte unten „Cookies verwalten“ und deaktivieren Sie
+          Marketing-/Tracking-/Profiling-Cookies.
+          <br />
+          <br />
+          Um sich von allen anderen Verkäufen abzumelden, senden Sie bitte eine
+          E-Mail an{" "}
           <a
             href="mailto:GroupPrivacy@BlackRock.com"
             className="underline text-blue-600"
@@ -895,115 +946,116 @@ export const Tab1 = () => {
         </li>
 
         <li>
-          <strong>Withdrawal</strong>
+          <strong>Widerruf</strong>
           <br />
-          To withdraw your consent you have provided at any time. The withdrawal
-          of consent does not affect the lawfulness of processing of your PI
-          based on consent before the withdrawal.
+          Widerruf Ihrer erteilten Einwilligung jederzeit. Der Widerruf der
+          Einwilligung beeinträchtigt nicht die Rechtmäßigkeit der Verarbeitung
+          Ihrer PI vor dem Widerruf.
         </li>
 
         <li>
-          <strong>Correction</strong>
+          <strong>Berichtigung</strong>
           <br />
-          To request that we update the PI we process in relation to you, or to
-          correct PI that you think is incorrect or incomplete.
+          Anforderung der Aktualisierung oder Korrektur Ihrer PI, falls Sie
+          diese für unzutreffend oder unvollständig halten.
         </li>
 
         <li>
-          <strong>Erasure</strong>
+          <strong>Löschung</strong>
           <br />
-          To ask that we delete PI that we process in relation to you where we
-          do not have a legal or regulatory obligation or other valid reason to
-          continue to process it.
+          Aufforderung zur Löschung Ihrer PI, wenn keine gesetzliche oder
+          regulatorische Verpflichtung oder sonstiger gültiger Grund zur
+          weiteren Verarbeitung besteht.
         </li>
 
         <li>
-          <strong>Restriction</strong>
+          <strong>Einschränkung</strong>
           <br />
-          To request that we restrict the way in which we process your PI, for
-          example, if you dispute the accuracy of your PI or have raised an
-          objection which is under consideration.
+          Beantragung der Einschränkung der Verarbeitung Ihrer PI – z. B. wenn
+          Sie die Richtigkeit bestreiten oder einen Widerspruch eingelegt haben,
+          der noch geprüft wird.
         </li>
 
         <li>
-          <strong>Portability</strong>
+          <strong>Datenübertragbarkeit</strong>
           <br />
-          To request a copy of your PI that you have provided to us in a
-          commonly used electronic format such as through the completion of an
-          application form.
+          Anforderung einer Kopie Ihrer PI, die Sie uns bereitgestellt haben, in
+          einem gängigen elektronischen Format, z. B. über ein Antragsformular.
         </li>
 
         <li>
-          <strong>Automated decision making</strong>
+          <strong>Automatisierte Entscheidungen</strong>
           <br />
-          To request manual intervention if you are subject to automated
-          decisions where the decision results in a legal or similar effect to
-          you.
+          Antrag auf manuelles Eingreifen, wenn Sie automatisierten
+          Entscheidungen unterliegen, die rechtliche oder ähnlich erhebliche
+          Auswirkungen auf Sie haben.
         </li>
       </ul>
+
       <p className="text-[16px]/[24px] text-[#000000]">
-        You may exercise your rights at any time by emailing{" "}
+        Sie können Ihre Rechte jederzeit ausüben, indem Sie eine E-Mail an{" "}
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
         >
           GroupPrivacy@BlackRock.com
         </a>{" "}
-        or using the details set out in the Contacting us section.
+        senden oder die Kontaktdaten im Abschnitt „Kontaktaufnahme“ verwenden.
         <br />
         <br />
-        To the extent permitted by applicable law or regulation we reserve the
-        right to charge an appropriate fee in connection with you exercising
-        your rights.
+        Soweit gesetzlich zulässig, behalten wir uns das Recht vor, für die
+        Ausübung Ihrer Rechte eine angemessene Gebühr zu verlangen.
         <br />
         <br />
-        We may need to request specific information from you to help us confirm
-        your identity and ensure your right to access to the PI requested, or to
-        exercise any of your other rights. This is to ensure that PI is not
-        disclosed to any person who does not have authority to receive it. We
-        may also request further information in relation to your request to help
-        us to locate the PI processed in relation to you, including, for
-        example, the nature and location of your relationship with us.
+        Wir können Sie um bestimmte Informationen bitten, um Ihre Identität zu
+        bestätigen und sicherzustellen, dass Sie berechtigt sind, Zugriff auf
+        die angeforderten PI zu erhalten oder Ihre Rechte geltend zu machen.
+        Dies dient dem Schutz Ihrer Daten vor unbefugtem Zugriff. Wir können
+        auch zusätzliche Informationen anfordern, um Ihre Anfrage zu bearbeiten
+        – etwa zur Art und zum Ort Ihrer Beziehung mit uns.
         <br />
         <br />
-        We will respond to all legitimate requests in line with the timescales
-        set out in applicable law.
+        Wir werden auf alle berechtigten Anfragen innerhalb der gesetzlich
+        vorgeschriebenen Fristen reagieren.
         <br />
         <br />
-        Depending on the laws of your jurisdiction, you may designate an
-        authorized agent to submit a request on your behalf either in writing or
-        through a power of attorney. Before processing your request, we will
-        require the authorized agent to provide written proof of authorization
-        and may require you to verify your own identity and confirm your
-        authorization directly with us.
+        Je nach Gesetzgebung Ihres Landes können Sie einen bevollmächtigten
+        Vertreter benennen, der in Ihrem Namen eine Anfrage schriftlich oder per
+        Vollmacht einreicht. Vor der Bearbeitung der Anfrage verlangen wir vom
+        Bevollmächtigten einen Nachweis über die Autorisierung und können eine
+        direkte Bestätigung Ihrer Identität und Autorisierung durch Sie selbst
+        verlangen.
         <br />
         <br />
-        You will not be disadvantaged in any way by exercising your rights in
-        relation to the processing of your PI.
+        Die Ausübung Ihrer Rechte in Bezug auf die Verarbeitung Ihrer PI hat
+        keinerlei nachteilige Auswirkungen für Sie.
         <br />
         <br />
-        Under certain U.S. laws, certain members of the BlackRock Group are
-        required to disclose metrics related to how they have responded to
-        rights requests under applicable privacy laws. These metrics are as
-        follows:
+        Nach bestimmten US-Gesetzen sind bestimmte Mitglieder der
+        BlackRock-Gruppe verpflichtet, Statistiken offenzulegen, wie sie auf
+        Rechteanfragen nach geltendem Datenschutzrecht reagiert haben. Diese
+        Statistiken lauten wie folgt:
       </p>
+
       <div className="grid grid-cols-6 text-[14px] text-black my-6">
         {/* Header */}
-        <div className="font-bold px-4 py-2 col-span-1">Request Type</div>
-        <div className="font-bold px-4 py-2 text-center">Received</div>
+        <div className="font-bold px-4 py-2 col-span-1">Anfragetyp</div>
+        <div className="font-bold px-4 py-2 text-center">Erhalten</div>
         <div className="font-bold px-4 py-2 text-center">
-          Complied with in Whole or in Part
+          Ganz oder teilweise erfüllt
         </div>
-        <div className="font-bold px-4 py-2 text-center">Denied</div>
+        <div className="font-bold px-4 py-2 text-center">Abgelehnt</div>
         <div className="font-bold px-4 py-2 text-center">
-          Median Days to Respond
+          Mittlere Antwortzeit (Tage)
         </div>
         <div className="font-bold px-4 py-2 text-center">
-          Mean Days to Respond
+          Durchschnittliche Antwortzeit (Tage)
         </div>
 
         {/* Row 1 */}
-        <div className="px-4 py-2">Requests to delete personal information</div>
+        <div className="px-4 py-2">
+          Anfragen zur Löschung personenbezogener Daten
+        </div>
         <div className="px-4 py-2 text-center">0</div>
         <div className="px-4 py-2 text-center">0</div>
         <div className="px-4 py-2 text-center">0</div>
@@ -1012,7 +1064,7 @@ export const Tab1 = () => {
 
         {/* Row 2 */}
         <div className="px-4 py-2">
-          Requests to know or access personal information
+          Anfragen zur Einsicht oder zum Zugriff auf personenbezogene Daten
         </div>
         <div className="px-4 py-2 text-center">0</div>
         <div className="px-4 py-2 text-center">0</div>
@@ -1022,8 +1074,8 @@ export const Tab1 = () => {
 
         {/* Row 3 */}
         <div className="px-4 py-2">
-          Requests to know what personal information was sold or shared and to
-          whom
+          Anfragen zur Offenlegung, ob personenbezogene Daten verkauft oder
+          weitergegeben wurden und an wen
         </div>
         <div className="px-4 py-2 text-center">0</div>
         <div className="px-4 py-2 text-center">0</div>
@@ -1033,7 +1085,8 @@ export const Tab1 = () => {
 
         {/* Row 4 */}
         <div className="px-4 py-2">
-          Requests to opt out of sale or sharing of personal information
+          Anfragen zum Widerspruch gegen den Verkauf oder die Weitergabe
+          personenbezogener Daten
         </div>
         <div className="px-4 py-2 text-center">0</div>
         <div className="px-4 py-2 text-center">0</div>
@@ -1043,8 +1096,8 @@ export const Tab1 = () => {
 
         {/* Row 5 */}
         <div className="px-4 py-2">
-          Requests to limit the use and disclosure of sensitive personal
-          information
+          Anfragen zur Einschränkung der Nutzung und Offenlegung sensibler
+          personenbezogener Daten
         </div>
         <div className="px-4 py-2 text-center">0</div>
         <div className="px-4 py-2 text-center">0</div>
@@ -1052,16 +1105,18 @@ export const Tab1 = () => {
         <div className="px-4 py-2 text-center">0</div>
         <div className="px-4 py-2 text-center">0</div>
       </div>
+
       <p className="text-[16px]/[24px] text-black">
-        <strong>Contacting us</strong>
+        <strong>Kontaktaufnahme</strong>
         <br />
         <br />
-        The Global Head of Privacy and Data Protection oversees compliance with
-        privacy and data protection at BlackRock. If you wish to exercise any of
-        your rights, or have questions concerning this notice, please contact:
+        Der Global Head of Privacy and Data Protection ist für die Einhaltung
+        der Datenschutzvorgaben bei BlackRock verantwortlich. Wenn Sie eines
+        Ihrer Rechte ausüben möchten oder Fragen zu dieser Mitteilung haben,
+        kontaktieren Sie bitte:
         <br />
         <br />
-        The Global Head of Privacy and Data Protection
+        Global Head of Privacy and Data Protection
         <br />
         BlackRock
         <br />
@@ -1071,7 +1126,7 @@ export const Tab1 = () => {
         <br />
         EC2N 2DL
         <br />
-        Email:{" "}
+        E-Mail:{" "}
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
@@ -1080,66 +1135,69 @@ export const Tab1 = () => {
         </a>
         <br />
         <br />
-        If you are a resident of certain U.S. states, you may also call us on +1
-        855 371 0019 or submit a request through our{" "}
-        <span className="underline">Contact Us</span> page.
+        Wenn Sie in bestimmten US-Bundesstaaten wohnen, können Sie uns auch
+        unter +1 855 371 0019 anrufen oder eine Anfrage über unsere{" "}
+        <span className="underline">Kontaktseite</span> einreichen.
         <br />
         <br />
-        <strong>Complaints</strong>
+        <strong>Beschwerden</strong>
         <br />
         <br />
-        If you have any concerns or complaints about the way your PI is
-        processed, please contact the Global Head of Privacy and Data Protection
-        at{" "}
+        Wenn Sie Bedenken oder Beschwerden hinsichtlich der Verarbeitung Ihrer
+        PI haben, kontaktieren Sie bitte den Global Head of Privacy and Data
+        Protection unter{" "}
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
         >
           GroupPrivacy@BlackRock.com
         </a>
-        . You may also have a right to complain to a data protection or other
-        competent authority with jurisdiction over privacy and data protection
-        law in the country you live or work, or in the country where you believe
-        an issue in relation to the processing of your PI has arisen.
+        . Sie haben auch das Recht, sich bei einer Datenschutzbehörde oder
+        anderen zuständigen Stelle in dem Land zu beschweren, in dem Sie leben
+        oder arbeiten, oder in dem Ihrer Meinung nach ein Verstoß im
+        Zusammenhang mit der Verarbeitung Ihrer PI stattgefunden hat.
         <br />
         <br />
-        Depending on the laws of your jurisdiction, you may also appeal our
-        decision related to your rights request where you believe we have not
-        reasonably fulfilled your request. To submit an appeal, please email{" "}
+        Abhängig von den Gesetzen Ihrer Region können Sie auch gegen unsere
+        Entscheidung zu einer Rechteanfrage Einspruch einlegen, wenn Sie der
+        Ansicht sind, dass wir Ihrer Anfrage nicht angemessen nachgekommen sind.
+        Um Einspruch einzulegen, senden Sie bitte eine E-Mail mit dem Betreff
+        „Appeal“ an{" "}
         <a
           href="mailto:GroupPrivacy@BlackRock.com"
           className="underline text-blue-600"
         >
           GroupPrivacy@BlackRock.com
-        </a>{" "}
-        with the subject “Appeal.”
+        </a>
       </p>
+
       <p className="text-[16px]/[24px] text-black">
-        <strong>Cookie Notice</strong>
+        <strong>Cookie-Hinweis</strong>
         <br />
         <br />
-        Please see our separate Cookie Notice.
+        Bitte beachten Sie unseren separaten Cookie-Hinweis.
         <br />
         <br />
-        <strong>Linked websites</strong>
+        <strong>Verlinkte Websites</strong>
         <br />
         <br />
-        This Privacy Notice is not applicable to third party websites that we do
-        not own or control, or to any third-party website where BlackRock
-        advertisements are displayed.
+        Dieser Datenschutzhinweis gilt nicht für Websites Dritter, die wir nicht
+        besitzen oder kontrollieren, oder für Websites Dritter, auf denen
+        Werbung von BlackRock erscheint.
         <br />
         <br />
-        <strong>Changes to this Privacy Notice</strong>
+        <strong>Änderungen an diesem Datenschutzhinweis</strong>
         <br />
         <br />
-        We may modify or amend this Privacy Notice from time to time and you are
-        advised to visit our website regularly to check for any amendments. Any
-        material changes will be communicated to you through an appropriate
-        channel, depending on how we normally communicate with you.
+        Wir können diesen Datenschutzhinweis von Zeit zu Zeit ändern oder
+        aktualisieren. Bitte besuchen Sie regelmäßig unsere Website, um sich
+        über etwaige Änderungen zu informieren. Wesentliche Änderungen werden
+        Ihnen über einen geeigneten Kanal mitgeteilt – je nachdem, wie wir
+        normalerweise mit Ihnen kommunizieren.
         <br />
         <br />
-        <sup>1</sup> Please note not all privacy laws define SPI, for example
-        Hong Kong, Singapore and Canada.
+        <sup>1</sup> Bitte beachten Sie, dass nicht alle Datenschutzgesetze SPI
+        definieren, z. B. in Hongkong, Singapur und Kanada.
       </p>
     </div>
   );

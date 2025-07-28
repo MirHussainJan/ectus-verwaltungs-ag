@@ -17,8 +17,8 @@ export const Footer = () => {
             <br />
             <br />
             <strong className="font-bold">Geschäftszeiten:</strong> <br />
-            Montag bis Samstag: <strong>10:00 – 19:00 Uhr</strong>{" "}
-            <br />
+            Montag bis Samstag: <strong>10:00 – 19:00 Uhr</strong> <br />
+            Samstag: <strong>10:00 - 15:00 Uhr</strong> <br />
             <br />
             <strong className="font-bold">Mittags Pause:</strong> <br />
             12:00 - 13:00 Uhr

@@ -12,20 +12,20 @@ const Impressum = () => {
                 <Link className='flex items-center gap-2 font-bold text-[#484848] text-[20px]/[150%]' href="/">
                     <BackArrow /> Startseite
                 </Link>
-                <div className='flex flex-col gap-4 lg:mt-8 mt-6 w-[240px]'>
+                <div className='flex flex-col gap-4 lg:mt-8 mt-6 w-[360px]'>
                     <h2 className='font-bold text-[32px]/[140%] lg:text-[40px]/[52px]%]'>Impressum</h2>
                     <p className='text-[18px]/[28px] text-[#626262]'>
                         SK Black Rock Financial GmbH
-                        Sandstraße 104
-                        40789 Monheim a. Rhein
+                        <br />Sandstraße 104
+                        <br />40789 Monheim a. Rhein
                         <br /><br />
                         Geschäftsführer: Mustafa Sizan
-                        Hauptsitz: Monheim
-                        Amtsgericht Düsseldorf
-                        HRB 102003
-                        DER1 101.HRB102003
+                        <br />Hauptsitz: Monheim
+                        <br />Amtsgericht Düsseldorf
+                        <br />HRB 102003
+                        <br />DER1 101.HRB102003
                         <br /><br />
-                        E-Mail: info@sk-blackrock
+                        E-Mail: info@sk-blackrock-financial.com
                     </p>
                 </div>
             </div>

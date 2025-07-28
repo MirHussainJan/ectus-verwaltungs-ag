@@ -13,16 +13,15 @@ export const Footer = () => {
         <div>
           <Logo className="w-[241px] h-[40px] mb-4" />
           <p className="lg:mb-[53px] text-[14px]/[20px]">
-            Telefon: +49 XXX XXX XXXX
+            Telefon: 0180546315
             <br />
             <br />
             <strong className="font-bold">Geschäftszeiten:</strong> <br />
-            Montag bis Samstag: <strong>10:00 – 21:00 Uhr</strong>{" "}
-            (Mitteleuropäische Sommerzeit, GMT+2)
+            Montag bis Samstag: <strong>10:00 – 19:00 Uhr</strong>{" "}
             <br />
             <br />
-            <strong className="font-bold">Pause:</strong> <br />
-            12:00 – 14:00 Uhr (Mitteleuropäische Sommerzeit, GMT+2)
+            <strong className="font-bold">Mittags Pause:</strong> <br />
+            12:00 - 13:00 Uhr
           </p>
         </div>
         <div className="w-[256px] mb-8">
@@ -30,10 +29,10 @@ export const Footer = () => {
             <strong>Kontakt</strong>
             <br />
             <br />
-            info@sk-blackrock
+            info@sk-blackrock-financial.com
             <br />
             <br />
-            +49 XXX XXX XXXX
+            0180546315
             <br />
             <br />
             Sandstraße 104 <br />

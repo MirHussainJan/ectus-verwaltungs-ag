@@ -17,7 +17,7 @@ const Impressum = () => {
                     <p className='text-[18px]/[28px] text-[#626262]'>
                         SK Black Rock Financial GmbH
                         <br />Sandstraße 104
-                        <br />40789 Monheim a. Rhein
+                        <br />02173 Monheim am Rhein
                         <br /><br />
                         Geschäftsführer: Mustafa Sizan
                         <br />Hauptsitz: Monheim

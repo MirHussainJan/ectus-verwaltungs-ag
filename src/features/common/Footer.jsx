@@ -20,8 +20,8 @@ export const Footer = () => {
             Montag bis Samstag: <strong>10:00 – 19:00 Uhr</strong> <br />
             Samstag: <strong>10:00 - 15:00 Uhr</strong> <br />
             <br />
-            <strong className="font-bold">Mittags Pause:</strong> <br />
-            12:00 - 13:00 Uhr
+            Mittags Pause: 
+             <strong> 12:00 - 13:00 Uhr</strong>
           </p>
         </div>
         <div className="w-[256px] mb-8">
@@ -36,7 +36,7 @@ export const Footer = () => {
             <br />
             <br />
             Sandstraße 104 <br />
-            40789 Monheim am Rhein
+            02173 Monheim am Rhein
           </p>
         </div>
       </div>

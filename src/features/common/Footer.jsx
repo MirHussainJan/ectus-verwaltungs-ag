@@ -17,11 +17,11 @@ export const Footer = () => {
             <br />
             <br />
             <strong className="font-bold">Geschäftszeiten:</strong> <br />
-            Montag bis Samstag: <strong>10:00 – 19:00 Uhr</strong> <br />
+            Montag bis Freitag: <strong>10:00 – 19:00 Uhr</strong> <br />
             Samstag: <strong>10:00 - 15:00 Uhr</strong> <br />
             <br />
-            Mittags Pause: 
-             <strong> 12:00 - 13:00 Uhr</strong>
+            Mittags Pause:
+            <strong> 12:00 - 13:00 Uhr</strong>
           </p>
         </div>
         <div className="w-[256px] mb-8">

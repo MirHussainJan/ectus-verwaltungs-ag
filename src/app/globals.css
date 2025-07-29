@@ -70,3 +70,20 @@ html {
   text-align: 14px;
   line-height: 150%;
 }
+
+/* Mantine Modal Styling */
+.mantine-Paper-root {
+  min-width: 600px;
+}
+
+.mantine-Modal-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #191919;
+}
+
+.mantine-Modal-close {
+  color: #262D33;
+  font-size: 24px;
+}

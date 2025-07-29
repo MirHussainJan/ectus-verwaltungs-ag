@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { MantineProvider } from '@mantine/core';
+import { Toaster } from 'sonner';
+import '@mantine/core/styles.css';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +26,7 @@ export default function RootLayout({ children }) {
       >
         <MantineProvider withGlobalStyles withNormalizeCSS>
           {children}
+          <Toaster position="bottom-right" />
         </MantineProvider>
       </body>
     </html>

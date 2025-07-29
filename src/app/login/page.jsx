@@ -17,9 +17,12 @@ import Signupbg from "../../assets/images/singup bg.png";
 import SignupIpad from "../../assets/images/SignupIpad.png";
 import Logo from "../../assets/icons/logo";
 import { useDisclosure } from "@mantine/hooks";
+import { useRouter } from "next/navigation";
+
 const Page = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const [resetEmail, setResetEmail] = useState('');
+  const router = useRouter();
   const form = useForm({
     initialValues: {
       email: "",
@@ -165,6 +168,7 @@ const Page = () => {
             <Button
               unstyled
               fullWidth
+              onClick={() => router.push("/login/admin")}
               className="!h-[50px] bg-white text-black !font-bold text-[16px]/[150%] transition-all duration-200 flex items-center justify-center border-[#E7E7E7] border-1 lg:absolute lg:top-6 lg:right-6 lg:p-[12px_24px] hover:bg-[#E7E7E7] cursor-pointer"
             >
               Admin Login

@@ -87,3 +87,14 @@ html {
   color: #262D33;
   font-size: 24px;
 }
+
+.admin .mantine-PasswordInput-label,
+.admin .mantine-TextInput-label {
+  color: #fff !important;
+}
+
+.admin .mantine-Input-input,
+.admin .mantine-PasswordInput-innerInput {
+  color: #fff !important;
+  background: transparent;
+}

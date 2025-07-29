@@ -73,7 +73,7 @@ html {
 
 /* Mantine Modal Styling */
 .mantine-Paper-root {
-  min-width: 600px;
+  min-width: 50vw;
 }
 
 .mantine-Modal-title {

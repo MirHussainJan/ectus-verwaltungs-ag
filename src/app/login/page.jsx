@@ -105,7 +105,7 @@ const Page = () => {
         </div>
       </Modal>
       <div className="flex flex-col md:flex-row items-center">
-        <Logo className="w-[241px] h-[40px] md:absolute md:top-14 md:left-14 z-50 md:text-white text-black static my-6 mt-14" />
+        <Logo className="w-[241px] h-[40px] md:absolute md:top-14 md:left-14 z-50 md:text-white text-black static my-6 mt-14 lg:m-0" />
         <div className="md:flex lg:w-[45.833%] hidden md:w-[50%] w-full h-screen">
           <Image
             src={Signupbg}

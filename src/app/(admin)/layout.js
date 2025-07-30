@@ -7,7 +7,9 @@ export default function StaticLayout({ children }) {
       <NavbarPortal admin />
       <div className="flex">
         <Sidebar />
-        {children}
+        <div className="lg:p-[36px] p-4 md:p-6 bg-[#F4F4F7] h-[calc(100dvh-104px)] w-full">
+          {children}
+        </div>
       </div>
     </>
 

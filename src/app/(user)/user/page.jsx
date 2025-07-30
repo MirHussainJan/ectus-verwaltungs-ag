@@ -4,7 +4,7 @@ import ProfilePic from "../../../assets/images/profile.jpg"
 import EditPen from "../../../assets/icons/EditPen"
 const page = () => {
   return (
-    <div className="py-4 md:py-9 px-4 md:px-6 lg:px-[4.167vw] bg-[#F4F4F7] h-[calc(100dvh-104px)]">
+    <div className="py-4 md:py-9 px-4 md:px-6 lg:px-[4.167vw]">
       <h2 className="mb-4 font-bold md:text-[24px]/[150%] text-[20px]/[150%]">
         Welcome back, Rainer Yaeger!
       </h2>

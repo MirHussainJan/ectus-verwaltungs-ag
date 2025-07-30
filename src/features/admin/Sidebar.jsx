@@ -23,9 +23,7 @@ const Sidebar = () => {
         {options.map(({ name, route, icon: Icon }, index) => {
           const fullPath = `${BASE}${route}`;
           const isActive =
-            // pathname === fullPath || pathname.startsWith(`${fullPath}/`);
-            index === 0 ? true : false;
-
+            pathname === fullPath || pathname.startsWith(`${fullPath}/`);
           const colorClass = isActive ? "text-white" : "text-[#ACB5BB]";
           return (
             <Link

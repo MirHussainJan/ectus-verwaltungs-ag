@@ -17,7 +17,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-[250px] h-[calc(100dvh-104px)] bg-black border-t border-[#545454] p-4">
+    <div className="w-[250px] h-[calc(100dvh-104px)] bg-black border-t border-[#545454] p-4 hidden md:block">
       <p className="text-[#6C7278] text-[12px]/[150%] mb-3">MAIN MENU</p>
       <div className="flex flex-col gap-2">
         {options.map(({ name, route, icon: Icon }, index) => {

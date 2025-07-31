@@ -2,6 +2,7 @@
 import React, { useMemo, useState } from "react";
 import { Pagination } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
+import MentineMenu from "@/features/common/MentineMenu";
 
 const UserList = ({ data }) => {
   const [selected, setSelected] = useState(new Set());
@@ -29,6 +30,24 @@ const UserList = ({ data }) => {
       return next;
     });
   };
+    const handleBulkDelete = () => {
+      const ids = Array.from(selected);
+      console.log("Delete selected users:", ids);
+    };
+     const handleEdit = (id) => console.log("Edit user:", id);
+     const handleRevealPassword = (id) =>
+       console.log("Reveal password for:", id);
+     const handleDelete = (id) => console.log("Delete user:", id);
+    //  Menu Items
+    const bulkMenuItems = [
+      { label: "Delete selected users", onClick: handleBulkDelete },
+    ];
+    const rowMenuItems = (id) => [
+      { label: "Delete User", onClick: () => handleDelete(id) },
+      { label: "Edit User", onClick: () => handleEdit(id) },
+      { label: "Reveal Password", onClick: () => handleRevealPassword(id) },
+    ];
+
 
   return (
     <div className="w-full overflow-hidden rounded-md border border-[#E2E8F0] bg-white">
@@ -59,13 +78,7 @@ const UserList = ({ data }) => {
           <div className="col-span-1">Total Value</div>
           <div className="col-span-1">
             <div className="flex justify-center">
-              <button
-                type="button"
-                className="h-8 w-8 rounded-md hover:bg-[#E2E8F0] flex items-center justify-center cursor-pointer"
-                onClick={() => console.log("Actions for", selected)}
-              >
-                <span className="text-xl leading-none">⋯</span>
-              </button>
+              <MentineMenu items={bulkMenuItems} ariaLabel="Bulk actions" />
             </div>
           </div>
         </div>
@@ -84,13 +97,7 @@ const UserList = ({ data }) => {
             />
           </div>
           <div className="flex justify-center">
-            <button
-              type="button"
-              className="h-8 w-8 rounded-md hover:bg-[#E2E8F0] flex items-center justify-center cursor-pointer"
-              onClick={() => console.log("Actions for", selected)}
-            >
-              <span className="text-xl leading-none">⋯</span>
-            </button>
+            <MentineMenu items={bulkMenuItems} ariaLabel="Bulk actions" />
           </div>
         </div>
       )}
@@ -117,14 +124,10 @@ const UserList = ({ data }) => {
                       </span>
                     </label>
 
-                    <button
-                      type="button"
-                      className="h-8 w-8 rounded-md hover:bg-[#F1F5F9] flex items-center justify-center"
-                      onClick={() => console.log("Actions for", row._id)}
-                      aria-label={`Actions for ${row.Name}`}
-                    >
-                      <span className="text-xl leading-none">⋯</span>
-                    </button>
+                    <MentineMenu
+                      items={rowMenuItems(row._id)}
+                      ariaLabel={`Actions for ${row.Name}`}
+                    />
                   </div>
                   <hr className="border-1 border-[#E2E8F0] mb-4" />
 
@@ -193,14 +196,10 @@ const UserList = ({ data }) => {
                   <div className="col-span-1 font-medium">{row.TotalValue}</div>
                   <div className="col-span-1">
                     <div className="flex justify-center">
-                      <button
-                        type="button"
-                        className="h-8 w-8 rounded-md hover:bg-[#F1F5F9] flex items-center justify-center cursor-pointer"
-                        onClick={() => console.log("Actions for", row._id)}
-                        aria-label={`Actions for ${row.Name}`}
-                      >
-                        <span className="text-xl leading-none">⋯</span>
-                      </button>
+                      <MentineMenu
+                        items={rowMenuItems(row._id)}
+                        ariaLabel={`Actions for ${row.Name}`}
+                      />
                     </div>
                   </div>
                 </div>

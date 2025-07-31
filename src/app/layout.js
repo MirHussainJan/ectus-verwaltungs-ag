@@ -1,9 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { MantineProvider } from '@mantine/core';
+import { DatesProvider } from '@mantine/dates';
 import { Toaster } from 'sonner';
 import '@mantine/core/styles.css';
-
+import '@mantine/dates/styles.css';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,7 +26,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <MantineProvider withGlobalStyles withNormalizeCSS>
-          {children}
+          <DatesProvider settings={{ locale: 'en', firstDayOfWeek: 0 }}>
+            {children}
+          </DatesProvider>
           <Toaster position="bottom-right" />
         </MantineProvider>
       </body>

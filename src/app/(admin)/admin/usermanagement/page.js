@@ -1,6 +1,11 @@
+"use client"
 import React from 'react'
 import Header from '@/features/admin/Header'
 import UserList from '@/features/admin/UserManagement/UserList'
+import { useDisclosure } from "@mantine/hooks";
+import { Button } from "@mantine/core";
+import AddNewUserModal from '@/features/admin/UserManagement/AddNewUserModal';
+
 const dummyData = [
     { _id: 1, Name: "Alice Johnson", Email: "alice.johnson@email.com", Gender: "Female", Country: "USA", KlarnaShares: 12, TotalValue: "€ 1,800" },
     { _id: 2, Name: "Bob Smith", Email: "bob.smith@email.com", Gender: "Male", Country: "Germany", KlarnaShares: 24, TotalValue: "€ 3,600" },
@@ -15,9 +20,11 @@ const dummyData = [
 ];
 
 const page = () => {
+    const [opened, { open, close }] = useDisclosure(false);
     return (
         <div>
-            <Header />
+            <AddNewUserModal opened={opened} onClose={close} />
+            <Header openModal={open} />
             <UserList data={dummyData} />
         </div>
     )

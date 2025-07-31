@@ -6,7 +6,7 @@ const Header = ({
   title = "User Management",
   initialSearch = "",
   onSearchChange,
-  onAddUser,
+  openModal,
 }) => {
   const [query, setQuery] = useState(initialSearch);
 
@@ -17,7 +17,7 @@ const Header = ({
   };
 
   const handleAddUser = () => {
-    onAddUser?.();
+    openModal();
   };
 
   return (
@@ -46,10 +46,10 @@ const Header = ({
           unstyled
           type="button"
           onClick={handleAddUser}
-          className="h-[50px] w-[117px] rounded bg-black text-white font-bold
+          className="h-[50px] w-[140px] rounded bg-black text-white font-bold
                      text-[14px] md:text-[16px] leading-[150%]
                      hover:bg-[#1a1a1a] transition-colors duration-200
-                     flex items-center gap-2 justify-center"
+                     flex items-center gap-2 justify-center cursor-pointer"
         >
           Add User
         </Button>

@@ -123,3 +123,18 @@ html {
   color: #000000;
   background: none;
 }
+
+/* addNewUserModal */
+.mantine-Modal-title {
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 130% !important;
+  color: #191919 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .mantine-Modal-title {
+    font-size: 20px !important;
+  }
+
+}

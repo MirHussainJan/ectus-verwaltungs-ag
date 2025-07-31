@@ -36,7 +36,7 @@ export default function Page() {
     };
 
     return (
-        <div className="w-[200px]">
+        <div className="">
             <h2 className="mb-5 font-bold md:text-[24px]/[150%] text-[20px]/[150%]">
                 Settings
             </h2>
@@ -74,13 +74,7 @@ export default function Page() {
                                     input: "h-[48px]",
                                 }}
                                 {...form.getInputProps("currentPassword")}
-                                error={form.errors.currentPassword}
                             />
-                            {form.errors.currentPassword ? (
-                                <p className="mt-1 text-[12px] text-red-600">
-                                    {form.errors.currentPassword}
-                                </p>
-                            ) : null}
                         </div>
 
                         <div>
@@ -93,13 +87,7 @@ export default function Page() {
                                     input: "h-[48px]",
                                 }}
                                 {...form.getInputProps("newPassword")}
-                                error={form.errors.newPassword}
                             />
-                            {form.errors.newPassword ? (
-                                <p className="mt-1 text-[12px] text-red-600">
-                                    {form.errors.newPassword}
-                                </p>
-                            ) : null}
                         </div>
                         <button
                             type="submit"

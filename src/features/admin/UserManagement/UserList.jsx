@@ -4,7 +4,7 @@ import { Pagination } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import MentineMenu from "@/features/common/MentineMenu";
 
-const UserList = ({ data }) => {
+const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
   const [selected, setSelected] = useState(new Set());
   const allIds = useMemo(() => data.map((d) => d._id), []);
   const allSelected = selected.size === allIds.length && allIds.length > 0;
@@ -36,7 +36,10 @@ const UserList = ({ data }) => {
     };
      const handleEdit = (id) => console.log("Edit user:", id);
      const handleRevealPassword = (id) =>
-       console.log("Reveal password for:", id);
+       {
+         setPassword(id);
+         openPassword();
+       };
      const handleDelete = (id) => console.log("Delete user:", id);
     //  Menu Items
     const bulkMenuItems = [

@@ -13,13 +13,13 @@ const NavbarPortal = ({admin = false}) => {
       )}
       <div
         className={`flex items-center justify-center size-[48px] rounded-full bg-[#FFFFFF29] cursor-pointer ${
-          admin && "hidden md:block"
+          admin && "hidden md:flex"
         }`}
       >
         <Logout className={`text-white size-[24px]`} />
       </div>
       {admin && (
-        <div className="flex items-center justify-center size-[48px] cursor-pointer">
+        <div className="md:hidden flex items-center justify-center size-[48px] cursor-pointer">
           <BurgerIcon className={`text-white size-[24px]`} />
         </div>
       )}

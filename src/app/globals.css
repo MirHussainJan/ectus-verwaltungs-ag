@@ -98,3 +98,28 @@ html {
   color: #fff !important;
   background: transparent;
 }
+
+/* Mantine Pagination */
+.pagination .mantine-Group-root {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 32px 0;
+}
+
+.pagination .mantine-Pagination-control {
+  width: 48px;
+  height: 48px;
+}
+
+.pagination .mantine-UnstyledButton-root {
+  color: #94A3B8;
+  border: 1px solid #E2E8F0;
+}
+
+.pagination .mantine-Pagination-control:first-of-type:not(:disabled),
+.pagination .mantine-Pagination-control:last-of-type:not(:disabled),
+.pagination .mantine-UnstyledButton-root[data-active="true"] {
+  color: #000000;
+  background: none;
+}

@@ -54,7 +54,7 @@ export default function AdminLoginPage() {
         onClick={() => router.push("/login")}
         className="hidden lg:flex items-center justify-center
                    absolute top-6 right-6 z-10
-                   px-6 py-3 border border-[#E7E7E7] text-white font-bold
+                   px-6 py-3 border border-[#E7E7E7] bg-black text-white font-bold
                    hover:bg-[#E7E7E7] hover:text-black transition-all duration-200
                    rounded"
       >

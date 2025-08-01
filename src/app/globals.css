@@ -137,4 +137,22 @@ html {
     font-size: 20px !important;
   }
 
+  .pagination .mantine-Pagination-control {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  .pagination .mantine-Pagination-control {
+    width: 32px;
+    height: 32px;
+  }
+
+}
+
+.mantine-Modal-content {
+  min-width: 70vw;
 }

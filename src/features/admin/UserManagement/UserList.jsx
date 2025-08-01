@@ -86,7 +86,7 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
           </div>
         </div>
       ) : (
-        <div className="flex justify-between px-4 pt-4">
+        <div className="flex justify-between px-4 pt-2">
           <div className="flex items-center">
             <input
               type="checkbox"
@@ -105,7 +105,7 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
         </div>
       )}
       {/* Rows */}
-      <div className="overflow-y-auto lg:max-h-[calc(100dvh-420px)] md:max-h-[calc(100dvh-400px)]">
+      <div className="overflow-y-auto lg:max-h-[calc(100dvh-420px)] md:max-h-[calc(100dvh-400px)] max-h-[calc(100dvh-480px)]">
         {isTabletOrMobile ? (
           <div className="grid md:grid-cols-2 gap-4 p-4">
             {data.map((row, idx) => {
@@ -113,7 +113,7 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
               return (
                 <div key={row._id} className="border border-[#F1F5F9] bg-white">
                   {/* Header: checkbox + name (left), actions (right) */}
-                  <div className="flex items-start justify-between p-4">
+                  <div className="flex md:items-start justify-between items-center px-4 py-2">
                     <label className="flex items-center gap-2 cursor-pointer">
                       <input
                         type="checkbox"
@@ -135,7 +135,7 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
                   <hr className="border-1 border-[#E2E8F0] mb-4" />
 
                   {/* Body: title on left, value on right (justify-between) */}
-                  <div className="px-4 pb-4 text-[14px] space-y-2">
+                  <div className="px-4 pb-4 text-[14px] flex flex-col gap-2">
                     <div className="flex items-center justify-between">
                       <span className="text-[#64748B]">Email</span>
                       <span className="text-right text-[#334155] break-all">
@@ -216,7 +216,9 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
         <Pagination
           total={data.length}
           value={filter.page}
-          onChange={(set) => setFilter((prev) => ({ ...prev, page: set }))}
+          onChange={(page) => setFilter((prev) => ({ ...prev, page }))}
+          siblings={0} 
+          boundaries={1}
           mt="sm"
         />
       </div>

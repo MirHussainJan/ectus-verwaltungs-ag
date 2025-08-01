@@ -13,3 +13,13 @@ export const useGetUsersList = (filters) =>
         },
         "Failed to fetch user list"
     );
+// /** -------------------------------
+//  * ➕ Add User
+//  ---------------------------------- */
+export const useAddNewUser = (onSuccessCallback) =>
+    useMutationWithToast({
+        mutationFn: userManagementAPIs.addNewUser,
+        successMsg: "User added successfully!",
+        errorMsg: "Could not add user",
+        onSuccess: onSuccessCallback,
+    });

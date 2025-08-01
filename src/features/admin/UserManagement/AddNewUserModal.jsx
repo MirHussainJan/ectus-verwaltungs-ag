@@ -12,8 +12,11 @@ import {
 import { DateInput } from "@mantine/dates";
 import { useForm } from "@mantine/form";
 import COUNTRIES from "./CountryList";
+import { useQueryClient } from "@tanstack/react-query";
+import LoadingBackdrop  from "@/features/common/LoadingBackdrop";
+import { useAddNewUser } from "@/hooks/admin/userManagement";
 
-const AddNewUserModal = ({ opened, onClose, onSubmit }) => {
+const AddNewUserModal = ({ opened, onClose }) => {
   const form = useForm({
     initialValues: {
       firstName: "",
@@ -47,15 +50,24 @@ const AddNewUserModal = ({ opened, onClose, onSubmit }) => {
         v.length >= 8 ? null : "Password must be at least 8 characters",
     },
   });
-
+  const { mutate, isPending } = useAddNewUser(() => {
+    onClose();
+    form.reset();
+    queryClient.invalidateQueries(["usersList"]);
+  });
+  const queryClient = useQueryClient();
   const handleSubmit = (values) => {
-    if (onSubmit) onSubmit(values);
-    else console.log("Add user:", values);
+    mutate(values);
   };
 
   return (
-    <Modal opened={opened} onClose={onClose} title="Add New User" centered>
-      <form onSubmit={form.onSubmit(handleSubmit)} className="p-4 gap-4 grid md:grid-cols-2">
+    <>
+      {isPending && <LoadingBackdrop />}
+      <Modal opened={opened} onClose={onClose} title="Add New User" centered>
+        <form
+          onSubmit={form.onSubmit(handleSubmit)}
+          className="p-4 gap-4 grid md:grid-cols-2"
+        >
           <TextInput
             label="First Name"
             placeholder="Enter First Name"
@@ -114,14 +126,14 @@ const AddNewUserModal = ({ opened, onClose, onSubmit }) => {
             {...form.getInputProps("password")}
           />
           <Button
-          unstyled
+            unstyled
             type="submit"
             className="h-[50px] bg-black hover:bg-black/90 text-white"
           >
             Save
           </Button>
           <Button
-          unstyled
+            unstyled
             type="button"
             variant="outline"
             className="h-[50px] bg-transparent text-[#111827] border border-[#E7E7E7]"
@@ -129,8 +141,9 @@ const AddNewUserModal = ({ opened, onClose, onSubmit }) => {
           >
             Cancel
           </Button>
-      </form>
-    </Modal>
+        </form>
+      </Modal>
+    </>
   );
 };
 

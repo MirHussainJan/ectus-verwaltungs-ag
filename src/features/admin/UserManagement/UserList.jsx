@@ -105,7 +105,6 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
         {isTabletOrMobile ? (
           <div className="grid md:grid-cols-2 gap-4 p-4">
             {data?.users.map((row, idx) => {
-              console.log(row);
               const isChecked = selected.has(row._id);
               return (
                 <div key={row._id} className="border border-[#F1F5F9] bg-white">

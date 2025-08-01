@@ -4,15 +4,11 @@ import { Pagination } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import MentineMenu from "@/features/common/MentineMenu";
 
-const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
+const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, filter }) => {
   const [selected, setSelected] = useState(new Set());
-  const allIds = useMemo(() => data.map((d) => d._id), []);
-  const allSelected = selected.size === allIds.length && allIds.length > 0;
+  const allIds = useMemo(() => data?.users.map((d) => d._id), []);
+  const allSelected = selected.size === allIds?.length && allIds.length > 0;
   const isIndeterminate = selected.size > 0 && !allSelected;
-  const [filter, setFilter] = useState({
-    page: 1,
-    limit: 10,
-  });
   const isTabletOrMobile = useMediaQuery("(max-width: 1023px)", undefined, {
     getInitialValueInEffect: true, 
   });
@@ -108,7 +104,8 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
       <div className="overflow-y-auto lg:max-h-[calc(100dvh-420px)] md:max-h-[calc(100dvh-400px)] max-h-[calc(100dvh-480px)]">
         {isTabletOrMobile ? (
           <div className="grid md:grid-cols-2 gap-4 p-4">
-            {data.map((row, idx) => {
+            {data?.users.map((row, idx) => {
+              console.log(row);
               const isChecked = selected.has(row._id);
               return (
                 <div key={row._id} className="border border-[#F1F5F9] bg-white">
@@ -120,16 +117,16 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
                         className="size-4 accent-black"
                         checked={isChecked}
                         onChange={() => toggleOne(row._id)}
-                        aria-label={`Select ${row.Name}`}
+                        aria-label={`Select ${row.firstName} ${row.lastName}`}
                       />
                       <span className="font-semibold text-[15px]">
-                        {row.Name}
+                        {row.firstName} {row.lastName}
                       </span>
                     </label>
 
                     <MentineMenu
                       items={rowMenuItems(row._id)}
-                      ariaLabel={`Actions for ${row.Name}`}
+                      ariaLabel={`Actions for ${row.firstName} ${row.lastName}`}
                     />
                   </div>
                   <hr className="border-1 border-[#E2E8F0] mb-4" />
@@ -139,28 +136,30 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
                     <div className="flex items-center justify-between">
                       <span className="text-[#64748B]">Email</span>
                       <span className="text-right text-[#334155] break-all">
-                        {row.Email}
+                        {row.email}
                       </span>
                     </div>
 
                     <div className="flex items-center justify-between">
                       <span className="text-[#64748B]">Gender</span>
-                      <span className="font-medium">{row.Gender}</span>
+                      <span className="font-medium">{row.gender}</span>
                     </div>
 
                     <div className="flex items-center justify-between">
                       <span className="text-[#64748B]">Country</span>
-                      <span className="font-semibold">{row.Country}</span>
+                      <span className="font-semibold">{row.country}</span>
                     </div>
 
                     <div className="flex items-center justify-between">
                       <span className="text-[#64748B]">Klarna shares</span>
-                      <span className="tabular-nums">{row.KlarnaShares}</span>
+                      <span className="tabular-nums">{row.shares}</span>
                     </div>
 
                     <div className="flex items-center justify-between">
                       <span className="text-[#64748B]">Total Value</span>
-                      <span className="font-semibold">{row.TotalValue}</span>
+                      <span className="font-semibold">
+                        {row.totalShareValue}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -169,7 +168,7 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
           </div>
         ) : (
           <div>
-            {data.map((row, idx) => {
+            {data?.users.map((row, idx) => {
               const isChecked = selected.has(row._id);
               return (
                 <div
@@ -184,24 +183,26 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
                       className="size-4 accent-black"
                       checked={isChecked}
                       onChange={() => toggleOne(row._id)}
-                      aria-label={`Select ${row.Name}`}
+                      aria-label={`Select ${row.firstName} ${row.lastName}`}
                     />
                   </div>
-                  <div className="col-span-2 truncate">{row.Name}</div>
+                  <div className="col-span-2 truncate">
+                    {row.firstName} {row.lastName}
+                  </div>
                   <div className="col-span-2 truncate text-[#334155]">
-                    {row.Email}
+                    {row.email}
                   </div>
-                  <div className="col-span-1">{row.Gender}</div>
-                  <div className="col-span-1">{row.Country}</div>
-                  <div className="col-span-1 tabular-nums">
-                    {row.KlarnaShares}
+                  <div className="col-span-1">{row.gender}</div>
+                  <div className="col-span-1">{row.country}</div>
+                  <div className="col-span-1 tabular-nums">{row.shares}</div>
+                  <div className="col-span-1 font-medium">
+                    {row.totalShareValue}
                   </div>
-                  <div className="col-span-1 font-medium">{row.TotalValue}</div>
                   <div className="col-span-1">
                     <div className="flex justify-center">
                       <MentineMenu
                         items={rowMenuItems(row._id)}
-                        ariaLabel={`Actions for ${row.Name}`}
+                        ariaLabel={`Actions for ${row.firstName} ${row.lastName}`}
                       />
                     </div>
                   </div>
@@ -214,10 +215,10 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword }) => {
       <hr className="mt-4 mb-8 border-1 border-[#F1F5F9]" />
       <div className="pagination">
         <Pagination
-          total={data.length}
+          total={data?.totalPages}
           value={filter.page}
           onChange={(page) => setFilter((prev) => ({ ...prev, page }))}
-          siblings={0} 
+          siblings={0}
           boundaries={1}
           mt="sm"
         />

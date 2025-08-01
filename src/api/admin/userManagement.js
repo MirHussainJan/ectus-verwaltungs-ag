@@ -27,4 +27,17 @@ export const userManagementAPIs = {
             throw new Error(error?.response?.data?.errors || "Failed to create user. Please try again.");
         }
     },
+    deleteUser: async (userIds) => {
+        try {
+            const response = await axiosInstance.patch("/admin/deleteUser/",
+                {
+                    userIds
+                }
+            )
+            return response.data;
+        } catch (error) {
+            console.log("error", error);
+            throw new Error(error?.response?.data?.errors || "Failed to delete user. Please try again.");
+        }
+    },
 };

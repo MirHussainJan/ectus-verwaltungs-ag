@@ -3,7 +3,9 @@ import React, { useMemo, useState } from "react";
 import { Pagination } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import MentineMenu from "@/features/common/MentineMenu";
-
+import {useDeleteUser} from "@/hooks/admin/userManagement";
+import { useQueryClient } from "@tanstack/react-query";
+import LoadingBackdrop from "@/features/common/LoadingBackdrop";
 const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, filter }) => {
   const [selected, setSelected] = useState(new Set());
   const allIds = useMemo(() => data?.users.map((d) => d._id), []);
@@ -12,7 +14,10 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
   const isTabletOrMobile = useMediaQuery("(max-width: 1023px)", undefined, {
     getInitialValueInEffect: true, 
   });
-
+  const queryClient = useQueryClient();
+  const { mutate, isPending } = useDeleteUser(() => {
+    queryClient.invalidateQueries(["usersList"]);
+  });
   const toggleAll = (checked) => {
     if (checked) setSelected(new Set(allIds));
     else setSelected(new Set());
@@ -28,7 +33,7 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
   };
     const handleBulkDelete = () => {
       const ids = Array.from(selected);
-      console.log("Delete selected users:", ids);
+      mutate(ids);
     };
      const handleEdit = (id) => console.log("Edit user:", id);
      const handleRevealPassword = (id) =>
@@ -36,7 +41,9 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
          setPassword(id);
          openPassword();
        };
-     const handleDelete = (id) => console.log("Delete user:", id);
+     const handleDelete = (id) => {
+      mutate([id]);
+     };
     //  Menu Items
     const bulkMenuItems = [
       { label: "Delete selected users", onClick: handleBulkDelete },
@@ -49,68 +56,139 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
 
 
   return (
-    <div className="w-full overflow-hidden rounded-md border border-[#E2E8F0] bg-white">
-      {/* Header */}
-      {!isTabletOrMobile ? (
-        <div
-          className="grid grid-cols-10 items-center h-[64px] px-4 text-[#94A3B8] text-[14px] font-semibold bg-[#F4F4F7]"
-          // Indeterminate styling for the "select all" checkbox (visual cue)
-        >
-          <div className="col-span-1 flex items-center">
-            <input
-              type="checkbox"
-              className="size-4 accent-black"
-              checked={allSelected}
-              onChange={(e) => toggleAll(e.target.checked)}
-              ref={(el) => {
-                if (el) el.indeterminate = isIndeterminate;
-              }}
-              aria-label="Select all rows"
-            />
-          </div>
+    <>
+    {isPending && <LoadingBackdrop />}
+      <div className="w-full overflow-hidden rounded-md border border-[#E2E8F0] bg-white">
+        {/* Header */}
+        {!isTabletOrMobile ? (
+          <div
+            className="grid grid-cols-10 items-center h-[64px] px-4 text-[#94A3B8] text-[14px] font-semibold bg-[#F4F4F7]"
+            // Indeterminate styling for the "select all" checkbox (visual cue)
+          >
+            <div className="col-span-1 flex items-center">
+              <input
+                type="checkbox"
+                className="size-4 accent-black"
+                checked={allSelected}
+                onChange={(e) => toggleAll(e.target.checked)}
+                ref={(el) => {
+                  if (el) el.indeterminate = isIndeterminate;
+                }}
+                aria-label="Select all rows"
+              />
+            </div>
 
-          <div className="col-span-2">Name</div>
-          <div className="col-span-2">Email</div>
-          <div className="col-span-1">Gender</div>
-          <div className="col-span-1">Country</div>
-          <div className="col-span-1">Klarna Shares</div>
-          <div className="col-span-1">Total Value</div>
-          <div className="col-span-1">
+            <div className="col-span-2">Name</div>
+            <div className="col-span-2">Email</div>
+            <div className="col-span-1">Gender</div>
+            <div className="col-span-1">Country</div>
+            <div className="col-span-1">Klarna Shares</div>
+            <div className="col-span-1">Total Value</div>
+            <div className="col-span-1">
+              <div className="flex justify-center">
+                <MentineMenu items={bulkMenuItems} ariaLabel="Bulk actions" />
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="flex justify-between px-4 pt-2">
+            <div className="flex items-center">
+              <input
+                type="checkbox"
+                className="size-4 accent-black"
+                checked={allSelected}
+                onChange={(e) => toggleAll(e.target.checked)}
+                ref={(el) => {
+                  if (el) el.indeterminate = isIndeterminate;
+                }}
+                aria-label="Select all rows"
+              />
+            </div>
             <div className="flex justify-center">
               <MentineMenu items={bulkMenuItems} ariaLabel="Bulk actions" />
             </div>
           </div>
-        </div>
-      ) : (
-        <div className="flex justify-between px-4 pt-2">
-          <div className="flex items-center">
-            <input
-              type="checkbox"
-              className="size-4 accent-black"
-              checked={allSelected}
-              onChange={(e) => toggleAll(e.target.checked)}
-              ref={(el) => {
-                if (el) el.indeterminate = isIndeterminate;
-              }}
-              aria-label="Select all rows"
-            />
-          </div>
-          <div className="flex justify-center">
-            <MentineMenu items={bulkMenuItems} ariaLabel="Bulk actions" />
-          </div>
-        </div>
-      )}
-      {/* Rows */}
-      <div className="overflow-y-auto lg:max-h-[calc(100dvh-420px)] md:max-h-[calc(100dvh-400px)] max-h-[calc(100dvh-480px)]">
-        {isTabletOrMobile ? (
-          <div className="grid md:grid-cols-2 gap-4 p-4">
-            {data?.users.map((row, idx) => {
-              const isChecked = selected.has(row._id);
-              return (
-                <div key={row._id} className="border border-[#F1F5F9] bg-white">
-                  {/* Header: checkbox + name (left), actions (right) */}
-                  <div className="flex md:items-start justify-between items-center px-4 py-2">
-                    <label className="flex items-center gap-2 cursor-pointer">
+        )}
+        {/* Rows */}
+        <div className="overflow-y-auto lg:max-h-[calc(100dvh-420px)] md:max-h-[calc(100dvh-400px)] max-h-[calc(100dvh-480px)]">
+          {isTabletOrMobile ? (
+            <div className="grid md:grid-cols-2 gap-4 p-4">
+              {data?.users.map((row, idx) => {
+                const isChecked = selected.has(row._id);
+                return (
+                  <div
+                    key={row._id}
+                    className="border border-[#F1F5F9] bg-white"
+                  >
+                    {/* Header: checkbox + name (left), actions (right) */}
+                    <div className="flex md:items-start justify-between items-center px-4 py-2">
+                      <label className="flex items-center gap-2 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          className="size-4 accent-black"
+                          checked={isChecked}
+                          onChange={() => toggleOne(row._id)}
+                          aria-label={`Select ${row.firstName} ${row.lastName}`}
+                        />
+                        <span className="font-semibold text-[15px]">
+                          {row.firstName} {row.lastName}
+                        </span>
+                      </label>
+
+                      <MentineMenu
+                        items={rowMenuItems(row._id)}
+                        ariaLabel={`Actions for ${row.firstName} ${row.lastName}`}
+                      />
+                    </div>
+                    <hr className="border-1 border-[#E2E8F0] mb-4" />
+
+                    {/* Body: title on left, value on right (justify-between) */}
+                    <div className="px-4 pb-4 text-[14px] flex flex-col gap-2">
+                      <div className="flex items-center justify-between">
+                        <span className="text-[#64748B]">Email</span>
+                        <span className="text-right text-[#334155] break-all">
+                          {row.email}
+                        </span>
+                      </div>
+
+                      <div className="flex items-center justify-between">
+                        <span className="text-[#64748B]">Gender</span>
+                        <span className="font-medium">{row.gender}</span>
+                      </div>
+
+                      <div className="flex items-center justify-between">
+                        <span className="text-[#64748B]">Country</span>
+                        <span className="font-semibold">{row.country}</span>
+                      </div>
+
+                      <div className="flex items-center justify-between">
+                        <span className="text-[#64748B]">Klarna shares</span>
+                        <span className="tabular-nums">{row.shares}</span>
+                      </div>
+
+                      <div className="flex items-center justify-between">
+                        <span className="text-[#64748B]">Total Value</span>
+                        <span className="font-semibold">
+                          {row.totalShareValue}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <div>
+              {data?.users.map((row, idx) => {
+                const isChecked = selected.has(row._id);
+                return (
+                  <div
+                    key={row._id}
+                    className={`grid grid-cols-10 items-center px-4 h-[64px] text-[14px] ${
+                      idx !== data.length - 1 ? "border-b border-[#E2E8F0]" : ""
+                    } hover:bg-[#F8FAFC]`}
+                  >
+                    <div className="col-span-1 flex items-center">
                       <input
                         type="checkbox"
                         className="size-4 accent-black"
@@ -118,111 +196,46 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
                         onChange={() => toggleOne(row._id)}
                         aria-label={`Select ${row.firstName} ${row.lastName}`}
                       />
-                      <span className="font-semibold text-[15px]">
-                        {row.firstName} {row.lastName}
-                      </span>
-                    </label>
-
-                    <MentineMenu
-                      items={rowMenuItems(row._id)}
-                      ariaLabel={`Actions for ${row.firstName} ${row.lastName}`}
-                    />
-                  </div>
-                  <hr className="border-1 border-[#E2E8F0] mb-4" />
-
-                  {/* Body: title on left, value on right (justify-between) */}
-                  <div className="px-4 pb-4 text-[14px] flex flex-col gap-2">
-                    <div className="flex items-center justify-between">
-                      <span className="text-[#64748B]">Email</span>
-                      <span className="text-right text-[#334155] break-all">
-                        {row.email}
-                      </span>
                     </div>
-
-                    <div className="flex items-center justify-between">
-                      <span className="text-[#64748B]">Gender</span>
-                      <span className="font-medium">{row.gender}</span>
+                    <div className="col-span-2 truncate">
+                      {row.firstName} {row.lastName}
                     </div>
-
-                    <div className="flex items-center justify-between">
-                      <span className="text-[#64748B]">Country</span>
-                      <span className="font-semibold">{row.country}</span>
+                    <div className="col-span-2 truncate text-[#334155]">
+                      {row.email}
                     </div>
-
-                    <div className="flex items-center justify-between">
-                      <span className="text-[#64748B]">Klarna shares</span>
-                      <span className="tabular-nums">{row.shares}</span>
+                    <div className="col-span-1">{row.gender}</div>
+                    <div className="col-span-1">{row.country}</div>
+                    <div className="col-span-1 tabular-nums">{row.shares}</div>
+                    <div className="col-span-1 font-medium">
+                      {row.totalShareValue}
                     </div>
-
-                    <div className="flex items-center justify-between">
-                      <span className="text-[#64748B]">Total Value</span>
-                      <span className="font-semibold">
-                        {row.totalShareValue}
-                      </span>
+                    <div className="col-span-1">
+                      <div className="flex justify-center">
+                        <MentineMenu
+                          items={rowMenuItems(row._id)}
+                          ariaLabel={`Actions for ${row.firstName} ${row.lastName}`}
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
-        ) : (
-          <div>
-            {data?.users.map((row, idx) => {
-              const isChecked = selected.has(row._id);
-              return (
-                <div
-                  key={row._id}
-                  className={`grid grid-cols-10 items-center px-4 h-[64px] text-[14px] ${
-                    idx !== data.length - 1 ? "border-b border-[#E2E8F0]" : ""
-                  } hover:bg-[#F8FAFC]`}
-                >
-                  <div className="col-span-1 flex items-center">
-                    <input
-                      type="checkbox"
-                      className="size-4 accent-black"
-                      checked={isChecked}
-                      onChange={() => toggleOne(row._id)}
-                      aria-label={`Select ${row.firstName} ${row.lastName}`}
-                    />
-                  </div>
-                  <div className="col-span-2 truncate">
-                    {row.firstName} {row.lastName}
-                  </div>
-                  <div className="col-span-2 truncate text-[#334155]">
-                    {row.email}
-                  </div>
-                  <div className="col-span-1">{row.gender}</div>
-                  <div className="col-span-1">{row.country}</div>
-                  <div className="col-span-1 tabular-nums">{row.shares}</div>
-                  <div className="col-span-1 font-medium">
-                    {row.totalShareValue}
-                  </div>
-                  <div className="col-span-1">
-                    <div className="flex justify-center">
-                      <MentineMenu
-                        items={rowMenuItems(row._id)}
-                        ariaLabel={`Actions for ${row.firstName} ${row.lastName}`}
-                      />
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
+                );
+              })}
+            </div>
+          )}
+        </div>
+        <hr className="mt-4 mb-8 border-1 border-[#F1F5F9]" />
+        <div className="pagination">
+          <Pagination
+            total={data?.totalPages}
+            value={filter.page}
+            onChange={(page) => setFilter((prev) => ({ ...prev, page }))}
+            siblings={0}
+            boundaries={1}
+            mt="sm"
+          />
+        </div>
       </div>
-      <hr className="mt-4 mb-8 border-1 border-[#F1F5F9]" />
-      <div className="pagination">
-        <Pagination
-          total={data?.totalPages}
-          value={filter.page}
-          onChange={(page) => setFilter((prev) => ({ ...prev, page }))}
-          siblings={0}
-          boundaries={1}
-          mt="sm"
-        />
-      </div>
-    </div>
+    </>
   );
 };
 

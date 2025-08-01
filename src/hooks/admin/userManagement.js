@@ -23,3 +23,13 @@ export const useAddNewUser = (onSuccessCallback) =>
         errorMsg: "Could not add user",
         onSuccess: onSuccessCallback,
     });
+// /** -------------------------------
+//  * 🚫 Delete User
+//  ---------------------------------- */
+export const useDeleteUser = (onSuccessCallback) =>
+    useMutationWithToast({
+        mutationFn: userManagementAPIs.deleteUser,
+        successMsg: "User deleted successfully!",
+        errorMsg: "Failed to delete user",
+        onSuccess: onSuccessCallback,
+    });

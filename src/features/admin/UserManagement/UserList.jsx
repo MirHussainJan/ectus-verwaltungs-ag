@@ -6,7 +6,8 @@ import MentineMenu from "@/features/common/MentineMenu";
 import {useDeleteUser} from "@/hooks/admin/userManagement";
 import { useQueryClient } from "@tanstack/react-query";
 import LoadingBackdrop from "@/features/common/LoadingBackdrop";
-const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, filter }) => {
+import { useRouter } from "next/navigation";
+const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, filter, openEdit }) => {
   const [selected, setSelected] = useState(new Set());
   const allIds = useMemo(() => data?.users.map((d) => d._id), []);
   const allSelected = selected.size === allIds?.length && allIds.length > 0;
@@ -15,6 +16,7 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
     getInitialValueInEffect: true, 
   });
   const queryClient = useQueryClient();
+  const router = useRouter();
   const { mutate, isPending } = useDeleteUser(() => {
     queryClient.invalidateQueries(["usersList"]);
   });
@@ -35,7 +37,10 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
       const ids = Array.from(selected);
       mutate(ids);
     };
-     const handleEdit = (id) => console.log("Edit user:", id);
+     const handleEdit = (id) => {
+       setCurrentUser(id);
+       openEdit();
+     };
      const handleRevealPassword = (id) =>
        {
          setPassword(id);

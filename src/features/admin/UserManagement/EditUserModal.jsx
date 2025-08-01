@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Modal,
   Button,
@@ -11,9 +11,20 @@ import {
 } from "@mantine/core";
 import { DateInput } from "@mantine/dates";
 import { useForm } from "@mantine/form";
+import { useQueryClient } from "@tanstack/react-query";
+import LoadingBackdrop from "@/features/common/LoadingBackdrop";
+import { useGetUser } from "@/hooks/admin/userManagement";
 import COUNTRIES from "./CountryList";
 
-const AddNewUserModal = ({ opened, onClose, onSubmit }) => {
+const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
+  const queryClient = useQueryClient();
+
+  const { data, isPending } = useGetUser(id);
+  // const { mutate: updateUser, isPending: isUpdating } = useUpdateUser(() => {
+  //   queryClient.invalidateQueries(["usersList"]);
+  //   onClose();
+  // });
+
   const form = useForm({
     initialValues: {
       firstName: "",
@@ -43,98 +54,115 @@ const AddNewUserModal = ({ opened, onClose, onSubmit }) => {
         return null;
       },
       email: (v) => (/^\S+@\S+\.\S+$/.test(v) ? null : "Invalid email"),
-      password: (v) =>
-        v.length >= 8 ? null : "Password must be at least 8 characters",
     },
   });
 
+  useEffect(() => {
+    if (data?.user) {
+      const { firstName, lastName, dob, gender, country, shares, email } =
+        data?.user;
+      form.setValues({
+        firstName,
+        lastName,
+        dob: new Date(dob),
+        gender,
+        country,
+        shares,
+        email,
+        password: "", 
+      });
+    }
+  }, [data]);
+
   const handleSubmit = (values) => {
-    if (onSubmit) onSubmit(values);
-    else console.log("Add user:", values);
+    updateUser({
+      userId: id,
+      updatedData: {
+        ...values,
+        dob: new Date(values.dob).toISOString(),
+      },
+    });
   };
 
   return (
-    <Modal opened={opened} onClose={onClose} title="Edit User Details" centered>
-      <form
-        onSubmit={form.onSubmit(handleSubmit)}
-        className="p-4 gap-4 grid md:grid-cols-2"
-      >
-        <TextInput
-          label="First Name"
-          placeholder="Enter First Name"
-          withAsterisk
-          {...form.getInputProps("firstName")}
-        />
-        <TextInput
-          label="Last Name"
-          placeholder="Enter Last Name"
-          withAsterisk
-          {...form.getInputProps("lastName")}
-        />
-        <DateInput
-          label="Date of Birth"
-          placeholder="MM-DD-YYYY"
-          withAsterisk
-          valueFormat="MM-DD-YYYY"
-          maxDate={new Date()}
-          {...form.getInputProps("dob")}
-        />
-        <Select
-          label="Gender"
-          placeholder="Select Gender"
-          withAsterisk
-          data={["Male", "Female", "Other"]}
-          searchable
-          nothingFoundMessage="No options"
-          {...form.getInputProps("gender")}
-        />
-        <Select
-          label="Country"
-          placeholder="Select Country"
-          withAsterisk
-          data={COUNTRIES}
-          searchable
-          nothingFoundMessage="No results"
-          {...form.getInputProps("country")}
-        />
-        <NumberInput
-          label="Klarna Shares"
-          placeholder="Enter Klarna shares"
-          hideControls
-          min={0}
-          {...form.getInputProps("shares")}
-        />
-        <TextInput
-          label="Email"
-          placeholder="Enter User Email"
-          withAsterisk
-          {...form.getInputProps("email")}
-        />
-        <PasswordInput
-          label="Password"
-          placeholder="Create New Password"
-          withAsterisk
-          {...form.getInputProps("password")}
-        />
-        <Button
-          unstyled
-          type="submit"
-          className="h-[50px] bg-black hover:bg-black/90 text-white"
+    <>
+      {(isPending) && <LoadingBackdrop />}
+      <Modal opened={opened} onClose={onClose} title="Edit User" centered>
+        <form
+          onSubmit={form.onSubmit(handleSubmit)}
+          className="p-4 gap-4 grid md:grid-cols-2"
         >
-          Save
-        </Button>
-        <Button
-          unstyled
-          type="button"
-          variant="outline"
-          className="h-[50px] bg-transparent text-[#111827] border border-[#E7E7E7]"
-          onClick={onClose}
-        >
-          Cancel
-        </Button>
-      </form>
-    </Modal>
+          <TextInput
+            label="First Name"
+            withAsterisk
+            {...form.getInputProps("firstName")}
+          />
+          <TextInput
+            label="Last Name"
+            withAsterisk
+            {...form.getInputProps("lastName")}
+          />
+          <DateInput
+            label="Date of Birth"
+            withAsterisk
+            placeholder="MM-DD-YYYY"
+            valueFormat="MM-DD-YYYY"
+            maxDate={new Date()}
+            {...form.getInputProps("dob")}
+          />
+          <Select
+            label="Gender"
+            placeholder="Select Gender"
+            withAsterisk
+            data={["Male", "Female", "Other"]}
+            searchable
+            {...form.getInputProps("gender")}
+          />
+          <Select
+            label="Country"
+            placeholder="Select Country"
+            withAsterisk
+            data={COUNTRIES}
+            searchable
+            {...form.getInputProps("country")}
+          />
+          <NumberInput
+            label="Klarna Shares"
+            hideControls
+            min={0}
+            {...form.getInputProps("shares")}
+          />
+          <TextInput
+            label="Email"
+            withAsterisk
+            {...form.getInputProps("email")}
+          />
+          <PasswordInput
+            label="Password"
+            placeholder="(Leave empty to keep unchanged)"
+            {...form.getInputProps("password")}
+          />
+
+          <Button
+            unstyled
+            type="submit"
+            className="h-[50px] bg-black hover:bg-black/90 text-white"
+          >
+            Save Changes
+          </Button>
+          <Button
+            unstyled
+            type="button"
+            variant="outline"
+            className="h-[50px] bg-transparent text-[#111827] border border-[#E7E7E7]"
+            onClick={onClose}
+          >
+            Cancel
+          </Button>
+        </form>
+      </Modal>
+    </>
   );
 };
 
-export default AddNewUserModal;
+export default EditUserModal;

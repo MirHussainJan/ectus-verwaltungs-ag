@@ -33,3 +33,15 @@ export const useDeleteUser = (onSuccessCallback) =>
         errorMsg: "Failed to delete user",
         onSuccess: onSuccessCallback,
     });
+/** -------------------------------
+ * 📋 Get User
+ ---------------------------------- */
+export const useGetUser = (id) =>
+    useQueryWithErrorToast(
+        {
+            queryKey: ["user", id],
+            queryFn: () => userManagementAPIs.getUser(id),
+            keepPreviousData: true,
+        },
+        "Failed to fetch user"
+    );

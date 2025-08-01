@@ -40,4 +40,13 @@ export const userManagementAPIs = {
             throw new Error(error?.response?.data?.errors || "Failed to delete user. Please try again.");
         }
     },
+    getUser: async (id) => {
+        try {
+            const response = await axiosInstance.get(`/admin/getUser/${id}`);
+            return response.data;
+        } catch (error) {
+            console.log("error", error);
+            throw new Error(error?.response?.data?.errors || "Failed to get user. Please try again.");
+        }
+    },
 };

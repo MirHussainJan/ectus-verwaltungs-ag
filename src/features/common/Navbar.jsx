@@ -18,8 +18,12 @@ export const Navbar = ({ mode = "dark" }) => {
     setIsOpen(false);
     if (pathname === "/") {
       scrollToSection(sectionId);
-    } else {
-      router.push(`/?section=${sectionId}`);
+      if (sectionId === "/login") {
+        router.push("/login");
+        return;
+      }
+    } else {      
+        router.push(`/?section=${sectionId}`);
     }
   };
 
@@ -32,7 +36,7 @@ export const Navbar = ({ mode = "dark" }) => {
 
   return (
     <>
-      <div className="flex py-8 px-6 md:px-[40px] lg:px-[120px] justify-between items-center">
+      <div className="flex py-4 px-6 md:px-[40px] lg:px-[120px] justify-between items-center">
         <Link href={"/"}>
           <Logo className={textColor} />
         </Link>
@@ -42,12 +46,14 @@ export const Navbar = ({ mode = "dark" }) => {
             { name: "Lösungen", path: "/#solutions" },
             { name: "Unser Team", path: "/#our-team" },
             { name: "Kontakt", path: "/#contact-us" },
+            { name: "Portal Login", path: "/login" },
           ].map((page) => (
             <a
               key={page.name}
               href={page.path}
               onClick={(e) => handleNavClick(e, page.path.replace("/#", ""))}
-              className={`${textColor} text-[20px] font-semibold fade-in-delay-500 cursor-pointer`}
+              className={`${textColor} text-[20px] font-semibold fade-in-delay-500 cursor-pointer
+              ${ page.name === "Portal Login" ? "border border-white p-3" : "" }`}
             >
               {page.name}
             </a>
@@ -77,6 +83,7 @@ export const Navbar = ({ mode = "dark" }) => {
               { name: "Lösungen", path: "/#solutions" },
               { name: "Unser Team", path: "/#our-team" },
               { name: "Kontakt", path: "/#contact-us" },
+              { name: "Portal Login", path: "/login" },
             ].map((page) => (
               <a
                 key={page.name}

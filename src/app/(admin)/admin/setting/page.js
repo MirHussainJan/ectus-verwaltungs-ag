@@ -51,7 +51,7 @@ export default function Page() {
                         src={ProfilePic}
                         alt="Profile Pic"
                     />
-                    <div className="absolute bottom-[-6px] right-[-3px] z-10 rounded-full size-[30px] flex items-center justify-center shadow-[0_5px_30px_0_#19191940] bg-white">
+                    <div className="absolute bottom-[-6px] right-[-3px] z-1 rounded-full size-[30px] flex items-center justify-center shadow-[0_5px_30px_0_#19191940] bg-white">
                         <EditPen className="size-[20px]" />
                     </div>
                 </div>

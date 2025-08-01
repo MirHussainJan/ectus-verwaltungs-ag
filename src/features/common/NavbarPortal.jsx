@@ -3,7 +3,8 @@ import Logo from "../../assets/icons/logo";
 import LogoAdmin from "../../assets/icons/LogoAdmin";
 import Logout from "../../assets/icons/Logout";
 import BurgerIcon from "../../assets/icons/BurgerIcon";
-const NavbarPortal = ({admin = false}) => {
+import { X } from 'lucide-react';
+const NavbarPortal = ({admin = false, openMenu, setOpenMenu}) => {
   return (
     <div className="p-[24.5px_16px] bg-black flex justify-between">
       {admin ? (
@@ -20,11 +21,14 @@ const NavbarPortal = ({admin = false}) => {
       </div>
       {admin && (
         <div className="md:hidden flex items-center justify-center size-[48px] cursor-pointer">
-          <BurgerIcon className={`text-white size-[24px]`} />
+          {openMenu ? <X onClick={() => setOpenMenu(!openMenu)} className={`text-white size-[24px]`} />
+        :  
+            <BurgerIcon onClick={() => setOpenMenu(!openMenu)} className={`text-white size-[24px]`} />
+        }
         </div>
       )}
     </div>
   );
 }
 
-export default NavbarPortal
+export default NavbarPortal;

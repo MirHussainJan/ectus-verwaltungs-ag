@@ -5,6 +5,7 @@ import { DatesProvider } from '@mantine/dates';
 import { Toaster } from 'sonner';
 import '@mantine/core/styles.css';
 import '@mantine/dates/styles.css';
+import QueryProvider from "../providers/QueryProvider";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,13 +23,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <MantineProvider withGlobalStyles withNormalizeCSS>
-          <DatesProvider settings={{ locale: 'en', firstDayOfWeek: 0 }}>
-            {children}
-          </DatesProvider>
+          <QueryProvider>
+            <DatesProvider settings={{ locale: 'en', firstDayOfWeek: 0 }}>
+              {children}
+            </DatesProvider>
+          </QueryProvider>
           <Toaster position="bottom-right" />
         </MantineProvider>
       </body>

@@ -20,8 +20,8 @@ export const Footer = () => {
             Montag bis Freitag: <strong>10:00 – 19:00 Uhr</strong> <br />
             Mittags Pause: <strong>12:00 - 13:00 Uhr</strong> <br />
             <br />
-            Samstag:
-            <strong>10:00 - 15:00 Uhr</strong>
+            Samstag: 
+            <strong> 10:00 - 15:00 Uhr</strong>
           </p>
         </div>
         <div className="w-[256px] mb-8">

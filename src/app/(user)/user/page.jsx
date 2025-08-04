@@ -1,21 +1,43 @@
 "use client";
-import React from 'react'
-import Image from 'next/image';
-import ProfilePic from "../../../assets/images/profile.jpg"
-import EditPen from "../../../assets/icons/EditPen"
+import React, { useRef } from "react";
+import Image from "next/image";
+import ProfilePic from "../../../assets/images/profile.jpg";
+import EditPen from "../../../assets/icons/EditPen";
 import LoadingBackdrop from "@/features/common/LoadingBackdrop";
-import { useGetUserProfile, useUpdateUserProfilePicture } from "@/hooks/user/profile";
-const page = () => {
-  const { data, isPending } = useGetUserProfile();
-  console.log(data);
-  
+import {
+  useGetUserProfile,
+  useUpdateUserProfilePicture,
+} from "@/hooks/user/profile";
+import { toast } from "sonner";
+
+const Page = () => {
+  const { data, isPending, refetch } = useGetUserProfile();
+  const fileInputRef = useRef(null);
+  const { mutate: updateProfilePicture, isPending: isUploading } =
+    useUpdateUserProfilePicture(() => {
+      refetch(); // Refetch profile after successful upload
+    });
+
+  const handleProfilePicChange = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    if (file.size > 5 * 1024 * 1024) {
+      toast.error("Image must be less than 5MB");
+      return;
+    }
+
+    updateProfilePicture(file);
+  };
+
   return (
     <>
-      {isPending && <LoadingBackdrop />}
+      {(isPending || isUploading) && <LoadingBackdrop />}
       <div className="py-4 md:py-9 px-4 md:px-6 lg:px-[4.167vw]">
         <h2 className="mb-4 font-bold md:text-[24px]/[150%] text-[20px]/[150%]">
           Welcome back, {data?.user?.firstName} {data?.user?.lastName}
         </h2>
+
         <div className="flex flex-col md:flex-row gap-6">
           {/* left */}
           <div className="p-5 md:p-[20px_16px] bg-white md:w-[263px] w-full">
@@ -26,12 +48,24 @@ const page = () => {
               <div className="relative inline-block mb-[18px]">
                 <Image
                   className="rounded-full size-[72px] z-0"
-                  src={ProfilePic}
+                  src={data?.user?.profilePicture?.url || ProfilePic}
                   alt="Profile Pic"
+                  width={72}
+                  height={72}
                 />
-                <div className="absolute bottom-[-6px] right-[-3px] z-10 rounded-full size-[30px] flex items-center justify-center shadow-[0_5px_30px_0_#19191940] bg-white">
+                <div
+                  className="absolute bottom-[-6px] right-[-3px] z-10 rounded-full size-[30px] flex items-center justify-center shadow-[0_5px_30px_0_#19191940] bg-white cursor-pointer"
+                  onClick={() => fileInputRef.current?.click()}
+                >
                   <EditPen className="size-[20px]" />
                 </div>
+                <input
+                  type="file"
+                  accept="image/*"
+                  ref={fileInputRef}
+                  onChange={handleProfilePicChange}
+                  className="hidden"
+                />
               </div>
               <h5 className="font-semibold text-[16px]/[150%]">
                 {data?.user?.firstName} {data?.user?.lastName}
@@ -69,9 +103,10 @@ const page = () => {
               </div>
             </div>
           </div>
+
           {/* right */}
           <div className="p-5 bg-white md:w-[312px] w-full flex flex-col gap-6">
-            <h6 className="font-semibold text-[18px]/[150%] ">
+            <h6 className="font-semibold text-[18px]/[150%]">
               Your Klarna Investment Details
             </h6>
             <div className="flex gap-6 justify-between">
@@ -88,20 +123,20 @@ const page = () => {
                   Current Klarna Price
                 </p>
                 <h4 className="font-semibold text-[20px]/[150%]">
-                  {data?.user?.klarnaPrice}
+                  € {data?.user?.klarnaPrice}
                 </h4>
               </div>
             </div>
             <hr className="border-1 border-[#E2E8F0]" />
             <p className="mb-1.5 font-medium text-[12px]/[100%]">Total Value</p>
             <h4 className="font-semibold text-[20px]/[150%]">
-              {data?.user?.totalShareValue}
+              € {data?.user?.totalShareValue}
             </h4>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
-export default page
+export default Page;

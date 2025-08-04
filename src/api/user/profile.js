@@ -20,7 +20,7 @@ export const userProfileAPIs = {
             const formData = new FormData();
             formData.append("image", file);
 
-            const response = await axiosInstance.post("/user/updateProfilePicture", formData, {
+            const response = await axiosInstance.patch("/user/updateProfilePicture", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

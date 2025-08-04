@@ -56,7 +56,6 @@ const Impressum = () => {
 
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

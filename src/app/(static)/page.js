@@ -18,7 +18,6 @@ export default function Home() {
       <Section6 />
       <Section7 />
       <Section8 />
-      <Footer />
     </div>
   );
 }

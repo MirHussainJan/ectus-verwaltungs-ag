@@ -9,7 +9,7 @@ import LoadingBackdrop from "@/features/common/LoadingBackdrop";
 import { useRouter } from "next/navigation";
 const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, filter, openEdit }) => {
   const [selected, setSelected] = useState(new Set());
-  const allIds = useMemo(() => data?.users.map((d) => d._id), []);
+  const allIds = useMemo(() => data?.users.map((d) => d._id) || [], [data]);
   const allSelected = selected.size === allIds?.length && allIds.length > 0;
   const isIndeterminate = selected.size > 0 && !allSelected;
   const isTabletOrMobile = useMediaQuery("(max-width: 1023px)", undefined, {
@@ -194,7 +194,9 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
                   <div
                     key={row._id}
                     className={`grid grid-cols-10 items-center px-4 h-[64px] text-[14px] ${
-                      idx !== data.length - 1 ? "border-b border-[#E2E8F0]" : ""
+                      idx !== data.users.length - 1
+                        ? "border-b border-[#E2E8F0]"
+                        : ""
                     } hover:bg-[#F8FAFC]`}
                   >
                     <div className="col-span-1 flex items-center">
@@ -237,7 +239,10 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
           <Pagination
             total={data?.totalPages}
             value={filter.page}
-            onChange={(page) => setFilter((prev) => ({ ...prev, page }))}
+            onChange={(page) => {
+              setSelected(new Set());
+              setFilter((prev) => ({ ...prev, page }))
+            }}
             siblings={0}
             boundaries={1}
             mt="sm"

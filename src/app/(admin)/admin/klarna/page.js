@@ -1,12 +1,14 @@
-// app/admin/klarna/page.jsx
 "use client";
-
-import React from "react";
+import React, { useEffect } from "react";
 import { Input } from "@mantine/core";
 import { useForm } from "@mantine/form";
+import { useGetKlarna, useUpdateKlarna } from "@/hooks/admin/klarna";
+import { useQueryClient } from "@tanstack/react-query";
+import LoadingBackdrop from "@/features/common/LoadingBackdrop";
 import EuroIcon from "../../../../assets/icons/EuroIcon";
-
 export default function Page() {
+    const queryClient = useQueryClient();
+    const { data, isPending: isFetching } = useGetKlarna();
     const form = useForm({
         initialValues: { price: "" },
         validate: {
@@ -19,17 +21,26 @@ export default function Page() {
             },
         },
     });
+    useEffect(() => {
+        if (data?.klarnaPrice) {
+            form.setFieldValue("price", String(data.klarnaPrice));
+        }
+    }, [data]);
 
+    const { mutate: updateKlarna, isPending: isUpdating } = useUpdateKlarna(() => {
+        queryClient.invalidateQueries(["klarna"]);
+    });
     const onSubmit = (values) => {
-        // You can call your API here. For now, just log it.
-        console.log("Updating Klarna price:", values.price);
+        const numericPrice = Number(values.price);
+        updateKlarna({ newKlarnaPrice: numericPrice });
     };
-
     return (
         <div className="w-[200px]">
+            {(isFetching || isUpdating) && <LoadingBackdrop />}
             <h2 className="mb-5 font-bold md:text-[24px]/[150%] text-[20px]/[150%]">
                 Klarna Details
             </h2>
+
             <form onSubmit={form.onSubmit(onSubmit)} className="max-w-[380px] space-y-4">
                 <div>
                     <p className="mb-2.5 font-medium text-[14px]/[150%] text-[#191919]">
@@ -46,12 +57,11 @@ export default function Page() {
                         }
                         rightSectionPointerEvents="none"
                         {...form.getInputProps("price")}
-                        error={form.errors.price}
                     />
 
-                    {form.errors.price ? (
+                    {form.errors.price && (
                         <p className="mt-1 text-[12px] text-red-600">{form.errors.price}</p>
-                    ) : null}
+                    )}
                 </div>
 
                 <button

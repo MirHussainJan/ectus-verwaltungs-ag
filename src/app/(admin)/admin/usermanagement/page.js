@@ -8,7 +8,7 @@ import EditUserModal from '@/features/admin/UserManagement/EditUserModal';
 import PasswordRevealModal from '@/features/admin/UserManagement/PasswordRevealModal';
 import LoadingBackdrop from "@/features/common/LoadingBackdrop";
 import { useGetUsersList } from '@/hooks/admin/userManagement';
-const page = () => {
+const Page = () => {
     const [opened, { open, close }] = useDisclosure(false);
     const [editOpened, { open: openEdit, close: closeEdit }] = useDisclosure(false);
     const [passwordOpen, { open: openPassword, close: closePassword }] = useDisclosure(false);
@@ -42,4 +42,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

@@ -3,7 +3,7 @@ import React, { useMemo, useState } from "react";
 import { Pagination } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import MentineMenu from "@/features/common/MentineMenu";
-import {useDeleteUser} from "@/hooks/admin/userManagement";
+import { useDeleteUser, useRevealPassword } from "@/hooks/admin/userManagement";
 import { useQueryClient } from "@tanstack/react-query";
 import LoadingBackdrop from "@/features/common/LoadingBackdrop";
 import { useRouter } from "next/navigation";
@@ -19,6 +19,12 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
   const router = useRouter();
   const { mutate, isPending } = useDeleteUser(() => {
     queryClient.invalidateQueries(["usersList"]);
+  });
+const { mutate: revealPassword, isPending: isRevealingPassword } =
+  useRevealPassword((res) => {
+    console.log("Revealed password:", res); 
+    setPassword(res.password);
+    openPassword();
   });
   const toggleAll = (checked) => {
     if (checked) setSelected(new Set(allIds));
@@ -41,11 +47,9 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
        setCurrentUser(id);
        openEdit();
      };
-     const handleRevealPassword = (id) =>
-       {
-         setPassword(id);
-         openPassword();
-       };
+     const handleRevealPassword = (id) => {
+      revealPassword(id);
+     };
      const handleDelete = (id) => {
       mutate([id]);
      };
@@ -62,7 +66,7 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
 
   return (
     <>
-    {isPending && <LoadingBackdrop />}
+      {(isPending || isRevealingPassword) && <LoadingBackdrop />}
       <div className="w-full overflow-hidden rounded-md border border-[#E2E8F0] bg-white">
         {/* Header */}
         {!isTabletOrMobile ? (

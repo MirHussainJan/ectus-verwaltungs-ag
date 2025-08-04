@@ -58,4 +58,13 @@ export const userManagementAPIs = {
             throw new Error(error?.response?.data?.message || "Failed to update user. Please try again.");
         }
     },
+    revealPassword: async (id) => {
+        try {
+            const response = await axiosInstance.get(`/admin/revealPassword/${id}`);
+            return response.data;
+        } catch (error) {
+            console.log("error", error);
+            throw new Error(error?.response?.data?.message || "Failed to reveal password. Please try again.");
+        }
+    },
 };

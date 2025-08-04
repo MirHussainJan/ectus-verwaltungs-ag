@@ -8,9 +8,9 @@ import { toast } from "sonner";
 export const useMutationWithToast = ({ mutationFn, successMsg, errorMsg, onSuccess }) =>
     useMutation({
         mutationFn,
-        onSuccess: () => {
+        onSuccess: (data) => {
             toast.success(successMsg);
-            onSuccess?.();
+            if (onSuccess) onSuccess(data);
         },
         onError: (error) => {
             toast.error(errorMsg, {

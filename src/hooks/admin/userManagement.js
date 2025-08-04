@@ -55,3 +55,13 @@ export const useUpdateUser = (onSuccessCallback) =>
         errorMsg: "Failed to update user",
         onSuccess: onSuccessCallback,
     });
+// /** -------------------------------
+//  * 🗑️ Reveal User Password
+//  ---------------------------------- */
+export const useRevealPassword = (onSuccessCallback) =>
+    useMutationWithToast({
+        mutationFn: userManagementAPIs.revealPassword,
+        successMsg: "Password revealed successfully!",
+        errorMsg: "Failed to reveal password",
+        onSuccess: onSuccessCallback,
+    });

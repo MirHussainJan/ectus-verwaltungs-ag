@@ -18,7 +18,8 @@ import SignupIpad from "../../assets/images/SignupIpad.png";
 import Logo from "../../assets/icons/logo";
 import { useDisclosure } from "@mantine/hooks";
 import { useRouter } from "next/navigation";
-
+import { useUserLogin } from "@/hooks/auth";
+import LoadingBackdrop from "@/features/common/LoadingBackdrop";
 const Page = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const [resetEmail, setResetEmail] = useState('');
@@ -35,21 +36,18 @@ const Page = () => {
         value.length >= 6 ? null : "Password must be at least 6 characters",
     },
   });
+  const { mutate: loginUser, isPending } = useUserLogin(() => {
+    toast.success("Login Successful! Welcome back.");
+    router.push("/user");
+  });
   const handleSubmit = (values) => {
     // Simulated login check
-    if (
-      values.email === "test@example.com" &&
-      values.password === "password123"
-    ) {
-      toast.success("Login Successful! Welcome back.");
-    } else {
-      toast.error("Invalid email or password");
-    }
-    console.log(values);
+    loginUser(values);
   };
 
   return (
     <>
+    {isPending && <LoadingBackdrop />}
       <Modal
         className="reset-password"
         centered

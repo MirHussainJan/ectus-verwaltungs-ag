@@ -144,3 +144,25 @@ export const useAdminLogout = (onSuccessCallback) => {
         onSuccess: onSuccessCallback,
     });
 };
+// /** -------------------------------
+//  * 👤 User Login
+//  ---------------------------------- */
+export const useUserLogin = (onSuccessCallback) => {
+    return useMutationWithToast({
+        mutationFn: (data) => authManagementAPIs.userLogin(data),
+        successMsg: "Login successful!",
+        errorMsg: "Failed to login",
+        onSuccess: onSuccessCallback,
+    });
+};
+// /** -------------------------------
+//  * 👤 User Logout
+//  ---------------------------------- */
+export const useUserLogout = (onSuccessCallback) => {
+    return useMutationWithToast({
+        mutationFn: () => authManagementAPIs.userLogout(),
+        successMsg: "Logout successful!",
+        errorMsg: "Failed to logout",
+        onSuccess: onSuccessCallback,
+    });
+};

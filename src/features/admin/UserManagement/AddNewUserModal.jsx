@@ -128,7 +128,7 @@ const AddNewUserModal = ({ opened, onClose }) => {
           <Button
             unstyled
             type="submit"
-            className="h-[50px] bg-black hover:bg-black/90 text-white"
+            className="h-[50px] bg-black hover:bg-black/90 text-white cursor-pointer"
           >
             Save
           </Button>

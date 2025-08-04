@@ -14,7 +14,7 @@ export const userManagementAPIs = {
             return response.data;
         } catch (error) {
             console.log("error", error);
-            throw new Error(error?.response?.data?.errors || "Failed to get users. Please try again.");
+            throw new Error(error?.response?.data?.message || "Failed to get users. Please try again.");
         }
 
     },
@@ -24,7 +24,7 @@ export const userManagementAPIs = {
             return response.data;
         } catch (error) {
             console.log("error", error);
-            throw new Error(error?.response?.data?.errors || "Failed to create user. Please try again.");
+            throw new Error(error?.response?.data?.message || "Failed to create user. Please try again.");
         }
     },
     deleteUser: async (userIds) => {
@@ -37,7 +37,7 @@ export const userManagementAPIs = {
             return response.data;
         } catch (error) {
             console.log("error", error);
-            throw new Error(error?.response?.data?.errors || "Failed to delete user. Please try again.");
+            throw new Error(error?.response?.data?.message || "Failed to delete user. Please try again.");
         }
     },
     getUser: async (id) => {
@@ -46,7 +46,16 @@ export const userManagementAPIs = {
             return response.data;
         } catch (error) {
             console.log("error", error);
-            throw new Error(error?.response?.data?.errors || "Failed to get user. Please try again.");
+            throw new Error(error?.response?.data?.message || "Failed to get user. Please try again.");
+        }
+    },
+    updateUser: async (updatedData) => {
+        try {
+            const response = await axiosInstance.patch("/admin/updateUser", updatedData);
+            return response.data;
+        } catch (error) {
+            console.log("error", error);
+            throw new Error(error?.response?.data?.message || "Failed to update user. Please try again.");
         }
     },
 };

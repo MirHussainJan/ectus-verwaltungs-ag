@@ -13,17 +13,17 @@ import { DateInput } from "@mantine/dates";
 import { useForm } from "@mantine/form";
 import { useQueryClient } from "@tanstack/react-query";
 import LoadingBackdrop from "@/features/common/LoadingBackdrop";
-import { useGetUser } from "@/hooks/admin/userManagement";
+import { useGetUser, useUpdateUser } from "@/hooks/admin/userManagement";
 import COUNTRIES from "./CountryList";
 
 const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
   const queryClient = useQueryClient();
 
   const { data, isPending } = useGetUser(id);
-  // const { mutate: updateUser, isPending: isUpdating } = useUpdateUser(() => {
-  //   queryClient.invalidateQueries(["usersList"]);
-  //   onClose();
-  // });
+  const { mutate: updateUser, isPending: isUpdating } = useUpdateUser(() => {
+    queryClient.invalidateQueries(["usersList"]);
+    onClose();
+  });
 
   const form = useForm({
     initialValues: {
@@ -75,18 +75,17 @@ const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
   }, [data]);
 
   const handleSubmit = (values) => {
+    const { email, password, ...rest } = values;
     updateUser({
       userId: id,
-      updatedData: {
-        ...values,
-        dob: new Date(values.dob).toISOString(),
-      },
+      dob: rest.dob.toISOString(),
+      ...rest,
     });
   };
 
   return (
     <>
-      {(isPending) && <LoadingBackdrop />}
+      {(isPending || isUpdating) && <LoadingBackdrop />}
       <Modal opened={opened} onClose={onClose} title="Edit User" centered>
         <form
           onSubmit={form.onSubmit(handleSubmit)}
@@ -146,7 +145,7 @@ const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
           <Button
             unstyled
             type="submit"
-            className="h-[50px] bg-black hover:bg-black/90 text-white"
+            className="h-[50px] bg-black hover:bg-black/90 text-white cursor-pointer"
           >
             Save Changes
           </Button>

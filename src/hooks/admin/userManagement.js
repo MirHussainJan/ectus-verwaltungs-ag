@@ -45,3 +45,13 @@ export const useGetUser = (id) =>
         },
         "Failed to fetch user"
     );
+// /** -------------------------------
+//  * ✏️ Update User
+//  ---------------------------------- */
+export const useUpdateUser = (onSuccessCallback) =>
+    useMutationWithToast({
+        mutationFn: userManagementAPIs.updateUser,
+        successMsg: "User updated successfully!",
+        errorMsg: "Failed to update user",
+        onSuccess: onSuccessCallback,
+    });

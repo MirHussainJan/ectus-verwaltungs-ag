@@ -36,4 +36,23 @@ export const authManagementAPIs = {
             throw new Error(error?.response?.data?.message || "Failed to logout. Please try again.");
         }
     },
+    checkUserAuthStatus: async () => {
+        try {
+            const response = await axiosInstance.get("/user/checkAuthStatus");
+            return response.data;
+        } catch (error) {
+            console.error("User auth check error:", error);
+            throw new Error(error?.response?.data?.message || "Failed to verify user auth.");
+        }
+    },
+
+    checkAdminAuthStatus: async () => {
+        try {
+            const response = await axiosInstance.get("/admin/checkAuthStatus");
+            return response.data;
+        } catch (error) {
+            console.error("Admin auth check error:", error);
+            throw new Error(error?.response?.data?.message || "Failed to verify admin auth.");
+        }
+    },
 };

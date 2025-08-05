@@ -16,19 +16,19 @@ export const Footer = () => {
             <strong className="font-bold">Geschäftszeiten:</strong> <br />
             <br />
           </p>
-          <div className="flex gap-1 justify-between">
+          <div className="flex gap-1 justify-between w-[256px]">
             <p className="text-[14px]/[20px]">Montag bis Freitag: </p>
             <p className="text-[14px]/[20px]">
               <strong>10:00 - 19:00 Uhr</strong>
             </p>
           </div>
-          <div className="flex gap-1 justify-between">
+          <div className="flex gap-1 justify-between w-[256px]">
             <p className="text-[14px]/[20px]">Mittags Pause: </p>
             <p className="text-[14px]/[20px]">
               <strong>12:00 - 13:00 Uhr</strong>
             </p>
           </div>
-          <div className="flex gap-1 justify-between">
+          <div className="flex gap-1 justify-between w-[256px]">
             <p className="text-[14px]/[20px]">Samstag: </p>
             <p className="text-[14px]/[20px]">
               <strong>10:00 - 15:00 Uhr</strong>

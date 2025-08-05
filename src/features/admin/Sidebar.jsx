@@ -1,4 +1,3 @@
-// app/components/Sidebar.jsx (or wherever you keep it)
 "use client";
 
 import React from "react";
@@ -8,13 +7,20 @@ import Setting from "../../assets/icons/sidebar/setting";
 import Usermanagement from "../../assets/icons/sidebar/usermanagement";
 import Klarna from "../../assets/icons/sidebar/klarna";
 import Logout from "../../assets/icons/Logout";
+
 const BASE = "/admin";
+
 const Sidebar = ({ openMenu, setOpenMenu }) => {
   const pathname = usePathname();
+
   const options = [
-    { name: "User Management", route: "/usermanagement", icon: Usermanagement },
+    {
+      name: "Benutzerverwaltung",
+      route: "/usermanagement",
+      icon: Usermanagement,
+    },
     { name: "Klarna", route: "/klarna", icon: Klarna },
-    { name: "Setting", route: "/setting", icon: Setting },
+    { name: "Einstellungen", route: "/setting", icon: Setting },
   ];
 
   return (
@@ -24,7 +30,7 @@ const Sidebar = ({ openMenu, setOpenMenu }) => {
           openMenu ? "h-fit absolute top-[97px] z-10" : "hidden"
         } md:block`}
       >
-        <p className="text-[#6C7278] text-[12px]/[150%] mb-3">MAIN MENU</p>
+        <p className="text-[#6C7278] text-[12px]/[150%] mb-3">HAUPTMENÜ</p>
         <div className="flex flex-col gap-2">
           {options.map(({ name, route, icon: Icon }, index) => {
             const fullPath = `${BASE}${route}`;

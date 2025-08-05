@@ -20,10 +20,12 @@ import { useDisclosure } from "@mantine/hooks";
 import { useRouter } from "next/navigation";
 import { useUserLogin } from "@/hooks/auth";
 import LoadingBackdrop from "@/features/common/LoadingBackdrop";
+
 const Page = () => {
   const [opened, { open, close }] = useDisclosure(false);
-  const [resetEmail, setResetEmail] = useState('');
+  const [resetEmail, setResetEmail] = useState("");
   const router = useRouter();
+
   const form = useForm({
     initialValues: {
       email: "",
@@ -31,40 +33,44 @@ const Page = () => {
     },
 
     validate: {
-      email: (value) => (/^\S+@\S+$/.test(value) ? null : "Invalid email"),
+      email: (value) =>
+        /^\S+@\S+$/.test(value) ? null : "Ungültige E-Mail-Adresse",
       password: (value) =>
-        value.length >= 6 ? null : "Password must be at least 6 characters",
+        value.length >= 6
+          ? null
+          : "Passwort muss mindestens 6 Zeichen lang sein",
     },
   });
+
   const { mutate: loginUser, isPending } = useUserLogin(() => {
-    toast.success("Login Successful! Welcome back.");
+    toast.success("Anmeldung erfolgreich! Willkommen zurück.");
     router.push("/user");
   });
+
   const handleSubmit = (values) => {
-    // Simulated login check
     loginUser(values);
   };
 
   return (
     <>
-    {isPending && <LoadingBackdrop />}
+      {isPending && <LoadingBackdrop />}
       <Modal
         className="reset-password"
         centered
         opened={opened}
         onClose={() => {
-          setResetEmail('');
-          close();    
+          setResetEmail("");
+          close();
         }}
-        title="Reset Your Password"
+        title="Passwort zurücksetzen"
       >
         <p className="text-[16px]/[24px] mb-6">
-          To reset your password, please contact our support team via email.
-          Copy the email address below and send your request to proceed with the
-          password reset.
+          Um Ihr Passwort zurückzusetzen, wenden Sie sich bitte per E-Mail an
+          unser Support-Team. Kopieren Sie die untenstehende E-Mail-Adresse und
+          senden Sie Ihre Anfrage, um mit dem Zurücksetzen fortzufahren.
         </p>
 
-        <p className="text-[14px]/[150%] mb-1.5">Contact Info</p>
+        <p className="text-[14px]/[150%] mb-1.5">Kontaktinformation</p>
 
         <div className="flex gap-4">
           <TextInput
@@ -77,7 +83,7 @@ const Page = () => {
           <CopyButton value={resetEmail} timeout={1500}>
             {({ copied, copy }) => (
               <Tooltip
-                label={copied ? "Copied!" : "Copy to clipboard"}
+                label={copied ? "Kopiert!" : "In Zwischenablage kopieren"}
                 withArrow
               >
                 <Button
@@ -85,16 +91,20 @@ const Page = () => {
                   className="text-[16px]/[24px] text-white bg-black w-[120px] px-4 py-2 rounded"
                   onClick={() => {
                     if (!resetEmail) {
-                      toast.error("Nothing to copy — please enter an email.");
+                      toast.error(
+                        "Nichts zu kopieren – bitte geben Sie eine E-Mail-Adresse ein."
+                      );
                       return;
                     }
                     copy();
-                    toast.success("Email copied to clipboard");
+                    toast.success("E-Mail-Adresse kopiert");
                   }}
                 >
                   <div className="flex justify-center items-center gap-2">
                     {copied ? <Check size={24} /> : <Copy size={24} />}
-                    <p className="font-bold">{copied ? "Copied" : "Copy"}</p>
+                    <p className="font-bold">
+                      {copied ? "Kopiert" : "Kopieren"}
+                    </p>
                   </div>
                 </Button>
               </Tooltip>
@@ -102,17 +112,19 @@ const Page = () => {
           </CopyButton>
         </div>
       </Modal>
+
       <div className="flex flex-col md:flex-row items-center">
         <Logo className="w-[241px] h-[40px] md:absolute md:top-14 md:left-14 z-50 md:text-white text-black static my-6 mt-14 md:m-0" />
+
         <div className="md:flex lg:w-[45.833%] hidden md:w-[50%] w-full h-screen">
           <Image
             src={Signupbg}
-            alt="Signup Background"
+            alt="Hintergrundbild Anmeldung"
             className="w-full h-full object-cover hidden lg:block"
           />
           <Image
             src={SignupIpad}
-            alt="Signup Background"
+            alt="Hintergrundbild Anmeldung"
             className="w-full h-full object-cover hidden md:block lg:hidden"
           />
         </div>
@@ -120,10 +132,10 @@ const Page = () => {
         <div className="flex flex-1 md:w-[50%] w-full flex-col gap-6 md:gap-[30px] justify-center lg:px-[12.361vw] md:px-[8.252vw] px-[16px]">
           <div className="flex flex-col md:gap-5 gap-3">
             <h2 className="font-bold text-[24px]/[130%] lg:text-[36px]/[130%]">
-              Welcome to SK BlackRock Financial
+              Willkommen bei SK BlackRock Financial
             </h2>
             <p className="text-[18px]/[150%] text-[#757575]">
-              Login to your account
+              Melden Sie sich in Ihrem Konto an
             </p>
           </div>
           <form
@@ -132,16 +144,16 @@ const Page = () => {
           >
             <TextInput
               withAsterisk
-              label="Email"
-              placeholder="your@email.com"
+              label="E-Mail"
+              placeholder="deine@email.com"
               className="w-full"
               {...form.getInputProps("email")}
             />
 
             <div className="flex flex-col gap-2">
               <PasswordInput
-                label="Password"
-                placeholder="Enter your password"
+                label="Passwort"
+                placeholder="Geben Sie Ihr Passwort ein"
                 withAsterisk
                 className="w-full"
                 {...form.getInputProps("password")}
@@ -151,7 +163,7 @@ const Page = () => {
                 onClick={open}
                 className="text-right mt-3 text-[#4B4B4B] text-[14px]/[150%] cursor-pointer"
               >
-                Forgot Password?
+                Passwort vergessen?
               </div>
             </div>
 
@@ -161,15 +173,16 @@ const Page = () => {
               fullWidth
               className="!h-[50px] bg-[#000000] text-white !font-bold text-[16px]/[150%] hover:bg-[#1a1a1a] transition-all duration-200 flex items-center justify-center"
             >
-              Sign In
+              Anmelden
             </Button>
+
             <Button
               unstyled
               fullWidth
               onClick={() => router.push("/login/admin")}
               className="!h-[50px] bg-white text-black !font-bold text-[16px]/[150%] transition-all duration-200 flex items-center justify-center border-[#E7E7E7] border-1 lg:absolute lg:top-6 lg:right-6 lg:p-[12px_24px] hover:bg-[#E7E7E7] cursor-pointer"
             >
-              Admin Login
+              Admin-Anmeldung
             </Button>
           </form>
         </div>
@@ -177,5 +190,4 @@ const Page = () => {
     </>
   );
 };
-
 export default Page;

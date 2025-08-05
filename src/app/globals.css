@@ -61,7 +61,11 @@ html {
 .mantine-Input-input {
   height: 50px !important;
   padding: 14.5px 20px;
-  border: 1px solid #E7E7E7
+  border: 1px solid #E7E7E7;
+}
+
+.mantine-PasswordInput-innerInput {
+  caret-color: auto;
 }
 
 .mantine-InputWrapper-label {

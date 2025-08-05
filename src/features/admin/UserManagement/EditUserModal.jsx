@@ -16,7 +16,7 @@ import LoadingBackdrop from "@/features/common/LoadingBackdrop";
 import { useGetUser, useUpdateUser } from "@/hooks/admin/userManagement";
 import COUNTRIES from "./CountryList";
 
-const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
+const EditUserModal = ({ opened, onClose, currentUser: id }) => {
   const queryClient = useQueryClient();
 
   const { data, isPending } = useGetUser(id);
@@ -38,36 +38,46 @@ const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
       password: "",
     },
     validate: {
-      firstName: (v) => (v.trim().length ? null : "First name is required"),
-      lastName: (v) => (v.trim().length ? null : "Last name is required"),
+      firstName: (v) => (v.trim().length ? null : "Vorname ist erforderlich"),
+      lastName: (v) => (v.trim().length ? null : "Nachname ist erforderlich"),
       dob: (v) => {
-        if (!v) return "Date of birth is required";
+        if (!v) return "Geburtsdatum ist erforderlich";
         const today = new Date();
-        if (v > today) return "DOB cannot be in the future";
+        if (v > today) return "Geburtsdatum darf nicht in der Zukunft liegen";
         return null;
       },
-      gender: (v) => (v ? null : "Select gender"),
-      country: (v) => (v ? null : "Select country"),
+      gender: (v) => (v ? null : "Geschlecht auswählen"),
+      country: (v) => (v ? null : "Land auswählen"),
       shares: (v) => {
         const n = Number(v);
         if (!Number.isFinite(n) || n < 0)
-          return "Enter a valid non‑negative number";
+          return "Geben Sie eine gültige, nicht-negative Zahl ein";
         return null;
       },
       klarnaPurchasePrice: (v) => {
         const n = Number(v);
         if (!Number.isFinite(n) || n < 0)
-          return "Enter a valid non-negative number";
+          return "Geben Sie einen gültigen Kaufpreis ein";
         return null;
       },
-      email: (v) => (/^\S+@\S+\.\S+$/.test(v) ? null : "Invalid email"),
+      email: (v) =>
+        /^\S+@\S+\.\S+$/.test(v) ? null : "Ungültige E-Mail-Adresse",
     },
   });
 
   useEffect(() => {
     if (data?.user) {
-      const { firstName, lastName, dob, gender, country, shares, klarnaPurchasePrice, email } =
-        data?.user;
+      const {
+        firstName,
+        lastName,
+        dob,
+        gender,
+        country,
+        shares,
+        klarnaPurchasePrice,
+        email,
+      } = data?.user;
+
       form.setValues({
         firstName,
         lastName,
@@ -77,7 +87,7 @@ const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
         shares,
         klarnaPurchasePrice,
         email,
-        password: "", 
+        password: "", // leer lassen
       });
     }
   }, [data]);
@@ -94,66 +104,71 @@ const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
   return (
     <>
       {(isPending || isUpdating) && <LoadingBackdrop />}
-      <Modal opened={opened} onClose={onClose} title="Edit User" centered>
+      <Modal
+        opened={opened}
+        onClose={onClose}
+        title="Benutzer bearbeiten"
+        centered
+      >
         <form
           onSubmit={form.onSubmit(handleSubmit)}
           className="p-4 gap-4 grid md:grid-cols-2"
         >
           <TextInput
-            label="First Name"
+            label="Vorname"
             withAsterisk
             {...form.getInputProps("firstName")}
           />
           <TextInput
-            label="Last Name"
+            label="Nachname"
             withAsterisk
             {...form.getInputProps("lastName")}
           />
           <DateInput
-            label="Date of Birth"
+            label="Geburtsdatum"
             withAsterisk
-            placeholder="MM-DD-YYYY"
+            placeholder="MM-TT-JJJJ"
             valueFormat="MM-DD-YYYY"
             maxDate={new Date()}
             {...form.getInputProps("dob")}
           />
           <Select
-            label="Gender"
-            placeholder="Select Gender"
+            label="Geschlecht"
+            placeholder="Geschlecht auswählen"
             withAsterisk
-            data={["Male", "Female", "Other"]}
+            data={["Männlich", "Weiblich", "Divers"]}
             searchable
             {...form.getInputProps("gender")}
           />
           <Select
-            label="Country"
-            placeholder="Select Country"
+            label="Land"
+            placeholder="Land auswählen"
             withAsterisk
             data={COUNTRIES}
             searchable
             {...form.getInputProps("country")}
           />
           <NumberInput
-            label="Klarna Shares"
+            label="Klarna-Aktien"
             hideControls
             min={0}
             {...form.getInputProps("shares")}
           />
           <NumberInput
-            label="Klarna Purchase Price"
+            label="Kaufpreis Klarna"
             hideControls
             min={0}
             {...form.getInputProps("klarnaPurchasePrice")}
           />
           <br />
           <TextInput
-            label="Email"
+            label="E-Mail"
             withAsterisk
             {...form.getInputProps("email")}
           />
           <PasswordInput
-            label="Password"
-            placeholder="(Leave empty to keep unchanged)"
+            label="Passwort"
+            placeholder="(Leer lassen, um es nicht zu ändern)"
             {...form.getInputProps("password")}
           />
 
@@ -162,7 +177,7 @@ const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
             type="submit"
             className="h-[50px] bg-black hover:bg-black/90 text-white cursor-pointer"
           >
-            Save Changes
+            Änderungen speichern
           </Button>
           <Button
             unstyled
@@ -171,7 +186,7 @@ const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
             className="h-[50px] bg-transparent text-[#111827] border border-[#E7E7E7]"
             onClick={onClose}
           >
-            Cancel
+            Abbrechen
           </Button>
         </form>
       </Modal>

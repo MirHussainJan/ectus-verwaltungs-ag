@@ -2,34 +2,34 @@ import { profileAPIs } from "../../api/admin/profile";
 import { useMutationWithToast } from "../../utils/tanstackInstance";
 
 /** -------------------------------
- * 🖼️ Update Profile Picture
+ * 🖼️ Profilbild aktualisieren
  ---------------------------------- */
 export const useUpdateProfilePicture = (onSuccessCallback) =>
     useMutationWithToast({
         mutationFn: profileAPIs.updateProfilePicture,
-        successMsg: "Profile picture updated successfully!",
-        errorMsg: "Failed to update profile picture",
+        successMsg: "Profilbild erfolgreich aktualisiert!",
+        errorMsg: "Profilbild konnte nicht aktualisiert werden",
         onSuccess: onSuccessCallback,
     });
 
 /** -------------------------------
- * 🖼️ Get Profile Picture
+ * 🖼️ Profilbild abrufen
  ---------------------------------- */
 export const useGetProfilePicture = (onSuccessCallback) =>
     useMutationWithToast({
         mutationFn: profileAPIs.getProfile,
-        successMsg: "Profile picture fetched successfully!",
-        errorMsg: "Failed to fetch profile picture",
+        successMsg: "Profilbild erfolgreich abgerufen!",
+        errorMsg: "Profilbild konnte nicht abgerufen werden",
         onSuccess: onSuccessCallback,
     });
 
 /** -------------------------------
- * 🔑 Change Password
+ * 🔑 Passwort ändern
  ---------------------------------- */
 export const useChangePassword = (onSuccessCallback) =>
     useMutationWithToast({
         mutationFn: profileAPIs.changePassword,
-        successMsg: "Password changed successfully!",
-        errorMsg: "Failed to change password",
+        successMsg: "Passwort erfolgreich geändert!",
+        errorMsg: "Passwort konnte nicht geändert werden",
         onSuccess: onSuccessCallback,
     });

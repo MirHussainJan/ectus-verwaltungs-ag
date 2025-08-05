@@ -23,7 +23,7 @@ const Page = () => {
     if (!file) return;
 
     if (file.size > 5 * 1024 * 1024) {
-      toast.error("Image must be less than 5MB");
+      toast.error("Bild muss kleiner als 5 MB sein");
       return;
     }
 
@@ -35,21 +35,21 @@ const Page = () => {
       {(isPending || isUploading) && <LoadingBackdrop />}
       <div className="py-4 md:py-9 px-4 md:px-6 lg:px-[4.167vw]">
         <h2 className="mb-4 font-bold md:text-[24px]/[150%] text-[20px]/[150%]">
-          Welcome back, {data?.user?.firstName} {data?.user?.lastName}
+          Willkommen zurück, {data?.user?.firstName} {data?.user?.lastName}
         </h2>
 
         <div className="flex flex-col md:flex-row gap-6">
           {/* left */}
           <div className="p-5 md:p-[20px_16px] bg-white md:w-[263px] w-full">
             <h6 className="font-semibold text-[18px]/[150%] mb-3">
-              Personal Info
+              Persönliche Informationen
             </h6>
             <div className="flex flex-col items-center mb-3">
               <div className="relative inline-block mb-[18px]">
                 <Image
                   className="rounded-full size-[72px] z-0"
                   src={data?.user?.profilePicture?.url || ProfilePic}
-                  alt="Profile Pic"
+                  alt="Profilbild"
                   width={72}
                   height={72}
                 />
@@ -75,10 +75,10 @@ const Page = () => {
               <hr className="border-1 border-[#E2E8F0]" />
               <div className="flex justify-between">
                 <p className="font-semibold text-[13px]/[100%] text-[#7E7E7E]">
-                  Date of Birth
+                  Geburtsdatum
                 </p>
                 <p className="font-medium text-[13px]/[100%]">
-                  {new Date(data?.user?.dob).toLocaleDateString("en-GB", {
+                  {new Date(data?.user?.dob).toLocaleDateString("de-DE", {
                     day: "2-digit",
                     month: "short",
                     year: "numeric",
@@ -87,7 +87,7 @@ const Page = () => {
               </div>
               <div className="flex justify-between">
                 <p className="font-semibold text-[13px]/[100%] text-[#7E7E7E]">
-                  Gender
+                  Geschlecht
                 </p>
                 <p className="font-medium text-[13px]/[100%]">
                   {data?.user?.gender}
@@ -95,7 +95,7 @@ const Page = () => {
               </div>
               <div className="flex justify-between">
                 <p className="font-semibold text-[13px]/[100%] text-[#7E7E7E]">
-                  Country
+                  Land
                 </p>
                 <p className="font-medium text-[13px]/[100%]">
                   {data?.user?.country}
@@ -107,12 +107,12 @@ const Page = () => {
           {/* right */}
           <div className="p-5 bg-white md:w-[312px] w-full flex flex-col gap-6">
             <h6 className="font-semibold text-[18px]/[150%]">
-              Your Klarna Investment Details
+              Ihre Klarna-Investmentdetails
             </h6>
             <div className="flex gap-6 justify-between">
               <div>
                 <p className="font-medium text-[12px]/[100%] mb-1.5">
-                  Your Klarna Shares
+                  Ihre Klarna-Anteile
                 </p>
                 <h4 className="font-semibold text-[20px]/[150%]">
                   {data?.user?.shares}
@@ -120,7 +120,7 @@ const Page = () => {
               </div>
               <div>
                 <p className="font-medium text-[12px]/[100%] mb-1.5">
-                  Current Klarna Price
+                  Aktueller Klarna-Preis
                 </p>
                 <h4 className="font-semibold text-[20px]/[150%]">
                   € {data?.user?.klarnaPrice}
@@ -131,7 +131,7 @@ const Page = () => {
             <div className="flex gap-6 justify-between">
               <div>
                 <p className="font-medium text-[12px]/[100%] mb-1.5">
-                  Total Value
+                  Gesamtwert
                 </p>
                 <h4 className="font-semibold text-[20px]/[150%]">
                   € {data?.user?.totalShareValue}
@@ -139,7 +139,7 @@ const Page = () => {
               </div>
               <div>
                 <p className="font-medium text-[12px]/[100%] mb-1.5">
-                  Klarna Purchase Price
+                  Klarna-Kaufpreis
                 </p>
                 <h4 className="font-semibold text-[20px]/[150%]">
                   € {data?.user?.klarnaPurchasePrice}

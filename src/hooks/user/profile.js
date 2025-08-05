@@ -2,7 +2,7 @@ import { userProfileAPIs } from "@/api/user/profile";
 import { useQueryWithErrorToast, useMutationWithToast } from "@/utils/tanstackInstance";
 
 /** -------------------------------
- * 📋 Get User Profile
+ * 📋 Benutzerprofil abrufen
  ---------------------------------- */
 export const useGetUserProfile = (onSuccessCallback) =>
     useQueryWithErrorToast(
@@ -10,17 +10,17 @@ export const useGetUserProfile = (onSuccessCallback) =>
             queryKey: ["userProfile"],
             queryFn: () => userProfileAPIs.getProfile(),
         },
-        "Failed to fetch user profile",
+        "Benutzerprofil konnte nicht abgerufen werden",
         onSuccessCallback
     );
 
 /** -------------------------------
- * 🖼️ Update User Profile Picture
+ * 🖼️ Benutzerprofilbild aktualisieren
  ---------------------------------- */
 export const useUpdateUserProfilePicture = (onSuccessCallback) =>
     useMutationWithToast({
         mutationFn: userProfileAPIs.updateProfilePicture,
-        successMsg: "Profile picture updated successfully!",
-        errorMsg: "Failed to update profile picture",
+        successMsg: "Profilbild erfolgreich aktualisiert!",
+        errorMsg: "Profilbild konnte nicht aktualisiert werden",
         onSuccess: onSuccessCallback,
     });

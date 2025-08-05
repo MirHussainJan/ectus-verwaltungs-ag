@@ -1,52 +1,62 @@
 import { authManagementAPIs } from "../api/auth";
 import { useQuery } from "@tanstack/react-query";
 import { useInfiniteQuery } from '@tanstack/react-query';
-import { useQueryWithErrorToast, useMutationWithToast, useMultiQueryWithErrorToast, useInfiniteQueryWithErrorToast } from "../utils/tanstackInstance";
+import {
+    useQueryWithErrorToast,
+    useMutationWithToast,
+    useMultiQueryWithErrorToast,
+    useInfiniteQueryWithErrorToast
+} from "../utils/tanstackInstance";
+
 // /** -------------------------------
 //  * 👤 Admin Login
 //  ---------------------------------- */
 export const useAdminLogin = (onSuccessCallback) => {
     return useMutationWithToast({
         mutationFn: (data) => authManagementAPIs.adminLogin(data),
-        successMsg: "Login successful!",
-        errorMsg: "Failed to login",
+        successMsg: "Login erfolgreich!",
+        errorMsg: "Login fehlgeschlagen",
         onSuccess: onSuccessCallback,
     });
 };
+
 // /** -------------------------------
 //  * 👤 Admin Logout
 //  ---------------------------------- */
 export const useAdminLogout = (onSuccessCallback) => {
     return useMutationWithToast({
         mutationFn: () => authManagementAPIs.adminLogout(),
-        successMsg: "Logout successful!",
-        errorMsg: "Failed to logout",
+        successMsg: "Logout erfolgreich!",
+        errorMsg: "Logout fehlgeschlagen",
         onSuccess: onSuccessCallback,
     });
 };
+
 // /** -------------------------------
 //  * 👤 User Login
 //  ---------------------------------- */
 export const useUserLogin = (onSuccessCallback) => {
     return useMutationWithToast({
         mutationFn: (data) => authManagementAPIs.userLogin(data),
-        successMsg: "Login successful!",
-        errorMsg: "Failed to login",
+        successMsg: "Login erfolgreich!",
+        errorMsg: "Login fehlgeschlagen",
         onSuccess: onSuccessCallback,
     });
 };
+
 // /** -------------------------------
 //  * 👤 User Logout
 //  ---------------------------------- */
 export const useUserLogout = (onSuccessCallback) => {
     return useMutationWithToast({
         mutationFn: () => authManagementAPIs.userLogout(),
-        successMsg: "Logout successful!",
-        errorMsg: "Failed to logout",
+        successMsg: "Logout erfolgreich!",
+        errorMsg: "Logout fehlgeschlagen",
         onSuccess: onSuccessCallback,
     });
 };
-// 🚀 User Auth Check Hook
+
+// 🚀 Benutzer-Authentifizierungsstatus prüfen
 export const useCheckUserAuthStatus = () => {
     return useQuery({
         queryKey: ["user-auth-status"],
@@ -56,7 +66,7 @@ export const useCheckUserAuthStatus = () => {
     });
 };
 
-// 👨‍💼 Admin Auth Check Hook
+// 👨‍💼 Admin-Authentifizierungsstatus prüfen
 export const useCheckAdminAuthStatus = () => {
     return useQuery({
         queryKey: ["admin-auth-status"],

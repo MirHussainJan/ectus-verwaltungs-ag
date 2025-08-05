@@ -46,14 +46,14 @@ export const Navbar = ({ mode = "dark" }) => {
             { name: "Lösungen", path: "/#solutions" },
             { name: "Unser Team", path: "/#our-team" },
             { name: "Kontakt", path: "/#contact-us" },
-            { name: "Portal Login", path: "/login" },
+            { name: "Portal Anmeldung", path: "/login" },
           ].map((page) => (
             <a
               key={page.name}
               href={page.path}
               onClick={(e) => handleNavClick(e, page.path.replace("/#", ""))}
-              className={`${textColor} text-[20px] font-semibold fade-in-delay-500 cursor-pointer
-              ${ page.name === "Portal Login" ? "border border-white p-3" : "" }`}
+              className={`${textColor} text-[18px] font-semibold fade-in-delay-500 cursor-pointer
+              ${ page.name === "Portal Anmeldung" ? "border border-white p-3" : "" }`}
             >
               {page.name}
             </a>
@@ -83,7 +83,7 @@ export const Navbar = ({ mode = "dark" }) => {
               { name: "Lösungen", path: "/#solutions" },
               { name: "Unser Team", path: "/#our-team" },
               { name: "Kontakt", path: "/#contact-us" },
-              { name: "Portal Login", path: "/login" },
+              { name: "Portal Anmeldung", path: "/login" },
             ].map((page) => (
               <a
                 key={page.name}

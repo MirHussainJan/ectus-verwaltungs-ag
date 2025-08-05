@@ -6,6 +6,7 @@ import { useGetKlarna, useUpdateKlarna } from "@/hooks/admin/klarna";
 import { useQueryClient } from "@tanstack/react-query";
 import LoadingBackdrop from "@/features/common/LoadingBackdrop";
 import EuroIcon from "../../../../assets/icons/EuroIcon";
+
 export default function Page() {
     const queryClient = useQueryClient();
     const { data, isPending: isFetching } = useGetKlarna();
@@ -13,14 +14,15 @@ export default function Page() {
         initialValues: { price: "" },
         validate: {
             price: (value) => {
-                if (!value?.trim()) return "Price is required";
+                if (!value?.trim()) return "Preis ist erforderlich";
                 const num = Number(value.replace(/[^0-9.]/g, ""));
-                if (Number.isNaN(num)) return "Enter a valid number";
-                if (num <= 0) return "Price must be greater than 0";
+                if (Number.isNaN(num)) return "Geben Sie eine gültige Zahl ein";
+                if (num <= 0) return "Der Preis muss größer als 0 sein";
                 return null;
             },
         },
     });
+
     useEffect(() => {
         if (data?.klarnaPrice) {
             form.setFieldValue("price", String(data.klarnaPrice));
@@ -30,25 +32,27 @@ export default function Page() {
     const { mutate: updateKlarna, isPending: isUpdating } = useUpdateKlarna(() => {
         queryClient.invalidateQueries(["klarna"]);
     });
+
     const onSubmit = (values) => {
         const numericPrice = Number(values.price);
         updateKlarna({ newKlarnaPrice: numericPrice });
     };
+
     return (
         <div className="w-[200px]">
             {(isFetching || isUpdating) && <LoadingBackdrop />}
             <h2 className="mb-5 font-bold md:text-[24px]/[150%] text-[20px]/[150%]">
-                Klarna Details
+                Klarna-Details
             </h2>
 
             <form onSubmit={form.onSubmit(onSubmit)} className="max-w-[380px] space-y-4">
                 <div>
                     <p className="mb-2.5 font-medium text-[14px]/[150%] text-[#191919]">
-                        Klarna Price
+                        Klarna-Preis
                     </p>
                     <Input
                         type="number"
-                        placeholder="Enter price"
+                        placeholder="Preis eingeben"
                         size="md"
                         rightSection={
                             <div className="h-full flex items-center">
@@ -68,7 +72,7 @@ export default function Page() {
                     type="submit"
                     className="bg-black text-white font-bold h-[48px] w-[199px] rounded-none"
                 >
-                    Update
+                    Aktualisieren
                 </button>
             </form>
         </div>

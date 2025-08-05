@@ -9,7 +9,7 @@ import { useForm } from "@mantine/form";
 import { useDisclosure } from "@mantine/hooks";
 import { useRouter } from "next/navigation";
 import { useAdminLogin } from "@/hooks/auth";
-import LoadingBackdrop  from "@/features/common/LoadingBackdrop";
+import LoadingBackdrop from "@/features/common/LoadingBackdrop";
 
 export default function AdminLoginPage() {
   const router = useRouter();
@@ -22,11 +22,13 @@ export default function AdminLoginPage() {
     },
     validate: {
       email: (value) =>
-        /^\S+@\S+\.\S+$/.test(value) ? null : "Please enter a valid email",
+        /^\S+@\S+\.\S+$/.test(value)
+          ? null
+          : "Bitte geben Sie eine gültige E-Mail-Adresse ein",
       password: (value) =>
         value.trim().length >= 6
           ? null
-          : "Password must be at least 6 characters",
+          : "Das Passwort muss mindestens 6 Zeichen lang sein",
     },
   });
   const { mutate, isPending } = useAdminLogin(() => {
@@ -38,9 +40,9 @@ export default function AdminLoginPage() {
 
   return (
     <>
-    {isPending && <LoadingBackdrop />}
+      {isPending && <LoadingBackdrop />}
       <div className="admin relative h-[100dvh] flex flex-col items-center gap-8">
-        {/* Background */}
+        {/* Hintergrund */}
         <Image
           src={background}
           alt=""
@@ -52,7 +54,7 @@ export default function AdminLoginPage() {
         {/* Logo */}
         <Logo className="w-[241px] h-[40px] lg:absolute lg:left-[77px] text-white lg:top-4 mt-10" />
 
-        {/* Customer Login (relative to page) */}
+        {/* Kundenanmeldung */}
         <Button
           unstyled
           onClick={() => router.push("/login")}
@@ -62,10 +64,10 @@ export default function AdminLoginPage() {
                    hover:bg-[#E7E7E7] hover:text-black transition-all duration-200
                    rounded"
         >
-          Customer Login
+          Kundenanmeldung
         </Button>
 
-        {/* Centered card */}
+        {/* Zentrale Anmeldekarte */}
         <div className="w-full h-full flex flex-col items-center lg:justify-center lg:px-[30.306vw] md:px-[25.879vw] px-[16px] ">
           <div
             className="w-full max-w-[560px]
@@ -77,15 +79,15 @@ export default function AdminLoginPage() {
               SK BlackRock Financial Admin
             </h2>
             <p className="mt-5 lg:text-[18px]/[150%] text-[#BDBDBD] mb-6">
-              Login to your account
+              Melden Sie sich bei Ihrem Konto an
             </p>
 
             <form onSubmit={form.onSubmit(handleSubmit)}>
-              {/* Email */}
+              {/* E-Mail */}
               <TextInput
                 withAsterisk
-                label="Email"
-                placeholder="your@email.com"
+                label="E-Mail"
+                placeholder="deine@email.com"
                 className="w-full mb-6"
                 classNames={{
                   root: "w-full",
@@ -98,11 +100,11 @@ export default function AdminLoginPage() {
                 {...form.getInputProps("email")}
               />
 
-              {/* Password */}
+              {/* Passwort */}
               <PasswordInput
                 withAsterisk
-                label="Password"
-                placeholder="Enter your password"
+                label="Passwort"
+                placeholder="Geben Sie Ihr Passwort ein"
                 visible={visible}
                 onVisibilityChange={toggle}
                 className="w-full mb-6"
@@ -118,7 +120,7 @@ export default function AdminLoginPage() {
                 {...form.getInputProps("password")}
               />
 
-              {/* Submit */}
+              {/* Anmelden */}
               <Button
                 unstyled
                 type="submit"
@@ -126,10 +128,12 @@ export default function AdminLoginPage() {
                          hover:bg-[#e6e0e0] transition-all duration-200
                          flex items-center justify-center cursor-pointer rounded"
               >
-                Sign In
+                Anmelden
               </Button>
             </form>
           </div>
+
+          {/* Mobile Kundenanmeldung */}
           <Button
             unstyled
             onClick={() => router.push("/login")}
@@ -137,7 +141,7 @@ export default function AdminLoginPage() {
                          transition-all duration-200 flex items-center justify-center
                          border border-[#E7E7E7] hover:bg-[#E7E7E7] hover:text-black cursor-pointer rounded mx-auto mt-6"
           >
-            Customer Login
+            Kundenanmeldung
           </Button>
         </div>
       </div>

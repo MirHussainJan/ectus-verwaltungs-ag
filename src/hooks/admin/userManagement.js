@@ -1,8 +1,13 @@
 import { userManagementAPIs } from "../../api/admin/userManagement";
-import { useQueryWithErrorToast, useMutationWithToast, useMultiQueryWithErrorToast, useInfiniteQueryWithErrorToast } from "../../utils/tanstackInstance";
+import {
+    useQueryWithErrorToast,
+    useMutationWithToast,
+    useMultiQueryWithErrorToast,
+    useInfiniteQueryWithErrorToast,
+} from "../../utils/tanstackInstance";
 
 /** -------------------------------
- * 📋 Get Users List
+ * 📋 Benutzerliste abrufen
  ---------------------------------- */
 export const useGetUsersList = (filters) =>
     useQueryWithErrorToast(
@@ -11,30 +16,33 @@ export const useGetUsersList = (filters) =>
             queryFn: () => userManagementAPIs.getUsersList(filters),
             keepPreviousData: true,
         },
-        "Failed to fetch user list"
+        "Benutzerliste konnte nicht abgerufen werden"
     );
-// /** -------------------------------
-//  * ➕ Add User
-//  ---------------------------------- */
+
+/** -------------------------------
+ * ➕ Benutzer hinzufügen
+ ---------------------------------- */
 export const useAddNewUser = (onSuccessCallback) =>
     useMutationWithToast({
         mutationFn: userManagementAPIs.addNewUser,
-        successMsg: "User added successfully!",
-        errorMsg: "Could not add user",
+        successMsg: "Benutzer erfolgreich hinzugefügt!",
+        errorMsg: "Benutzer konnte nicht hinzugefügt werden",
         onSuccess: onSuccessCallback,
     });
-// /** -------------------------------
-//  * 🚫 Delete User
-//  ---------------------------------- */
+
+/** -------------------------------
+ * 🚫 Benutzer löschen
+ ---------------------------------- */
 export const useDeleteUser = (onSuccessCallback) =>
     useMutationWithToast({
         mutationFn: userManagementAPIs.deleteUser,
-        successMsg: "User deleted successfully!",
-        errorMsg: "Failed to delete user",
+        successMsg: "Benutzer erfolgreich gelöscht!",
+        errorMsg: "Benutzer konnte nicht gelöscht werden",
         onSuccess: onSuccessCallback,
     });
+
 /** -------------------------------
- * 📋 Get User
+ * 📋 Benutzer abrufen
  ---------------------------------- */
 export const useGetUser = (id) =>
     useQueryWithErrorToast(
@@ -43,25 +51,27 @@ export const useGetUser = (id) =>
             queryFn: () => userManagementAPIs.getUser(id),
             keepPreviousData: true,
         },
-        "Failed to fetch user"
+        "Benutzer konnte nicht abgerufen werden"
     );
-// /** -------------------------------
-//  * ✏️ Update User
-//  ---------------------------------- */
+
+/** -------------------------------
+ * ✏️ Benutzer aktualisieren
+ ---------------------------------- */
 export const useUpdateUser = (onSuccessCallback) =>
     useMutationWithToast({
         mutationFn: userManagementAPIs.updateUser,
-        successMsg: "User updated successfully!",
-        errorMsg: "Failed to update user",
+        successMsg: "Benutzer erfolgreich aktualisiert!",
+        errorMsg: "Benutzer konnte nicht aktualisiert werden",
         onSuccess: onSuccessCallback,
     });
-// /** -------------------------------
-//  * 🗑️ Reveal User Password
-//  ---------------------------------- */
+
+/** -------------------------------
+ * 🗑️ Passwort anzeigen
+ ---------------------------------- */
 export const useRevealPassword = (onSuccessCallback) =>
     useMutationWithToast({
         mutationFn: userManagementAPIs.revealPassword,
-        successMsg: "Password revealed successfully!",
-        errorMsg: "Failed to reveal password",
+        successMsg: "Passwort erfolgreich angezeigt!",
+        errorMsg: "Passwort konnte nicht angezeigt werden",
         onSuccess: onSuccessCallback,
     });

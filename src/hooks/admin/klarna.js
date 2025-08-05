@@ -1,7 +1,13 @@
 import { klarnaAPIs } from "../../api/admin/klarna";
-import { useQueryWithErrorToast, useMutationWithToast, useMultiQueryWithErrorToast, useInfiniteQueryWithErrorToast } from "../../utils/tanstackInstance";
+import {
+    useQueryWithErrorToast,
+    useMutationWithToast,
+    useMultiQueryWithErrorToast,
+    useInfiniteQueryWithErrorToast,
+} from "../../utils/tanstackInstance";
+
 /** -------------------------------
- * 📋 Get Klarna Price
+ * 📋 Klarna-Preis abrufen
  ---------------------------------- */
 export const useGetKlarna = () =>
     useQueryWithErrorToast(
@@ -10,15 +16,16 @@ export const useGetKlarna = () =>
             queryFn: () => klarnaAPIs.getKlarna(),
             keepPreviousData: true,
         },
-        "Failed to fetch klarna"
+        "Klarna-Preis konnte nicht abgerufen werden"
     );
-// /** -------------------------------
-//  * ✏️ Update Klarna Price
-//  ---------------------------------- */
+
+/** -------------------------------
+ * ✏️ Klarna-Preis aktualisieren
+ ---------------------------------- */
 export const useUpdateKlarna = (onSuccessCallback) =>
     useMutationWithToast({
         mutationFn: klarnaAPIs.updateKlarna,
-        successMsg: "Klarna updated successfully!",
-        errorMsg: "Failed to update klarna",
+        successMsg: "Klarna erfolgreich aktualisiert!",
+        errorMsg: "Klarna konnte nicht aktualisiert werden",
         onSuccess: onSuccessCallback,
     });

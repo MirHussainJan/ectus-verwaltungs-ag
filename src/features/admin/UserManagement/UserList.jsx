@@ -22,7 +22,6 @@ const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, 
   });
 const { mutate: revealPassword, isPending: isRevealingPassword } =
   useRevealPassword((res) => {
-    console.log("Revealed password:", res); 
     setPassword(res.password);
     openPassword();
   });
@@ -55,12 +54,12 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
      };
     //  Menu Items
     const bulkMenuItems = [
-      { label: "Delete selected users", onClick: handleBulkDelete },
+      { label: "Ausgewählte Benutzer löschen", onClick: handleBulkDelete },
     ];
     const rowMenuItems = (id) => [
-      { label: "Delete User", onClick: () => handleDelete(id) },
-      { label: "Edit User", onClick: () => handleEdit(id) },
-      { label: "Reveal Password", onClick: () => handleRevealPassword(id) },
+      { label: "Benutzer löschen", onClick: () => handleDelete(id) },
+      { label: "Benutzer bearbeiten", onClick: () => handleEdit(id) },
+      { label: "Passwort anzeigen", onClick: () => handleRevealPassword(id) },
     ];
 
 
@@ -68,12 +67,9 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
     <>
       {(isPending || isRevealingPassword) && <LoadingBackdrop />}
       <div className="w-full overflow-hidden rounded-md border border-[#E2E8F0] bg-white">
-        {/* Header */}
+        {/* Kopfzeile */}
         {!isTabletOrMobile ? (
-          <div
-            className="grid grid-cols-10 items-center h-[64px] px-4 text-[#94A3B8] text-[14px] font-semibold bg-[#F4F4F7]"
-            // Indeterminate styling for the "select all" checkbox (visual cue)
-          >
+          <div className="grid grid-cols-10 items-center h-[64px] px-4 text-[#94A3B8] text-[14px] font-semibold bg-[#F4F4F7]">
             <div className="col-span-1 flex items-center">
               <input
                 type="checkbox"
@@ -83,19 +79,19 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
                 ref={(el) => {
                   if (el) el.indeterminate = isIndeterminate;
                 }}
-                aria-label="Select all rows"
+                aria-label="Alle Zeilen auswählen"
               />
             </div>
 
             <div className="col-span-2">Name</div>
-            <div className="col-span-2">Email</div>
-            <div className="col-span-1">Gender</div>
-            <div className="col-span-1">Country</div>
-            <div className="col-span-1">Klarna Shares</div>
-            <div className="col-span-1">Total Value</div>
+            <div className="col-span-2">E-Mail</div>
+            <div className="col-span-1">Geschlecht</div>
+            <div className="col-span-1">Land</div>
+            <div className="col-span-1">Klarna-Anteile</div>
+            <div className="col-span-1">Gesamtwert</div>
             <div className="col-span-1">
               <div className="flex justify-center">
-                <MentineMenu items={bulkMenuItems} ariaLabel="Bulk actions" />
+                <MentineMenu items={bulkMenuItems} ariaLabel="Sammelaktionen" />
               </div>
             </div>
           </div>
@@ -110,15 +106,16 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
                 ref={(el) => {
                   if (el) el.indeterminate = isIndeterminate;
                 }}
-                aria-label="Select all rows"
+                aria-label="Alle Zeilen auswählen"
               />
             </div>
             <div className="flex justify-center">
-              <MentineMenu items={bulkMenuItems} ariaLabel="Bulk actions" />
+              <MentineMenu items={bulkMenuItems} ariaLabel="Sammelaktionen" />
             </div>
           </div>
         )}
-        {/* Rows */}
+
+        {/* Zeilen */}
         <div className="overflow-y-auto lg:max-h-[calc(100dvh-420px)] md:max-h-[calc(100dvh-400px)] max-h-[calc(100dvh-480px)]">
           {isTabletOrMobile ? (
             <div className="grid md:grid-cols-2 gap-4 p-4">
@@ -129,7 +126,7 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
                     key={row._id}
                     className="border border-[#F1F5F9] bg-white"
                   >
-                    {/* Header: checkbox + name (left), actions (right) */}
+                    {/* Kopfzeile: Checkbox + Name (links), Aktionen (rechts) */}
                     <div className="flex md:items-start justify-between items-center px-4 py-2">
                       <label className="flex items-center gap-2 cursor-pointer">
                         <input
@@ -137,7 +134,7 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
                           className="size-4 accent-black"
                           checked={isChecked}
                           onChange={() => toggleOne(row._id)}
-                          aria-label={`Select ${row.firstName} ${row.lastName}`}
+                          aria-label={`Auswählen: ${row.firstName} ${row.lastName}`}
                         />
                         <span className="font-semibold text-[15px]">
                           {row.firstName} {row.lastName}
@@ -146,37 +143,37 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
 
                       <MentineMenu
                         items={rowMenuItems(row._id)}
-                        ariaLabel={`Actions for ${row.firstName} ${row.lastName}`}
+                        ariaLabel={`Aktionen für ${row.firstName} ${row.lastName}`}
                       />
                     </div>
                     <hr className="border-1 border-[#E2E8F0] mb-4" />
 
-                    {/* Body: title on left, value on right (justify-between) */}
+                    {/* Inhalte */}
                     <div className="px-4 pb-4 text-[14px] flex flex-col gap-2">
                       <div className="flex items-center justify-between">
-                        <span className="text-[#64748B]">Email</span>
+                        <span className="text-[#64748B]">E-Mail</span>
                         <span className="text-right text-[#334155] break-all">
                           {row.email}
                         </span>
                       </div>
 
                       <div className="flex items-center justify-between">
-                        <span className="text-[#64748B]">Gender</span>
+                        <span className="text-[#64748B]">Geschlecht</span>
                         <span className="font-medium">{row.gender}</span>
                       </div>
 
                       <div className="flex items-center justify-between">
-                        <span className="text-[#64748B]">Country</span>
+                        <span className="text-[#64748B]">Land</span>
                         <span className="font-semibold">{row.country}</span>
                       </div>
 
                       <div className="flex items-center justify-between">
-                        <span className="text-[#64748B]">Klarna shares</span>
+                        <span className="text-[#64748B]">Klarna-Anteile</span>
                         <span className="tabular-nums">{row.shares}</span>
                       </div>
 
                       <div className="flex items-center justify-between">
-                        <span className="text-[#64748B]">Total Value</span>
+                        <span className="text-[#64748B]">Gesamtwert</span>
                         <span className="font-semibold">
                           {row.totalShareValue}
                         </span>
@@ -205,7 +202,7 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
                         className="size-4 accent-black"
                         checked={isChecked}
                         onChange={() => toggleOne(row._id)}
-                        aria-label={`Select ${row.firstName} ${row.lastName}`}
+                        aria-label={`Auswählen: ${row.firstName} ${row.lastName}`}
                       />
                     </div>
                     <div className="col-span-2 truncate">
@@ -224,7 +221,7 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
                       <div className="flex justify-center">
                         <MentineMenu
                           items={rowMenuItems(row._id)}
-                          ariaLabel={`Actions for ${row.firstName} ${row.lastName}`}
+                          ariaLabel={`Aktionen für ${row.firstName} ${row.lastName}`}
                         />
                       </div>
                     </div>
@@ -241,7 +238,7 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
             value={filter.page}
             onChange={(page) => {
               setSelected(new Set());
-              setFilter((prev) => ({ ...prev, page }))
+              setFilter((prev) => ({ ...prev, page }));
             }}
             siblings={0}
             boundaries={1}

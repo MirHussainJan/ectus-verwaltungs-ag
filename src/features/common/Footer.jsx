@@ -9,13 +9,10 @@ export const Footer = () => {
       id="contact-us"
       className="lg:py-[45px] lg:px-[7.778vw] py-12 px-4 md:px-6 rounded-b-[50px] bg-[#F5F5F5]"
     >
+          <Logo className="w-[241px] h-[40px] mb-4" />
       <div className="flex justify-between gap-6 flex-col lg:flex-row border-b border-[#D1D5DB]">
         <div>
-          <Logo className="w-[241px] h-[40px] mb-4" />
           <p className="lg:mb-[53px] text-[14px]/[20px]">
-            Telefon: 0180546315
-            <br />
-            <br />
             <strong className="font-bold">Geschäftszeiten:</strong> <br />
             Montag bis Freitag: <strong>10:00 – 19:00 Uhr</strong> <br />
             Mittags Pause: <strong>12:00 - 13:00 Uhr</strong> <br />
@@ -28,12 +25,11 @@ export const Footer = () => {
           <p className="lg:mb-[53px] text-[14px]/[20px]">
             <strong>Kontakt</strong>
             <br />
-            <br />
             info@sk-blackrock-financial.com
             <br />
-            <br />
+            
             0180546315
-            <br />
+          
             <br />
             Sandstraße 104 <br />
             40789 Monheim am Rhein

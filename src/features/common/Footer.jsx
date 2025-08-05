@@ -12,14 +12,28 @@ export const Footer = () => {
       <Logo className="w-[241px] h-[40px] mb-4" />
       <div className="flex justify-between gap-6 flex-col lg:flex-row border-b border-[#D1D5DB]">
         <div>
-          <p className="lg:mb-[53px] text-[14px]/[20px]">
+          <p className="text-[14px]/[20px]">
             <strong className="font-bold">Geschäftszeiten:</strong> <br />
             <br />
-            Montag bis Freitag: <strong>10:00 – 19:00 Uhr</strong> <br />
-            Mittags Pause: <strong>12:00 - 13:00 Uhr</strong> <br />
-            Samstag:
-            <strong> 10:00 - 15:00 Uhr</strong>
           </p>
+          <div className="flex gap-1 justify-between">
+            <p className="text-[14px]/[20px]">Montag bis Freitag: </p>
+            <p className="text-[14px]/[20px]">
+              <strong>10:00 - 19:00 Uhr</strong>
+            </p>
+          </div>
+          <div className="flex gap-1 justify-between">
+            <p className="text-[14px]/[20px]">Mittags Pause: </p>
+            <p className="text-[14px]/[20px]">
+              <strong>12:00 - 13:00 Uhr</strong>
+            </p>
+          </div>
+          <div className="flex gap-1 justify-between">
+            <p className="text-[14px]/[20px]">Samstag: </p>
+            <p className="text-[14px]/[20px]">
+              <strong>10:00 - 15:00 Uhr</strong>
+            </p>
+          </div>
         </div>
         <div className="w-[256px] mb-8">
           <p className="lg:mb-[53px] text-[14px]/[20px]">

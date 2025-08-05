@@ -33,6 +33,7 @@ const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
       gender: "",
       country: "",
       shares: "",
+      klarnaPurchasePrice: "",
       email: "",
       password: "",
     },
@@ -53,13 +54,19 @@ const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
           return "Enter a valid non‑negative number";
         return null;
       },
+      klarnaPurchasePrice: (v) => {
+        const n = Number(v);
+        if (!Number.isFinite(n) || n < 0)
+          return "Enter a valid non-negative number";
+        return null;
+      },
       email: (v) => (/^\S+@\S+\.\S+$/.test(v) ? null : "Invalid email"),
     },
   });
 
   useEffect(() => {
     if (data?.user) {
-      const { firstName, lastName, dob, gender, country, shares, email } =
+      const { firstName, lastName, dob, gender, country, shares, klarnaPurchasePrice, email } =
         data?.user;
       form.setValues({
         firstName,
@@ -68,6 +75,7 @@ const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
         gender,
         country,
         shares,
+        klarnaPurchasePrice,
         email,
         password: "", 
       });
@@ -131,6 +139,13 @@ const EditUserModal = ({ opened, onClose, currentUser: id  }) => {
             min={0}
             {...form.getInputProps("shares")}
           />
+          <NumberInput
+            label="Klarna Purchase Price"
+            hideControls
+            min={0}
+            {...form.getInputProps("klarnaPurchasePrice")}
+          />
+          <br />
           <TextInput
             label="Email"
             withAsterisk

@@ -25,6 +25,7 @@ const AddNewUserModal = ({ opened, onClose }) => {
       gender: "",
       country: "",
       shares: "",
+      klarnaPurchasePrice: "",
       email: "",
       password: "",
     },
@@ -43,6 +44,12 @@ const AddNewUserModal = ({ opened, onClose }) => {
         const n = Number(v);
         if (!Number.isFinite(n) || n < 0)
           return "Enter a valid non‑negative number";
+        return null;
+      },
+      klarnaPurchasePrice: (v) => {
+        const n = Number(v);
+        if (!Number.isFinite(n) || n < 0)
+          return "Enter a valid non-negative number";
         return null;
       },
       email: (v) => (/^\S+@\S+\.\S+$/.test(v) ? null : "Invalid email"),
@@ -113,6 +120,14 @@ const AddNewUserModal = ({ opened, onClose }) => {
             min={0}
             {...form.getInputProps("shares")}
           />
+          <NumberInput
+            label="Klarna Purchase Price"
+            placeholder="Enter Klarna purchase price"
+            hideControls
+            min={0}
+            {...form.getInputProps("klarnaPurchasePrice")}
+          />
+          <br />
           <TextInput
             label="Email"
             placeholder="Enter User Email"

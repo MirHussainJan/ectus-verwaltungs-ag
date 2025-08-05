@@ -128,10 +128,24 @@ const Page = () => {
               </div>
             </div>
             <hr className="border-1 border-[#E2E8F0]" />
-            <p className="mb-1.5 font-medium text-[12px]/[100%]">Total Value</p>
-            <h4 className="font-semibold text-[20px]/[150%]">
-              € {data?.user?.totalShareValue}
-            </h4>
+            <div className="flex gap-6 justify-between">
+              <div>
+                <p className="font-medium text-[12px]/[100%] mb-1.5">
+                  Total Value
+                </p>
+                <h4 className="font-semibold text-[20px]/[150%]">
+                  € {data?.user?.totalShareValue}
+                </h4>
+              </div>
+              <div>
+                <p className="font-medium text-[12px]/[100%] mb-1.5">
+                  Klarna Purchase Price
+                </p>
+                <h4 className="font-semibold text-[20px]/[150%]">
+                  € {data?.user?.klarnaPurchasePrice}
+                </h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>

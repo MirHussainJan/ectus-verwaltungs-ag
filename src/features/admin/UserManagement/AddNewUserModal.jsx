@@ -128,6 +128,7 @@ const AddNewUserModal = ({ opened, onClose }) => {
             {...form.getInputProps("klarnaPurchasePrice")}
           />
           <br />
+          {/* delete later */}
           <TextInput
             label="Email"
             placeholder="Enter User Email"

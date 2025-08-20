@@ -42,7 +42,7 @@ export const Footer = () => {
             <br />
             info@sk-blackrock-financial.com
             <br />
-            0180546315
+            021732646280
             <br />
             Sandstraße 104 <br />
             40789 Monheim am Rhein

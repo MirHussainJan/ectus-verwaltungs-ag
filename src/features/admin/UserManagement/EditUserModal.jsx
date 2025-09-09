@@ -34,6 +34,7 @@ const EditUserModal = ({ opened, onClose, currentUser: id }) => {
       country: "",
       shares: "",
       klarnaPurchasePrice: "",
+      klarnaPrice: "",
       email: "",
       password: "",
     },
@@ -49,15 +50,25 @@ const EditUserModal = ({ opened, onClose, currentUser: id }) => {
       gender: (v) => (v ? null : "Geschlecht auswählen"),
       country: (v) => (v ? null : "Land auswählen"),
       shares: (v) => {
+        if (v === "" || v === null)
+          return "Geben Sie eine gültige, nicht-negative Zahl ein";
         const n = Number(v);
         if (!Number.isFinite(n) || n < 0)
           return "Geben Sie eine gültige, nicht-negative Zahl ein";
         return null;
       },
       klarnaPurchasePrice: (v) => {
+        if (v === "" || v === null) return "Kaufpreis ist erforderlich";
         const n = Number(v);
         if (!Number.isFinite(n) || n < 0)
           return "Geben Sie einen gültigen Kaufpreis ein";
+        return null;
+      },
+      klarnaPrice: (v) => {
+        if (v === "" || v === null) return "Klarna-Preis ist erforderlich";
+        const n = Number(v);
+        if (!Number.isFinite(n) || n < 0)
+          return "Geben Sie einen gültigen Klarna-Preis ein";
         return null;
       },
       email: (v) =>
@@ -75,6 +86,7 @@ const EditUserModal = ({ opened, onClose, currentUser: id }) => {
         country,
         shares,
         klarnaPurchasePrice,
+        klarnaPrice,
         email,
       } = data?.user;
 
@@ -86,6 +98,7 @@ const EditUserModal = ({ opened, onClose, currentUser: id }) => {
         country,
         shares,
         klarnaPurchasePrice,
+        klarnaPrice,
         email,
         password: "", // leer lassen
       });
@@ -160,7 +173,13 @@ const EditUserModal = ({ opened, onClose, currentUser: id }) => {
             min={0}
             {...form.getInputProps("klarnaPurchasePrice")}
           />
-          <br />
+          <NumberInput
+            label="Klarna-Preis"
+            placeholder="Klarna-Preis eingeben"
+            hideControls
+            // min={0}
+            {...form.getInputProps("klarnaPrice")}
+          />
           <TextInput
             label="E-Mail"
             withAsterisk

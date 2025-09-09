@@ -7,24 +7,32 @@ import { useDeleteUser, useRevealPassword } from "@/hooks/admin/userManagement";
 import { useQueryClient } from "@tanstack/react-query";
 import LoadingBackdrop from "@/features/common/LoadingBackdrop";
 import { useRouter } from "next/navigation";
-const UserList = ({ data, setCurrentUser, setPassword, openPassword, setFilter, filter, openEdit }) => {
+const UserList = ({
+  data,
+  setCurrentUser,
+  setPassword,
+  openPassword,
+  setFilter,
+  filter,
+  openEdit,
+}) => {
   const [selected, setSelected] = useState(new Set());
   const allIds = useMemo(() => data?.users.map((d) => d._id) || [], [data]);
   const allSelected = selected.size === allIds?.length && allIds.length > 0;
   const isIndeterminate = selected.size > 0 && !allSelected;
   const isTabletOrMobile = useMediaQuery("(max-width: 1023px)", undefined, {
-    getInitialValueInEffect: true, 
+    getInitialValueInEffect: true,
   });
   const queryClient = useQueryClient();
   const router = useRouter();
   const { mutate, isPending } = useDeleteUser(() => {
     queryClient.invalidateQueries(["usersList"]);
   });
-const { mutate: revealPassword, isPending: isRevealingPassword } =
-  useRevealPassword((res) => {
-    setPassword(res.password);
-    openPassword();
-  });
+  const { mutate: revealPassword, isPending: isRevealingPassword } =
+    useRevealPassword((res) => {
+      setPassword(res.password);
+      openPassword();
+    });
   const toggleAll = (checked) => {
     if (checked) setSelected(new Set(allIds));
     else setSelected(new Set());
@@ -38,30 +46,29 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
       return next;
     });
   };
-    const handleBulkDelete = () => {
-      const ids = Array.from(selected);
-      mutate(ids);
-    };
-     const handleEdit = (id) => {
-       setCurrentUser(id);
-       openEdit();
-     };
-     const handleRevealPassword = (id) => {
-      revealPassword(id);
-     };
-     const handleDelete = (id) => {
-      mutate([id]);
-     };
-    //  Menu Items
-    const bulkMenuItems = [
-      { label: "Ausgewählte Benutzer löschen", onClick: handleBulkDelete },
-    ];
-    const rowMenuItems = (id) => [
-      { label: "Benutzer löschen", onClick: () => handleDelete(id) },
-      { label: "Benutzer bearbeiten", onClick: () => handleEdit(id) },
-      { label: "Passwort anzeigen", onClick: () => handleRevealPassword(id) },
-    ];
-
+  const handleBulkDelete = () => {
+    const ids = Array.from(selected);
+    mutate(ids);
+  };
+  const handleEdit = (id) => {
+    setCurrentUser(id);
+    openEdit();
+  };
+  const handleRevealPassword = (id) => {
+    revealPassword(id);
+  };
+  const handleDelete = (id) => {
+    mutate([id]);
+  };
+  //  Menu Items
+  const bulkMenuItems = [
+    { label: "Ausgewählte Benutzer löschen", onClick: handleBulkDelete },
+  ];
+  const rowMenuItems = (id) => [
+    { label: "Benutzer löschen", onClick: () => handleDelete(id) },
+    { label: "Benutzer bearbeiten", onClick: () => handleEdit(id) },
+    { label: "Passwort anzeigen", onClick: () => handleRevealPassword(id) },
+  ];
 
   return (
     <>
@@ -175,7 +182,8 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
                       <div className="flex items-center justify-between">
                         <span className="text-[#64748B]">Gesamtwert</span>
                         <span className="font-semibold">
-                          {row.totalShareValue}
+                          {/* {row.totalShareValue} */}
+                          {row?.shares * row?.klarnaPrice}
                         </span>
                       </div>
                     </div>
@@ -215,7 +223,8 @@ const { mutate: revealPassword, isPending: isRevealingPassword } =
                     <div className="col-span-1">{row.country}</div>
                     <div className="col-span-1 tabular-nums">{row.shares}</div>
                     <div className="col-span-1 font-medium">
-                      {row.totalShareValue}
+                      {/* {row.totalShareValue} */}
+                      {row?.shares * row?.klarnaPrice}
                     </div>
                     <div className="col-span-1">
                       <div className="flex justify-center">

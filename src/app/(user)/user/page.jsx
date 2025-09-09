@@ -134,8 +134,7 @@ const Page = () => {
                   Gesamtwert
                 </p>
                 <h4 className="font-semibold text-[20px]/[150%]">
-                  € {data?.user?.shares * data?.user?.klarnaPrice}
-                  {/* € {data?.user?.totalShareValue} */}
+                  € {data?.user?.totalShareValue}
                 </h4>
               </div>
               <div>

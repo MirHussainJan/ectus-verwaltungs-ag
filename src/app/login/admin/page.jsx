@@ -128,7 +128,7 @@ export default function AdminLoginPage() {
                          hover:bg-[#e6e0e0] transition-all duration-200
                          flex items-center justify-center cursor-pointer rounded"
               >
-                Anmelden
+                Einloggen
               </Button>
             </form>
           </div>

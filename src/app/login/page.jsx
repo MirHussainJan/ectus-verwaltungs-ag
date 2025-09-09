@@ -173,7 +173,7 @@ const Page = () => {
               fullWidth
               className="!h-[50px] bg-[#000000] text-white !font-bold text-[16px]/[150%] hover:bg-[#1a1a1a] transition-all duration-200 flex items-center justify-center"
             >
-              Anmelden
+              Einloggen
             </Button>
 
             <Button

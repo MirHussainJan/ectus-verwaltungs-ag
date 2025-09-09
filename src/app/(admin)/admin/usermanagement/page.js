@@ -29,17 +29,39 @@ const Page = () => {
     const { data, isPending } = useGetUsersList(filter);
 
     return (
-        <div>
-            {isPending && <LoadingBackdrop />}
-            <AddNewUserModal opened={opened} onClose={close} />
-            {currentUser &&
-                <EditUserModal opened={editOpened} onClose={closeEdit} currentUser={currentUser} />
-            }
-            <Header initialSearch={debouncedSearch} onSearchChange={setDebouncedSearch} openModal={open} />
-            <UserList filter={filter} setFilter={setFilter} data={data} setCurrentUser={setCurrentUser} setPassword={setPassword} openPassword={openPassword} openEdit={openEdit} />
-            <PasswordRevealModal opened={passwordOpen} onClose={closePassword} password={password} />
-        </div>
-    )
+      <div>
+        {isPending && <LoadingBackdrop />}
+        <AddNewUserModal opened={opened} onClose={close} />
+        {currentUser && (
+          <EditUserModal
+            opened={editOpened}
+            onClose={closeEdit}
+            currentUser={currentUser}
+          />
+        )}
+        <Header
+          initialSearch={debouncedSearch}
+          onSearchChange={setDebouncedSearch}
+          openModal={open}
+        />
+        <UserList
+          filter={filter}
+          setFilter={setFilter}
+          data={data}
+          setCurrentUser={setCurrentUser}
+          setPassword={setPassword}
+          openPassword={openPassword}
+          openEdit={openEdit}
+        />
+        {passwordOpen && (
+          <PasswordRevealModal
+            opened={passwordOpen}
+            onClose={closePassword}
+            password={password}
+          />
+        )}
+      </div>
+    );
 }
 
 export default Page

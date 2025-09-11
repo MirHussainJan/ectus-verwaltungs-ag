@@ -29,7 +29,7 @@ const ChangePasswordPage = () => {
       });
 
       if (res.status === 200) {
-        toast.success("Password changed successfully");
+        toast.success("Passwort erfolgreich geändert");
         router.push("/user");
       } else {
         toast.error(res?.data?.message || "Failed to change password");

@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import Image from "next/image";
 import ProfilePic from "../../../assets/images/profile.jpg";
 import EditPen from "../../../assets/icons/EditPen";
@@ -32,25 +33,23 @@ const Page = () => {
     updateProfilePicture(file);
   };
 
-  const handleChangePassword = () => {
-    router.push("/user/changePassword");
-  };
+  // Removed handleChangePassword, using Link instead
 
   return (
     <>
       {(isPending || isUploading) && <LoadingBackdrop />}
       <div className="py-4 md:py-9 px-4 md:px-6 lg:px-[4.167vw]">
-        {/* Header with Change Password Button */}
+        {/* Header with Change Password Link */}
         <div className="flex justify-between items-center mb-4">
           <h2 className="font-bold md:text-[24px]/[150%] text-[20px]/[150%]">
             Willkommen zurück, {data?.user?.firstName} {data?.user?.lastName}
           </h2>
-          <button
-            onClick={handleChangePassword}
+          <Link
+            href="/user/changePassword"
             className="bg-black text-white px-4 py-2 font-medium text-[14px] hover:bg-gray-800 transition-colors"
           >
             Change password
-          </button>
+          </Link>
         </div>
 
         <div className="flex flex-col md:flex-row gap-6">

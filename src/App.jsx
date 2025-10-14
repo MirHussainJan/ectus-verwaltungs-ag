@@ -1,12 +1,8 @@
-import React from 'react'
-import Landing from './pages/landing'
+import { RouterProvider } from "react-router";
+import router from "./Router";
 
 const App = () => {
-  return (
-    <>
-      <Landing />
-    </>
-  )
-}
+  return <RouterProvider router={router} />;
+};
 
-export default App
+export default App;

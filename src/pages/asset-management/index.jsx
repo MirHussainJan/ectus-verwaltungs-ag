@@ -1,3 +1,4 @@
+import CallToActionSection from "../../components/asset-management/call-to-action";
 import AssetManagementHeroSection from "../../components/asset-management/hero-section";
 import WelcomMessageSection from "../../components/asset-management/message-section";
 import Footer from "../../components/footer";
@@ -9,6 +10,7 @@ const AssetManagementPage = () => {
       <Header />
       <AssetManagementHeroSection />
       <WelcomMessageSection />
+      <CallToActionSection />
       <Footer />
     </>
   );

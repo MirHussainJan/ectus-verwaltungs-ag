@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Landing from "./pages/landing";
 import AssetManagementPage from "./pages/asset-management";
 import IpoPage from "./pages/ipo";
+import ArbitragePage from "./pages/arbitrage";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/ipo",
     element: <IpoPage />,
+  },
+  {
+    path: "/arbitrage",
+    element: <ArbitragePage />,
   },
 ]);
 

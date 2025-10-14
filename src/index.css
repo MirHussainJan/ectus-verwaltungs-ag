@@ -3,3 +3,12 @@
 button {
   @apply hover:cursor-pointer;
 }
+
+.hero-image {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./assets/images/hero-image.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}

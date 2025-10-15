@@ -1,60 +1,85 @@
 function Card({ icon, title, children }) {
   return (
-    <div className="rounded-lg border border-border p-6 bg-card">
-      <div className="h-10 w-10 rounded-md bg-primary/10 text-primary flex items-center justify-center mb-4">
+    <div className="rounded-lg py-6 bg-card">
+      <div className="h-10 w-10 rounded-md bg-primary/10 text-primary flex items-center justify-center mx-auto">
         {icon}
       </div>
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-muted-foreground">{children}</p>
+      <h3 className="text-2xl text-center font-light mb-4">{title}</h3>
+      <p className="text-muted-foreground text-center text-lg font-light">{children}</p>
     </div>
-  )
+  );
 }
 
 export default function FeatureCards() {
-  const iconClass = "w-5 h-5"
+  const iconClass = "w-5 h-5";
   return (
-    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
       <Card
         icon={
-          <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M4 12h16M4 6h16M4 18h10" strokeWidth="2" strokeLinecap="round" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="42"
+            viewBox="0 0 25 42"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.13922 0H20.8537L15.2986 14.6203L25 14.5941L5.94869 42L10.4786 21.8304L0 21.8233L4.13922 0Z"
+              fill="#5f1718"
+            />
           </svg>
         }
         title="Anlageberatung"
       >
-        Individuelle Portfolios mit Fokus auf Risiko, Rendite und Nachhaltigkeit.
+        Profitieren Sie von unserer Expertise bei der optimalen Gestaltung Ihres
+        Investmentportfolios.
       </Card>
       <Card
         icon={
-          <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M12 3v18M3 12h18" strokeWidth="2" strokeLinecap="round" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="42"
+            viewBox="0 0 25 42"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.13922 0H20.8537L15.2986 14.6203L25 14.5941L5.94869 42L10.4786 21.8304L0 21.8233L4.13922 0Z"
+              fill="#5f1718"
+            />
           </svg>
         }
-        title="Vermögensplanung"
+        title="Versicherungsanalyse"
       >
-        Ganzheitliche Strategien für Vermögensaufbau, Absicherung und Liquidität.
+        Wir überprüfen Ihre Versicherungen, um sicherzustellen, dass Sie optimal
+        abgesichert sind.
       </Card>
       <Card
         icon={
-          <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M4 12l6 6L20 6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="42"
+            viewBox="0 0 25 42"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.13922 0H20.8537L15.2986 14.6203L25 14.5941L5.94869 42L10.4786 21.8304L0 21.8233L4.13922 0Z"
+              fill="#5f1718"
+            />
           </svg>
         }
-        title="Steueroptimierung"
+        title="Budgetplanung"
       >
-        Effiziente Konzepte zur Reduktion der Steuerlast mit klarer Umsetzung.
-      </Card>
-      <Card
-        icon={
-          <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <circle cx="12" cy="12" r="9" strokeWidth="2" />
-            <path d="M12 7v5l3 3" strokeWidth="2" strokeLinecap="round" />
-          </svg>
-        }
-        title="Langfristige Begleitung"
-      >
-        Proaktive Betreuung und regelmäßige Reviews für nachhaltigen Erfolg.
+        Gemeinsam erstellen wir einen maßgeschneiderten Budgetplan, um Ihre
+        finanziellen Ziele zu erreichen.
       </Card>
     </div>
-  )
+  );
 }

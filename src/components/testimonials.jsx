@@ -1,30 +1,42 @@
-function Quote({ author, children }) {
+function Quote({inst, author, children }) {
   return (
     <div className="text-center max-w-xl mx-auto">
       <svg
-        className="mx-auto mb-4 text-primary"
-        width="30"
-        height="30"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        aria-hidden
+      className="mx-auto"
+        xmlns="http://www.w3.org/2000/svg"
+        width="51"
+        height="33"
+        viewBox="0 0 51 33"
+        fill="none"
       >
-        <path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V22h8v-8H6.83A3.17 3.17 0 0 1 10 10.83V6H7.17Zm9 0A5.17 5.17 0 0 0 11 11.17V22h8v-8h-3.17A3.17 3.17 0 0 1 19 10.83V6h-2.83Z" />
+        <path
+          d="M8.39024 17.4912C7.77518 13.4777 10.4516 7.91494 14.4381 4.49556C15.8993 3.24226 16.6749 2.82327 22.267 0.426164C19.6388 -0.688855 13.3476 0.565697 10.8592 2.09851C-1.61119 10.5436 -0.83668 23.9016 1.12051 27.302C3.72091 33.0714 10.04 33.601 13.6329 31.0786C20.6929 25.1838 15.4923 16.7944 8.39024 17.4912Z"
+          fill="#5f1718"
+        />
+        <path
+          d="M37.0218 17.9766C36.4068 13.9631 39.0832 8.4003 43.0697 4.98092C44.5309 3.72761 45.3065 3.30862 50.8986 0.911513C48.2703 -0.203501 41.9792 1.05105 39.4907 2.58386C27.0204 11.029 27.7949 24.387 29.7521 27.7874C32.3525 33.5568 38.6716 34.0864 42.2645 31.564C49.3245 25.6691 44.1239 17.2798 37.0218 17.9766Z"
+          fill="#5f1718"
+        />
       </svg>
-      <p className="text-lg leading-relaxed text-pretty">{children}</p>
-      <p className="mt-4 font-medium">{author}</p>
+      <p className="mt-4 font-light text-2xl">{author}</p>
+      <p className="font-medium mb-6">{inst}</p>
+      <p className="text-lg leading-relaxed font-light">{children}</p>
     </div>
-  )
+  );
 }
 
 export default function Testimonials() {
   return (
-    <div className="grid gap-10 md:gap-12 md:grid-cols-3">
-      <Quote author="Claudia R.">
-        „Die Beratung war klar, ehrlich und extrem hilfreich. Endlich habe ich einen Plan, der zu mir passt.“
+    <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+      <Quote inst="Müller & Co. GmbH" author="Anna Müller">
+        Wir waren äußerst zufrieden mit der professionellen Beratung durch Ectus Verwaltungs AG in Kemberg, Deutschland.
       </Quote>
-      <Quote author="Daniel K.">„Transparente Kosten, starke Ergebnisse – ich fühle mich bestens aufgehoben.“</Quote>
-      <Quote author="Mara S.">„Regelmäßige Updates und verständliche Analysen. Genau das habe ich gesucht.“</Quote>
+      <Quote inst="Schmidt Finanzdienstleistungen" author="Mario Schmidt">
+        Unsere Erwartungen wurden übertroffen - Ectus Verwaltungs AG erwies sich als zuverlässiger und kompetenter Finanzberater.
+      </Quote>
+      <Quote inst="Wagner Investitionen GmbH" author="Julia Wagner">
+        Die Zusammenarbeit mit Ectus Verwaltungs AG war äußerst erfolgreich und wir empfehlen ihre Dienste gerne weiter.
+      </Quote>
     </div>
-  )
+  );
 }

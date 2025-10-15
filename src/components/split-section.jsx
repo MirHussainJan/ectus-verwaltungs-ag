@@ -1,33 +1,40 @@
-export default function SplitSection({ kicker, title, copy, image, imageAlt, imageLeft = false }) {
+export default function SplitSection({
+  kicker,
+  title,
+  copy,
+  image,
+  imageAlt,
+  imageLeft = false,
+}) {
   return (
-    <div
-      className={`grid gap-8 md:gap-12 items-center ${imageLeft ? "md:grid-cols-[1fr_1.1fr]" : "md:grid-cols-[1.1fr_1fr]"}`}
-    >
-      {imageLeft && (
-        <div className="order-none md:order-none">
+    <section className="w-full bg-gray-50 py-16 md:py-24">
+      <div
+        className={`max-w-5xl mx-auto flex flex-col ${
+          imageLeft ? "md:flex-row-reverse" : "md:flex-row"
+        } items-center gap-10 md:gap-16`}
+      >
+        {/* Text Section */}
+        <div className="flex-1">
+          <p className="uppercase font-bold text-base text-muted-foreground">
+            {kicker}
+          </p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl mb-6 text-balance">
+            {title}
+          </h2>
+          <div className="text-base md:text-lg leading-relaxed font-light space-y-4">
+            {copy}
+          </div>
+        </div>
+
+        {/* Image Section */}
+        <div className="flex-1">
           <img
-            src={image || "/placeholder.svg"}
+            src={image}
             alt={imageAlt}
-            className="w-full h-64 md:h-[28rem] object-cover rounded-lg border border-border"
+            className="w-full object-cover"
           />
         </div>
-      )}
-
-      <div className={`${imageLeft ? "order-last md:order-none" : ""}`}>
-        <p className="uppercase tracking-widest text-sm text-muted-foreground">{kicker}</p>
-        <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold mt-2 mb-4 text-pretty">{title}</h3>
-        <p className="text-muted-foreground leading-relaxed">{copy}</p>
       </div>
-
-      {!imageLeft && (
-        <div>
-          <img
-            src={image || "/placeholder.svg"}
-            alt={imageAlt}
-            className="w-full h-64 md:h-[28rem] object-cover rounded-lg border border-border"
-          />
-        </div>
-      )}
-    </div>
-  )
+    </section>
+  );
 }

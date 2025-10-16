@@ -9,7 +9,7 @@ const CallToActionSection = () => {
       </h1>
       <Link to="/#Karriere">
         <button className="bg-[#5f1718] rounded-lg p-[5px_20px] text-white font-semibold w-[220px] h-[42px]">
-          Contact us
+          Kontaktieren Sie uns
         </button>
       </Link>
     </div>

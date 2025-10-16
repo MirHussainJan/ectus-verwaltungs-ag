@@ -2,39 +2,45 @@ const IPODetails = () => {
   return (
     <div className="px-8 py-20 flex justify-center">
       <div className="max-w-[1040px] text-xl md:text-2xl text-black/80 font-light leading-normal md:leading-10">
-        An initial public offering (IPO) is the process by which a private
-        company offers its shares to the public for the first time. This step
-        often marks a significant milestone in a company's development and
-        offers a variety of benefits.
+        Ein Börsengang, auch Initial Public Offering (IPO) genannt, ist der
+        Prozess, bei dem ein privates Unternehmen erstmals seine Aktien der
+        Öffentlichkeit anbietet. Dieser Schritt markiert häufig einen
+        bedeutenden Meilenstein in der Entwicklung einer Firma und bietet
+        vielfältige Vorteile.
         <br />
-        One of the main advantages of an IPO is access to capital. By selling
-        shares to the general public, a company can raise significant funds that
-        can be used for further growth and expansion, the development of new
-        products, or the repayment of debt. This capital is particularly
-        valuable because, unlike debt, it does not have to be repaid.
+        Einer der Hauptvorteile eines IPOs ist der Zugang zu Kapital. Durch den
+        Verkauf von Aktien an die breite Öffentlichkeit kann ein Unternehmen
+        erhebliche Finanzmittel beschaffen, die für weiteres Wachstum und
+        Expansion, die Entwicklung neuer Produkte oder die Tilgung von Schulden
+        verwendet werden können. Dieses Kapital ist besonders wertvoll, da es
+        nicht wie Fremdkapital zurückgezahlt werden muss.
         <br />
-        Another advantage is the increased public awareness and prestige that
-        comes with being listed on a stock exchange. A publicly traded company
-        often gains credibility and trust among customers, suppliers, and
-        potential business partners. This can also make it easier to attract
-        highly qualified employees and retain existing staff, as stock options
-        and other equity-based compensation can serve as an attraction.
+        Ein weiterer Vorteil ist die gesteigerte öffentliche Wahrnehmung und das
+        Prestige, das mit der Notierung an einer Börse einhergeht. Ein
+        börsennotiertes Unternehmen gewinnt oft an Glaubwürdigkeit und Vertrauen
+        bei Kunden, Lieferanten und potenziellen Geschäftspartnern. Dies kann
+        auch dazu führen, dass es einfacher ist, hochqualifizierte Mitarbeiter
+        zu gewinnen und bestehendes Personal zu halten, da Aktienoptionen und
+        andere aktienbasierte Vergütungen als Anziehungspunkt dienen können.
+        IPOs bieten auch liquiditätsbezogene Vorteile für frühe Investoren und
+        Gründer. Diese können einen Teil ihrer Anteile veräußern und somit ihre
+        Investitionen realisieren. Darüber hinaus schafft ein Börsengang einen
+        öffentlich handelbaren Markt für die Aktien, was es den Aktionären
+        erleichtert, ihre Anteile zu fairen Marktpreisen zu verkaufen.
         <br />
-        IPOs also offer liquidity-related advantages for early investors and
-        founders. They can sell part of their shares and thus realize their
-        investments. Furthermore, an IPO creates a publicly tradable market for
-        the shares, making it easier for shareholders to sell their shares at
-        fair market prices.
+        Aktionären erleichtert, ihre Anteile zu fairen Marktpreisen zu
+        verkaufen. Zudem eröffnet ein IPO Möglichkeiten für künftige
+        Kapitalbeschaffungen. Einmal an der Börse, kann ein Unternehmen in der
+        Regel einfacher zusätzliches Kapital aufnehmen, da es bereits eine
+        etablierte Investorenbasis hat und die Liquidität der Aktien am Markt
+        gegeben ist.
         <br />
-        In addition, an IPO opens up opportunities for future capital raising.
-        Once listed on the stock market, a company can generally raise
-        additional capital more easily because it already has an established
-        investor base and the shares are readily available on the market.
-        However, it's important to note that an IPO also entails challenges and
-        obligations, such as increased transparency requirements and regulatory
-        obligations. Despite these challenges, a successful IPO can be a
-        strategic step that promotes a company's growth and long-term
-        development.
+        Allerdings ist zu beachten, dass ein Börsengang auch Herausforderungen
+        und Verpflichtungen mit sich bringt, wie beispielsweise erhöhte
+        Transparenzanforderungen und regulatorische Auflagen. Trotz dieser
+        Herausforderungen kann ein erfolgreicher IPO ein strategischer Schritt
+        sein, der das Wachstum und die langfristige Entwicklung eines
+        Unternehmens fördert.
       </div>
     </div>
   );

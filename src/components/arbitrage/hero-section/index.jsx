@@ -7,11 +7,11 @@ const ArbitrageHeroSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <a href="#footer">
           <button className="bg-[#5f1718] w-full text-white rounded-lg p-[5px_20px] h-[42px]">
-            Call us
+            Rufen sie uns an
           </button>
         </a>
         <button className="bg-white rounded-lg p-[5px_20px] text-black h-[42px]">
-          Make an appointment
+          Vereinbaren sie einen Termin
         </button>
       </div>
     </div>

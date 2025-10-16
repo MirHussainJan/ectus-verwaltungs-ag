@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function Footer() {
   return (
     <footer id="footer" className="w-full border-t border-gray-200 py-8 bg-white">
@@ -15,11 +17,11 @@ export default function Footer() {
               Home
             </button>
           </a>
-          <a href="/impressum">
+          <Link to="/impressum">
             <button className="border border-gray-400 text-gray-600 px-6 py-2 font-bold rounded-lg text-lg hover:bg-gray-100 transition">
               Impressum
             </button>
-          </a>
+          </Link>
         </div>
 
         {/* Center Section */}

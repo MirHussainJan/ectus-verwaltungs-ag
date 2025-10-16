@@ -4,90 +4,63 @@ const ArbitrageDetails = () => {
       <div className="max-w-[1040px] text-black/80 font-light flex flex-col gap-8 md:gap-12">
         <div className="text-center w-full">
           <h2 className="text-2xl md:text-4xl text-center font-light mb-4 leading-normal">
-            Arbitrage trading
+            Arbitragehandel
           </h2>
           <p className="text-lg md:text-xl">
             <span className="mb-2 leading-normal">
-              <b>Opportunities and challenges in the modern financial world</b>
+              <b>Chancen und Herausforderungen in der modernen Finanzwelt</b>
             </span>
             <br />
-            Arbitrage is the practice of exploiting price differences for the
-            same asset across different markets to generate risk-free profits.
-            By simultaneously buying and selling identical financial instruments
-            on different trading venues, arbitrage can be an effective method
-            for maximizing returns.
+            Arbitrage bezeichnet die Praxis, Preisunterschiede für dasselbe
+            Asset auf verschiedenen Märkten auszunutzen, um risikofreie Gewinne
+            zu erzielen. Durch den simultanen Kauf und Verkauf identischer
+            Finanzinstrumente an unterschiedlichen Handelsplätzen kann Arbitrage
+            eine effektive Methode zur Maximierung von Renditen sein.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <div className="flex flex-col gap-3">
             <h3 className="text-[#5f1718] text-xl font-normal">
-              Advantages of arbitrage
+              Vorteile der Arbitrage
             </h3>
             <ol className="list-decimal list-inside text-lg">
               <li>
-                <b>Risk minimization:</b> One of the greatest strengths of
-                arbitrage is its low risk. Because it involves exploiting price
-                differences, the market is virtually risk-free, provided the
-                transactions are executed correctly.
+                Risikominimierung: Eine der größten Stärken der Arbitrage ist das geringe Risiko. Da es sich um das Ausnutzen von Preisunterschieden handelt, ist der Markt nahezu risikofrei, vorausgesetzt, die Transaktionen werden korrekt ausgeführt.
               </li>
               <li>
-                <b>Increased efficiency:</b> Arbitrage contributes to market
-                stability by helping to reduce price differences between markets
-                and thus promotes price integration.
+                Effizienzsteigerung: Arbitrage trägt zur Marktstabilität bei, indem sie dazu beiträgt, Preisunterschiede zwischen den Märkten zu verringern und somit die Preisintegration fördert.
               </li>
               <li>
-                <b>Profit potential:</b> For experienced traders, arbitrage
-                offers the opportunity to make significant profits in a short
-                period of time, depending on the size of the price differences.
+                Gewinnpotenzial: Für geübte Trader bietet Arbitrage die Möglichkeit, in kurzer Zeit beachtliche Gewinne zu erzielen, abhängig von der Höhe der Preisdifferenzen.
               </li>
             </ol>
           </div>
           <div className="flex flex-col gap-3">
             <h3 className="text-[#5f1718] text-xl font-normal">
-              Disadvantages of arbitrage
+              Nachteile der Arbitrage
             </h3>
             <ol className="list-decimal list-inside text-lg">
               <li>
-                <b>Low margins:</b> Because arbitrage relies on minimal price
-                differences, profit margins are often very low. High trading
-                volumes are necessary to generate significant returns.
+                Niedrige Margen: Da Arbitrage auf minimale Preisunterschiede setzt, sind die Gewinnmargen oft sehr gering. Hohe Handelsvolumina sind notwendig, um signifikante Renditen zu erzielen.
               </li>
               <li>
-                <b>Implementation costs:</b> The necessary infrastructure and
-                transaction costs can be high, especially for the acquisition
-                and maintenance of sophisticated technology.
+                Implementierungskosten: Die notwendige Infrastruktur und die Transaktionskosten können hoch sein. Dies betrifft vor allem die Anschaffung und Pflege von hochentwickelter Technologie.
               </li>
               <li>
-                <b>Regulatory risks:</b> Different legal frameworks in different
-                countries can make it difficult to conduct arbitrage
-                transactions.
+                 Regulatorische Risiken: Unterschiedliche gesetzliche Rahmenbedingungen in verschiedenen Ländern können die Durchführung von Arbitrage-Geschäften erschweren.
+                 <br />
+                 Unsere moderne Technik für Arbitrage
               </li>
             </ol>
           </div>
         </div>
         <div className="text-center w-full">
-          <h2 className="text-2xl md:text-4xl text-center font-light mb-4 leading-normal">
-            Our modern technology for arbitrage
-          </h2>
           <p className="text-lg md:text-xl">
-            In a rapidly changing financial market environment, the use of
-            state-of-the-art technology is crucial for successfully executing
-            arbitrage trades. We utilize sophisticated algorithms and
-            specialized software capable of instantly identifying market
-            discrepancies and executing trades in near real time. These
-            technologies minimize human error and maximize the efficiency of our
-            arbitrage strategies.
+            In einem sich schnell wandelnden Finanzmarktumfeld ist der Einsatz modernster Technik entscheidend, um erfolgreich Arbitrage-Geschäfte abzuwickeln. Wir nutzen hochentwickelte Algorithmen und spezialisierte Software, die in der Lage sind, blitzschnell Marktunterschiede zu identifizieren und Transaktionen nahezu in Echtzeit auszuführen. Diese Technologien minimieren menschliches Versagen und maximieren die Effizienz unserer Arbitrage-Strategien.
             <br />
-            In addition, we leverage advanced data analytics and artificial
-            intelligence to identify market patterns and make predictions that
-            give us a strategic advantage. Our dedicated team of IT experts and
-            financial analysts continuously works to optimize our systems to
-            ensure maximum benefit for each of our clients.
+            Darüber hinaus setzen wir auf fortschrittliche Datenanalysen und künstliche Intelligenz, um Marktmuster zu erkennen und Vorhersagen zu treffen, die uns einen strategischen Vorteil verschaffen. Unser engagiertes Team von IT-Experten und Finanzanalysten arbeitet kontinuierlich an der Optimierung unserer Systeme, um jedem unserer Kunden einen maximalen Nutzen zu garantieren.
             <br />
-            By combining in-depth expertise, cutting-edge technology, and
-            flexible strategy, we are ideally positioned to fully exploit the
-            opportunities offered by arbitrage while simultaneously overcoming
-            the challenges inherent in this complex trading method.
+            Durch die Kombination aus fundiertem Fachwissen, modernster Technik und flexibler Strategie sind wir bestens positioniert, um die Chancen der Arbitrage voll auszuschöpfen und gleichzeitig die Herausforderungen dieser komplexen Handelsmethode zu meistern.
           </p>
         </div>
       </div>

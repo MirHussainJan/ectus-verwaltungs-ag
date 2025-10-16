@@ -10,13 +10,13 @@ export default function Hero({ imageUrl }) {
       aria-label="Hero"
     >
       <div className="absolute inset-0 bg-black/25" />
-      <div className="relative max-w-5xl mx-auto pt-24">
-        <div className="text-white space-y-6 md:space-y-24">
-          <h1 className="text-3xl font-light md:text-5xl lg:text-6xl w-[90%] leading-relaxed text-balance">
+      <div className="relative max-w-5xl mx-auto pt-24 px-4">
+        <div className="text-white space-y-6 md:space-y-24 text-center md:text-left">
+          <h1 className="text-3xl font-light md:text-5xl lg:text-6xl w-full md:w-[90%] mx-auto md:mx-0 leading-relaxed text-balance">
             Gemeinsam finanzielle Träume verwirklichen mit Der Ectus Verwaltungs
             AG
           </h1>
-          <a className="px-6 py-4 rounded-lg bg-[#5f1718] font-bold">
+          <a className="inline-block px-6 py-4 rounded-lg bg-[#5f1718] font-bold">
             Konsultation buchen
           </a>
         </div>

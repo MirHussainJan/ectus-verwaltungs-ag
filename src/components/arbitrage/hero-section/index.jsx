@@ -5,9 +5,11 @@ const ArbitrageHeroSection = () => {
     >
       <h1 className="text-3xl md:text-6xl text-center font-light">Arbitrage</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <button className="bg-[#5f1718] text-white rounded-lg p-[5px_20px] h-[42px]">
-          Call us
-        </button>
+        <a href="#footer">
+          <button className="bg-[#5f1718] w-full text-white rounded-lg p-[5px_20px] h-[42px]">
+            Call us
+          </button>
+        </a>
         <button className="bg-white rounded-lg p-[5px_20px] text-black h-[42px]">
           Make an appointment
         </button>

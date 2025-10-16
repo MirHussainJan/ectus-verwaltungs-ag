@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-gray-200 py-8 bg-white">
+    <footer id="footer" className="w-full border-t border-gray-200 py-8 bg-white">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Left Section */}
         <img
@@ -10,12 +10,16 @@ export default function Footer() {
         />
 
         <div className="flex flex-col gap-3 mt-4">
-          <button className="border border-gray-400 text-gray-600 px-6 py-2 font-bold rounded-lg text-lg hover:bg-gray-100 transition">
-            Home
-          </button>
-          <button className="border border-gray-400 text-gray-600 px-6 py-2 font-bold rounded-lg text-lg hover:bg-gray-100 transition">
-            Impressum
-          </button>
+          <a href="/">
+            <button className="border border-gray-400 text-gray-600 px-6 py-2 font-bold rounded-lg text-lg hover:bg-gray-100 transition w-full">
+              Home
+            </button>
+          </a>
+          <a href="/impressum">
+            <button className="border border-gray-400 text-gray-600 px-6 py-2 font-bold rounded-lg text-lg hover:bg-gray-100 transition">
+              Impressum
+            </button>
+          </a>
         </div>
 
         {/* Center Section */}
@@ -57,30 +61,6 @@ export default function Footer() {
               <p className="text-gray-600 text-base">+49 32 221807849</p>
             </div>
           </div>
-        </div>
-
-        {/* Right Section - Socials */}
-        <div className="flex items-center gap-4">
-          <svg viewBox="0 0 48 48" style={{ width: "30px", height: "30px" }}>
-            <path
-              fill="#3c3c3c"
-              d="M24 48C10.745 48 0 37.255 0 24S10.745 0 24 0s24 10.745 24 24-10.745 24-24 24zm4.314-23.37l.572-3.741h-3.578V18.46c0-1.023.5-2.021 2.102-2.021h1.627v-3.186S27.561 13 26.149 13c-2.947 0-4.873 1.792-4.873 5.037v2.852H18v3.742h3.276v9.046a12.955 12.955 0 004.032 0v-9.046h3.006z"
-            ></path>
-          </svg>
-          <svg viewBox="0 0 48 48" style={{ width: "30px", height: "30px" }}>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48ZM34.6407 13.9039H31.1138L25.3023 20.5471L20.2775 13.9039H13L21.6955 25.2744L13.4542 34.6938H16.9831L23.3438 27.4259L28.9027 34.6938H36L26.9356 22.7103L34.6407 13.9039ZM31.8303 32.5828H29.876L17.1185 15.904H19.2156L31.8303 32.5828Z"
-              fill="#3C3C3C"
-            ></path>
-          </svg>
-          <svg viewBox="0 0 48 48" style={{ width: "30px", height: "30px" }}>
-            <path
-              fill="#3c3c3c"
-              d="M24 48C10.745 48 0 37.255 0 24S10.745 0 24 0s24 10.745 24 24-10.745 24-24 24zm-2.475-28.489v13.525h4.34v-6.528c0-1.721.345-3.388 2.606-3.388 2.227 0 2.258 1.969 2.258 3.5v6.416h4.342v-7.238c0-3.554-.813-6.287-5.21-6.287-2.113 0-3.532 1.094-4.111 2.132h-.06V19.51h-4.165zm-7.525 0v13.525h4.515V19.511H14zm4.515-3.757a2.256 2.256 0 00-2.257-2.254A2.256 2.256 0 0014 15.754a2.256 2.256 0 002.258 2.254 2.256 2.256 0 002.257-2.254z"
-            ></path>
-          </svg>
         </div>
       </div>
     </footer>

@@ -8,7 +8,7 @@ const Impressum = () => {
     <>
       <Header />
       <HeroSection />
-      <div className="max-w-5xl mx-auto text-3xl font-light text-center mt-24">
+      <div className="max-w-5xl mx-auto px-4 text-3xl font-light text-center mt-24">
         <div className="text-4xl">Ectus Verwaltungs AG</div>
         <p>Adresse:</p>
         <p>Neue Str. 12 a</p>

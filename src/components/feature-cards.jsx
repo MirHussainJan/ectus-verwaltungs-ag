@@ -1,6 +1,6 @@
 function Card({ icon, title, children }) {
   return (
-    <div className="rounded-lg py-6 bg-card">
+    <div className="rounded-lg py-6 bg-card text-center">
       <div className="h-10 w-10 rounded-md bg-primary/10 text-primary flex items-center justify-center mx-auto">
         {icon}
       </div>
@@ -13,7 +13,7 @@ function Card({ icon, title, children }) {
 export default function FeatureCards() {
   const iconClass = "w-5 h-5";
   return (
-    <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 px-4">
       <Card
         icon={
           <svg

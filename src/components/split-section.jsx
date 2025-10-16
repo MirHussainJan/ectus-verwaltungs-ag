@@ -7,7 +7,10 @@ export default function SplitSection({
   imageLeft = false,
 }) {
   return (
-    <section className="w-full bg-gray-50 py-16 md:py-24">
+    <section
+      id="UNSERE_GESCHICHTE"
+      className="w-full bg-gray-50 py-16 md:py-24 scroll-smooth scroll-mt-20 md:scroll-mt-24"
+    >
       <div
         className={`max-w-5xl mx-auto flex flex-col ${
           imageLeft ? "md:flex-row-reverse" : "md:flex-row"

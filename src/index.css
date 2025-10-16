@@ -12,3 +12,13 @@ button {
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
+.\body
+{
+  /* keep this legacy selector just in case some components use class="body" */
+  scroll-behavior: smooth !important;
+}
+
+/* Use the root html element so anchor links and hash navigation scroll smoothly */
+html {
+  scroll-behavior: smooth !important;
+}

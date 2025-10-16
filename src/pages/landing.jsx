@@ -15,7 +15,7 @@ export default function Landing() {
     <main className="min-h-screen">
       <Header />
       <Hero imageUrl="/heroBg.jpg" />
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 scroll-smooth scroll-mt-20 md:scroll-mt-35" id="Services">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mx-auto mb-10 md:mb-14">
             <p className="uppercase font-bold text-base text-muted-foreground">
@@ -35,6 +35,7 @@ export default function Landing() {
       </section>
 
       <SplitSection
+        
         kicker="UNSERE GESCHICHTE"
         title="Vertrauen Sie uns mit Ihrer Finanzplanung"
         copy={
@@ -61,7 +62,7 @@ export default function Landing() {
         imageAlt="Beratungsszene in einem Meetingraum"
       />
 
-      <section className="py-16 md:py-24">
+      <section id="WARUM" className="py-16 md:py-24 scroll-smooth scroll-mt-20 md:scroll-mt-40">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mx-auto mb-10 md:mb-14">
             <p className="uppercase font-bold text-base text-muted-foreground">
@@ -150,7 +151,7 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="bg-gray-100 py-16 md:py-24">
+      <section className="bg-gray-100 py-16 md:py-24 scroll-smooth scroll-mt-20 md:scroll-mt-28" id="Karriere">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mx-auto mb-10 md:mb-14">
             <p className="uppercase font-bold text-base text-muted-foreground">

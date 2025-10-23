@@ -41,7 +41,7 @@ export default function Footer() {
               </svg>
               <span className="font-bold">E-Mail</span>
               <p className="text-gray-600 text-base">
-                info@ectus-verwaltungs-ag.de
+                info@ectus-verwaltungs-ag.com
               </p>
             </div>
           </div>

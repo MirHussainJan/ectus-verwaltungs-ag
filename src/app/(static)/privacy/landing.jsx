@@ -1,23 +1,21 @@
-import Awards from "@/features/home/awards";
-import Contact from "@/features/home/contact";
-import FeatureCards from "@/features/home/feature-cards";
-import Footer from "@/features/home/footer";
-import Header from "@/features/home/header";
-import Hero from "@/features/home/hero";
-import SplitSection from "@/features/home/split-section";
-import Strengths from "@/features/home/strengths";
-import Team from "@/features/home/team";
-import Testimonials from "@/features/home/testimonials";
+import Header from "../components/header.jsx";
+import Hero from "../components/hero.jsx";
+import FeatureCards from "../components/feature-cards.jsx";
+import StrengthCards from "../components/feature-cards.jsx";
+import SplitSection from "../components/split-section.jsx";
+import Team from "../components/team.jsx";
+import Awards from "../components/awards.jsx";
+import Testimonials from "../components/testimonials.jsx";
+import Contact from "../components/contact.jsx";
+import Footer from "../components/footer.jsx";
+import Strengths from "../components/strengths.jsx";
 
-export default function Home() {
+export default function Landing() {
   return (
     <main className="min-h-screen">
       <Header />
       <Hero imageUrl="/heroBg.jpg" />
-      <section
-        className="py-16 md:py-24 scroll-smooth scroll-mt-20 md:scroll-mt-35"
-        id="Services"
-      >
+      <section className="py-16 md:py-24 scroll-smooth scroll-mt-20 md:scroll-mt-35" id="Services">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mx-auto mb-10 md:mb-14">
             <p className="uppercase font-bold text-base text-muted-foreground">
@@ -37,6 +35,7 @@ export default function Home() {
       </section>
 
       <SplitSection
+        
         kicker="UNSERE GESCHICHTE"
         title="Vertrauen Sie uns mit Ihrer Finanzplanung"
         copy={
@@ -63,10 +62,7 @@ export default function Home() {
         imageAlt="Beratungsszene in einem Meetingraum"
       />
 
-      <section
-        id="WARUM"
-        className="py-16 md:py-24 scroll-smooth scroll-mt-20 md:scroll-mt-40"
-      >
+      <section id="WARUM" className="py-16 md:py-24 scroll-smooth scroll-mt-20 md:scroll-mt-40">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mx-auto mb-10 md:mb-14">
             <p className="uppercase font-bold text-base text-muted-foreground">
@@ -134,10 +130,7 @@ export default function Home() {
               Hervorragende Auszeichnungen und Akkreditierungen
             </h2>
             <p className="text-muted-foreground mt-8 text-center leading-relaxed font-light text-lg">
-              Unser Team hat renommierte Auszeichnungen und Akkreditierungen in
-              der Finanzbranche erhalten, die unsere Fachkenntnisse und
-              Professionalität unterstreichen. Wir haben uns kontinuierlich
-              weitergebildet, um diese Anerkennungen zu verdienen.
+              Unser Team hat renommierte Auszeichnungen und Akkreditierungen in der Finanzbranche erhalten, die unsere Fachkenntnisse und Professionalität unterstreichen. Wir haben uns kontinuierlich weitergebildet, um diese Anerkennungen zu verdienen.
             </p>
           </div>
           <Awards />
@@ -158,10 +151,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        className="bg-gray-100 py-16 md:py-24 scroll-smooth scroll-mt-20 md:scroll-mt-28"
-        id="Karriere"
-      >
+      <section className="bg-gray-100 py-16 md:py-24 scroll-smooth scroll-mt-20 md:scroll-mt-28" id="Karriere">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mx-auto mb-10 md:mb-14">
             <p className="uppercase font-bold text-base text-muted-foreground">
@@ -175,15 +165,15 @@ export default function Home() {
         </div>
       </section>
 
-      <iframe
-        width="100%"
-        height="570"
-        frameBorder="0"
+      <iframe 
+        width="100%" 
+        height="570" 
+        frameBorder="0" 
         allowFullScreen={true}
-        data-categories="unclassified"
-        data-termly-iframe-id="termly-iframe-0"
-        style={{ display: "block" }}
-        data-autoblock-ignore="1"
+        data-categories="unclassified" 
+        data-termly-iframe-id="termly-iframe-0" 
+        style={{ display: 'block' }} 
+        data-autoblock-ignore="1" 
         src="https://www.google.com/maps?q=51.767013,12.629125&hl=en&z=14&output=embed"
         title="Google Maps Location"
       ></iframe>

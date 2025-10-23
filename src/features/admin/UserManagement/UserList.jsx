@@ -94,7 +94,7 @@ const UserList = ({
             <div className="col-span-2">E-Mail</div>
             <div className="col-span-1">Geschlecht</div>
             <div className="col-span-1">Land</div>
-            <div className="col-span-1">Klarna-Anteile</div>
+            <div className="col-span-1">OpenAI-Anteile</div>
             <div className="col-span-1">Gesamtwert</div>
             <div className="col-span-1">
               <div className="flex justify-center">
@@ -175,7 +175,7 @@ const UserList = ({
                       </div>
 
                       <div className="flex items-center justify-between">
-                        <span className="text-[#64748B]">Klarna-Anteile</span>
+                        <span className="text-[#64748B]">OpenAI-Anteile</span>
                         <span className="tabular-nums">{row.shares}</span>
                       </div>
 

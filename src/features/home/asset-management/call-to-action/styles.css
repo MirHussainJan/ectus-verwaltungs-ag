@@ -1,6 +1,6 @@
 .bg-image {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../../../assets//images//asset-management-cta.jpg");
+    url("/asset-management-cta.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;

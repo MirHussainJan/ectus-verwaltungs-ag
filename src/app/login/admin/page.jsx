@@ -52,7 +52,7 @@ export default function AdminLoginPage() {
         />
 
         {/* Logo */}
-        <Logo className="w-[241px] h-[40px] lg:absolute lg:left-[77px] text-white lg:top-4 mt-10" />
+        <img src="/Logo!.png" className="w-20 lg:absolute lg:left-[77px] text-white lg:top-6" />
 
         {/* Kundenanmeldung */}
         <Button
@@ -76,7 +76,7 @@ export default function AdminLoginPage() {
                      backdrop-blur-[5.5px]"
           >
             <h2 className="text-white font-bold lg:text-[36px]/[130%] text-[24px]/[130%]">
-              SK BlackRock Financial Admin
+              Ectus Verwaltungs AG Financial Admin
             </h2>
             <p className="mt-5 lg:text-[18px]/[150%] text-[#BDBDBD] mb-6">
               Melden Sie sich bei Ihrem Konto an

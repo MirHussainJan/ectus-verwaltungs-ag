@@ -17,13 +17,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "SK BlackRock",
+  title: "Ectus Verwaltungs AG",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body 
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
+      >
         <MantineProvider withGlobalStyles withNormalizeCSS>
           <QueryProvider>
             <DatesProvider settings={{ locale: 'en', firstDayOfWeek: 0 }}>

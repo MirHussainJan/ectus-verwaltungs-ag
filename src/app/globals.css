@@ -160,3 +160,9 @@ html {
 .mantine-Modal-content {
   min-width: 70vw;
 }
+
+.hero-image{
+  background-image: url('/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}

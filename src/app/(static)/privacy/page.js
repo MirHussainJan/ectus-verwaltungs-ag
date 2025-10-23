@@ -4,7 +4,6 @@ import {
     TabsTab,
     TabsPanel,
 } from '@mantine/core';
-import { Footer } from '@/features/common/Footer';
 import { Navbar } from '@/features/common/Navbar';
 import BackArrow from '@/assets/icons/backArrow';
 import React from 'react';

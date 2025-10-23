@@ -1,7 +1,6 @@
 import Header from "../components/header.jsx";
 import Hero from "../components/hero.jsx";
 import FeatureCards from "../components/feature-cards.jsx";
-import StrengthCards from "../components/feature-cards.jsx";
 import SplitSection from "../components/split-section.jsx";
 import Team from "../components/team.jsx";
 import Awards from "../components/awards.jsx";

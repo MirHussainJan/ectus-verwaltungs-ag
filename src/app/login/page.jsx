@@ -113,10 +113,10 @@ const Page = () => {
         </div>
       </Modal>
 
-      <div className="flex flex-col md:flex-row items-center">
-        <Logo className="w-[241px] h-[40px] md:absolute md:top-14 md:left-14 z-50 md:text-white text-black static my-6 mt-14 md:m-0" />
+      <div className="flex flex-col md:flex-row relative">
+        <img src="/Logo!.png" alt="Logo" className="absolute w-20 top-3 left-10 z-1" />
 
-        <div className="md:flex lg:w-[45.833%] hidden md:w-[50%] w-full h-screen">
+        <div className="md:flex lg:w-[45.833%] hidden md:w-[50%] w-full">
           <Image
             src={Signupbg}
             alt="Hintergrundbild Anmeldung"
@@ -130,9 +130,9 @@ const Page = () => {
         </div>
 
         <div className="flex flex-1 md:w-[50%] w-full flex-col gap-6 md:gap-[30px] justify-center lg:px-[12.361vw] md:px-[8.252vw] px-[16px]">
-          <div className="flex flex-col md:gap-5 gap-3">
+          <div className="flex flex-col md:gap-5 gap-3 mt-16">
             <h2 className="font-bold text-[24px]/[130%] lg:text-[36px]/[130%]">
-              Willkommen bei SK BlackRock Financial
+              Willkommen bei Ectus Verwaltungs AG Financial Admin
             </h2>
             <p className="text-[18px]/[150%] text-[#757575]">
               Melden Sie sich in Ihrem Konto an
@@ -180,7 +180,7 @@ const Page = () => {
               unstyled
               fullWidth
               onClick={() => router.push("/login/admin")}
-              className="!h-[50px] bg-white text-black !font-bold text-[16px]/[150%] transition-all duration-200 flex items-center justify-center border-[#E7E7E7] border-1 lg:absolute lg:top-6 lg:right-6 lg:p-[12px_24px] hover:bg-[#E7E7E7] cursor-pointer"
+              className="!h-[50px] bg-white text-black !font-bold text-[16px]/[150%] transition-all duration-200 flex items-center justify-center border-[#E7E7E7] border-1 lg:absolute lg:top-2 lg:right-6 lg:p-[12px_24px] hover:bg-[#E7E7E7] cursor-pointer top-0"
             >
               Admin-Anmeldung
             </Button>

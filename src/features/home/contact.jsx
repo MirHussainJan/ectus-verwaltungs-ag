@@ -13,6 +13,10 @@ export default function Contact() {
           Zweigniederlassung
           <br />
           Ectus Verwaltungs AG
+          <br />
+          Rheinpromenade 13
+          <br />
+          40789 Monheim am Rhein
         </p>
         <div className="mt-4 space-y-8 text-muted-foreground text-lg font-light">
           <p>+49 32 221807849</p>

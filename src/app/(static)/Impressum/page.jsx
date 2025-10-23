@@ -1,7 +1,6 @@
-import React from "react";
-import HeroSection from "../components/herosection";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Footer from "@/features/home/footer";
+import Header from "@/features/home/header";
+import HeroSection from "@/features/home/herosection";
 
 const Impressum = () => {
   return (

@@ -25,8 +25,8 @@ const AddNewUserModal = ({ opened, onClose }) => {
       gender: "",
       country: "",
       shares: "",
-      klarnaPurchasePrice: "",
-      klarnaPrice: "",
+      OpenAIPurchasePrice: "",
+      OpenAIPrice: "",
       email: "",
       password: "",
     },
@@ -49,18 +49,18 @@ const AddNewUserModal = ({ opened, onClose }) => {
           return "Geben Sie eine gültige, nicht-negative Zahl ein";
         return null;
       },
-      klarnaPurchasePrice: (v) => {
+      OpenAIPurchasePrice: (v) => {
         if (v === "" || v === null) return "Kaufpreis ist erforderlich";
         const n = Number(v);
         if (!Number.isFinite(n) || n < 0)
           return "Geben Sie einen gültigen Kaufpreis ein";
         return null;
       },
-      klarnaPrice: (v) => {
-        if (v === "" || v === null) return "Klarna-Preis ist erforderlich";
+      OpenAIPrice: (v) => {
+        if (v === "" || v === null) return "OpenAI-Preis ist erforderlich";
         const n = Number(v);
         if (!Number.isFinite(n) || n < 0)
-          return "Geben Sie einen gültigen Klarna-Preis ein";
+          return "Geben Sie einen gültigen OpenAI-Preis ein";
         return null;
       },
       email: (v) =>
@@ -134,25 +134,25 @@ const AddNewUserModal = ({ opened, onClose }) => {
             {...form.getInputProps("country")}
           />
           <NumberInput
-            label="Klarna-Aktien"
+            label="OpenAI-Aktien"
             placeholder="Anzahl der Aktien eingeben"
             hideControls
             min={0}
             {...form.getInputProps("shares")}
           />
           <NumberInput
-            label="Kaufpreis Klarna"
+            label="Kaufpreis OpenAI"
             placeholder="Kaufpreis eingeben"
             hideControls
             min={0}
-            {...form.getInputProps("klarnaPurchasePrice")}
+            {...form.getInputProps("OpenAIPurchasePrice")}
           />
           <NumberInput
-            label="Klarna-Preis"
-            placeholder="Klarna-Preis eingeben"
+            label="OpenAI-Preis"
+            placeholder="OpenAI-Preis eingeben"
             hideControls
             // min={0}
-            {...form.getInputProps("klarnaPrice")}
+            {...form.getInputProps("OpenAIPrice")}
           />
           <TextInput
             label="E-Mail"

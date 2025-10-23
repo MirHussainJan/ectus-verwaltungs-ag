@@ -38,9 +38,9 @@ const NavbarPortal = ({ admin = false, openMenu, setOpenMenu }) => {
 
       <div className="p-[24.5px_16px] bg-black flex justify-between">
         {admin ? (
-          <LogoAdmin className="w-[241px] h-[40px] text-white" />
+          <img src="/Logo!.png" alt="" className="w-20"/>
         ) : (
-          <Logo className="w-[241px] h-[40px] text-white" />
+          <img src="/Logo!.png" alt="" className="w-20"/>
         )}
 
         <div

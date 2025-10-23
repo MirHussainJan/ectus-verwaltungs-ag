@@ -64,12 +64,12 @@ export default function Header() {
           <img
             src="/Logo!.png"
             alt="Ectus Verwaltungs AG Logo"
-            className="w-35 h-auto transition-transform hover:scale-105"
+            className="w-35 h-auto transition-transform"
           />
         </Link>
 
         {/* Navigation */}
-        <div className="flex items-center">
+        <div className="flex items-center gap-4">
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-10 text-base font-semibold text-gray-800">
             <a href="#Services" onClick={(e) => handleAnchorClick(e, "Services")} className="transition hover:text-[#5F1718]">
@@ -150,6 +150,13 @@ export default function Header() {
               </div>
             </div>
           </nav>
+
+          {/* Kundenlogin Button - Desktop */}
+          <Link href="/login" className="hidden md:block">
+            <button className="bg-[#5F1718] text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-[#4a1213] transition-all cursor-pointer">
+              Kundenlogin
+            </button>
+          </Link>
 
           {/* Mobile Hamburger */}
           <button
@@ -259,6 +266,15 @@ export default function Header() {
                   </Link>
                 </li>
               </ul>
+            </div>
+
+            {/* Kundenlogin Button - Mobile */}
+            <div className="mt-6">
+              <Link href="/login" onClick={() => setMobileOpen(false)}>
+                <button className="w-full bg-[#5F1718] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#4a1213] transition-all cursor-pointer">
+                  Kundenlogin
+                </button>
+              </Link>
             </div>
 
             {/* Contact CTA at bottom */}

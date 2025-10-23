@@ -132,7 +132,7 @@ const Page = () => {
         <div className="flex flex-1 md:w-[50%] w-full flex-col gap-6 md:gap-[30px] justify-center lg:px-[12.361vw] md:px-[8.252vw] px-[16px]">
           <div className="flex flex-col md:gap-5 gap-3 mt-16">
             <h2 className="font-bold text-[24px]/[130%] lg:text-[36px]/[130%]">
-              Willkommen bei Ectus Verwaltungs AG Admin
+              Willkommen bei Ectus Verwaltungs AG
             </h2>
             <p className="text-[18px]/[150%] text-[#757575]">
               Melden Sie sich in Ihrem Konto an

@@ -1,3 +1,4 @@
+"use client";
 import Footer from "@/features/home/footer";
 import Header from "@/features/home/header";
 import HeroSection from "@/features/home/herosection";

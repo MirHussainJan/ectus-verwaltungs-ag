@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div className="grid gap-8 lg:grid-cols-3 px-4">
-      <div className="p-6 bg-card h-[90%] self-center flex flex-col justify-between md:col-span-1 col-span-2 text-center lg:text-left">
+      <div className="p-6 bg-card h-[90%] self-center flex flex-col md:col-span-1 col-span-2 text-center lg:text-left">
         <h4 className="font-light text-2xl mb-2">Informationen zum Büro</h4>
         <p className="text-muted-foreground text-lg font-light">
           Neue Straße 12A
@@ -19,7 +19,7 @@ export default function Contact() {
           <br />
           40789 Monheim am Rhein
         </p>
-        <div className="mt-4text-muted-foreground text-lg font-light">
+        <div className="mt-4 text-muted-foreground text-lg font-light">
           <p>+49 21 732646281</p>
           <p>info@ectus-verwaltungs-ag.com</p>
         </div>

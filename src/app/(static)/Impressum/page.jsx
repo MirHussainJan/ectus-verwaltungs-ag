@@ -13,11 +13,12 @@ const Impressum = () => {
         <br />
         <p>Adresse:</p>
         <p>Neue Str. 12 a</p>
-        <p>Rheinpromenade 13 40789 Monheim am Rhein</p>
         <p>06901 Kemberg</p>
+        <br />
+        <p>Nueue Adresse:</p>
+        <p>Rheinpromenade 13 40789 Monheim am Rhein</p>
         <p className="mt-10">Telefon:</p>
         <p>+49 21 732646281</p>
-        <p className="text-2xl">+49 21 732646281</p>
         <p className="mt-10">E-Mail:</p>
         <p>info@ectus-verwaltungs-ag.com</p>
         <p className="mt-10">Registergericht:</p>

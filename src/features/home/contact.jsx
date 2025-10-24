@@ -8,7 +8,8 @@ export default function Contact() {
           <br />
           06901 Kemberg
           <br />
-          Germany
+          Deutschland
+          <br />
           <br />
           Zweigniederlassung
           <br />
@@ -18,9 +19,9 @@ export default function Contact() {
           <br />
           40789 Monheim am Rhein
         </p>
-        <div className="mt-4 space-y-8 text-muted-foreground text-lg font-light">
-          <p>+49 32 221807849</p>
-          <p>info@ectus-verwaltungs-ag.de</p>
+        <div className="mt-4text-muted-foreground text-lg font-light">
+          <p>+49 21 732646281</p>
+          <p>info@ectus-verwaltungs-ag.com</p>
         </div>
       </div>
 

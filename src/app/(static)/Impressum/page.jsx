@@ -10,14 +10,16 @@ const Impressum = () => {
       <HeroSection />
       <div className="max-w-5xl mx-auto px-4 text-3xl font-light text-center mt-24">
         <div className="text-4xl">Ectus Verwaltungs AG</div>
+        <br />
         <p>Adresse:</p>
         <p>Neue Str. 12 a</p>
+        <p>Rheinpromenade 13 40789 Monheim am Rhein</p>
         <p>06901 Kemberg</p>
         <p className="mt-10">Telefon:</p>
-        <p>+49 32221807849</p>
-        <p className="text-2xl">+49 32221807849</p>
+        <p>+49 21 732646281</p>
+        <p className="text-2xl">+49 21 732646281</p>
         <p className="mt-10">E-Mail:</p>
-        <p>info@ectus-verwaltungs-ag.de</p>
+        <p>info@ectus-verwaltungs-ag.com</p>
         <p className="mt-10">Registergericht:</p>
         <p>Amtsgericht Frankfurt am Main</p>
         <p>Amtsgericht Frankfurt am Main HRB 103709</p>

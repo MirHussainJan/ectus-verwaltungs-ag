@@ -25,8 +25,8 @@ const AddNewUserModal = ({ opened, onClose }) => {
       gender: "",
       country: "",
       shares: "",
-      OpenAIPurchasePrice: "",
-      OpenAIPrice: "",
+      klarnaPurchasePrice: "",
+      klarnaPrice: "",
       email: "",
       password: "",
     },
@@ -49,14 +49,14 @@ const AddNewUserModal = ({ opened, onClose }) => {
           return "Geben Sie eine gültige, nicht-negative Zahl ein";
         return null;
       },
-      OpenAIPurchasePrice: (v) => {
+      klarnaPurchasePrice: (v) => {
         if (v === "" || v === null) return "Kaufpreis ist erforderlich";
         const n = Number(v);
         if (!Number.isFinite(n) || n < 0)
           return "Geben Sie einen gültigen Kaufpreis ein";
         return null;
       },
-      OpenAIPrice: (v) => {
+      klarnaPrice: (v) => {
         if (v === "" || v === null) return "OpenAI-Preis ist erforderlich";
         const n = Number(v);
         if (!Number.isFinite(n) || n < 0)
@@ -78,16 +78,22 @@ const AddNewUserModal = ({ opened, onClose }) => {
     queryClient.invalidateQueries(["usersList"]);
   });
 
-  const handleSubmit = (values) => {
-    mutate(values);
-  };
+  const handleSubmit = React.useCallback((values) => {
+    requestAnimationFrame(() => {
+      mutate(values);
+    });
+  }, [mutate]);
+
+  const handleClose = React.useCallback(() => {
+    onClose();
+  }, [onClose]);
 
   return (
     <>
       {isPending && <LoadingBackdrop />}
       <Modal
         opened={opened}
-        onClose={onClose}
+        onClose={handleClose}
         title="Neuen Benutzer hinzufügen"
         centered
       >
@@ -145,14 +151,14 @@ const AddNewUserModal = ({ opened, onClose }) => {
             placeholder="Kaufpreis eingeben"
             hideControls
             min={0}
-            {...form.getInputProps("OpenAIPurchasePrice")}
+            {...form.getInputProps("klarnaPurchasePrice")}
           />
           <NumberInput
             label="OpenAI-Preis"
             placeholder="OpenAI-Preis eingeben"
             hideControls
-            // min={0}
-            {...form.getInputProps("OpenAIPrice")}
+            min={0}
+            {...form.getInputProps("klarnaPrice")}
           />
           <TextInput
             label="E-Mail"
@@ -178,7 +184,7 @@ const AddNewUserModal = ({ opened, onClose }) => {
             type="button"
             variant="outline"
             className="h-[50px] bg-transparent text-[#111827] border border-[#E7E7E7]"
-            onClick={onClose}
+            onClick={handleClose}
           >
             Abbrechen
           </Button>

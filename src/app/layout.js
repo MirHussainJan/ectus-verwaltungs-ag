@@ -6,6 +6,7 @@ import { Toaster } from 'sonner';
 import '@mantine/core/styles.css';
 import '@mantine/dates/styles.css';
 import QueryProvider from "../providers/QueryProvider";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -18,6 +19,9 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Ectus Verwaltungs AG",
+  icons: {
+    icon: '/Logo!.png',
+  },
 };
 
 export default function RootLayout({ children }) {

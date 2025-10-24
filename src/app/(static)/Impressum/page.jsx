@@ -15,8 +15,8 @@ const Impressum = () => {
         <p>Neue Str. 12 a</p>
         <p>06901 Kemberg</p>
         <br />
-        <p>Nueue Adresse:</p>
-        <p>Rheinpromenade 13 40789 Monheim am Rhein</p>
+        <p>Rheinpromenade 13</p>
+        <p>40789 Monheim am Rhein</p>
         <p className="mt-10">Telefon:</p>
         <p>+49 21 732646281</p>
         <p className="mt-10">E-Mail:</p>

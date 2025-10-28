@@ -25,7 +25,7 @@ export default function Team() {
         Jonas Wagner analysiert Märkte und Chancen, um die besten Investitionsstrategien für unsere Kunden zu entwickeln. Gemeinsam erreichen wir finanzielle Ziele.
       </Person>
       <Person name="Marie Wagenknecht" role="Risikoanalyst" img="/3.jpg">
-        Felix Scholz bewertet Risiken und erstellt Absicherungsstrategien, um Ihre finanzielle Sicherheit zu gewährleisten. Vertrauen Sie auf unsere Expertise.
+        Marie Wagenknecht bewertet Risiken und erstellt Absicherungsstrategien, um Ihre finanzielle Sicherheit zu gewährleisten. Vertrauen Sie auf unsere Expertise.
       </Person>
     </div>
   )

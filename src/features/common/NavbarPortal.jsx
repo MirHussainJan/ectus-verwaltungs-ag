@@ -44,7 +44,7 @@ const NavbarPortal = ({ admin = false, openMenu, setOpenMenu }) => {
         )}
 
         <div
-          className={`flex items-center justify-center size-[48px] rounded-full bg-[#FFFFFF29] cursor-pointer ${
+          className={`flex items-center justify-center size-[48px] rounded-full bg-black
             admin && "hidden md:flex"
           }`}
         >

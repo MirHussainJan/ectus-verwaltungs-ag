@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import axiosInstance from "@/utils/axiosInstance";
+import NavbarPortal from "@/features/common/NavbarPortal";
 
 const ChangePasswordPage = () => {
   const [currentPassword, setCurrentPassword] = useState("");
@@ -50,29 +51,7 @@ const ChangePasswordPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-black text-white px-4 md:px-6 lg:px-[4.167vw] py-4">
-        <div className="flex items-center justify-between">
-          <h1 className="text-white font-medium text-[18px]">SK Black Rock</h1>
-          <button 
-            onClick={handleBack}
-            className="text-white hover:text-gray-300 transition-colors"
-          >
-            <svg 
-              className="w-6 h-6" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" 
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
+      <NavbarPortal/>
 
       {/* Main Content */}
       <div className="py-8 px-4 md:px-6 lg:px-[4.167vw]">

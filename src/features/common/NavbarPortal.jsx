@@ -36,7 +36,7 @@ const NavbarPortal = ({ admin = false, openMenu, setOpenMenu }) => {
     <>
       {(isAdminLoggingOut || isUserLoggingOut) && <LoadingBackdrop />}
 
-      <div className="p-[24.5px_16px] bg-black flex justify-between">
+      <div className="p-[24.5px_16px] flex justify-between">
         {admin ? (
           <img src="/Logo!.png" alt="" className="w-20"/>
         ) : (

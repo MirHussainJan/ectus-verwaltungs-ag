@@ -7,17 +7,17 @@ import ArbitragePage from "./pages/arbitrage";
 import Impressum from "./pages/Impressum";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <RootLayout />,
-    children: [
-      { index: true, element: <Landing /> },
-      { path: "verm-gensverwaltung", element: <AssetManagementPage /> },
-      { path: "ipo", element: <IpoPage /> },
-      { path: "arbitrage", element: <ArbitragePage /> },
-      { path: "impressum", element: <Impressum /> },
-    ],
-  },
+  // {
+  //   path: "/",
+  //   element: <RootLayout />,
+  //   children: [
+  //     // { index: true, element: <Landing /> },
+  //     // { path: "verm-gensverwaltung", element: <AssetManagementPage /> },
+  //     // { path: "ipo", element: <IpoPage /> },
+  //     // { path: "arbitrage", element: <ArbitragePage /> },
+  //     // { path: "impressum", element: <Impressum /> },
+  //   ],
+  // },
 ]);
 
 export default router;

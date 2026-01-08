@@ -26,7 +26,7 @@ export default function Landing() {
           </div>
           <FeatureCards />
           <div className="text-center mt-18">
-            <a className="px-6 py-4 text-white rounded-lg bg-[#5f1718] font-bold">
+            <a className="px-6 py-4 text-white rounded-lg bg-[#5639A5] font-bold">
               Konsultation buchen
             </a>
           </div>
@@ -73,7 +73,7 @@ export default function Landing() {
           </div>
           <Strengths />
           <div className="text-center mt-18">
-            <a className="px-6 py-4 text-white rounded-lg bg-[#5f1718] font-bold">
+            <a className="px-6 py-4 text-white rounded-lg bg-[#5639A5] font-bold">
               Konsultation buchen
             </a>
           </div>

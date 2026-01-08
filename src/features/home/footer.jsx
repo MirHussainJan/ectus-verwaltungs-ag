@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Left Section */}
         <img
           src="/Logo!.png"
-          alt="Ectus Verwaltungs AG Logo"
+          alt="RCH Capital Holding GMBH. Logo"
           className="w-30 h-auto mb-2"
         />
 
@@ -17,7 +17,7 @@ export default function Footer() {
               Home
             </button>
           </a>
-          <Link href="/Impressum">
+          <Link href="/impressum">
             <button className="border border-gray-400 text-gray-600 px-6 py-2 font-bold rounded-lg text-lg hover:bg-gray-100 transition">
               Impressum
             </button>
@@ -41,7 +41,7 @@ export default function Footer() {
               </svg>
               <span className="font-bold">E-Mail</span>
               <p className="text-gray-600 text-base">
-                info@ectus-verwaltungs-ag.com
+                info@rch-capital-holding.com
               </p>
             </div>
           </div>
@@ -53,14 +53,14 @@ export default function Footer() {
                 <path
                   fill="none"
                   stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.7"
                   d="M6.364 3.81c1.496-1.503 5.032-2.139 6.907-2.108 1.88-.218 1.273 8.104.313 8.263 0 0-3.039.384-3.125 1.275-.116 1.217 3.009 8.67 4.22 8.84.65.091 2.606-1.402 2.606-1.402 1.521-1.145 4.678 2.2 6.161 3.596.649.627.617 1.159-.059 1.947-1.181 1.322-4.29 3.439-5.52 3.266-2.988-.42-8.05-4.592-10.483-9.582-2.743-5.629-2.712-12.82-1.02-14.095z"
                 ></path>
               </svg>
               <span className="font-bold">Telefon</span>
-              <p className="text-gray-600 text-base">+49 21 732646281</p>
+              <p className="text-gray-600 text-base">+49 32 221807849</p>
             </div>
           </div>
         </div>

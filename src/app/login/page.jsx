@@ -15,7 +15,6 @@ import { useForm } from "@mantine/form";
 import { toast } from "sonner";
 import Signupbg from "../../assets/images/singup bg.jpg";
 import SignupIpad from "../../assets/images/SignupIpad.png";
-import Logo from "../../assets/icons/logo";
 import { useDisclosure } from "@mantine/hooks";
 import { useRouter } from "next/navigation";
 import { useUserLogin } from "@/hooks/auth";
@@ -116,23 +115,18 @@ const Page = () => {
       <div className="flex flex-col md:flex-row relative">
         <img src="/Logo!.png" alt="Logo" className="absolute w-20 top-3 left-10 z-1" />
 
-        <div className="md:flex lg:w-[45.833%] hidden md:w-[50%] w-full">
-          <Image
-            src={Signupbg}
+        <div className="md:flex h-screen lg:w-[45.833%] hidden md:w-[50%] w-full">
+          <img
+            src="/spaceX.webp"
             alt="Hintergrundbild Anmeldung"
-            className="w-full h-full object-cover hidden lg:block"
-          />
-          <Image
-            src={SignupIpad}
-            alt="Hintergrundbild Anmeldung"
-            className="w-full h-full object-cover hidden md:block lg:hidden"
+            className="w-full h-full object-cover hidden md:block"
           />
         </div>
 
         <div className="flex flex-1 md:w-[50%] w-full flex-col gap-6 md:gap-[30px] justify-center lg:px-[12.361vw] md:px-[8.252vw] px-[16px]">
           <div className="flex flex-col md:gap-5 gap-3 mt-16">
             <h2 className="font-bold text-[24px]/[130%] lg:text-[36px]/[130%]">
-              Willkommen bei Ectus Verwaltungs AG
+              Willkommen bei RCH Capital Holding GMBH
             </h2>
             <p className="text-[18px]/[150%] text-[#757575]">
               Melden Sie sich in Ihrem Konto an

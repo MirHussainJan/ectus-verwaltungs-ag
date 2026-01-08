@@ -1,5 +1,47 @@
 @import "tailwindcss";
 
+@import "tailwindcss";
+
+.hero-image {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/hero-image.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.impressum-image {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/image (4).jfif");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.\body
+{
+  /* keep this legacy selector just in case some components use class="body" */
+  scroll-behavior: smooth !important;
+}
+
+/* Use the root html element so anchor links and hash navigation scroll smoothly */
+html {
+  scroll-behavior: smooth !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
 html {
   scroll-behavior: smooth;
 }

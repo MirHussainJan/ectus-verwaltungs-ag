@@ -41,13 +41,13 @@ export default function AdminLoginPage() {
   return (
     <>
       {isPending && <LoadingBackdrop />}
-      <div className="admin relative h-[100dvh] flex flex-col items-center gap-8">
+      <div className="admin relative h-[100vh] flex flex-col items-center gap-8">
         {/* Hintergrund */}
-        <Image
-          src={background}
+        <img
+          src="/spacex-scaled.jpg"
           alt=""
           fill
-          className="object-cover -z-10"
+          className="object-cover h-full w-full absolute top-0 left-0 -z-10"
           priority
         />
 
@@ -76,7 +76,7 @@ export default function AdminLoginPage() {
                      backdrop-blur-[5.5px]"
           >
             <h2 className="text-white font-bold lg:text-[36px]/[130%] text-[24px]/[130%]">
-              Ectus Verwaltungs AG Admin
+              RCH Capital Holding GMBH Admin
             </h2>
             <p className="mt-5 lg:text-[18px]/[150%] text-[#BDBDBD] mb-6">
               Melden Sie sich bei Ihrem Konto an

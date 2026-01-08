@@ -24,17 +24,16 @@ export default function FeatureCards() {
             fill="none"
           >
             <path
-              fillRule="evenodd"
-              clipRule="evenodd"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
               d="M4.13922 0H20.8537L15.2986 14.6203L25 14.5941L5.94869 42L10.4786 21.8304L0 21.8233L4.13922 0Z"
-              fill="#5f1718"
+              fill="#5639A5"
             />
           </svg>
         }
         title="Anlageberatung"
       >
-        Profitieren Sie von unserer Expertise bei der optimalen Gestaltung Ihres
-        Investmentportfolios.
+        Wir beraten Unternehmer und Investoren bei  IPO-Vorbereitungen sowie der strukturierten  Kapitalanlage - unabhängig und transparent.
       </Card>
       <Card
         icon={
@@ -46,17 +45,16 @@ export default function FeatureCards() {
             fill="none"
           >
             <path
-              fillRule="evenodd"
-              clipRule="evenodd"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
               d="M4.13922 0H20.8537L15.2986 14.6203L25 14.5941L5.94869 42L10.4786 21.8304L0 21.8233L4.13922 0Z"
-              fill="#5f1718"
+              fill="#5639A5"
             />
           </svg>
         }
-        title="Versicherungsanalyse"
+        title="Inflationsschutz"
       >
-        Wir überprüfen Ihre Versicherungen, um sicherzustellen, dass Sie optimal
-        abgesichert sind.
+        Fest-und Tagesgeldanlagen können einen Beitrag zum Erhalt der Kaufkraft leisten und bieten planbare Zinserträge bei hoher Sicherheit. Für Mandanten, die bestehende Festgeldverträge vorzeitig beenden möchten, prüfen wir Möglichkeiten zur Übertragung laufender Verträge, um mögliche Nachteile zu reduzieren. Darüber hinaus sind neue Fest-und Tagesgeldanlagen mit gesetzlicher Absicherung durch den EU-Einlagensicherungsfonds möglich.
       </Card>
       <Card
         icon={
@@ -68,10 +66,10 @@ export default function FeatureCards() {
             fill="none"
           >
             <path
-              fillRule="evenodd"
-              clipRule="evenodd"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
               d="M4.13922 0H20.8537L15.2986 14.6203L25 14.5941L5.94869 42L10.4786 21.8304L0 21.8233L4.13922 0Z"
-              fill="#5f1718"
+              fill="#5639A5"
             />
           </svg>
         }

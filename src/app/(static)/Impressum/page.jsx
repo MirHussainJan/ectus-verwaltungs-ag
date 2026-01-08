@@ -1,4 +1,3 @@
-"use client";
 import Footer from "@/features/home/footer";
 import Header from "@/features/home/header";
 import HeroSection from "@/features/home/herosection";
@@ -9,23 +8,20 @@ const Impressum = () => {
       <Header />
       <HeroSection />
       <div className="max-w-5xl mx-auto px-4 text-3xl font-light text-center mt-24">
-        <div className="text-4xl">Ectus Verwaltungs AG</div>
-        <br />
+        <div className="text-4xl">RCH Capital Holding GMBH</div>
         <p>Adresse:</p>
-        <p>Neue Str. 12 a</p>
-        <p>06901 Kemberg</p>
-        <br />
-        <p>Rheinpromenade 13</p>
-        <p>40789 Monheim am Rhein</p>
+        <p>Sankt Michael 29</p>
+        <p>91056 Erlangen</p>
+        <p>Deutschland</p>
         <p className="mt-10">Telefon:</p>
-        <p>+49 21 732646281</p>
+        <p>+49 32221807849</p>
+        <p className="text-2xl">+49 32221807849</p>
         <p className="mt-10">E-Mail:</p>
-        <p>info@ectus-verwaltungs-ag.com</p>
+        <p>info@rch-capital-holding.com</p>
         <p className="mt-10">Registergericht:</p>
-        <p>Amtsgericht Frankfurt am Main</p>
-        <p>Amtsgericht Frankfurt am Main HRB 103709</p>
+        <p>Amtsgericht Führt HRB 20838</p>
         <p className="mt-10">Vertreten durch den Geschäftsführer:</p>
-        <p>Ralf-Uwe Stolarski</p>
+        <p>Alexander Rizzeli</p>
         <p className="my-24">
           Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für
           die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir
@@ -33,8 +29,7 @@ const Impressum = () => {
           <br />
           Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Knut Ropte
           (Anschrift wie oben) Streitschlichtung: Die Europäische Kommission
-          stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: [Link
-          hinzufügen]. Wir sind nicht verpflichtet, an Streitbeilegungsverfahren
+          stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a className="text-[#5538A4]" href="https://consumer-redress.ec.europa.eu/index_de">https://consumer-redress.ec.europa.eu/index_de</a> Wir sind nicht verpflichtet, an Streitbeilegungsverfahren
           vor einer Verbraucherschlichtungsstelle teilzunehmen.
         </p>
         <p className="mb-24">

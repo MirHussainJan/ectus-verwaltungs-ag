@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "https://api.ectus-verwaltungs-ag.com/api",
+    baseURL: "https://backend.rch-capital-holding.com/api",
     withCredentials: true, 
 });
 

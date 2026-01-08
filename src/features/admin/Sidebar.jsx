@@ -19,7 +19,7 @@ const Sidebar = ({ openMenu, setOpenMenu }) => {
       route: "/usermanagement",
       icon: Usermanagement,
     },
-    { name: "OpenAI", route: "/klarna", icon: Klarna },
+    { name: "SpaceX", route: "/klarna", icon: Klarna },
     { name: "Einstellungen", route: "/setting", icon: Setting },
   ];
 

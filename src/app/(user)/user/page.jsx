@@ -121,12 +121,12 @@ const Page = () => {
           {/* right */}
           <div className="p-5 bg-white md:w-[312px] w-full flex flex-col gap-6">
             <h6 className="font-semibold text-[18px]/[150%]">
-              Ihre OpenAI-Investmentdetails
+              Ihre SpaceX-Investmentdetails
             </h6>
             <div className="flex gap-6 justify-between">
               <div>
                 <p className="font-medium text-[12px]/[100%] mb-1.5">
-                  Ihre OpenAI-Anteile
+                  Ihre SpaceX-Anteile
                 </p>
                 <h4 className="font-semibold text-[20px]/[150%]">
                   {data?.user?.shares}
@@ -134,7 +134,7 @@ const Page = () => {
               </div>
               <div>
                 <p className="font-medium text-[12px]/[100%] mb-1.5">
-                  Aktueller OpenAI-Preis
+                  Aktueller SpaceX-Preis
                 </p>
                 <h4 className="font-semibold text-[20px]/[150%]">
                   € {data?.user?.klarnaPrice}
@@ -153,7 +153,7 @@ const Page = () => {
               </div>
               <div>
                 <p className="font-medium text-[12px]/[100%] mb-1.5">
-                  OpenAI-Kaufpreis
+                  SpaceX-Kaufpreis
                 </p>
                 <h4 className="font-semibold text-[20px]/[150%]">
                   € {data?.user?.klarnaPurchasePrice}

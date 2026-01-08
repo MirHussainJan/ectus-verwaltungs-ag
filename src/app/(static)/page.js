@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
-      <Hero imageUrl="/heroBg.jpg" />
+      <Hero imageUrl="/d7e50718-c133-4bbb-96c4-91a523984dfd.png" />
       <section
         className="py-16 md:py-24 scroll-smooth scroll-mt-20 md:scroll-mt-35"
         id="Services"
@@ -29,7 +29,7 @@ export default function Home() {
           </div>
           <FeatureCards />
           <div className="text-center mt-18">
-            <a className="px-6 py-4 text-white rounded-lg bg-[#5f1718] font-bold">
+            <a href="/#Karriere" className="px-6 py-4 text-white rounded-lg bg-[#5639A5] font-bold">
               Konsultation buchen
             </a>
           </div>
@@ -42,24 +42,34 @@ export default function Home() {
         copy={
           <>
             <p>
-              Mit Gründung im Jahr 2015 in Kemberg haben wir uns als
-              Finanzberater einen Namen gemacht. Unser Firmensitz in Kemberg,
-              Germany, dient als zentraler Standort für unsere
-              Vermögensverwaltungsdienste. Unsere Geschichte begann mit dem
-              klaren Ziel, individuelle Finanzlösungen für unsere Kunden zu
-              schaffen.
+              Mit der Gründung am 04.10.2021 in Erlangen haben wir uns als
+              spezialisierter Finanzberater mit klarem Fokus auf
+              Kapitalmarktstrategien und Börsengänge (IPOs) positioniert. Unser
+              Hauptsitz in Erlangen, Deutschland, bildet das strategische
+              Zentrum unserer Unternehmensberatung und Strukturierung von
+              Kapitalmarktprojekten.
             </p>
             <p>
-              Seit unserer Gründung sind wir kontinuierlich gewachsen und sind
-              heute stolz darauf, eine Vielzahl von Kunden in und um Kemberg zu
-              betreuen. Unsere Expertise und unser Engagement für die
-              finanziellen Ziele unserer Kunden haben uns zu einem
-              vertrauenswürdigen Partner in allen Fragen der Finanzplanung
-              gemacht.
+              Als Teil einer größeren Holding, die an zahlreichen Unternehmen
+              beteiligt ist und aktiv Start-ups sowie Wachstumsunternehmen
+              fördert, liegt unser wirtschaftlicher Schwerpunkt dort, wo
+              nachhaltige Wertschöpfung entsteht: am Kapitalmarkt. Insbesondere
+              die strukturierte Vorbereitung und Begleitung von Unternehmen bis
+              zum Börsengang stellt den zentralen Hebel für Wachstum und
+              Ertragssteigerung dar.
+            </p>
+            <p>
+              Unsere Zweigniederlassung am Potsdamer Platz im Sony Center,
+              Berlin, ist gezielt auf das IPO-Geschäft sowie auf strukturierte
+              Fest- und Tagesgeldlösungen ausgerichtet. Dort bündeln wir unsere
+              operative Expertise in der Kapitalmarktvorbereitung, der
+              Investorenstrukturierung sowie in der Umsetzung
+              sicherheitsorientierter Anlage- und Liquiditätskonzepte für
+              Unternehmen und Investoren.
             </p>
           </>
         }
-        image="/20d48b4b5f.jpg"
+        image="/image (7).png"
         imageAlt="Beratungsszene in einem Meetingraum"
       />
 
@@ -78,7 +88,7 @@ export default function Home() {
           </div>
           <Strengths />
           <div className="text-center mt-18">
-            <a className="px-6 py-4 text-white rounded-lg bg-[#5f1718] font-bold">
+            <a className="px-6 py-4 text-white rounded-lg bg-[#5639A5] font-bold">
               Konsultation buchen
             </a>
           </div>
@@ -87,22 +97,24 @@ export default function Home() {
 
       <SplitSection
         kicker="EINZIGARTIGER ANSATZ"
-        title="Unsere innovative Herangehensweise"
         copy={
           <>
             <p>
-              Als erfahrene Finanzberater gehen wir neue Wege, um
-              maßgeschneiderte Lösungen für unsere Kunden zu entwickeln. Unser
-              innovativer Ansatz ermöglicht es uns, individuelle
-              Finanzstrategien zu erstellen, die auf die spezifischen
-              Bedürfnisse und Ziele jedes Einzelnen zugeschnitten sind.
-            </p>
-            <p>
-              Durch ständige Weiterentwicklung und Anpassung an die sich
-              wandelnden Finanzmärkte bleiben wir an vorderster Front, um
-              unseren Kunden stets die bestmöglichen Beratungsdienste zu bieten.
-              Mit unserer innovativen Herangehensweise schaffen wir langfristige
-              Werte und helfen unseren Kunden, finanzielle Ziele zu erreichen.
+              Unser Ansatz verbindet sicherheitsorientierte Fest-und
+              Tagesgeldlösungen mit gezielten Kapitalmarkt- und IPO-Strategien.
+              So schaffen wir eine ausgewogene Struktur aus Stabilität,
+              Liquidität und Wachstumsperspektiven, abgestimmt auf die
+              individuellen Ziele unserer Mandanten. Als erfahrene Finanzberater
+              entwickeln wir maßgeschneiderte Finanzstrategien, die sowohl dem
+              Kapitalerhalt als auch der kontrollierten Nutzung von Marktchancen
+              dienen. Durch kontinuierliche Marktbeobachtung und die laufende
+              Anpassung unserer Konzepte stellen wir sicher, dass sowohl sichere
+              Anlageformen als auch vorbörsliche Investitionsmöglichkeiten
+              professionell strukturiert und transparent begleitet werden. Unser
+              Ziel ist es, langfristige Werte zu schaffen, Risiken klar
+              darzustellen und Mandanten auf Basis von Vertrauen, Transparenz
+              und Kapitalmarktexpertise bei der Erreichung ihrer finanziellen
+              Ziele zu begleiten.
             </p>
           </>
         }
@@ -126,18 +138,22 @@ export default function Home() {
 
       <section className="bg-gray-100 py-16 md:py-24">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mx-auto mb-10 md:mb-14 max-w-xl">
+          <div className="text-center mx-auto mb-10 md:mb-12 max-w-xl">
             <p className="uppercase font-bold text-base text-muted-foreground">
               ANERKANNTE SPITZENLEISTUNGEN
             </p>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl mx-auto text-balance">
-              Hervorragende Auszeichnungen und Akkreditierungen
-            </h2>
             <p className="text-muted-foreground mt-8 text-center leading-relaxed font-light text-lg">
-              Unser Team hat renommierte Auszeichnungen und Akkreditierungen in
-              der Finanzbranche erhalten, die unsere Fachkenntnisse und
-              Professionalität unterstreichen. Wir haben uns kontinuierlich
-              weitergebildet, um diese Anerkennungen zu verdienen.
+              Unser Team verfügt über anerkannte Auszeichnungen sowie relevante
+              Akkreditierungen der Finanzbranche, die unsere fachliche
+              Qualifikation, strukturierten Prozesse und professionelle
+              Arbeitsweise dokumentieren. Diese Qualifikationen bilden eine
+              belastbare Grundlage für fundierte Investitionsentscheidungen und
+              eine verantwortungsvolle Begleitung von Kapital. Durch
+              kontinuierliche fachliche Weiterbildung, die Einhaltung hoher
+              Qualitäts- und Compliance-Standards sowie die fortlaufende
+              Anpassung an regulatorische und marktwirtschaftliche Anforderungen
+              gewährleisten wir eine verlässliche, transparente und
+              investorenorientierte Beratung.
             </p>
           </div>
           <Awards />
@@ -184,7 +200,7 @@ export default function Home() {
         data-termly-iframe-id="termly-iframe-0"
         style={{ display: "block" }}
         data-autoblock-ignore="1"
-        src="https://www.google.com/maps?q=51.767013,12.629125&hl=en&z=14&output=embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.98059972991!2d10.9454587!3d49.579254899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a201fee8a3b80f%3A0x963ffc23b12ebe60!2sSt.%20Michael%2029%2C%2091056%20Erlangen%2C%20Germany!5e0!3m2!1sen!2s!4v1767283243135!5m2!1sen!2s"
         title="Google Maps Location"
       ></iframe>
 

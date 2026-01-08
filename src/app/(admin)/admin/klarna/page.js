@@ -42,13 +42,13 @@ export default function Page() {
         <div className="w-[200px]">
             {(isFetching || isUpdating) && <LoadingBackdrop />}
             <h2 className="mb-5 font-bold md:text-[24px]/[150%] text-[20px]/[150%]">
-                OpenAI-Details
+                SpaceX-Details
             </h2>
 
             <form onSubmit={form.onSubmit(onSubmit)} className="max-w-[380px] space-y-4">
                 <div>
                     <p className="mb-2.5 font-medium text-[14px]/[150%] text-[#191919]">
-                        OpenAI-Preis
+                        SpaceX-Preis
                     </p>
                     <Input
                         type="number"

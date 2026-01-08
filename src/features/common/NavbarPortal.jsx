@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Logo from "../../assets/icons/logo";
-import LogoAdmin from "../../assets/icons/LogoAdmin";
 import Logout from "../../assets/icons/Logout";
 import BurgerIcon from "../../assets/icons/BurgerIcon";
 import { useRouter } from "next/navigation";
@@ -36,7 +34,7 @@ const NavbarPortal = ({ admin = false, openMenu, setOpenMenu }) => {
     <>
       {(isAdminLoggingOut || isUserLoggingOut) && <LoadingBackdrop />}
 
-      <div className="p-[24.5px_16px] flex justify-between">
+      <div className="px-[24.5px_16px] py-2 flex justify-between items-center">
         {admin ? (
           <img src="/Logo!.png" alt="" className="w-20"/>
         ) : (
@@ -44,11 +42,11 @@ const NavbarPortal = ({ admin = false, openMenu, setOpenMenu }) => {
         )}
 
         <div
-          className={`flex items-center justify-center size-[48px] rounded-full bg-black
+          className={`flex items-center justify-center p-3 rounded-full bg-black
             admin && "hidden md:flex"
           }`}
         >
-          <Logout onClick={handleLogout} className="text-white size-[24px]" />
+          <Logout onClick={handleLogout} className="text-white size-[26px]" />
         </div>
 
         {admin && (

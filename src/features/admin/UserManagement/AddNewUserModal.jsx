@@ -57,10 +57,10 @@ const AddNewUserModal = ({ opened, onClose }) => {
         return null;
       },
       klarnaPrice: (v) => {
-        if (v === "" || v === null) return "OpenAI-Preis ist erforderlich";
+        if (v === "" || v === null) return "SpaceX-Preis ist erforderlich";
         const n = Number(v);
         if (!Number.isFinite(n) || n < 0)
-          return "Geben Sie einen gültigen OpenAI-Preis ein";
+          return "Geben Sie einen gültigen SpaceX-Preis ein";
         return null;
       },
       email: (v) =>
@@ -140,22 +140,22 @@ const AddNewUserModal = ({ opened, onClose }) => {
             {...form.getInputProps("country")}
           />
           <NumberInput
-            label="OpenAI-Aktien"
+            label="SpaceX-Aktien"
             placeholder="Anzahl der Aktien eingeben"
             hideControls
             min={0}
             {...form.getInputProps("shares")}
           />
           <NumberInput
-            label="Kaufpreis OpenAI"
+            label="Kaufpreis SpaceX"
             placeholder="Kaufpreis eingeben"
             hideControls
             min={0}
             {...form.getInputProps("klarnaPurchasePrice")}
           />
           <NumberInput
-            label="OpenAI-Preis"
-            placeholder="OpenAI-Preis eingeben"
+            label="SpaceX-Preis"
+            placeholder="SpaceX-Preis eingeben"
             hideControls
             min={0}
             {...form.getInputProps("klarnaPrice")}

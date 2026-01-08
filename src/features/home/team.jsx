@@ -18,14 +18,14 @@ function Person({ name, role, img, children }) {
 export default function Team() {
   return (
     <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
-      <Person name="Maximilian Mayer" role="Finanzberater" img="/1.jpg">
-        Maximilian Mayer unterstützt Sie bei Ihren Finanzzielen mit Fachwissen und maßgeschneiderten Lösungen. Wir stehen Ihnen immer zur Seite.
+      <Person name="Christian Herzog" role="Finanzberater" img="/image (3).jfif">
+        Christian Herzog unterstützt Sie mit tiefgehender Kapitalmarktexpertise und individuell entwickelten Finanzstrategien. Unser Anspruch ist es, nachhaltige Werte zu schaffen und Sie als vertrauensvoller Partner langfristig zu begleiten.
       </Person>
-      <Person name="Jonas Wagner" role="Investmentexperte" img="/2.jpg">
-        Jonas Wagner analysiert Märkte und Chancen, um die besten Investitionsstrategien für unsere Kunden zu entwickeln. Gemeinsam erreichen wir finanzielle Ziele.
+      <Person name="Volker Hartmund" role="Investmentexperte" img="/image (6).png">
+        Volker Hartmund vereint präzise Marktanalyse mit strategischem Weitblick, um strukturierte und leistungsfähige Investmentstrategien zu entwickeln. Sein Schwerpunkt liegt auf der Identifikation von Chancen und der langfristigen Ausrichtung von Kapital.
       </Person>
-      <Person name="Marie Wagenknecht" role="Risikoanalyst" img="/3.jpg">
-        Marie Wagenknecht bewertet Risiken und erstellt Absicherungsstrategien, um Ihre finanzielle Sicherheit zu gewährleisten. Vertrauen Sie auf unsere Expertise.
+      <Person name="Christiane Schneider" role="Assistenz der Geschäftsführung" img="/image.jpg">
+        Christiane Schneider verantwortet die strukturierte Risikobewertung und Entwicklung von Absicherungsstrategien, um die finanzielle Sicherheit unserer Mandanten nachhaltig zu unterstützen. Darüber hinaus koordiniert sie als zentrale Assistenz die organisatorischen und administrativen Abläufe für Christian Herzog und Volker Hartmund und gewährleistet so effiziente Prozesse und eine verlässliche Kommunikation.
       </Person>
     </div>
   )
